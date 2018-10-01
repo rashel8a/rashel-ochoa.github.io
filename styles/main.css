@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Brandon Text Regular', sans-serif;
+  color: #001F40;
+}
+
+.description {
+  font-size: 3.5rem;
+  line-height: 4.9rem;
+  padding-top: 4.5rem;
+}
+
+@font-face {
+font-family: 'Brandon Text Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Brandon Text Regular'), url('HVD Fonts - BrandonText-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Brandon Grotesque Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Brandon Grotesque Bold'), url('brandon-grotesque-bold-587bd6400afd0.woff') format('woff');
+}
+
+nav {
+
+}
+.opener {
+  font-family: 'Brandon Grotesque Bold', sans-serif;
+  font-size: 8rem;
+  line-height: 11rem;
+  letter-spacing: 1%;
+}
+
+strong {
+  font-family: 'Brandon Text Bold';
+}
+
+.slogan {
+  font-size: 4.4rem;
+  line-height: 6.2rem;
+}
