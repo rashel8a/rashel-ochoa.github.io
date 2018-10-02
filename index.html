@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio | Rashel Ochoa</title>
     <!-- Reset -->
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--AOS Style-->
@@ -14,41 +14,46 @@
     <link rel="stylesheet" href="fonts/btwf/btstyle.css">
     <link rel="stylesheet" href="fonts/bgwf/bgstyle.css">
     <!-- Custom Syles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/flex.css">
   </head>
   <body>
     <div class="container">
-    <!--Header section-->
-      <!--Nav section -->
-      <nav class="top-nav">
-        <ul>
-          <li class="logo">
-            <a href="index.html">
-              <img src="images/full-sized-ro-logo.png" alt="Rashel-logo">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#project-section">Work</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Resume</a>
-          </li>
-        </ul>
-      </nav>
-      <!--Hero unit -->
-      <section class="hero">
-        <h1 class="opener"> Hi, I'm Rashel. </h1>
-        <p class="slogan"> A <strong>user-centered</strong> product designer with a <strong>business-oriented</strong> mindset in the San Francisco Bay area. </p>
-        <p class="description"> I design <strong>intentional</strong> and <strong>inclusive products</strong> rooted in the <strong>problems</strong> and <strong>stories</strong> of the people they serve. </p>
-        <img class="header-image" src="images/index/HP-desktop-header.png" alt="abstract header image">
-        <div class="see-work">
-          <a href="#project-section">See my latest work</a>
-          <i class="fas fa-caret-down"></i>
-        </div>
-      </section>
+      <!--Header section-->
+      <header class="bg-header">
+        <!--Nav section -->
+        <nav class="top-nav">
+          <ul class="flex-container">
+            <li class="logo">
+              <a href="index.html">
+                <img src="images/full-sized-ro-logo.png" alt="Rashel-logo">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#project-section">Work</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Resume</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Hero unit -->
+        <section class="hero">
+          <div class="intro">
+            <h1 class="opener"> Hi, I'm Rashel. </h1>
+            <p class="slogan"> A <strong>user-centered</strong> product designer with a <strong>business-oriented</strong> mindset in the San Francisco Bay area. </p>
+            <p class="description"> I design <strong>intentional</strong> and <strong>inclusive products</strong> rooted in the <strong>problems</strong> and <strong>stories</strong> of the people they serve. </p>
+            <img class="header-image" src="images/index/desktop-hp-flower.png" alt="abstract header image">
+          </div>
+          <div class="see-work">
+            <a href="#project-section">See my latest work</a>
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </section>
+      </header>
     <!-- Project section-->
       <section id="project-section">
         <div class="feat-project-display">

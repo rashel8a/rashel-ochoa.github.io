@@ -2,16 +2,33 @@
   box-sizing: border-box
 }
 
-html {
-  font-size: 10px;
-  font-family: 'Brandon Text Regular', sans-serif;
-  color: #001F40;
+body {
+  background-color: #FFFDFB;
+}
+
+body.bg-header {
+  background-image: linear-gradient(#FFF3ED, #FFFDFB);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .description {
   font-size: 3.5rem;
   line-height: 4.9rem;
   padding-top: 4.5rem;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Brandon Text Regular', sans-serif;
+  color: #001F40;
+}
+
+.intro {
+  width: 38%;
 }
 
 @font-face {
@@ -29,14 +46,16 @@ font-weight: normal;
 src: local('Brandon Grotesque Bold'), url('brandon-grotesque-bold-587bd6400afd0.woff') format('woff');
 }
 
-nav {
-
-}
 .opener {
   font-family: 'Brandon Grotesque Bold', sans-serif;
   font-size: 8rem;
   line-height: 11rem;
   letter-spacing: 1%;
+  padding: 20rem 0 0 0;
+}
+
+p {
+  font-size: 2rem;
 }
 
 strong {
