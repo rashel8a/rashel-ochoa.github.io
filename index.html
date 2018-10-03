@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio | Rashel Ochoa</title>
+    <title>Product Designer | Rashel Ochoa</title>
     <!-- Reset -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--AOS Style-->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Fonts-->
     <link rel="stylesheet" href="fonts/btwf/btstyle.css">
     <link rel="stylesheet" href="fonts/bgwf/bgstyle.css">
+    <!--Javascript -->
+    <script type="text/javascript" async src="main.js"></script>
     <!-- Custom Syles -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/grid.css">
   </head>
   <body>
     <div class="container">
@@ -23,44 +25,49 @@
       <header class="bg-header">
         <!--Nav section -->
         <nav class="top-nav">
-          <ul class="flex-container">
-            <li class="logo">
-              <a href="index.html">
-                <img src="images/full-sized-ro-logo.png" alt="Rashel-logo">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#project-section">Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Resume</a>
-            </li>
-          </ul>
-        </nav>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+          <a class="logo animated-in" href="index.html">
+            <img class="logo-size" src="images/full-sized-ro-logo.png" alt="Rashel logo">
+          </a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a class="nav-link one animated-in" href="#project-section">work</a>
+          </li>
+          <li>
+            <a class="nav-link two animated-in" href="about.html">about</a>
+          </li>
+          <li>
+            <a class="nav-link three animated-in" href="#">resume</a>
+          </li>
+          <li>
+            <a class="nav-link four animated-in" href="#footer-box">contact</a>
+          </li>
+        </ul>
+      </nav>
         <!--Hero unit -->
-        <section class="hero">
-          <div class="intro">
-            <h1 class="opener"> Hi, I'm Rashel. </h1>
-            <p class="slogan"> A <strong>user-centered</strong> product designer with a <strong>business-oriented</strong> mindset in the San Francisco Bay area. </p>
-            <p class="description"> I design <strong>intentional</strong> and <strong>inclusive products</strong> rooted in the <strong>problems</strong> and <strong>stories</strong> of the people they serve. </p>
-            <img class="header-image" src="images/index/desktop-hp-flower.png" alt="abstract header image">
-          </div>
-          <div class="see-work">
-            <a href="#project-section">See my latest work</a>
-            <i class="fas fa-caret-down"></i>
-          </div>
-        </section>
-      </header>
+      <section class="grid-hero">
+        <p class="hi">Hello,</p>
+        <h1 class="name">I'm Rashel.</h1>
+        <p class="slogan"> A <strong>people-first</strong> product designer and <strong>integrative thinker</strong> in the San Francisco Bay area. </p>
+        <p class="description"> I design <strong>intentional</strong> and <strong>inclusive products</strong> rooted in the <strong>problems</strong> and <strong>stories</strong> of the people they serve. </p>
+        <img class="desktop-image" src="images/index/desktop-hp-flower.png" alt="abstract header image">
+        <img class="mobile-header" src="images/index/mobile-header.png" alt="mobile header image">
+        <div class="see-work">
+          <a class="work-link" href="#project-section">See my latest work</a>
+          <i class="fas fa-caret-down"></i>
+        </div>
+      </section>
+    </header>
     <!-- Project section-->
       <section id="project-section">
-        <div class="feat-project-display">
-          <a href="project.html"><img src="images/index/HP-project-image-desktop.png" alt="Scattered project display iamge"></a>
-        </div>
+        <a class="feat-project-display" href="project.html">
+          <img class="project-desktop" src="images/index/project-desktop.png" alt="Scattered project display image">
+          <img class="project-mobile" src="images/index/project-mobile.png" alt="mobile project display">
+        </a>
         <article class="feat-project-text">
-          <h3>Starstuff</h3>
+          <h3 class="project-name">Starstuff</h3>
           <h2 class="project-title">A Place To Bring Ideas To Life</h2>
           <h4 class="role">User Experience Design & Branding</h4>
           <p class="project-desc"> Starstuff is a cloud storage app with a new kind of workspace that gives its users exactly what they want — a place to animate their ideas seamlessly and share them with a robust community.</p>
@@ -86,7 +93,7 @@
        </div>
      </div>
      <!--Nav footer-->
-     <footer class="footer-box">
+     <footer id="footer-box">
        <nav class="bottom-nav">
           <ul class="bottom-nav">
             <li>
