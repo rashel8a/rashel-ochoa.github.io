@@ -93,6 +93,22 @@ nav {
   display: block;
 }
 
+.primary-btn {
+  background-color: none;
+  width: 20rem;
+  height: 4.8rem;
+  font-family: 'Brandon Grotesque Black';
+  font-size: 1.6rem;
+  border: .3rem solid #FB7E6C;
+  color: #FB7E6C;
+  padding: 1.55rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  border-radius: 4rem;
+}
+
 /*End of menu toggle*/
 
 /* Logo fade-in & transform animations*/
@@ -148,10 +164,15 @@ img {
 
 p {
   font-size: 1.6rem;
+  font-family: 'Brandon Text Regular';
 }
 
 strong {
   font-family: 'Brandon Text Bold';
+}
+
+.project-desktop {
+  display: none;
 }
 
 /* ****** DESKTOP MEDIA QUERY ******* */
@@ -159,7 +180,6 @@ strong {
 @media screen and (min-width: 768px) {
   body {
     background-color: #FFFDFB;
-    width: 144rem;
   }
 
   .container {
@@ -176,6 +196,18 @@ strong {
 
   p {
     font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 3rem;
   }
 
   .main-nav {
@@ -260,6 +292,15 @@ strong {
   }
 
   .mobile-header {
+    display: none !important;
+  }
+
+  .project-desktop {
+    width: 100%;
+    display: block;
+  }
+
+  .project-mobile {
     display: none !important;
   }
 
