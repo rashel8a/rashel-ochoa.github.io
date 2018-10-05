@@ -1,10 +1,12 @@
-body {
+/* body {
   width: 37.5rem;
-}
+} */
 
 .grid-hero {
   display: grid;
-  width: 34.3rem;
+  /* width: 100%;
+  height: 100%; */
+  /* width: 34.3rem; */
   align-items: center;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -48,8 +50,6 @@ a.work-link {
 .mobile-header {
   grid-area: header-m;
   width: 100%;
-  border: 1px solid red;
-  /* padding-left: 0; */
 }
 
 .name {
@@ -124,17 +124,17 @@ h3 {
   font-size: 1.8rem;
   line-height: 120%;
   color: #405276;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .project-desc {
   grid-area: pr-desc;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 .read-more.primary-btn {
   grid-area: button;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 
@@ -142,13 +142,13 @@ h3 {
 
 @media screen and (min-width: 720px) {
   body {
-    width: 144rem;
+    /* width: 144rem; */
+    /* width: 100%; */
   }
 
   .grid-hero {
     display: flex;
-    width: 114rem;
-    border: 4px solid green;
+    /* width: 114rem; */
     flex-direction: row-reverse;
     align-items: center;
     height: 100vh;
@@ -157,27 +157,32 @@ h3 {
   .desktop-image {
     width: 100%;
     z-index: 1;
+    /* padding: 0 0 0 2rem; */
   }
 
   .description {
     font-size: 1.8rem;
     line-height: 2.8rem;
-    padding: 0;
+    padding: 0 0 0 2rem;
+    width: 50rem;
   }
 
  .hi {
     font-size: 3.5rem;
-    padding-top: 0;
+    padding: 0 0 0 2rem;
   }
 
   .slogan {
     font-size: 2.2rem;
     line-height: 3.2rem;
+    width: 50rem;
+    padding: 0 0 2rem 2rem;
   }
 
   .name {
     font-size: 8rem;
     width: 50rem;
+    padding: 0 0 0 2rem;
   }
 
   .see-work {
@@ -188,24 +193,23 @@ h3 {
 /* Project Section Desktop */
   #project-section {
     display: grid;
-    width: 114rem;
+    width: auto;
     align-items: center;
-    margin-top: 15rem;
-    border: 4px solid blue;
-    grid-template-columns: 1fr;
+    margin-top: 0;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
-    "desktop-img pr-name"
-    "desktop-img pr-title"
-    "desktop-img pr-role"
-    "desktop-img pr-desc"
-    "desktop-img button";
+    "project-desktop project-text";
   }
 
+
   .project-desktop {
-    grid-area: desktop-img;
-    border: 1px solid red;
-    padding-right: 5rem;
-    width: 100%;
+    width: 80%;
+    display: block;
+    grid-area: project-desktop;
+  }
+
+  .project-desktop, .feat-project-text {
+    align-items: center;
   }
 
   .project-name {
@@ -227,6 +231,7 @@ h3 {
     grid-area: pr-title;
     width: 50rem;
     line-height: 100%;
+    padding-bottom: .5rem;
     font-family: Futura-bold;
   }
 
@@ -241,14 +246,30 @@ h3 {
 
   .project-desc {
     grid-area: pr-desc;
-    line-height: 100%;
+    line-height: 120%;
     width: 50rem;
   }
 
   .read-more.primary-btn {
     grid-area: button;
+    margin-top: 3rem;
+  }
 
-    border: 1px solid black;
+  .project-mobile {
+    display: none !important;
+  }
+
+  .primary-btn {
+    background-color: none;
+    font-family: 'Brandon Grotesque Black';
+    font-size: 1.6rem;
+    border: .3rem solid #FB7E6C;
+    color: #FB7E6C;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 4rem;
   }
 
 

@@ -13,38 +13,44 @@
     <!--Fonts-->
     <link rel="stylesheet" href="fonts/btwf/btstyle.css">
     <link rel="stylesheet" href="fonts/bgwf/bgstyle.css">
-    <!--Javascript -->
-    <script type="text/javascript" async src="main.js"></script>
     <!-- Custom Syles -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
   </head>
   <body>
     <div class="container">
-      <!--Header section-->
-      <header class="bg-header">
-        <!--Nav section -->
-        <nav class="top-nav">
-          <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-          </span>
-          <a class="logo animated-in" href="index.html">
-            <img class="logo-size" src="images/full-sized-ro-logo.png" alt="Rashel logo">
-          </a>
-        <ul class="main-nav" id="js-menu">
-          <li>
-            <a class="nav-link one animated-in" href="#project-section">work</a>
-          </li>
-          <li>
-            <a class="nav-link two animated-in" href="about.html">about</a>
-          </li>
-          <li>
-            <a class="nav-link three animated-in" href="#">resume</a>
-          </li>
-          <li>
-            <a class="nav-link four animated-in" href="#footer-box">contact</a>
-          </li>
+    <!--Header section-->
+    <header class="bg-header" id="top">
+      <!--Nav section -->
+      <nav class="navbar">
+        <a class="logo animated-in" href="index.html">
+          <img class="logo-size" src="images/full-sized-ro-logo.png" alt="Rashel logo">
+        </a>
+        <ul id="desk">
+          <li class="off"><a href="index.html">work</a></li>
+          <li class="off"><a href="about.html">about</a></li>
+          <li class="off"><a href="#">resume</a></li>
+          <li class="off"><a href="#footer-box">contact</a></li>
         </ul>
+        <div id="desktop-nav" id="navbar-toggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="main-nav">
+            <li>
+              <a class="nav-link one animated-in" href="#project-section">work</a>
+            </li>
+            <li>
+              <a class="nav-link two animated-in" href="about.html">about</a>
+            </li>
+            <li>
+              <a class="nav-link three animated-in" href="#">resume</a>
+            </li>
+            <li>
+              <a class="nav-link four animated-in" href="#footer-box">contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
         <!--Hero unit -->
       <section class="grid-hero">
@@ -78,73 +84,74 @@
           <a class="read-more primary-btn" href="project.html">READ CASE STUDY</a>
         </article>
       </section>
-    <!--About me intro section-->
-     <section class="about-intro">
-       <div class="intro-text">
-         <img class="leaves-story-graphic" src="images/Leaves-story-graphic.png" alt="Leaves dot image">
-         <h3>As a designer with a background in sales and digital marketing, I embrace the opportunity to craft innovative experiences that <b>serve the needs of its users while keeping business objectives at hand.</b> My goal is to design thoughtful products that <b>help people and communities thrive</b> around the world.</h3>
-         <a class="read-story secondary-btn" href="about.html">READ MY STORY</a>
+      <!--About me intro section-->
+    <section class="about-box">
+      <div class="about-content">
+        <img class="story-graphic" src="images/Leaves-story-graphic.png" alt="Leaves dot image">
+        <h2 class="about-title">What's my story?</h2>
+        <p class="about">I’m a designer who merges a passion for storytelling, cultural experiences, and people with business acumen to craft innovative and results-oriented user experiences. My focus is on designing thoughtful, engaging, yet disruptive products that help people and communities thrive around the world.</p>
+        <a class="secondary-btn" href="about.html">COOL TELL ME MORE</a>
       </div>
     </section>
     <!--Footer-->
      <!--Contact Card -->
      <div class="contact-box">
-       <h1>Let's create innovative user experiences.</h1>
-       <h2>Thanks for stopping by. <br> Find my work intriguing and want to discuss further? <br>Let's connect and take this offline!</h2>
+       <img class="contact-image" src="images/index/contact-image.png" alt="abstract contact image">
+       <h2 class="contact-header">Let's create innovative user experiences.</h2>
+       <h3 class="contact-body">Thanks for stopping by. <br> Like my work and want to grab coffee together or just talk more UX? <br>Let's connect and take this offline!</h3>
        <div class="contact-btns">
          <a class="get-in-touch primary-btn" href="mailto:ochoarashel@gmail.com">GET IN TOUCH</a>
          <a class="download-resume primary-btn" href="#" target="_blank">DOWNLOAD RESUME</a>
        </div>
+       <div class="return-top bounce">
+         <a class="return-link" href="#top">Return to top</a>
+         <i class="fas fa-caret-up"></i>
+       </div>
      </div>
      <!--Nav footer-->
      <footer id="footer-box">
-       <nav class="bottom-nav">
-          <ul class="bottom-nav">
-            <li>
-              <a href="index.html">Work</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="#">Resume</a>
-            </li>
-          </ul>
-        </nav>
         <ul class="social-media">
           <li>
-            <a href="mailto:ochoarashel@gmail.com">
-              <i class="fas fa-envelope"></i>
-            </a>
-          <li>
-            <a href="https://www.linkedin.com/in/rashelochoa/">
-               <i class="fab fa-linkedin"></i>
-             </a>
+            <p>
+              <a href="https://www.linkedin.com/in/rashelochoa/">
+                <i class="fab fa-linkedin"></i>
+              </a>LinkedIn
+             </p>
           </li>
           <li>
-            <a href="https://twitter.com/Rashel8a">
-              <i class="fab fa-twitter"></i>
-            </a>
+            <p>
+              <a href="https://twitter.com/Rashel8a">
+                <i class="fab fa-twitter"></i>
+              </a>Twitter
+            </p>
           </li>
           <li>
-            <a href="https://github.com/rashel8a">
-              <i class="fab fa-github"></i>
-            </a>
+            <p>
+              <a href="https://github.com/rashel8a">
+                <i class="fab fa-github"></i>
+              </a>Github
+            </p>
           </li>
           <li>
-            <a href="https://www.instagram.com/shellgoplaces/">
-            <i class="fab fa-instagram"></i>
-            </a>
+            <p>
+              <a href="https://www.instagram.com/shellgoplaces/">
+                <i class="fab fa-instagram"></i>
+              </a>Instagram
+            </p>
           </li>
           <li>
-            <a href="https://medium.com/@rashel8a">
-              <img src="https://png.icons8.com/ios/50/000000/medium-logo-filled.png" alt="medium logo">
-            </a>
+            <p>
+              <a href="https://medium.com/@rashel8a">
+                <i class="fab fa-medium"></i>"
+              </a>Medium
+            </p>
           </li>
           <li>
-            <a href="https://unsplash.com/@rashel8a">
-              <img src="https://png.icons8.com/ios/50/000000/unsplash-filled.png" alt="unsplash logo">
-            </a>
+            <p>
+              <a href="https://unsplash.com/@rashel8a">
+                <i class="fas fa-camera"></i>
+              </a>Unsplash
+            <p>
           </li>
         </ul>
         <div class="copyright">
