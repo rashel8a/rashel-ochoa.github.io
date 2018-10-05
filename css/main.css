@@ -12,7 +12,7 @@ body {
   background-color: #FFFDFB;
   font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
   transition: background 1s ease;
-  width: 37.5rem;
+  width: 100%;
 }
 
 .container {
@@ -35,6 +35,170 @@ p {
   line-height: 120%;
   font-family: 'Brandon Text Regular';
 }
+
+/* ANIMATIONS*/
+@charset "UTF-8";
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+.animated.fast {
+  -webkit-animation-duration: 800ms;
+  animation-duration: 800ms;
+}
+
+.animated.faster {
+  -webkit-animation-duration: 500ms;
+  animation-duration: 500ms;
+}
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+/* Logo fade-in */
+
+.logo {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+  -webkit-transform: translateY(25px);
+  -ms-transform: translateY(25px);
+  transform: translateY(25px);
+  visibility: visible;
+  transition: opacity 1s, transform .7s, visibility .7s, -webkit-transform .7s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* END ANIMATIONS*/
 
 strong {
   font-family: 'Brandon Text Bold';
@@ -64,30 +228,28 @@ strong {
 /*Menu toggle section*/
 .navbar {
   display: flex;
+  flex-direction: row;
   width: 100%;
-  flex-direction: row-reverse;
+  height: 10rem;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 1.6rem;
-  width: 37.5rem;
-}
-
-nav .off{
-  display: none;
 }
 
 .logo-size {
-  width: 20rem;
-  position: relative;
-  right: 14rem;
-  bottom: 2.5rem;
+  width: 70%;
+  padding-left: 1.6rem;
+  padding-bottom: 0;
+  margin-bottom: 4.7rem;
+}
+
+div.desktop {
+  display: none;
 }
 
 #navbar-toggle {
   display: block;
+  padding-right: 1.6rem;
   position: relative;
-   right: -29rem;
-   top: 0;
    z-index: 2;
    -webkit-user-select: none;
    user-select: none;
@@ -178,7 +340,8 @@ nav .off{
 
 #main-nav li {
   text-align: center;
-  padding-bottom: 10rem;
+  font-family: 'Brandon Grotesque Bold';
+  padding-bottom: 5rem;
   padding-top: 3rem;
   margin: 0 auto;
 }
@@ -186,7 +349,7 @@ nav .off{
 .nav-link {
   text-decoration: none;
   color: #001F40;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .primary-btn {
@@ -197,7 +360,7 @@ nav .off{
   font-size: 1.6rem;
   border: .3rem solid #FB7E6C;
   color: #FB7E6C;
-  padding: 1.55rem 2rem;
+  padding: 1.50rem 2rem;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -221,51 +384,6 @@ nav .off{
 }
 
 /*End of menu toggle*/
-
-/* Logo fade-in & transform animations*/
-
-.logo {
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 4s; /* Firefox < 16 */
-      -ms-animation: fadein 4s; /* Internet Explorer */
-       -o-animation: fadein 4s; /* Opera < 12.1 */
-          animation: fadein 4s;
-  -webkit-transform: translateY(25px);
-  -ms-transform: translateY(25px);
-  transform: translateY(25px);
-  visibility: visible;
-  transition: opacity 1s, transform .7s, visibility .7s, -webkit-transform .7s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-/* End of logo animations*/
 
 
 /* MOBILE HERO CSS GRID SECTION */
@@ -317,6 +435,7 @@ nav .off{
 
   .mobile-header {
     grid-area: header-m;
+    width: auto;
   }
 
   .name {
@@ -326,7 +445,6 @@ nav .off{
     line-height: 7.9rem;
     letter-spacing: 1%;
     width: 30rem;
-
   }
 
   .slogan {
@@ -541,8 +659,9 @@ nav .off{
 
 .social-media {
   display: grid;
-  width: 100%;
+  width: 80%;
   padding: 3rem 0;
+  margin: 0 auto;
   grid-gap: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -552,6 +671,7 @@ nav .off{
   align-items: center;
   flex-direction: column;
   font-size: 1.8rem;
+  font-family: 'Futura Bold', inherit;
 
 }
 
@@ -563,11 +683,111 @@ nav .off{
 .copyright {
   text-align: center;
   padding-bottom: 3rem;
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Futura Bold', inherit;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* ****** TABLET MEDIA QUERY ******* */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .desktop-image {
+    width: 80%;
+    display: block;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .navbar {
+      display: flex;
+      height: 12rem;
+      flex-direction: row;
+      width: 100%;
+    }
+
+  .logo-size {
+    width: 70%;
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 3rem;
+    }
+
+    .logo-size, .desktop {
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    #navbar-toggle {
+      display: none;
+    }
+
+    div.desktop {
+    display: block;
+     min-width: 55%;
+     padding: 4rem 2rem;
+    }
+
+    ul.no {
+      display: flex;
+      justify-content: flex-end;
+      text-align: center;
+    }
+
+    .no a {
+      cursor: pointer;
+      color: #001F40;
+      text-decoration: none;
+    }
+
+    .no a:hover {
+      color: #FB7E6C;
+    }
+
+    .off {
+      padding: 2rem;
+      font-size: 2rem;
+    }
+
+    article {
+      width: 75%;
+    }
+
+    /* .name {
+      grid-area: name;
+      font-family: 'Brandon Grotesque Bold', sans-serif;
+      font-size: 6.9rem;
+      line-height: 7.9rem;
+      letter-spacing: 1%;
+      width: 30rem;
+    } */
+
+    .slogan {
+      grid-area: slogan;
+      padding-top: 3rem;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+}
 
 
 
@@ -580,22 +800,16 @@ nav .off{
 
 
 /* ****** DESKTOP MEDIA QUERY ******* */
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
   body {
     background-color: #FFFDFB;
     font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
     transition: background 1s ease;
-    width: 144rem;
-  }
-
-  .bg-header {
-    background-image: linear-gradient(#FFF3ED, #FFFDFB);
     width: 100%;
   }
 
-  .grid-hero, #project-section {
+ .grid-hero, #project-section {
     width: 80%;
   }
 
@@ -606,84 +820,103 @@ nav .off{
     font-size: 2rem;
   }
 
-  .logo {
-    flex-grow: 2;
-    padding-left: 100rem;
-  }
-
-  /* #main-nav {
+.navbar {
     display: flex;
-    flex-grow: 1; */
-    /* justify-content: space-between; */
-  /* } */
-
-  /* #main-nav li {
-    display: block;
-    padding-top: 5rem;
-  }
-
-  .nav-link {
-    flex-grow: 1;
-    text-align: center;
-    flex-wrap: wrap;
-    color: #001F40;
-    font-size: 1.8rem;
-  } */
-
-  ul#main-nav {
-    display: flex;
-    justify-content: space-between;
+    height: 12rem;
+    flex-direction: row;
     width: 100%;
   }
-#navbar-toggle {
-    display: block;
-    }
+
+.logo-size {
+  width: 60%;
+  padding-top: 2rem;
+  margin-bottom: 6rem;
+  margin-left: 17rem;
+  }
+
+  .logo-size, .desktop {
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  #navbar-toggle {
+    display: none;
+  }
+
+  div.desktop {
+  display: block;
+   min-width: 55%;
+   padding: 4rem 2rem;
+  }
+
+  ul.no {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+  }
+
+  .no a {
+    cursor: pointer;
+    color: #001F40;
+    text-decoration: none;
+  }
+
+  .no a:hover {
+    color: #FB7E6C;
+  }
+
+  .off {
+    padding: 2rem;
+    font-size: 2rem;
+  }
 
   .secondary-btn:hover {
     background-color: #FB7E6C;
     cursor: pointer;
   }
 
-  .logo {
-    text-align: left;
-    flex-grow: 2;
-  }
+/*NAV LINK FADE ANIMATION */
 
-/*NAV LINK ANIMATIONS IF THEY DECIDE TO WORK SOMEDAY */
-li.one {
-      transition-delay: .45s;
-  }
+.desktop li {
+  -webkit-animation: fadeinLoad 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadeinLoad 4s; /* Firefox < 16 */
+      -ms-animation: fadeinLoad 4s; /* Internet Explorer */
+       -o-animation: fadeinLoad 4s; /* Opera < 12.1 */
+          animation: fadeinLoad 4s;
+  visibility: visible;
+  transition: opacity 1s, visibility .7s;
+}
 
-li.two {
-      transition-delay: .55s;
-  }
+@keyframes fadeinLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-li.three {
-      transition-delay: .65s;
-  }
+/* Firefox < 16 */
+@-moz-keyframes fadeinLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-li.four {
-      transition-delay: .75s;
-  }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-#main-nav li {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
+/* Internet Explorer */
+@-ms-keyframes fadeinLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-#main-nav li {
-    opacity: 1
-    visibility: visible;
-    -webkit-transform: translateY(25px);
-    -ms-transform: translateY(25px);
-    transform: translateY(25px);
-    transition: opacity .7s, transform .7s, visibility .7s, -webkit-transform .7s;
-  }
+/* Opera < 12.1 */
+@-o-keyframes fadeinLoad {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
-
+/* END OF NAV ANIMATION*/
   .nav-link:hover {
     color: #FB7E6C;
     -webkit-transition: ease-in-out .5s;
@@ -745,7 +978,7 @@ li.four {
     .name {
       font-size: 8rem;
       width: 50rem;
-      padding: 0 0 0 2rem;
+      padding: 1rem 0 1rem 2rem;
     }
 
     .see-work {
@@ -838,5 +1071,148 @@ li.four {
       color: #FFFDFB;
       cursor: pointer;
     }
+
+    /* About section*/
+    .about-box {
+      display: flex;
+      background-color: #FDE8DE;
+      width: 100%;
+      /* padding: 0 1.6rem; */
+      padding-top: 0rem;
+      padding-bottom: 10rem;
+      margin-top: 20rem;
+    }
+
+    .about-box, .about-content {
+      align-items: center;
+    }
+
+    .about-content {
+      width: 80%;
+      padding-left: 15rem;
+      margin-top: -10rem;
+    }
+
+    .about-title {
+      font-size: 4rem;
+      font-family: 'Brandon Text Bold', sans-serif;
+      color: #001F40;
+    }
+
+    .story-graphic {
+      width: 23%;
+      position: relative;
+      top: 0rem;
+      left: -10rem;
+      z-index: 1;
+    }
+
+    /* Contact Section */
+    .contact-box {
+      width: 100%;
+      padding: 0 1.6rem;
+      background-color: #15246D;
+      padding-bottom: 8rem;
+      padding-top: 2rem;
+    }
+
+    .contact-image {
+      width: 20%;
+      position: relative;
+      left: 100rem;
+      max-width: 100%;
+      top: -3rem;
+      z-index: 1;
+    }
+
+    .contact-header {
+      font-size: 5rem;
+      text-align: center;
+      position: relative;
+      top: -10rem;
+      z-index: 10;
+      font-family: 'Brandon Text Bold';
+      line-height: 100%;
+      color: #FFA856;
+    }
+
+    .contact-body {
+      font-size: 3rem;
+      text-align: center;
+      font-family: 'Brandon Text Regular';
+      line-height: 120%;
+      color: #FFA856;
+      margin-top: -8rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem auto;
+    }
+
+    .get-in-touch, .download-resume {
+      margin: 0 2.5rem 0 2.5rem;
+    }
+
+    .return-top {
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 2rem;
+      padding-top: 6rem;
+      text-align: center;
+      align-items: center;
+    }
+
+    #footer-box {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 3rem 0;
+      align-items: center;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 10rem;
+    }
+
+    .social-media p {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding: 0 1rem;
+      font-size: 1.8rem;
+      font-family: 'Futura Bold', inherit;
+    }
+
+    .fab, .fas {
+      font-size: 2rem;
+      padding-right: .5rem;
+      color: #001F40;
+    }
+
+    .social-media i:hover {
+      color: #FFFDFB;
+    }
+
+    .social-media p:hover {
+      color: #FFFDFB;
+      cursor: pointer;
+    }
+
+    .copyright {
+      text-align: center;
+      align-items: center;
+      font-size: 1.5rem;
+      padding: 0 0 0 10rem;
+      font-family: 'Futura Bold', inherit;
+    }
+
+
 
 }
