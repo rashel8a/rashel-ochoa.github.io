@@ -17,6 +17,7 @@ body {
 
 .container {
   width: 100%;
+  overflow: hidden;
 }
 
 .bg-header {
@@ -369,18 +370,26 @@ div.desktop {
 }
 
 .secondary-btn {
-  background-position: -3rem bottom;
-  background-color: #03E1D7;
-  width: 16rem;
-  height: .5rem !important;
   font-family: 'Brandon Grotesque Bold';
   font-size: 1.6rem;
   text-decoration: none;
   color: #001F40;
-  padding-bottom: .8rem;
-  display: inline-block;
+  z-index: 1000;
   cursor: pointer;
-  border-radius: 4rem;
+  position: relative;
+  right: 16.3rem;
+}
+
+.story-button span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  border-radius: 5rem;
+  height: 1rem;
+  width: 16rem;
+  top: .7rem;
+  background-position: -3rem bottom;
+  background-color: #03E1D7;
 }
 
 /*End of menu toggle*/
@@ -435,7 +444,7 @@ div.desktop {
 
   .mobile-header {
     grid-area: header-m;
-    width: auto;
+    width: 100%;
   }
 
   .name {
@@ -463,7 +472,8 @@ div.desktop {
 
   #project-section {
     display: grid;
-    padding: 0 1.6rem;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas:
     "mobile-img"
@@ -475,11 +485,13 @@ div.desktop {
   }
 
   .feat-project-text {
-    display: block;
+    padding: 0 1.6rem;
+    margin: 0 auto;
   }
 
-  .project-mobile {
+  .project-mobile-lg {
     grid-area: mobile-img;
+    width: 100%;
   }
 
   .project-desktop {
@@ -575,7 +587,6 @@ div.desktop {
     width: 60%;
     position: relative;
     left: 17rem;
-    max-width: 100%;
     top: -3rem;
     z-index: 1;
   }
@@ -591,9 +602,10 @@ div.desktop {
   }
 
   .contact-body {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Brandon Text Regular';
     line-height: 120%;
+    width: 95%;
     color: #FFA856;
     margin-top: -8rem;
     margin-bottom: 3rem;
@@ -846,7 +858,7 @@ div.desktop {
   div.desktop {
   display: block;
    min-width: 55%;
-   padding: 4rem 2rem;
+   padding: 4rem 5rem;
   }
 
   ul.no {
@@ -917,6 +929,7 @@ div.desktop {
 }
 
 /* END OF NAV ANIMATION*/
+
   .nav-link:hover {
     color: #FB7E6C;
     -webkit-transition: ease-in-out .5s;
@@ -929,9 +942,9 @@ div.desktop {
     color: #FB7E6C;
   }
 
-  .desktop-image {
-    width: 100%;
+  img.desktop-image {
     display: block;
+    width: 120%;
   }
 
   .mobile-header {
@@ -946,6 +959,7 @@ div.desktop {
 
     .grid-hero {
       display: flex;
+      width: 114rem;
       flex-direction: row-reverse;
       align-items: center;
       height: 100vh;
@@ -954,11 +968,12 @@ div.desktop {
     .desktop-image {
       width: 100%;
       z-index: 1;
+      padding-right: 5rem;
     }
 
     .description {
-      font-size: 1.8rem;
-      line-height: 2.8rem;
+      font-size: 2.2rem;
+      line-height: 3.2rem;
       padding: 0 0 0 2rem;
       width: 50rem;
     }
@@ -972,7 +987,7 @@ div.desktop {
       font-size: 2.2rem;
       line-height: 3.2rem;
       width: 50rem;
-      padding: 0 0 2rem 2rem;
+      padding: 0 0 1rem 2rem;
     }
 
     .name {
@@ -1049,8 +1064,8 @@ div.desktop {
       margin-top: 3rem;
     }
 
-    .project-mobile {
-      display: none !important;
+    .project-mobile-lg {
+      display: none;
     }
 
     .primary-btn {
@@ -1078,8 +1093,8 @@ div.desktop {
       background-color: #FDE8DE;
       width: 100%;
       /* padding: 0 1.6rem; */
-      padding-top: 0rem;
-      padding-bottom: 10rem;
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
       margin-top: 20rem;
     }
 
@@ -1088,7 +1103,7 @@ div.desktop {
     }
 
     .about-content {
-      width: 80%;
+      width: 70%;
       padding-left: 15rem;
       margin-top: -10rem;
     }
@@ -1110,7 +1125,7 @@ div.desktop {
     /* Contact Section */
     .contact-box {
       width: 100%;
-      padding: 0 1.6rem;
+      padding: 15rem 1.6rem;
       background-color: #15246D;
       padding-bottom: 8rem;
       padding-top: 2rem;
@@ -1129,8 +1144,7 @@ div.desktop {
       font-size: 5rem;
       text-align: center;
       position: relative;
-      top: -10rem;
-      z-index: 10;
+      padding: 0 23rem;
       font-family: 'Brandon Text Bold';
       line-height: 100%;
       color: #FFA856;
@@ -1141,9 +1155,8 @@ div.desktop {
       text-align: center;
       font-family: 'Brandon Text Regular';
       line-height: 120%;
+      padding: 0 23rem;
       color: #FFA856;
-      margin-top: -8rem;
-      margin-bottom: 3rem;
     }
 
     .contact-btns {
@@ -1171,7 +1184,6 @@ div.desktop {
     #footer-box {
       display: flex;
       flex-direction: row-reverse;
-      padding: 3rem 0;
       align-items: center;
     }
 
@@ -1205,11 +1217,12 @@ div.desktop {
       cursor: pointer;
     }
 
-    .copyright {
-      text-align: center;
+    .copyright p {
+      text-align: left;
       align-items: center;
-      font-size: 1.5rem;
-      padding: 0 0 0 10rem;
+      font-size: 1.8rem;
+      padding-left: 10rem;
+      padding-top: 3rem;
       font-family: 'Futura Bold', inherit;
     }
 
