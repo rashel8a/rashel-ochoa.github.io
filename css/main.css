@@ -11,8 +11,15 @@ a {
 body {
   background-color: #FFFDFB;
   font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
-  transition: background 1s ease;
+  /* margin: 0; */
+  transition: all 500ms;
+  will-change: background;
+}
+
+#contact {
+  display: block;
   width: 100%;
+  /* height: 100vh; */
 }
 
 .container {
@@ -153,6 +160,43 @@ p {
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
+}
+
+/* STORY GRAPHIC ANIMATION*/
+
+.wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 3000ms cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s;
+	        animation: wobble-hor-bottom 3000ms cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  /* 15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  } */
+  /* 30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  } */
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
 
 /* Logo fade-in */
@@ -539,24 +583,49 @@ div.desktop {
   .about-box {
     display: flex;
     background-color: #FDE8DE;
+    justify-content: center;
     width: 100%;
-    padding: 0 1.6rem;
-    padding-top: 5rem;
-    padding-bottom: 7.5rem;
+    padding: 7.5rem 1.6rem;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .about-box, .about-content {
+  .about-box, .rashel-img-mobile {
     align-items: center;
+    justify-content: center;
+  }
+
+  .about-content {
+    margin-top: -40rem;
   }
 
   .about-title {
     font-size: 3rem;
     font-family: 'Brandon Text Bold', sans-serif;
     color: #001F40;
-    position: relative;
-    padding-bottom: 1rem;
-    top: -5rem;
     z-index: 10;
+    margin-bottom: 6rem;
+  }
+
+  .story-graphic {
+    display: none;
+  }
+
+  .rashel-image {
+    display: none;
+  }
+
+  .rashel-img-mobile {
+    display: block;
+    width: auto;
+    padding: 0 1.6rem;
+  }
+
+  .leaves-story-mobile {
+    width: 40%;
+    position: relative;
+    bottom: 30rem;
+    right: 11.5rem;
   }
 
   .about {
@@ -564,30 +633,21 @@ div.desktop {
     margin-bottom: 2rem;
   }
 
-  .story-graphic {
-    width: 40%;
-    position: relative;
-    top: -4rem;
-    max-width: 100%;
-    right: 2rem;
-    height: auto;
-    z-index: 1;
-  }
-
   /* Contact Section */
   .contact-box {
     width: 100%;
     padding: 0 1.6rem;
-    background-color: #15246D;
     padding-bottom: 8rem;
+    background-color: #15246D;
     padding-top: 2rem;
   }
 
   .contact-image {
-    width: 60%;
+    max-width: 80%;
+    height: auto;
     position: relative;
-    left: 17rem;
-    top: -3rem;
+    left: 6rem;
+    top: -4rem;
     z-index: 1;
   }
 
@@ -648,9 +708,10 @@ div.desktop {
   .bounce {
   z-index: 1;
   animation-timing-function: ease;
-  -moz-animation: bounce 4s infinite;
-  -webkit-animation: bounce 4s infinite;
-  animation: bounce 4s infinite;
+  transition-duration: 3s;
+  -moz-animation: bounce 4s 4;
+  -webkit-animation: bounce 4s 4;
+  animation: bounce 4s 4;
 }
 
 @keyframes bounce {
@@ -707,13 +768,6 @@ div.desktop {
 
 
 
-
-
-
-
-
-
-
 /* ****** TABLET MEDIA QUERY ******* */
 
 @media screen and (min-width: 768px) {
@@ -721,20 +775,18 @@ div.desktop {
     width: 100%;
   }
 
-  .desktop-image {
-    width: 80%;
+  .desktop-image{
+    width: 70%;
+    margin: 0 auto;
     display: block;
   }
 
-  .mobile-header {
-    display: none;
-  }
 
   .navbar {
-      display: flex;
-      height: 12rem;
-      flex-direction: row;
-      width: 100%;
+    display: flex;
+    height: 12rem;
+    flex-direction: row;
+    width: 100%;
     }
 
   .logo-size {
@@ -745,12 +797,12 @@ div.desktop {
     }
 
     .logo-size, .desktop {
-      align-items: center;
-      flex-direction: row-reverse;
+    align-items: center;
+    flex-direction: row-reverse;
     }
 
     #navbar-toggle {
-      display: none;
+    display: none;
     }
 
     div.desktop {
@@ -764,6 +816,7 @@ div.desktop {
       justify-content: flex-end;
       text-align: center;
     }
+
 
     .no a {
       cursor: pointer;
@@ -780,24 +833,75 @@ div.desktop {
       font-size: 2rem;
     }
 
-    article {
-      width: 75%;
+    /* TABLET HERO*/
+
+    .grid-hero, .feat-project-text, .about-content, .contact-header, .contact-body {
+          padding: 0 5rem;
     }
 
-    /* .name {
-      grid-area: name;
-      font-family: 'Brandon Grotesque Bold', sans-serif;
-      font-size: 6.9rem;
-      line-height: 7.9rem;
-      letter-spacing: 1%;
-      width: 30rem;
-    } */
+    .grid-hero {
+      margin: 0 auto;
+      padding: 0;
+    }
 
-    .slogan {
-      grid-area: slogan;
-      padding-top: 3rem;
-      font-size: 2.5rem;
-      line-height: 3.5rem;
+    /* TABLET PROJECT */
+
+    .feat-project-text {
+      margin-bottom: 0rem;
+    }
+
+    .project-desktop {
+      width: 60%;
+      display: block;
+    }
+
+    .project-desktop, .mobile-header, .story-graphic {
+      display: none;
+    }
+
+    .project-mobile-lg {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+
+    }
+
+    /*TABLET ABOUT*/
+
+    .rashel-img-mobile {
+      margin-bottom: 0rem;
+    }
+
+    .leaves-story-mobile {
+      display: block;
+      right: 3rem;
+    }
+
+    /* TABLET CONTACT*/
+    .contact-image {
+      left: 44rem;
+      top: 0;
+      display: block;
+    }
+
+    .contact-header {
+      margin-top: -5rem;
+    }
+
+    .contact-btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 5rem auto;
+    }
+
+    .get-in-touch, .download-resume {
+      margin: 0 2.5rem 0 2.5rem;
+    }
+
+    .return-top {
+      margin-top: -5rem;
     }
 }
 
@@ -811,7 +915,11 @@ div.desktop {
 
 
 
+
+
 /* ****** DESKTOP MEDIA QUERY ******* */
+
+/* HOMEPAGE SECTION*/
 @media screen and (min-width: 1024px) {
 
   body {
@@ -826,8 +934,9 @@ div.desktop {
   }
 
 
-  /*DESKTOP NAVIGATION*/
+  /*DESKTOP SECTION BEGINS*/
 
+/* DESKTOP NAVIGATION*/
   p {
     font-size: 2rem;
   }
@@ -880,11 +989,6 @@ div.desktop {
   .off {
     padding: 2rem;
     font-size: 2rem;
-  }
-
-  .secondary-btn:hover {
-    background-color: #FB7E6C;
-    cursor: pointer;
   }
 
 /*NAV LINK FADE ANIMATION */
@@ -951,7 +1055,7 @@ div.desktop {
     display: none !important;
   }
 
-  /* ***** DESKTOP GRID SECTION - MEDIA QUERY CONTINUES ******* */
+  /* DESKTOP GRID HERO SECTION** */
 
     body {
       width: 144rem;
@@ -966,13 +1070,13 @@ div.desktop {
     }
 
     .desktop-image {
-      width: 100%;
+      width: 150%;
       z-index: 1;
-      padding-right: 5rem;
+      padding: 0 5rem 0 0;
     }
 
     .description {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       line-height: 3.2rem;
       padding: 0 0 0 2rem;
       width: 50rem;
@@ -984,8 +1088,8 @@ div.desktop {
     }
 
     .slogan {
-      font-size: 2.2rem;
-      line-height: 3.2rem;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
       width: 50rem;
       padding: 0 0 1rem 2rem;
     }
@@ -1006,7 +1110,7 @@ div.desktop {
       display: grid;
       width: auto;
       align-items: center;
-      margin-top: 0;
+      justify-content: center;
       grid-template-columns: 2fr 1fr;
       grid-template-areas:
       "project-desktop project-text";
@@ -1015,7 +1119,8 @@ div.desktop {
 
     .project-desktop {
       display: block;
-      margin-left: -12rem;
+      margin-left: -18rem;
+      width: 100%;
       grid-area: project-desktop;
     }
 
@@ -1025,6 +1130,10 @@ div.desktop {
 
     .feat-project-text {
       margin-right: 15rem;
+      align-self: center;
+      align-items: center;
+      /* margin-top: 0; */
+      padding: 2rem 2rem;
     }
 
     .project-name {
@@ -1062,6 +1171,7 @@ div.desktop {
     .read-more.primary-btn {
       grid-area: button;
       margin-top: 3rem;
+      margin-bottom: 0;
     }
 
     .project-mobile-lg {
@@ -1076,36 +1186,43 @@ div.desktop {
       color: #FB7E6C;
       text-align: center;
       text-decoration: none;
-      display: block;
+      /* display: block; */
       cursor: pointer;
       border-radius: 4rem;
     }
 
     .primary-btn:hover {
-      background-color: #FB7E6C;
-      color: #FFFDFB;
-      cursor: pointer;
+        background-color: #FB7E6C;
+        color: #FFFDFB;
+        -webkit-transition: background-color 500ms linear;
+        -ms-transition: background-color 500ms linear;
+        transition: background-color 500ms linear;
     }
 
-    /* About section*/
+    /* About section DESKTOP*/
     .about-box {
       display: flex;
+      flex-direction: row-reverse;
       background-color: #FDE8DE;
-      width: 100%;
-      /* padding: 0 1.6rem; */
-      padding-top: 7.5rem;
-      padding-bottom: 7.5rem;
       margin-top: 20rem;
+      padding-left: 15rem;
     }
 
-    .about-box, .about-content {
+    .about-content, .about-box {
       align-items: center;
+      /* justify-content: center; */
     }
 
     .about-content {
-      width: 70%;
-      padding-left: 15rem;
-      margin-top: -10rem;
+      margin: 0 auto;
+      padding: 0 2rem;
+      padding-right: 3rem;
+    }
+
+    .rashel-image {
+      display: block;
+      width: 100%;
+      margin-right: -3rem;
     }
 
     .about-title {
@@ -1116,17 +1233,37 @@ div.desktop {
 
     .story-graphic {
       width: 23%;
+      display: block;
       position: relative;
-      top: 0rem;
-      left: -10rem;
-      z-index: 1;
+      top: -15rem;
+      left: 28rem;
     }
+
+    .rashel-img-mobile {
+      display: none;
+    }
+
+    .leaves-story-mobile {
+      display: none;
+    }
+
+    .secondary-btn a {
+      width: 12rem;
+      border: 1px solid red;
+      margin: 0;
+      padding: 0;
+    }
+
+    .story-button span:hover {
+      background-color: #FB7E6C;
+      cursor: pointer;
+    }
+
 
     /* Contact Section */
     .contact-box {
       width: 100%;
       padding: 15rem 1.6rem;
-      background-color: #15246D;
       padding-bottom: 8rem;
       padding-top: 2rem;
     }
@@ -1225,7 +1362,4 @@ div.desktop {
       padding-top: 3rem;
       font-family: 'Futura Bold', inherit;
     }
-
-
-
 }

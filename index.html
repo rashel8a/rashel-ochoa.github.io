@@ -8,80 +8,81 @@
     <link rel="stylesheet" href="css/reset.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!--AOS Style-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Fonts-->
     <link rel="stylesheet" href="fonts/btwf/btstyle.css">
     <link rel="stylesheet" href="fonts/bgwf/bgstyle.css">
     <!-- Custom Syles -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="container">
     <!--Header section-->
-    <header class="bg-header" id="top">
-      <!--Nav section -->
-      <nav class="navbar">
-        <a class="logo" href="index.html">
-          <img class="logo-size" src="images/full-sized-ro-logo.png" alt="Rashel logo">
-        </a>
-        <div class="desktop">
-          <ul class="no">
-            <li>
-              <a class="off animated-in" href="#project-section">work</a>
-            </li>
-            <li>
-              <a class="off animated-in" href="about.html">about</a>
-            </li>
-            <li>
-              <a class="off animated-in" href="#">resume</a>
-            </li>
-            <li>
-              <a class="off animated-in" href="#footer-box">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="fixed">
-          <div id="navbar-toggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="main-nav">
+      <header class="bg-header" id="top">
+        <!--Nav section -->
+        <nav class="navbar">
+          <a class="logo" href="index.html">
+            <img class="logo-size" src="images/full-sized-ro-logo.png" alt="Rashel logo">
+          </a>
+          <div class="desktop">
+            <ul class="no">
               <li>
-                <a class="nav-link one animated-in" href="#project-section">work</a>
+                <a class="off animated-in" href="#project-section">work</a>
               </li>
               <li>
-                <a class="nav-link two animated-in" href="about.html">about</a>
+                <a class="off animated-in" href="about.html">about</a>
               </li>
               <li>
-                <a class="nav-link three animated-in" href="#">resume</a>
+                <a class="off animated-in" href="#">resume</a>
               </li>
               <li>
-                <a class="nav-link four animated-in" href="#footer-box">contact</a>
+                <a class="off animated-in" href="#footer-box">contact</a>
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
-        <!--Hero unit -->
-      <section class="grid-hero">
-        <div>
-          <img class="desktop-image animated slower fadeIn" src="images/index/desktop-hp-flower.png" alt="abstract header image">
-          <img class="mobile-header" src="images/index/mobile-header.png" alt="mobile header image">
-        </div>
-        <article>
-          <p class="hi animated fadeInDown">Hello,</p>
-          <h1 class="name animated slower delay-1s fadeIn">I'm Rashel.</h1>
-          <p class="slogan animated delay-3s fadeIn"> A <strong>people-first</strong> product designer, <strong>business enthusiast</strong>, and <strong>integrative thinker</strong> in the San Francisco Bay area. </p>
-          <p class="description animated delay-3s fadeIn"> I design intentional and inclusive products rooted in the problems and stories of the people they serve. </p>
-        </article>
-      </section>
-        <div class="see-work">
-          <a class="work-link" href="#project-section">See my latest work</a>
-          <i class="fas fa-caret-down"></i>
-        </div>
-    </header>
+          <div class="fixed">
+            <div id="navbar-toggle">
+              <input type="checkbox">
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="main-nav">
+                <li>
+                  <a class="nav-link one animated-in" href="#project-section">work</a>
+                </li>
+                <li>
+                  <a class="nav-link two animated-in" href="about.html">about</a>
+                </li>
+                <li>
+                  <a class="nav-link three animated-in" href="#">resume</a>
+                </li>
+                <li>
+                  <a class="nav-link four animated-in" href="#footer-box">contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+          <!--Hero unit -->
+        <section id="hero">
+          <div class="grid-hero">
+            <div>
+              <img class="desktop-image animated slower fadeIn" src="images/index/desktop-hp-flower.png" alt="abstract header image">
+              <img class="mobile-header" src="images/index/mobile-header.png" alt="mobile header image">
+            </div>
+            <article>
+              <p class="hi animated fadeInDown">Hello,</p>
+              <h1 class="name animated slower delay-1s fadeIn">I'm Rashel.</h1>
+              <p class="slogan animated delay-3s fadeIn"> A <strong>people-first</strong> product designer, <strong>business enthusiast</strong>, and <strong>integrative thinker</strong> in the San Francisco Bay area. </p>
+              <p class="description animated delay-3s fadeIn"> I design intentional and inclusive products rooted in the problems and stories of the people they serve. </p>
+            </article>
+          </div>
+        </section>
+          <div class="see-work animated pulse">
+            <a class="work-link" href="#project-section">See my latest work</a>
+            <i class="fas fa-caret-down"></i>
+          </div>
+      </header>
     <!-- Project section-->
       <section id="project-section">
         <a class="feat-project-display" href="project.html">
@@ -97,32 +98,51 @@
         </article>
       </section>
       <!--About me intro section-->
-    <section class="about-box">
-      <div class="about-content">
-        <img class="story-graphic" src="images/Leaves-story-graphic.png" alt="Leaves dot image">
-        <h2 class="about-title">What's my story?</h2>
-        <p class="about">I’m a designer who merges a passion for storytelling, cultural experiences, and people with business acumen to craft innovative and results-oriented user experiences. My focus is on designing thoughtful, engaging, yet disruptive products that help people and communities thrive around the world.</p>
-        <div class="story-button">
-          <span></span>
-          <a class="secondary-btn" href="about.html">COOL TELL ME MORE</a>
+    <section id="about">
+      <div class="about-box">
+        <div class="rashel-image" data-aos="fade-left" data-aos-duration="1200">
+          <img src="images/index/rashel-image.png" alt="image of myself">
+        </div>
+        <div class="rashel-img-mobile" data-aos="fade-in" data-aos-duration="1500">
+          <img src="images/index/rashel-img-mobile.png" alt="image of myself mobile">
+        </div>
+        <div class="story-graphic wobble-hor-bottom" data-aos="fade-in" data-aos-duration="500">
+          <img src="images/Leaves-story-graphic.png" alt="Leaves dot image">
+        </div>
+        <div class="leaves-story-mobile wobble-hor-bottom" data-aos="fade-in" data-aos-duration="1200">
+          <img src="images/index/Leaves-story-mobile.png" alt="Leaves dot image mobile">
+        </div>
+        <div class="about-content">
+          <h2 class="about-title">What's my story?</h2>
+          <p class="about">I’m a designer who merges a passion for storytelling, cultural experiences, and people with business acumen to craft innovative and results-oriented user experiences. My focus is on designing thoughtful, engaging, yet disruptive products that help people and communities thrive around the world.</p>
+          <div class="story-button">
+            <span></span>
+            <a class="secondary-btn" href="about.html">COOL TELL ME MORE</a>
+          </div>
         </div>
       </div>
     </section>
     <!--Footer-->
      <!--Contact Card -->
-     <div class="contact-box">
-       <img class="contact-image" src="images/index/contact-image.png" alt="abstract contact image">
-       <h2 class="contact-header">Let's create innovative user experiences.</h2>
-       <h3 class="contact-body">Thanks for stopping by. <br> Like my work and want to grab coffee or just talk more UX? <br>Let's connect and take this offline!</h3>
-       <div class="contact-btns">
-         <a class="get-in-touch primary-btn" href="mailto:ochoarashel@gmail.com">GET IN TOUCH</a>
-         <a class="download-resume primary-btn" href="#" target="_blank">DOWNLOAD RESUME</a>
+     <section id="contact" data-color="#15246D">
+       <div class="contact-box">
+         <div class="contact-image" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600" data-aos-easing="ease-in-out-back">
+           <img src="images/index/contact-image.png" alt="abstract contact image">
+         </div>
+         <div class="contact-content">
+           <h2 class="contact-header">Let's create innovative user experiences.</h2>
+           <h3 class="contact-body">Thanks for stopping by. <br> Like my work and want to grab coffee or just talk more UX? <br>Let's connect and take this offline!</h3>
+           <div class="contact-btns">
+             <a class="get-in-touch primary-btn" href="mailto:ochoarashel@gmail.com">GET IN TOUCH</a>
+             <a class="download-resume primary-btn" href="#" target="_blank">DOWNLOAD RESUME</a>
+           </div>
+           <div class="return-top bounce">
+             <a class="return-link" href="#top">Return to top</a>
+             <i class="fas fa-caret-up"></i>
+           </div>
+         </div>
        </div>
-       <div class="return-top bounce">
-         <a class="return-link" href="#top">Return to top</a>
-         <i class="fas fa-caret-up"></i>
-       </div>
-     </div>
+     </section>
      <!--Nav footer-->
      <footer id="footer-box">
         <ul class="social-media">
@@ -172,7 +192,13 @@
         <div class="copyright">
           <p><i class="far fa-copyright"></i> 2018 | Designed and Developed by Rashel Ochoa</p>
         </div>
-      </footer>
-    </div>
+       </footer>
+     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>
