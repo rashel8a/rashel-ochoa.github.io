@@ -727,6 +727,10 @@ div.desktop {
   background-color: #FB7E6C;
 }
 
+.social-media li {
+  list-style-type: none;
+}
+
 .social-media {
   display: grid;
   width: 80%;
@@ -852,8 +856,10 @@ div.Starstuff-header {
 }
 
 .pg {
-  margin-top: 7.5rem;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.content {
   padding: 0 1.6rem;
 }
 
@@ -889,10 +895,6 @@ img {
   text-align: center;
 }
 
-/* .text-box {
-  padding-top: 0rem;
-  padding-bottom: 5rem;
-} */
 
 div.CTA-buttons {
   display: flex;
@@ -1121,19 +1123,25 @@ img.chapter1-image {
   flex-direction: column;
 }
 
+.vertical-line .pers-quote {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #FB7E6C;
+}
+
 .persona-quote {
   font-family: 'Brandon Text Regular Italic', cursive;
   color: #FB7E6C;
   font-size: 2rem;
-  margin-right: 1.6rem;
-  margin: 0 auto;
+  /* margin-right: 1.6rem; */
   display: block;
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .vertical-line {
   border-left: 3px solid #FB7E6C;
   margin-left: 0rem;
+  display: flex;
 }
 
 .motivations span, .frustrations span {
@@ -1156,7 +1164,6 @@ img.chapter1-image {
   font-family: 'Brandon Grotesque Bold';
   font-size: 1.6rem;
   text-decoration: none;
-  color: #001F40;
   z-index: 1000;
   cursor: pointer;
   display: block;
@@ -1164,17 +1171,21 @@ img.chapter1-image {
   width: 100%;
 }
 
-.persona-button span {
+.pg .persona-button span {
   display: inline-block;
   position: relative;
   z-index: 1;
   border-radius: 5rem;
-  height: 1rem;
+  height: 1.5rem;
   width: 17.5rem;
-  top: 2rem;
+  top: 2.5rem;
   right: -7.5rem;
-  background-position: -3rem bottom;
-  background-color: #03E1D7;
+  /* background-position: -3rem bottom; */
+  /* background-color: #03E1D7; */
+  background-image: linear-gradient(180deg, transparent 65%, #FB7E6C 0);
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .4 ease;
 }
 
 /* CHAPTER 3 MOBILE */
@@ -1220,17 +1231,17 @@ div.box-1 {
   background-color: #03E1D7;
 }
 
-.sketches img, .wireframe img {
+.sketches img {
   width: 100%;
   margin: 0 auto;
 }
 
-.wireframe .wf-img-group {
-  display: none;
+.wf-images .wf-img-1, .wf-images .wf-img-2{
+  width: 100%;
 }
 
-.wireframe img {
-  padding-top: 1rem;
+.wf-images .wf-img-group {
+  display: none;
 }
 
 .prototype-button .secondary-btn {
@@ -1240,7 +1251,7 @@ div.box-1 {
   width: 100%;
 }
 
-#chapter3 .prototype-button span {
+.prototype-button span {
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -1281,9 +1292,9 @@ div.iterations-header {
   text-align: center;
 }
 
-.iterations-header .text-box {
-  margin-bottom: 0;
-  padding-bottom: 0;
+.list-content .text-box {
+  display: block;
+  float: left;
 }
 
 .iterations-snippet {
@@ -1311,11 +1322,12 @@ div.iterations-header {
   float: left;
 }
 
-.it {
+.iteration-title .it {
   display: inline-block;
   float: left;
+  text-align: left;
   padding: .5rem .5rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: 'Brandon Text Medium', sans-serif;
 }
 
@@ -1327,6 +1339,110 @@ div.iterations-header {
 .iterations-snippet img {
   width: 100%;
 }
+
+/* CHAPTER 4 MOBILE */
+
+#chapter4 .pg {
+  margin-top: 5rem;
+}
+
+ img.chapter {
+  width: auto;
+  display: block;
+  position: relative;
+  bottom: .8rem;
+}
+
+.brand-header {
+  width: 100%;
+  margin-top: 7.5rem;
+  display: block;
+}
+
+.brand-quote img.quote-img {
+  width: 11%;
+  display: block;
+  position: relative;
+  right: .5rem;
+  top: 2rem;
+  }
+
+.brand-story .brand-quote h2 {
+ font-family: 'Brandon Text Medium Italic', cursive;
+ font-size: 2.2rem;
+ line-height: 130%;
+ width: 88%;
+ margin: 0 0 0 4rem;
+ position: relative;
+ top: 0rem;
+}
+
+.brand-quote h2.by {
+ font-family: 'Brandon Grotesque Black', sans-serif;
+ margin-top: -.5rem;
+}
+
+.logos {
+ width: 100%;
+ display: block;
+ margin: 3rem auto;
+}
+
+img.color-else {
+ width: 80%;
+ margin: 3rem auto 0 auto;
+ display: block;
+ border: 1px solid orange;
+}
+
+article.typography {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/* article.typography .type {
+  padding: 0;
+  border: 1px solid blue;
+  display: block;
+  width: 100%;
+} */
+
+.typography img.type-img {
+ width: auto;
+ display: block;
+ float: left;
+ margin: 0 auto;
+ border: 1px solid red;
+}
+
+.style-guide-button {
+  display: inline-block;
+}
+
+.style-guide-button .secondary-btn {
+  display: block;
+  margin: 3rem 16rem;
+  text-align: center;
+  width: 100%;
+}
+
+.typography .secondary-btn span {
+  display: inline-block;
+  border: 1px solid blue;
+  position: relative;
+  z-index: 1;
+  border-radius: 5rem;
+  height: 1rem;
+  width: 25rem;
+  /* top: 5rem;
+  left: 4.5rem; */
+  background-color: #03E1D7;
+}
+
+
 
 
 
@@ -1651,8 +1767,9 @@ img.chapter1-image {
 .survey-results .callout p {
   width: 60%;
   text-align: left;
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3.1rem;
 }
 
 .survey-results hr {
@@ -1723,19 +1840,23 @@ section.both-personas {
   padding: 3rem 0;
 }
 
+.vertical-line .pers-quote {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #FB7E6C;
+}
+
 .persona-quote {
   font-family: 'Brandon Text Regular Italic', cursive;
   color: #FB7E6C;
   font-size: 2rem;
-  margin-right: 1.6rem;
-  margin: 0 auto;
-  display: block;
-  margin-left: 10px;
+  margin-left: 0rem;
 }
 
 .vertical-line {
   border-left: 3px solid #FB7E6C;
-  margin-left: 0rem;
+  margin-left: 2rem;
+  display: flex;
 }
 
 .motivations span, .frustrations span {
@@ -1832,12 +1953,26 @@ div.box-1, div.box-2 {
   margin: 0 auto;
 }
 
-.wireframe .wf-img-group {
+.wf-images .wf-group-mobile {
   display: none;
 }
 
-.wireframe img {
+.wf-images .wf-img-group {
+  display: block;
+  width: 100%;
+}
+
+.wf-images .wf-img-1, .wf-images .wf-img-2 {
+  width: 50%;
+}
+
+.wf-images {
   padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .prototype-button .secondary-btn {
@@ -1855,91 +1990,196 @@ div.box-1, div.box-2 {
   height: 1rem;
   width: 25rem;
   top: 5rem;
-  left: 4.5rem;
+  left: 11.5rem;
   background-color: #03E1D7;
 }
 
 .prototype .callout {
   background-color: #FDE8DE;
-  width: 120%;
-  margin: 5rem -1.6rem 5rem -1.6rem;
+  width: 140%;
+  margin: 5rem -10rem 5rem -10rem;
   padding: 3rem 0;
-  /* padding: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prototype .callout p {
-  width: 31.3rem;
-  margin: 5rem 1.6rem 5rem 4.6rem;
-  padding: 0;
+  width: 60%;
+  margin-left: 0;
   text-align: left;
-  font-size: 2rem;
-  line-height: 2.8rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3.1rem;
   display: block;
 }
 
-.prototype hr {
+.prototype .callout hr {
   border-radius: 10rem;
-  margin: 1.5rem 0 2.5rem 1.6rem;
+  margin-right: 3rem;
+}
+
+/* TABLET IMITATE*/
+.iteration-title {
+  text-align: center;
+}
+
+.iterations-snippet {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.iterations-snippet .text-box {
+  width: 80%;
+  margin-left: 4.5rem;
+}
+
+.list-content .text-box {
   display: block;
   float: left;
 }
 
-div.iterations-header {
-  text-align: center;
-}
-
-.iterations-header .text-box {
-  margin-bottom: 0;
-  padding-bottom: 0;
+section.first {
+  margin-top: 7.5rem;
 }
 
 .iterations-snippet {
-  margin: 2rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-left: -10rem;
+  margin-right: -10rem;
+  margin-bottom: 10rem;
+}
+
+.iterations-snippet .two, .iterations-snippet .one {
+  width: 45rem;
+}
+
+ .first img, .second img {
+  margin-right: 0rem;
+  width: 45%;
+  margin-left: 2.5rem;
+  display: block;
+}
+
+section.third img.last {
+  width: 50%;
+  display: block;
 }
 
 .iteration-title {
-  text-align: center;
-  margin-top: 5rem;
+  width: 100%;
 }
 
 .number-circle {
   background-color: #6534FF;
   border-radius: 50%;
-  padding: .4rem;
+  padding: .9rem 0;
   color: #FFFDFB;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   font-family: 'Brandon Text Medium', sans-serif;
-  font-size: 1.7rem;
-  display: inline-block;
-  float: left;
+  font-size: 2rem;
+  display: inline;
 }
 
 .it {
-  display: inline-block;
-  float: left;
-  padding: .5rem .5rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: 'Brandon Text Medium', sans-serif;
+  display: inline;
+  text-align: left;
+  width: 83.8%;
+  float: left;
+  padding-left: 1rem;
 }
 
-.iterations-snippet .text-box {
-  margin-top: 1rem;
-  padding: 0;
+/* CHAPTER 4 TABLET */
+
+#chapter4 img.chapter {
+  width: auto;
+  display: block;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 1.5rem;
+  padding-right: 1rem;
 }
 
-.iterations-snippet img {
+.brand-header {
   width: 100%;
+  display: block;
 }
 
-/* CHAPTER 4 SECTION */
+.brand-quote img.quote-img {
+  width: 9%;
+  display: block;
+  position: relative;
+  right: 2rem;
+  top: 1rem;
+  }
 
-#chapter4 .chapter {
-  width: 12%;
+.brand-story .brand-quote h2 {
+ font-family: 'Brandon Text Medium Italic', cursive;
+ font-size: 3rem;
+ line-height: 130%;
+ position: relative;
+ top: 0rem;
+ margin-top: 0rem;
 }
+
+.brand-quote h2.by {
+ font-family: 'Brandon Grotesque Black', sans-serif;
+ margin-top: .3rem;
+}
+
+i {
+  font-family: 'Brandon Text Medium Italic', italic;
+}
+
+img.mood {
+ width: 100%;
+}
+
+article.logo-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logop img.logos {
+ margin-top: 7.5rem;
+ width: 110%;
+}
+
+article.color-palette img.color-else {
+ width: auto;
+ display: block;
+ margin-top: 5rem;
+}
+
+.typography {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+
+.typography .type {
+ width: 50%;
+ display: block;
+ padding: 3rem 0;
+ /* margin-left: -4rem;
+ margin-right: 0; */
+}
+
+.typography img.type-img {
+ width: 100%;
+ display: block;
+ margin-left: 8rem;
+ margin-right: 0rem;
+}
+
+
 
 
 
@@ -2496,6 +2736,10 @@ div.iterations-header {
     margin-top: 15rem;
   }
 
+  .pg {
+    margin-top: 15rem;
+  }
+
   .pg-topic, .pg-label {
     font-size: 3.2rem;
     line-height: 110%;
@@ -2545,7 +2789,6 @@ div.iterations-header {
 
   #chapter1 .solution {
     margin-top: 10rem;
-    border: 1px solid blue;
   }
 
   img.chapter1-image {
@@ -2586,8 +2829,9 @@ div.iterations-header {
  .survey-results .callout p {
    width: 38%;
    text-align: left;
-   font-size: 2.2rem;
-   line-height: 2.8rem;
+   font-size: 2.3rem;
+   font-weight: 600;
+   line-height: 3.3rem;
  }
 
  .survey-results hr {
@@ -2710,6 +2954,25 @@ div.iterations-header {
    width: 100%;
  }
 
+ .vertical-line .pers-quote {
+   font-size: 2rem;
+   margin-left: 1rem;
+   color: #FB7E6C;
+ }
+
+ .persona-quote {
+   font-family: 'Brandon Text Regular Italic', cursive;
+   color: #FB7E6C;
+   margin-left: 0rem;
+   font-size: 2rem;
+ }
+
+ .vertical-line {
+   border-left: 3px solid #FB7E6C;
+   margin-left: 4rem;
+   display: flex;
+ }
+
  section.both-personas {
    display: flex;
    padding: 0;
@@ -2717,21 +2980,6 @@ div.iterations-header {
 
  .maya-persona .persona-quote {
    width: 80%;
- }
-
- .persona-quote {
-   font-family: 'Brandon Text Regular Italic', cursive;
-   color: #FB7E6C;
-   width: 95%;
-   margin: 0 auto;
-   display: block;
-   margin-left: 10px;
- }
-
- .vertical-line {
-   border-left: 3px solid #FB7E6C;
-   margin-left: 5rem;
-   display: block;
  }
 
  .motivations span, .frustrations span {
@@ -2783,13 +3031,13 @@ div.iterations-header {
 }
 
  #chapter3 .chapter {
-   width: 8%;
+   width: auto;
    padding-bottom: 0;
    position: relative;
    bottom: 1.5rem;
  }
 
- .flows {
+ .pg .flows {
    text-align: center;
  }
 
@@ -2802,7 +3050,6 @@ div.iterations-header {
 
 .box-2 h4 {
   margin-left: 15rem;
-  border: 1px solid pink;
 }
 
 .box-1 h4 {
@@ -2813,13 +3060,16 @@ div.iterations-header {
    display: none;
  }
 
-img.flow-2 {
+.box-2 img.flow-2 {
    display: block;
-   width: auto;
+   width: 100%;
+   margin: 0 auto;
  }
 
- .flows img.flow-1 {
-   width: 100%;
+ .box-1 img.flow-1 {
+   width: 90%;
+   display: block;
+   margin: 0 auto;
  }
  .flows-button .secondary-btn {
    font-family: 'Brandon Grotesque Bold';
@@ -2852,7 +3102,7 @@ img.flow-2 {
    display: block;
  }
 
- .wireframe .wf-group-mobile {
+ .wf-images .wf-group-mobile {
    display: none;
  }
 
@@ -2861,7 +3111,6 @@ img.flow-2 {
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   border: 1px solid green;
  }
 
  .wireframe .wf-img-group {
@@ -2888,85 +3137,263 @@ img.flow-2 {
    height: 1rem;
    width: 25rem;
    top: 5rem;
-   left: 4.5rem;
+   left: 17rem;
    background-color: #03E1D7;
  }
 
  .prototype .callout {
    background-color: #FDE8DE;
    width: 120%;
-   margin: 5rem -1.6rem 5rem -1.6rem;
-   padding: 3rem 0;
-   /* padding: 0; */
+   margin: 5rem -10rem 5rem -10rem;
+   padding: 5rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
 
  .prototype .callout p {
-   width: 31.3rem;
-   margin: 5rem 1.6rem 5rem 4.6rem;
-   padding: 0;
+   width: 38%;
+   margin-left: 0;
    text-align: left;
-   font-size: 2rem;
-   line-height: 2.8rem;
+   font-size: 2.3rem;
+   font-weight: 600;
+   line-height: 3.3rem;
    display: block;
  }
 
- .prototype hr {
+ .prototype .callout hr {
    border-radius: 10rem;
-   margin: 1.5rem 0 2.5rem 1.6rem;
-   display: block;
-   float: left;
- }
-
- div.iterations-header {
-   text-align: center;
- }
-
- .iterations-header .text-box {
-   margin-bottom: 0;
-   padding-bottom: 0;
- }
-
- .iterations-snippet {
-   margin: 2rem 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   margin-right: 5rem;
  }
 
  .iteration-title {
    text-align: center;
-   margin-top: 5rem;
+ }
+
+ .iterations-snippet {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .iterations-snippet .text-box {
+   margin-left: 1rem;
+ }
+
+ .list-content {
+   width: 45rem;
+ }
+
+ .list-content .text-box {
+   display: block;
+   float: left;
+ }
+
+ section.first {
+   margin-top: 7.5rem;
+ }
+
+ .iterations-snippet {
+   margin-left: -24rem;
+   margin-right: -24rem;
+   margin-bottom: 15rem;
+ }
+
+ .iterations-snippet .two, .iterations-snippet .one {
+   width: 45rem;
+ }
+
+  .first img, .second img {
+   margin-right: 12rem;
+   width: 30%;
+   margin-left: 12rem;
+   display: block;
+ }
+
+ .list-content .tercer {
+   margin-left: 4.5rem;
+ }
+
+ section.third img.last {
+   width: 50%;
+   display: block;
  }
 
  .number-circle {
    background-color: #6534FF;
    border-radius: 50%;
-   padding: .4rem;
+   padding: .9rem 0;
    color: #FFFDFB;
-   width: 2.5rem;
-   height: 2.5rem;
+   width: 3.5rem;
+   height: 3.5rem;
    font-family: 'Brandon Text Medium', sans-serif;
-   font-size: 1.7rem;
-   display: inline-block;
-   float: left;
+   font-size: 2rem;
+   display: inline;
  }
 
  .it {
-   display: inline-block;
-   float: left;
-   padding: .5rem .5rem;
-   font-size: 1.8rem;
+   font-size: 2.2rem;
    font-family: 'Brandon Text Medium', sans-serif;
- }
+   display: inline;
+   float: left;
+   padding-left: 1rem;
+}
 
- .iterations-snippet .text-box {
-   margin-top: 1rem;
-   padding: 0;
- }
+ /* CHAPTER 4 DESKTOP */
 
- .iterations-snippet img {
-   width: 100%;
- }
+ #chapter4 img.chapter {
+   width: auto;
+   display: block;
+   position: relative;
+   bottom: 2rem;
+}
+
+#chapter3 .chapter {
+  width: auto;
+  padding-bottom: 0;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+ .brand-story, .logo-design {
+   margin: 0 25rem;
+}
+
+img.brand-header {
+  width: auto;
+  margin: 15rem 15rem;
+  border: 1px solid red;
+}
+
+.brand-quote img.quote-img {
+  width: 9%;
+  display: block;
+  position: relative;
+  right: 4rem;
+  }
+}
+
+article.brand-story {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 7.5rem 25rem 0 25rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-quote .main-quote h2 {
+  font-family: 'Brandon Text Medium Italic', cursive;
+  font-size: 5rem;
+  line-height: 130%;
+  margin-top: 5rem;
+}
+
+.brand-quote h2.by {
+  font-weight: bolder;
+  padding-top: 1rem;
+  font-family: 'Brandon Grotesque', cursive;
+}
+
+.pg img.mood {
+  width: 100%;
+  display: block;
+  margin: 5rem auto 0 auto;
+}
+
+.img-logo img.logos {
+  display: block;
+  margin-left: 20rem;
+  width: 80%;
+}
+
+article.color-palette {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-palette div.color {
+  width: 50rem;
+  display: block;
+}
+
+.img-color img.color-else {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.typography {
+  display: grid;
+  width: 80%;
+  margin: 15rem auto;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 2fr;
+  grid-template-areas:
+  "type type-img";
+}
+
+.type {
+  grid-area: "type";
+  width: 100%;
+  display: block;
+  margin: 5rem 0;
+  margin-right: 0rem;
+}
+
+.typography img.type-img {
+  grid-area: "type-img";
+  width: auto;
+  display: block;
+  margin: -2rem 0;
+}
+
+.style-button {
+  margin: 0 0rem 0 40rem;
+  width: 23%;
+  background-color: none;
+  font-family: 'Brandon Grotesque Black';
+  font-size: 1.8rem;
+  text-align: center;
+  display: block;
+  color: #1C46C5;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.style-button::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: .7rem;
+  border-radius: 6rem;
+  background: #03E1D7;
+  transition: width .3s;
+}
+
+.style-button:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

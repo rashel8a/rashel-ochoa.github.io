@@ -11,6 +11,7 @@
     <!--Fonts-->
     <link rel="stylesheet" href="fonts/btwf/btstyle.css">
     <link rel="stylesheet" href="fonts/bgwf/bgstyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
     <!-- Custom Syles -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -252,7 +253,8 @@
                   <h3>Writer & Design Freelancer, 26 years old</h3>
                 </div>
                 <div class="vertical-line">
-                    <p class="persona-quote"><i>"Giving and receiving feedback is key to learning how to strengthen my skills."</i></p>
+                  <span class="pers-quote">"</span>
+                  <p class="persona-quote"><i>Giving and receiving feedback is key to learning how to strengthen my skills."</i></p>
                 </div>
                 <div class="motivations">
                   <h4><span>Motivations – </span></h4>
@@ -270,7 +272,8 @@
                   <h3>Product Manager, 27 years old</h3>
                 </div>
                 <div class="vertical-line">
-                  <p class="persona-quote"><i>"On a given day I am buried in text documents, assigning tasks and collaborating with my team."</i></p>
+                  <span class="pers-quote">"</span>
+                  <p class="persona-quote"><i>On a given day I am buried in text documents, assigning tasks and collaborating with my team."</i></p>
                 </div>
                 <div class="motivations">
                   <h4><span>Motivations – </span></h4>
@@ -285,6 +288,9 @@
             <div class="persona-button">
               <span></span>
               <a class="secondary-btn" href="https://www.dropbox.com/sh/9sco5h2efcw27ju/AACatW6TZHaNis_WT4zvta6ca?dl=0" target ="_blank">VIEW USER PERSONAS</a>
+            </div>
+            <div class="d-button">
+              <a class="style-button" href="https://www.dropbox.com/sh/9sco5h2efcw27ju/AACatW6TZHaNis_WT4zvta6ca?dl=0" target="_blank">VIEW USER PERSONAS</a>
             </div>
           </article>
         </section>
@@ -325,17 +331,17 @@
             <div class="wireframe content">
               <h3 class="pg-topic">Low-fidelity wireframes</h3>
               <h2 class="pg-label">Revisiting the problem to build the skeletal structure</h2>
-              <p class="text-box">To address the issue of low discoverability within cloud storage interfaces, I chose to display a top-level navigation to promote exploration and allows easy access to the broad categories within the primary navigation before drilling down into specific pages. This top-level approach eliminated unnecessary clicking and the reliance on the search box to find files. Using my <a class="quick-link" href="https://sketch.cloud/s/4V7Wq">sitemap</a> and user flows, I built my wireframes using Figma. </p>
+              <p class="text-box">To address the issue of low discoverability within cloud storage interfaces, I chose to display a top-level navigation to promote exploration and allow easy access to the broad categories within the primary navigation before drilling down into specific pages. This top-level approach eliminated unnecessary clicking and the reliance on the search box to find files. Using my <a class="quick-link" href="https://sketch.cloud/s/4V7Wq">sitemap</a> and user flows, I built my wireframes using Figma. </p>
+            </div>
               <div class="wf-images">
                 <img class="wf-img-1" src="images/project/lf-wf-1.png" alt="wireframe screen">
                 <img class="wf-img-2" src="images/project/lf-wf-2.png" alt="wireframe screen">
                 <img class="wf-img-group" src="images/project/lf-wf-group.png" alt="wireframe screen">
                 <img class="wf-group-mobile" src="images/project/mobile-wireframes.png" alt="wireframe group mobile">
               </div>
-            </div>
           </article>
-          <article class="pg">
-            <div class="prototype content">
+          <article class="pg prototype">
+            <div class="content">
               <h3 class="pg-topic">Low-fidelity wireframe prototype</h3>
               <h2 class="pg-label">Testing the foundation before moving forward</h2>
               <p class="text-box">If I had moved onto wireframe testing at this point in the process I would have overlooked some of the most glaring issues living within my wireframes.Thankfully, I didn’t. Before moving onto high fidelity mockups, I made sure to validate my design decisions by conducting a little bit of testing.</p>
@@ -344,10 +350,10 @@
                 <span></span>
                 <a class="secondary-btn" href="https://invis.io/TVJ9P82FZJ5" target ="_blank">VIEW LOW-FIDELITY PROTOTYPE</a>
               </div>
-              <div class="callout">
-                <hr width="6" color="#FFA856" size="236">
-                <p class="co-text">During testing, several users were unfamiliar with the content labeling established within various areas of the dashboard, prompting them to overlook actionable cues for accomplishing primary tasks. </p>
-              </div>
+            </div>
+            <div class="callout">
+              <hr width="6" color="#FFA856" size="236">
+              <p class="co-text">During testing, several users were unfamiliar with the content labeling established within various areas of the dashboard, prompting them to overlook actionable cues for accomplishing primary tasks. </p>
             </div>
           </article>
           <article class="pg">
@@ -357,77 +363,87 @@
                 <h2 class="pg-label">Reducing visual confusion</h2>
                 <p class="text-box">With the accumulation of golden nugget knowledge gained from testing my wireframes, I was armed with the knowledge needed to make the following revisions.</p>
               </div>
-              <div class="iterations-list">
-                <section class="iterations-snippet">
+              <section class="iterations-snippet first">
+                <header class="list-content one">
                   <div class="iteration-title">
                     <div class="number-circle">1</div>
                     <h3 class="it">Redesign the "Create" button</h3>
                   </div>
                   <p class="text-box">While the small “Create” icon on its own is widely used in similar platforms, many testers did not recognize it as a way of creating new content. To maintain high discoverability, I placed it within a larger accented button with the label “Create” displayed.</p>
-                  <img src="images/project/create-iteration-graphic.png" alt="create graphic">
-                </section>
-                <section class="iterations-snippet">
+                </header>
+                <img src="images/project/create-iteration-graphic.png" alt="create graphic">
+              </section>
+              <section class="iterations-snippet second">
+                <header class="list-content two">
                   <div class="iteration-title">
                     <div class="number-circle">2</div>
                     <h3 class="it">Rename content navigation labels</h3>
                   </div>
-                    <p class="text-box">To better communicate the ability to follow groups and be a part of the community, I renamed the "Tribes" navigation to the term "Groups" to adhere to common naming conventions.</p>
-                    <img src="images/project/groups-iteration-graphic.png" alt="image displaying groups iteration change">
-                </section>
-                <section class="iterations-snippet">
-                    <div class="iteration-title">
-                      <div class="number-circle">3</div>
-                      <h3 class="it">Rename content navigation labels</h3>
-                    </div>
-                    <p class="text-box">To clearly communicate the purpose of each item that can be inserted into a document, I converted the collapsed insert menu into a full-sized menu list displaying both icons and copy for that extra touch of information.</p>
-                    <img src="images/project/insert-iteration-graphic.png" alt="image displaying insert menu list iteration change">
-                </section>
-              </div>
+                  <p class="text-box">To better communicate the ability to follow groups and be a part of the community, I renamed the "Tribes" navigation to the term "Groups" to adhere to common naming conventions.</p>
+                </header>
+                <img src="images/project/groups-iteration-graphic.png" alt="image displaying groups iteration change">
+              </section>
+              <section class="iterations-snippet third">
+                <header class="list-content three">
+                  <div class="iteration-title">
+                    <div class="number-circle">3</div>
+                    <h3 class="it">Make insert action items easily readable.</h3>
+                  </div>
+                  <p class="text-box tercer">To clearly communicate the purpose of each item that can be inserted into a document, I converted the collapsed insert menu into a full-sized menu list displaying both icons and copy for that extra touch of information.</p>
+                </header>
+                <img class="last" src="images/project/insert-iteration-graphic.png" alt="image displaying insert menu list iteration change">
+              </section>
             </div>
           </article>
         </section>
-        <section id="chapter4" class="chap-title">
-          <img class="chapter" src="images/project/chap4-graphic.png" alt="abstract flower">
-          <h2 class="section-title">CHAPTER 4 | A BRAND IS BORN</h2>
+        <section id="chapter4">
+          <div class="title-card">
+            <img class="chapter" src="images/project/chap4-graphic.png" alt="abstract flower">
+            <h2 class="section-title">CHAPTER 4 | A BRAND IS BORN</h2>
+          </div>
+          <img class="brand-header" src="images/project/brand-image-header.png" alt="image of landing page branding">
           <article class="pg">
-            <div class="content">
-              <img class="center" src="images/project/brand-image-header.png" alt="image of landing page branding">
+            <div class="brand-story content">
               <h3 class="pg-topic">Brand concept</h3>
               <h2 class="pg-label">The story behind Starstuff</h2>
               <p class="text-box">“Starstuff” was chosen as the brand name because it holds its own propositional density, having both a functional, or literal meaning as well as an emotional one. Starstuff can literally represent the product’s key feature of “starring” or saving stuff within the dashboard. But it also holds a metaphorical interpretation, which is based on Carl Sagan’s theory that humans originate from, or are a product of, the stars. Just as humans are made of the same chemical elements as stars, groundbreaking work is made from a series of evolved ideas and imaginations brought together by many people. Starstuff’s underlying concept is based on the notion that we can’t produce brilliant work unless humans unite to stitch many ideas together.</p>
               <div class="brand-quote">
-                <h2><i><span class="style-quote">"</span>The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of starstuff."</i></h2>
-                <h2><i>– Carl Sagan, Cosmos</i></h2>
+                <img class="quote-img" src="images/project/quote-img.png" alt="quote image">
+                <h2 class="main-quote"><i>The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of starstuff."</i></h2>
+                <h2 class="by">– Carl Sagan, Cosmos</h2>
               </div>
-              <img class="center" src="images/project/moodboard-graphic.png" alt="moodboard collage">
             </div>
+            <img class="mood" src="images/project/moodboard-graphic.png" alt="moodboard collage">
           </article>
-          <article class="pg">
-            <div class="content">
+          <article class="pg logop">
+            <div class="logo-design content">
               <h3 class="pg-topic">Logo design</h3>
               <h2 class="pg-label">Creating a logo that sparks creativity</h2>
               <p class="text-box">After selecting the brand name, the logo underwent a plethora of sketch iterations before arriving to its final design. I began the brainstorm with a mindmapping exercise to curate a concept that activated creativity and communicated the formation of a momentous idea.</p>
               <p class="text-box">To maintain consistency with the solar system theme, I focused on using star and rounded planetary shapes. This decision led to the idea of bringing two semi-circles together to produce one bright star, alluding to the process of bringing people together to conjure an idea. In the end, this logo was chosen for its simple, playful and versatile design.</p>
-              <img class="center" src="images/project/logo-design-images.png" alt="logo design image">
             </div>
           </article>
-          <article class="pg">
-            <div class="content">
+          <img class="logos" src="images/project/logo-design-images.png" alt="logo design image">
+          <article class="pg color-palette">
+            <div class="color content">
               <h3 class="pg-topic">Color palette</h3>
               <h2 class="pg-label">Evoking the right emotions</h2>
               <p class="text-box">So I’d created the brand idea and logo, but what kind of emotions did I want to convey to my users when maneuvering throughout the product?</p>
               <p class="text-box">Because my users are a younger audience, I chose a combination of bright, contrasting colors and muted slate blue tones to strike a harmonious balance between an engaging, yet relaxing space-themed environment. I chose electric violet as the primary accented color because it evokes a sense of creativity that compliments the muted blues and grays reflecting calmness and dependability. The bright pastel pink and teal colors were used sparingly, sprinkled throughout to supply tiny bursts of energy.</p>
-              <img class="left-side" src="images/project/color-palette-images.png" alt="color palette">
             </div>
           </article>
-          <article class="pg">
-            <div class="content">
+          <img class="color-else" src="images/project/color-palette-images.png" alt="color palette">
+          <article class="pg typography">
+            <div class="type content">
               <h3 class="pg-topic">Typography</h3>
               <h2 class="pg-label">Prioritizing legibility and branding</h2>
               <p class="text-box">Because of its similarity to the logo’s rounded semi-circle shapes, I chose to use Futura as the primary typeface because of its ease of legibility, elegant appearance, and minimalist aesthetic approach.</p>
-              <img class="left-side" src="images/project/futura-typeface.png" alt="typeface usage">
             </div>
-            <a class="view secondary-btn" href="https://www.dropbox.com/s/dqy2vdps8b52cl6/Starstuff%20Style%20Guide.pdf?dl=0" target ="_blank">View style guide</a>
+            <img class="type-img" src="images/project/futura-typeface.png" alt="typeface usage">
+            <div class="style-guide-button">
+              <span></span>
+              <a class="secondary-btn" href="https://www.dropbox.com/s/dqy2vdps8b52cl6/Starstuff%20Style%20Guide.pdf?dl=0" target ="_blank">VIEW STYLE GUIDE</a>
+            </div>
           </article>
         </section>
         <section id="chapter5" class="chap-title">
