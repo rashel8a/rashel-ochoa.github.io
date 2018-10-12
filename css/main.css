@@ -778,10 +778,6 @@ body {
   overflow: hidden;
 }
 
-main {
-  overflow: hidden;
-}
-
 .dark-bg {
   background-color: #021E39;
 }
@@ -798,10 +794,6 @@ p {
   color: #001F40;
   font-size: 'Brandon Text Regular', sans-serif;
 }
-/*
-main {
-  padding: 0 1.6rem;
-} */
 
 /* STARSTUFF HERO*/
 
@@ -814,9 +806,9 @@ div.Starstuff-header {
 }
 
 .header-content {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
   padding: 0 1.6rem;
 }
 
@@ -830,8 +822,7 @@ div.Starstuff-header {
 }
 
 .header-title {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .Starstuff-display {
@@ -857,9 +848,6 @@ div.Starstuff-header {
 
 .pg {
   margin-top: 5rem;
-}
-
-.content {
   padding: 0 1.6rem;
 }
 
@@ -887,9 +875,9 @@ ul {
     margin-top: .5rem;
 }
 
-img {
+/* img {
   padding-top: 1rem;
-}
+} */
 
 #intro .pg-topic, #intro .pg-label {
   text-align: center;
@@ -1346,7 +1334,7 @@ div.iterations-header {
   margin-top: 5rem;
 }
 
- img.chapter {
+ #chapter4 img.chapter {
   width: auto;
   display: block;
   position: relative;
@@ -1382,67 +1370,78 @@ div.iterations-header {
  margin-top: -.5rem;
 }
 
+
 .logos {
- width: 100%;
+ max-width: 100%;
  display: block;
  margin: 3rem auto;
 }
 
-img.color-else {
- width: 80%;
- margin: 3rem auto 0 auto;
- display: block;
- border: 1px solid orange;
-}
-
-article.typography {
+div.color-palette {
   display: flex;
   flex-direction: column;
-  padding: 0;
   align-items: center;
-  border: 1px solid black;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-/* article.typography .type {
-  padding: 0;
-  border: 1px solid blue;
+div.color {
+  margin: 0 auto;
+  margin-right: 5rem;
+  border: 1px solid red;
+   max-width: 100%;
   display: block;
-  width: 100%;
-} */
+}
 
-.typography img.type-img {
+.color-palette img.color-else {
+ width: 75%;
+ margin: 3rem auto 0 auto;
+}
+
+div.typography {
+  margin: 5rem auto;
+  width: 100%;
+}
+
+.typography div.type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+div.type-content {
+  margin-bottom: 3rem;
+  margin-left: -22rem;
+  margin-right: 20rem;
+}
+
+div.type img.type-img {
  width: auto;
  display: block;
- float: left;
- margin: 0 auto;
  border: 1px solid red;
 }
 
-.style-guide-button {
-  display: inline-block;
-}
-
-.style-guide-button .secondary-btn {
+div.style-guide-button .secondary-btn {
   display: block;
-  margin: 3rem 16rem;
+  margin: 5rem 16rem;
   text-align: center;
   width: 100%;
 }
 
-.typography .secondary-btn span {
+div.style-guide-button span {
   display: inline-block;
-  border: 1px solid blue;
   position: relative;
   z-index: 1;
   border-radius: 5rem;
   height: 1rem;
-  width: 25rem;
-  /* top: 5rem;
-  left: 4.5rem; */
+  width: 15rem;
+  top: 7rem;
+  left: 10.8rem;
   background-color: #03E1D7;
 }
-
-
 
 
 
@@ -1536,7 +1535,7 @@ article.typography {
     /* TABLET HP HERO*/
 
     .grid-hero, .feat-project-text, .about-content, .contact-header, .contact-body {
-          padding: 0 5rem;
+    padding: 0 5rem;
     }
 
     .grid-hero {
@@ -1718,6 +1717,10 @@ h2.section-title {
   align-items: center;
 }
 
+.pg .solution {
+  margin-bottom: 3rem;
+}
+
 .chapter1-image {
   width: 100%;
 }
@@ -1875,6 +1878,11 @@ section.both-personas {
   margin: 3rem 0;
 }
 
+.d-button {
+  border: 1px solid red;
+  display: none;
+}
+
 .persona-button .secondary-btn {
   font-family: 'Brandon Grotesque Bold';
   font-size: 1.6rem;
@@ -1891,9 +1899,9 @@ section.both-personas {
 .persona-button span {
   z-index: 1;
   border-radius: 5rem;
-  height: 1rem;
+  height: 1.5rem;
   width: 17.5rem;
-  top: 2rem;
+  top: 2.5rem;
   background-color: #03E1D7;
 }
 
@@ -1942,7 +1950,7 @@ div.box-1, div.box-2 {
   text-align: center;
   height: 1rem;
   width: 14.5rem;
-  top: 2rem;
+  top: 2.2rem;
   left: 15.5rem;
   background-position: -3rem bottom;
   background-color: #03E1D7;
@@ -2022,19 +2030,25 @@ div.box-1, div.box-2 {
 /* TABLET IMITATE*/
 .iteration-title {
   text-align: center;
+  margin-top: 0;
+  margin-left: .5rem;
 }
 
-.iterations-snippet {
+section.iterations-snippet {
   display: flex;
   flex-direction: row;
-  margin: 0 10rem;
+  margin-top: 0;
   justify-content: center;
   align-items: center;
 }
 
+header.two p {
+  margin-right: 4rem;
+}
+
 .iterations-snippet .text-box {
   width: 80%;
-  margin-left: 4.5rem;
+  margin-left: 4rem;
 }
 
 .list-content .text-box {
@@ -2068,19 +2082,15 @@ section.third img.last {
   display: block;
 }
 
-.iteration-title {
-  width: 100%;
-}
-
 .number-circle {
   background-color: #6534FF;
   border-radius: 50%;
-  padding: .9rem 0;
+  padding: .6rem 0;
   color: #FFFDFB;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   font-family: 'Brandon Text Medium', sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   display: inline;
 }
 
@@ -2148,36 +2158,74 @@ article.logo-design {
 }
 
 .logop img.logos {
- margin-top: 7.5rem;
+ margin-top: 5rem;
  width: 110%;
 }
 
-article.color-palette img.color-else {
- width: auto;
- display: block;
- margin-top: 5rem;
+div.color-palette {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
 }
 
-.typography {
- display: flex;
- flex-direction: row;
- align-items: center;
+div.color {
+  margin-right: 5rem;
+  margin-left: -5rem;
 }
 
-.typography .type {
- width: 50%;
+img.color-else {
+ max-width: 50%;
+ margin-top: 0;
+ margin-right: -5rem;
  display: block;
- padding: 3rem 0;
- /* margin-left: -4rem;
- margin-right: 0; */
 }
 
-.typography img.type-img {
- width: 100%;
- display: block;
- margin-left: 8rem;
- margin-right: 0rem;
+div.typography {
+  position: relative;
+  top: 3rem;
+  padding-bottom: 0;
 }
+
+div.type-content {
+  width: 60%;
+  position: relative;
+  right: 17rem;
+  margin-left: 6.5rem;
+}
+
+img.type-img {
+   max-width: 30%;
+   position: relative;
+   left: 17rem;
+   bottom: 20rem;
+   margin-bottom: -50rem;
+}
+
+.style-guide-button .secondary-btn {
+  display: block;
+  margin: 0 16rem;
+  position: relative;
+  bottom: 12rem;
+  margin-bottom: -20rem;
+  text-align: center;
+  width: 100%;
+}
+
+.style-guide-button span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  border-radius: 5rem;
+  height: 1rem;
+  width: 15rem;
+  top: -10rem;
+  left: 15.3rem;
+  background-color: #03E1D7;
+}
+
+
 
 
 
@@ -3014,9 +3062,9 @@ article.color-palette img.color-else {
  .persona-button span {
    z-index: 1;
    border-radius: 5rem;
-   height: 1rem;
+   height: 1.5rem;
    width: 17.5rem;
-   top: 2rem;
+   top: 2.5rem;
    background-color: #03E1D7;
  }
 
@@ -3177,17 +3225,16 @@ article.color-palette img.color-else {
    align-items: center;
  }
 
- .iterations-snippet .text-box {
-   margin-left: 1rem;
- }
-
  .list-content {
    width: 45rem;
  }
 
- .list-content .text-box {
-   display: block;
-   float: left;
+ .two .text-box {
+   margin: 0.5rem;
+ }
+
+.one .text-box {
+   margin: 0.5rem;
  }
 
  section.first {
@@ -3232,15 +3279,18 @@ article.color-palette img.color-else {
    display: inline;
  }
 
- .it {
-   font-size: 2.2rem;
+ .iteration-title .it {
+   font-size: 2.1rem;
    font-family: 'Brandon Text Medium', sans-serif;
    display: inline;
    float: left;
-   padding-left: 1rem;
+   padding-left: 0.5rem;
 }
 
  /* CHAPTER 4 DESKTOP */
+ #chapter4 .pg {
+   margin-top: 10rem;
+ }
 
  #chapter4 img.chapter {
    width: auto;
@@ -3262,7 +3312,7 @@ article.color-palette img.color-else {
 
 img.brand-header {
   width: auto;
-  margin: 15rem 15rem;
+  margin: 15rem 15rem 0 15rem;
   border: 1px solid red;
 }
 
@@ -3316,40 +3366,41 @@ article.color-palette {
 }
 
 .color-palette div.color {
-  width: 50rem;
+  width: 45rem;
+  margin-left: 5rem;
   display: block;
 }
 
-.img-color img.color-else {
-  width: 50%;
+img.color-else {
+  width: 40%;
   display: block;
   margin: 0 auto;
 }
 
-.typography {
-  display: grid;
-  width: 80%;
-  margin: 15rem auto;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 2fr;
-  grid-template-areas:
-  "type type-img";
-}
-
-.type {
-  grid-area: "type";
+div.typography {
   width: 100%;
+  border: 1px solid red;
   display: block;
-  margin: 5rem 0;
-  margin-right: 0rem;
 }
 
-.typography img.type-img {
-  grid-area: "type-img";
+ div.type {
+  display: inline-block;
+  position: relative;
+  left: 22rem;
+  width: 85rem;
+  margin: 5rem auto;
+}
+
+img.type-img {
   width: auto;
-  display: block;
-  margin: -2rem 0;
+  display: inline-block;
+  position: relative;
+  left: 57rem;
+  top: -53rem;
+}
+
+.style-guide-button {
+  display: none;
 }
 
 .style-button {
