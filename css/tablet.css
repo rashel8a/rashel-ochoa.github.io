@@ -11,6 +11,13 @@
   width: 100%;
 }
 
+.logo-size {
+  width: 70%;
+  padding-left: 1.6rem;
+  padding-top: 7rem;
+  position: relative;
+}
+
 div.desktop {
   display: block;
   min-width: 55%;
@@ -313,22 +320,55 @@ div a.new-button {
   width: 10%;
 }
 
-div.box-1, div.box-2 {
-  font-size: 1.8rem;
-  text-align: left;
+.box-1, .box-2 {
+  display: block;
+}
+
+div.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 div.box-1, div.box-2 {
-  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5rem;
 }
 
-.box-2 .flow-mobile {
+.box-1 h4 {
+ margin-bottom: 5rem;
+}
+
+img.flow-mobile {
   display: none;
 }
 
-.box-2 img.flow-2 {
-  width: 100%;
+.box-2 .flow-2 {
   display: block;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.box-1 img.flow-1 {
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.box-1 h4 {
+ margin-bottom: 5rem;
+}
+
+/* img.flow-mobile {
+  display: none;
+} */
+
+.style-button {
+  display: none;
 }
 
 .flows-button span {
@@ -340,7 +380,7 @@ div.box-1, div.box-2 {
   height: 1rem;
   width: 14.5rem;
   top: 4rem;
-  left: 20.7rem;
+  left: 6.5rem;
   background-position: -3rem bottom;
   background-color: #03E1D7;
 }
@@ -442,7 +482,7 @@ header.two p {
 }
 
 .it-snippet {
-  margin-bottom: 10rem;
+  margin-bottom: 7.5rem;
 }
 
 .it-snippet .two, .it-snippet .one {
@@ -453,11 +493,13 @@ header.two p {
   width: 45%;
   margin-left: 2.5rem;
   display: block;
+  margin-bottom: 0;
 }
 
 section.third img.last {
   width: auto;
   display: block;
+  margin-bottom: 0;
 }
 
 .number-circle {
@@ -498,7 +540,7 @@ section.third img.last {
 }
 
 .brand-quote img.quote-img {
-  width: 9%;
+  width: 11%;
   display: block;
   position: relative;
   right: 2rem;
@@ -507,7 +549,7 @@ section.third img.last {
 
 .brand-story .brand-quote h2 {
  font-family: 'Brandon Text Medium Italic', cursive;
- font-size: 3rem;
+ font-size: 2.5rem;
  line-height: 130%;
  position: relative;
  top: 0rem;
@@ -563,23 +605,22 @@ div.typography {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border: 1px solid green;
 }
 
 .type-content {
   width: 45rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-right: 5rem;
 }
 
 div.typography img.type-img {
-   width: 40%;
-   margin: 0 15rem 0 auto;
+   width: 35%;
+   margin: 0 19rem 0 auto;
 }
 
 .style-guide-button {
   margin-left: 5.5rem;
-  margin-right: 1.5rem;
+  margin-right: 7rem;
   margin-top: 3rem;
 }
 
@@ -642,9 +683,9 @@ div.screen-a-header, div.screen-b-header {
 div.screen-a-header h4, div.screen-b-header h4 {
   font-size: 3rem;
   letter-spacing: 1%;
+  margin-top: 5rem;
   font-weight: 600;
   line-height: 120%;
-  padding-bottom: 1rem;
   font-family: 'Brandon Text Bold', sans-serif;
 }
 
@@ -670,13 +711,14 @@ img.cat-test-mobile {
 .test-bg .category-title {
   font-size: 3.5rem;
   font-family: 'Brandon Text Bold', bold;
-  margin: 5rem auto 3rem auto;
+  margin: 5rem auto 0 auto;
   text-align: center;
-  width: 100%;
+  width: 75%;
+  line-height: 130%;
 }
 
 h3.numbers {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: futura-bold, sans-serif;
   margin-top: 3rem;
   padding-bottom: 1rem;
@@ -983,19 +1025,40 @@ article.final-p .text-box {
   font-size: 2rem;
 }
 
-article.final-p img {
+img.desktop-bg {
   width: 100vw;
-  margin: 0;
-  padding: 0;
-  display: block;
+  z-index: 1;
+  display: inline-block;
 }
 
-.final-p img.final-mobile {
+div.desktop-images-final {
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -210rem;
+  z-index: 1000;
+}
+
+div.desktop-images-final img {
+  width: 45%;
+  height: 45%;
+  margin: 0.5rem auto;
+}
+
+div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
+  z-index: 1000;
+  margin: 0 auto 0.5rem auto;
+  width: 100%;
+  height: 45%;
+}
+
+div.mobile-images-final, article.final-p img.mobile-bg {
   display: none;
 }
 
 div.CTA-buttons {
-  margin: 3rem 0 3rem 7.5rem;
+  margin: 10rem 0 0rem 7.5rem;
 }
 
 #chapter6 .concl {

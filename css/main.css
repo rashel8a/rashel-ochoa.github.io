@@ -1185,11 +1185,7 @@ div a.new-button {
 
 /* CHAPTER 3 MOBILE */
 
-div.box-1, div.box-2 {
-  display: none;
-}
-
-.box-2 img.flow-2 {
+.box-1, .box-2 {
   display: none;
 }
 
@@ -1624,14 +1620,49 @@ article.final-p h2 {
   font-family: futura-bold, 'Brandon Text Bold', sans-serif;
 }
 
-img.final-desktop {
+img.desktop-bg {
   display: none;
 }
 
-img.final-mobile {
-  display: 100%;
+img.mobile-bg {
+  width: 100vw;
   margin-left: -1.6rem;
+  z-index: 1;
+  display: inline-block;
 }
+
+div.desktop-images-final {
+  display: none;
+}
+
+div.mobile-images-final {
+  display: block;
+  /* position: relative; */
+  margin-top: -457rem;
+  z-index: 1000;
+  border: 3px solid red;
+}
+
+div.mobile-images-final img {
+  width: 100%;
+  margin: .3rem auto;
+}
+
+div.mobile-screens {
+  width: auto;
+  margin: .3rem auto;
+}
+
+/* div.mobile-images {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+} */
+
+div.CTA-buttons {
+  margin: 7.5rem 0 0 0;
+}
+
 
 article.concl {
   margin: 0 1.6rem;

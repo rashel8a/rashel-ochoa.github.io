@@ -203,7 +203,7 @@
  }
 
  .survey-results .callout p {
-   width: 40%;
+   width: 38%;
    text-align: left;
    font-size: 2.3rem;
    font-weight: 600;
@@ -422,8 +422,6 @@
    width: auto;
    padding-bottom: 0;
    position: relative;
-   /* bottom: 1rem;
-   right: 3rem; */
  }
 
  .pg .flows {
@@ -435,19 +433,24 @@
 
  }
 
- div.block {
+ /* div.block {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    margin: 0 auto;
- }
+ } */
 
- div.box-1, div.box-2 {
+ article.user-flow div.box-1, article.user-flow div.box-2 {
    font-size: 2.2rem;
    font-weight: 600;
    text-align: center;
    margin-top: 5rem;
+ }
+
+ .box-1, .box-2 {
+   display: block;
+   width: auto;
  }
 
 .box-1 h4 {
@@ -458,16 +461,19 @@
    display: none;
  }
 
-.box-2 img.flow-2 {
+ .box-2 img.flow-2 {
+   margin-right: 20rem;
    display: block;
-   width: auto;
-   margin: 0 auto;
+   position: relative;
+   left: -21rem;
  }
 
  .box-1 img.flow-1 {
-   width: auto;
    display: block;
+   width: auto;
    margin: 0 auto;
+   position: relative;
+   right: 5rem;
  }
 
   .flows-button {
@@ -478,10 +484,10 @@
      background-color: none;
      font-family: 'Brandon Grotesque Black';
      font-size: 1.8rem;
-     width: auto;
+     width: 16%;
      color: #1C46C5;
      display: block;
-     margin-left: 33rem;
+     margin-left: 58rem;
      text-align: center;
    }
 
@@ -599,10 +605,11 @@
  }
 
  .prototype .callout p {
-   width: 40%;
+   width: 38%;
    margin-left: 0;
    text-align: left;
    font-size: 2.3rem;
+   font-weight: 600;
    line-height: 3.3rem;
    display: block;
  }
@@ -614,6 +621,7 @@
 
  div.iterations-header {
    margin-bottom: 5rem;
+   text-align: center;
  }
 
  section.it-snippet .it-title {
@@ -675,7 +683,7 @@
 
 img.brand-header {
   width: auto;
-  margin: 0 15rem;
+  margin: 0 15rem 0 15rem;
 }
 
 div.brand-story {
@@ -835,7 +843,7 @@ article.ab a {
 div.test-bg {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   background-color: #132D60;
 }
 
@@ -859,6 +867,13 @@ div.screen-a-header h4, div.screen-b-header h4 {
   line-height: 120%;
   padding-bottom: 1rem;
   font-family: 'Brandon Text Bold', sans-serif;
+}
+
+.test-bg {
+  width: 100vw;
+  display: block;
+  margin: 0 auto;
+  padding-left: -100rem;
 }
 
 .test-bg img {
@@ -907,7 +922,7 @@ p.descs {
 
 article.testing {
   display: flex;
-  margin: 15rem 32rem 0 32rem;
+  margin: 10rem 32rem 0 32rem;
   flex-direction: column;
   align-items: center;
 }
@@ -951,7 +966,7 @@ article.short {
 .short .callout {
   background-color: #FDE8DE;
   width: 100vw;
-  margin: 7.5rem 0 0 0;
+  margin: 5rem 0 0 0;
   padding: 7.5rem 0;
   display: flex;
   align-items: center;
@@ -959,7 +974,7 @@ article.short {
 }
 
 .short .callout p {
-  width: 40%;
+  width: 38%;
   margin-left: 0;
   text-align: left;
   font-size: 2.3rem;
@@ -1130,7 +1145,7 @@ article.icing .callout {
 }
 
 article.icing .callout p {
-  width: 45%;
+  width: 38%;
   margin-left: 0;
   text-align: left;
   font-size: 2.3rem;
@@ -1173,35 +1188,70 @@ article.final-p .text-box {
   font-family: 'Brandon Text Regular', sans-serif;
 }
 
-article.final-p img {
+img.desktop-bg {
   width: 100vw;
-  margin: 0;
-  padding: 0;
-  display: block;
+  z-index: 1;
+  display: inline-block;
 }
 
-.final-p img.final-mobile {
+img.mobile-bg {
   display: none;
 }
 
+div.mobile-images-final {
+  display: none;
+}
+
+div.desktop-images-final {
+  margin: 0 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -390rem;
+  z-index: 1000;
+}
+
+div.desktop-images-final img {
+  width: 45%;
+  height: 45%;
+  margin: 2rem auto;
+}
+
+div.mobile-desktop-images {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
+  width: auto;
+  margin: 2rem auto;
+  display: block;
+}
+/*
+.final-p img.final-mobile {
+  display: none;
+} */
+
 div.CTA-buttons {
-  margin: 0;
+  margin: 10rem 0 0rem 0;
   padding: 0
+  border: 1px solid red;
 }
 
 #chapter6 .concl {
-  margin: 10rem 32rem 5rem 32rem;
+  margin: 5rem 32rem 10rem 32rem;
 }
 
 div.key-learnings .concl-heading {
   font-family: 'Brandon Text Black', 'Brandon Text Bold', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 5rem;
 }
 
 div.key-learnings .concl-subhead {
   font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 120%;
 }
 
@@ -1217,7 +1267,7 @@ div.key-learnings .text-box {
 
 div.key-learnings .concl-sub {
   font-family: 'Brandon Text Medium', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 120%;
   margin-top: 2rem;
 }
@@ -1229,9 +1279,9 @@ div.key-learnings .concl-sub {
 }
 
 .contact-box .contact-image img {
-  width: 26%;
+  width: 21%;
   position: relative;
-  left: 100rem;
+  left: 105rem;
   top: 1rem;
   z-index: 1;
 }
