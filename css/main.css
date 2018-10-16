@@ -776,7 +776,18 @@ div.desktop {
 
 @media screen and (min-width: 320px) {
 
-/* STAR MOBILE */
+/***
+/***
+/***
+/*** ABOUT MOBILE***/
+
+
+
+
+
+/***
+/***
+/*** STAR MOBILE */
 
 body {
   background-color: #FFFDFB;
@@ -1653,12 +1664,6 @@ div.mobile-screens {
   margin: .3rem auto;
 }
 
-/* div.mobile-images {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-} */
-
 div.CTA-buttons {
   margin: 7.5rem 0 0 0;
 }
@@ -1832,10 +1837,6 @@ div.key-learnings .concl-sub {
 }
 
 
-
-
-
-
 }
 
 
@@ -1847,8 +1848,10 @@ div.key-learnings .concl-sub {
     width: 100%;
     overflow: hidden;
   }
-
+/*
+/*
 /* HOMEPAGE*/
+
 
   .desktop-image{
     width: 70%;
@@ -1985,12 +1988,6 @@ div.key-learnings .concl-sub {
     .return-top {
       margin-top: -5rem;
     }
-
-/* CHAPTER 5*/
-
-
-
-
 
 }
 
