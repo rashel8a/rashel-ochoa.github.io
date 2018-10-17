@@ -46,13 +46,15 @@
   }
 
   .CTA-buttons .primary-btn {
-    width: 27.5rem;
-    margin: 5rem 2rem 7.5rem 2rem;
+    margin: 0rem 2rem 5rem 2rem;
   }
 
   article.intro-header {
-    margin: 0 20rem;
-    padding: 10rem;
+    margin: 10rem 32rem;
+  }
+
+  .intro-header div.content {
+    margin-bottom: -3rem;
   }
 
   /* PROJECT ROLE DESKTOP INFO*/
@@ -64,12 +66,28 @@
     margin: 0 auto;
   }
 
-  .project-info ul li{
-    list-style-type: none;
+  .line-rule {
+    border-bottom: none;
+    margin: -5rem 0 0 0;
   }
 
-  hr.small {
-    display: none;
+  .line-second {
+    border-bottom: none;
+    margin: -5rem 0 0 0;
+  }
+
+  .line-last {
+    border-bottom: none;
+    margin: -5rem 0 0 0;
+  }
+
+  .design-role ul, .design-del ul {
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  }
+
+  .project-info ul li{
+    list-style-type: none;
   }
 
   .spec {
@@ -83,17 +101,6 @@
     border: none;
   }
 
-  .title {
-    padding-bottom: -3rem;
-  }
-
-  hr.large {
-    margin-top: 0;
-    display: block;
-    width: 20%;
-    margin-bottom: 2rem;
-    color: #000;
-  }
 
   /* CHAPTER SECTION DESKTOP GENERAL*/
 
@@ -195,24 +202,30 @@
  .survey-results .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -10rem 0rem -15rem;
-   padding: 7.5rem 0;
+   margin: 10rem -32rem 0rem -15rem;
+   padding: 7.5rem 0rem;
    display: flex;
    align-items: center;
    justify-content: center;
  }
 
- .survey-results .callout p {
+ .survey-results p.co-text {
    width: 38%;
    text-align: left;
+   margin: 0 auto;
    font-size: 2.3rem;
    font-weight: 600;
    line-height: 3.3rem;
+   display: block;
  }
 
- .survey-results hr {
-   border-radius: 10rem;
-   margin-right: 3rem;
+ .survey-results .callout-line {
+   background-color: #FFA856;
+   width: .9rem;
+   height: 28rem;
+   position: relative;
+   left: 40rem;
+   border-radius: 4rem;
  }
 
  div.magnify {
@@ -358,7 +371,6 @@
  }
 
  article.person .style-button {
-    background-color: none;
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
     width: 17.5%;
@@ -481,7 +493,6 @@
   }
 
   article.user-flow .style-button {
-     background-color: none;
      font-family: 'Brandon Grotesque Black';
      font-size: 1.8rem;
      width: 16%;
@@ -563,7 +574,6 @@
  }
 
   article.prototype .style-button {
-    background-color: none;
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
     width: 40%;
@@ -590,6 +600,19 @@
    transition: width .3s;
  }
 
+ .prototype .text-box a {
+   color: #FB7E6C;
+ }
+
+ .prototype .callout-line {
+   background-color: #FFA856;
+   width: .9rem;
+   height: 26rem;
+   position: relative;
+   left: 40rem;
+   border-radius: 4rem;
+ }
+
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
@@ -600,23 +623,14 @@
    justify-content: center;
  }
 
- .prototype .text-box a {
-   color: #FB7E6C;
- }
-
- .prototype .callout p {
+ .prototype p.co-text {
    width: 38%;
-   margin-left: 0;
+   margin: 0 auto;
    text-align: left;
    font-size: 2.3rem;
    font-weight: 600;
    line-height: 3.3rem;
    display: block;
- }
-
- .prototype .callout hr {
-   border-radius: 10rem;
-   margin-right: 3rem;
  }
 
  div.iterations-header {
@@ -772,7 +786,6 @@ div.typography img.type-img {
 
 div.typography .style-button {
   width: 15%;
-  background-color: none;
   font-family: 'Brandon Grotesque Black';
   font-size: 1.8rem;
   text-align: center;
@@ -862,7 +875,7 @@ div.screen-a-header, div.screen-b-header {
 
 div.screen-a-header h4, div.screen-b-header h4 {
   font-size: 3rem;
-  letter-spacing: 1%;
+  letter-spacing: 1px;
   font-weight: 600;
   line-height: 120%;
   padding-bottom: 1rem;
@@ -873,7 +886,6 @@ div.screen-a-header h4, div.screen-b-header h4 {
   width: 100vw;
   display: block;
   margin: 0 auto;
-  padding-left: -100rem;
 }
 
 .test-bg img {
@@ -963,6 +975,15 @@ article.short {
   justify-content: center;
 }
 
+.short .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 26rem;
+  position: relative;
+  left: 40rem;
+  border-radius: 4rem;
+}
+
 .short .callout {
   background-color: #FDE8DE;
   width: 100vw;
@@ -973,19 +994,14 @@ article.short {
   justify-content: center;
 }
 
-.short .callout p {
+.short p.co-text {
   width: 38%;
-  margin-left: 0;
+  margin: 0 auto;
   text-align: left;
   font-size: 2.3rem;
   font-weight: 600;
   line-height: 3.3rem;
-}
-
-.short .callout hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
-  margin-left: 0;
+  display: block;
 }
 
 article.icing {
@@ -1133,6 +1149,14 @@ section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid
   padding-bottom: 50rem;
 }
 
+article.icing .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 37rem;
+  position: relative;
+  left: 40rem;
+  border-radius: 4rem;
+}
 
 article.icing .callout {
   background-color: #FDE8DE;
@@ -1144,20 +1168,14 @@ article.icing .callout {
   justify-content: center;
 }
 
-article.icing .callout p {
+article.icing p.co-text {
   width: 38%;
-  margin-left: 0;
+  margin: 0 auto;
   text-align: left;
   font-size: 2.3rem;
   font-weight: 600;
   line-height: 3.3rem;
-}
-
-.icing hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
-  height: 325px;
-  margin-left: 0;
+  display: block;
 }
 
 /* CHAPTER 6 DESKTOP*/
@@ -1235,7 +1253,7 @@ div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.fi
 
 div.CTA-buttons {
   margin: 10rem 0 0rem 0;
-  padding: 0
+  padding: 0;
   border: 1px solid red;
 }
 
@@ -1303,7 +1321,7 @@ div.key-learnings .concl-sub {
 }
 
 h5.contact-text {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   font-family: 'Brandon Text Regular';
   line-height: 120%;
@@ -1354,7 +1372,7 @@ h5.contact-text {
   flex-direction: row;
   padding: 0 1rem;
   font-size: 1.8rem;
-  font-family: 'Futura Bold', inherit;
+  font-family: Futura-bold;
 }
 
 .fab, .fas {
@@ -1378,14 +1396,8 @@ h5.contact-text {
   font-size: 1.8rem;
   padding-left: 10rem;
   padding-top: 3rem;
-  font-family: 'Futura Bold', inherit;
+  font-family: futura-bold;
 }
-
-
-
-
-
-
 
 
 

@@ -42,20 +42,23 @@ ul .project-1 a {
 
 /* STAR HERO TABLET */
 
-.header-content {
-  padding: 2rem 10rem;
-}
 
 ul li {
   margin-left: 2rem;
 }
 
 .logo-header {
-  width: auto;
+  width: 50%;
 }
 
 .mobile-display {
   display: none;
+}
+
+.header-text {
+  margin: 0 10rem;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
 }
 
 .Starstuff-header .Starstuff-display {
@@ -65,9 +68,33 @@ ul li {
 
 /* INTRO SECTION TABLET*/
 
-.intro-header .content {
-  margin: 0 10rem 5rem 10rem;
+/* article.intro-header .content {
+  margin: 0 auto;
+  border: 1px solid red;
+} */
+
+#intro {
+  margin: 0 auto;
+  display: block;
 }
+
+  article.intro-header {
+    margin: 10rem 0 5rem 0;
+  }
+
+  article.intro-header .content {
+    margin: 1rem 8rem -7rem 8rem;
+  }
+
+  div.CTA-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -5rem 0 -5rem;
+  }
+
+  div.CTA-buttons a.primary-btn {
+    margin: 0 3rem 5rem 0rem;
+  }
 
 /* CHAPTER SECTION GENERAL*/
 
@@ -98,8 +125,7 @@ h2.section-title {
 }
 
 .pg {
-  margin-top: 7.5rem;
-  padding: 0 10rem;
+  margin: 7.5rem 10rem 0 10rem;
 }
 
 /* CHAPTER 1 TABLET*/
@@ -121,37 +147,25 @@ h2.section-title {
   margin-bottom: 3rem;
 }
 
-.chapter1-image {
-  width: 100%;
-}
-
-div.CTA-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.CTA-buttons .primary-btn {
-  width: 27.5rem;
-  margin: 0 1.5rem 0rem 1.5rem;
-}
-
 img.chapter1-image {
-  width: auto;
-  display: block;
-  margin: -3rem auto 0 auto;
+  display: none;
 
 }
 
 /* CHAPTER 2 TABLET*/
-.chart-mobile {
+img.chart-mobile {
   display: none;
 }
 
-.chart {
-  display: block;
+.survey-results .content {
   margin: 0 auto;
+  padding: 0;
+}
+
+img.chart {
+  display: block;
   width: 100vw;
-  margin-left: -15rem;
+  margin-left: -11.5rem;
   margin-top: 3rem;
 }
 
@@ -161,25 +175,32 @@ img.chapter1-image {
 
 .survey-results .callout {
   background-color: #FDE8DE;
-  width: 140%;
-  margin: 5rem -10rem 5rem -10rem;
-  padding: 3rem 0;
+  width: 100vw;
+  margin: 5rem -10rem 5rem -11.5rem;
+  padding: 3rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.survey-results .callout p {
+.survey-results p.co-text {
   width: 60%;
   text-align: left;
+  margin: 0 auto;
+  padding-left: 1rem;
   font-size: 2.1rem;
   font-weight: 600;
   line-height: 3.1rem;
+  display: block;
 }
 
-.survey-results hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
+.survey-results .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 26rem;
+  position: relative;
+  left: 13rem;
+  border-radius: 4rem;
 }
 
 .magnify .img-frustrations {
@@ -199,12 +220,10 @@ img.chapter1-image {
 }
 
 .compimgh {
-  width: auto;
+  /* width: auto; */
   display: block;
-}
-
-article.person {
-  width: 105%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 section.both-personas {
@@ -309,7 +328,7 @@ div a.new-button {
   height: 1rem;
   width: 17.5rem;
   top: 4rem;
-  left: 21rem;
+  left: 17.5rem;
   background-position: -3rem bottom;
   background-color: #03E1D7;
 }
@@ -396,11 +415,11 @@ img.flow-mobile {
 
 .wf-images .wf-img-group {
   display: block;
-  width: 100%;
+  width: 100vw;
 }
 
 .wf-images .wf-img-1, .wf-images .wf-img-2 {
-  width: 50%;
+  width: 90%;
 }
 
 .wf-images {
@@ -412,6 +431,36 @@ img.flow-mobile {
   flex-wrap: wrap;
 }
 
+.prototype .callout {
+  background-color: #FDE8DE;
+  width: 100vw;
+  margin: 5rem -10rem 5rem -11.5rem;
+  padding: 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prototype p.co-text {
+  width: 60%;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3.1rem;
+  display: block;
+}
+
+.prototype .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 22rem;
+  position: relative;
+  left: 13rem;
+  border-radius: 4rem;
+}
+
 .prototype-button span {
   display: inline-block;
   position: relative;
@@ -420,33 +469,8 @@ img.flow-mobile {
   height: 1rem;
   width: 25rem;
   top: 4rem;
-  left: 10.5rem;
+  left: 9rem;
   background-color: #03E1D7;
-}
-
-.prototype .callout {
-  background-color: #FDE8DE;
-  width: 140%;
-  margin: 5rem -10rem 5rem -10rem;
-  padding: 3rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.prototype .callout p {
-  width: 60%;
-  margin-left: 0;
-  text-align: left;
-  font-size: 2.1rem;
-  font-weight: 600;
-  line-height: 3.1rem;
-  display: block;
-}
-
-.prototype .callout hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
 }
 
 /* TABLET IMITATE*/
@@ -566,7 +590,9 @@ i {
 }
 
 img.mood {
- width: 100%;
+ width: 100vw;
+ display: block;
+ margin-left: -11.5rem;
 }
 
 article.logo-design {
@@ -577,7 +603,9 @@ article.logo-design {
 
 .logop img.logos {
  margin-top: 5rem;
- width: 110%;
+ width: 100vw;
+ display: block;
+ margin-left: -11.5rem;
 }
 
 div.color-palette {
@@ -682,7 +710,7 @@ div.screen-a-header, div.screen-b-header {
 
 div.screen-a-header h4, div.screen-b-header h4 {
   font-size: 3rem;
-  letter-spacing: 1%;
+  letter-spacing: 1px;
   margin-top: 5rem;
   font-weight: 600;
   line-height: 120%;
@@ -783,27 +811,31 @@ article.short {
   background-color: #FDE8DE;
   width: 100vw;
   margin: 7.5rem 0 0 0;
-  padding: 7.5rem 0;
+  padding: 3rem 0rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.short .callout p {
+.short p.co-text {
   width: 60%;
-  margin-left: 0;
   text-align: left;
-  font-size: 2.3rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.3rem;
+  line-height: 3.1rem;
+  display: block;
 }
 
-.short .callout hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
-  margin-left: 0;
+.short .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 29rem;
+  position: relative;
+  left: 13rem;
+  border-radius: 4rem;
 }
-
 
 article.icing {
   display: flex;
@@ -971,31 +1003,36 @@ section.cuatro .iteration-title, section.cinco .iteration-title, section.seis .i
     padding-left: 10rem;
 }
 
+
 article.icing .callout {
   background-color: #FDE8DE;
   width: 100vw;
-  padding: 7.5rem 0;
+  padding: 5rem 0;
   margin-top: -5rem;
-  margin-bottom: 7.5rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-article.icing .callout p {
+article.icing p.co-text {
   width: 60%;
-  margin-left: 0;
   text-align: left;
-  font-size: 2.3rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.3rem;
+  line-height: 3.1rem;
+  display: block;
 }
 
-.icing hr {
-  border-radius: 10rem;
-  margin-right: 3rem;
-  height: 400px;
-  margin-left: 0;
+article.icing .callout-line {
+  background-color: #FFA856;
+  width: .9rem;
+  height: 40rem;
+  position: relative;
+  left: 13rem;
+  border-radius: 4rem;
 }
 
 /* CHAPTER 6*/
@@ -1058,11 +1095,12 @@ div.mobile-images-final, article.final-p img.mobile-bg {
 }
 
 div.CTA-buttons {
-  margin: 10rem 0 0rem 7.5rem;
+  margin: 10rem auto 0 10rem;
+  padding: 0;
 }
 
 #chapter6 .concl {
-  margin: 10rem 10rem 5rem 10rem;
+  margin: 5rem 10rem 5rem 10rem;
 }
 
 div.key-learnings .concl-heading {
@@ -1088,24 +1126,26 @@ div.key-learnings .concl-sub {
   line-height: 120%;
 }
 
-/* CONTACT DESKTOP*/
+/* CONTACT TABLET*/
 
 .contact-box {
   width: 100%;
   height: 100%;
 }
 
-div.contact-image img.contact-graphic{
-  width: 35%;
+div.contact-box img.right-side{
+  width: 30%;
+  display: block;
   position: relative;
-  top: -3rem;
+  top: -2rem;
+  left: 13rem;
   z-index: 1;
 }
 
 .contact-copy  {
   text-align: center;
   position: relative;
-  top: -2rem;
+  top: 0rem;
   z-index: 1000;
 }
 
@@ -1154,7 +1194,6 @@ h5.contact-text {
 #footer-box {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   padding: 0;
@@ -1162,18 +1201,16 @@ h5.contact-text {
 
 .social-media {
   display: flex;
-  margin-left: 6rem;
-  margin: 0;
+  align-items: center;
+  padding-bottom: 2rem;
+  margin-left: 4.8rem;
 }
 
 .social-media p {
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
   flex-direction: row;
-  padding: 0 1rem;
-  margin-left: -2rem;
   font-size: 1.8rem;
-  font-family: 'Futura Bold', inherit;
+  font-family: futura-bold;
 }
 
 .fab, .fas {
@@ -1183,11 +1220,12 @@ h5.contact-text {
 }
 
 .copyright p {
-  text-align: left;
+  text-align: center;
   align-items: center;
   font-size: 1.8rem;
-  padding-left: 10rem;
-  font-family: 'Futura Bold', inherit;
+  margin: 0 auto;
+  display: block;
+  font-family: futura-bold;
 }
 
 

@@ -32,7 +32,7 @@ body {
 
 html {
   font-size: 10px;
-  font-family: 'Brandon Text Regular', sans-serif;
+  font-family: 'Brandon Text Regular';
   color: #001F40;
 }
 
@@ -43,7 +43,6 @@ p {
 }
 
 /* ANIMATIONS*/
-@charset "UTF-8";
 
 @-webkit-keyframes fadeIn {
   from {
@@ -278,9 +277,7 @@ strong {
 
 .navbar .fixed {
   position: fixed; /* Set the navbar to fixed position */
-  top: 375; /* Position the navbar at the top of the page */
-  /* width: 100%; /* Full width */
-  z-index: 10;
+  z-index: 1500;
   margin-left: 32.5rem;
 }
 
@@ -368,8 +365,9 @@ div.desktop {
   height: 90rem;
   margin: -10rem 0 0 50rem;
   padding: 50%;
-  padding-top: 12.5rem;
-  background: #FB7E6Ced;
+  padding-top: 13rem;
+  background: #FB7E6C;
+  opacity: 0.95;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;/*stop flickering in safari*/
 
@@ -391,8 +389,8 @@ div.desktop {
 #main-nav li {
   text-align: center;
   font-family: 'Brandon Grotesque Bold';
-  padding-bottom: 5rem;
-  padding-top: 3rem;
+  font-size: 6rem;
+  padding-bottom: 4rem;
   list-style-type: none;
   margin: 0 auto;
 }
@@ -404,7 +402,6 @@ div.desktop {
 }
 
 .primary-btn {
-  background-color: none;
   width: 21rem;
   height: 4.8rem;
   font-family: 'Brandon Grotesque Bold';
@@ -489,7 +486,6 @@ div.desktop {
     grid-area: hi;
     font-family: 'Brandon Grotesque Bold', sans-serif;
     font-size: 3rem;
-    letter-spacing: 1%;
   }
 
   .mobile-header {
@@ -502,7 +498,6 @@ div.desktop {
     font-family: 'Brandon Grotesque Bold', sans-serif;
     font-size: 6.9rem;
     line-height: 7.9rem;
-    letter-spacing: 1%;
     width: 30rem;
   }
 
@@ -754,7 +749,7 @@ div.desktop {
   align-items: center;
   flex-direction: column;
   font-size: 1.8rem;
-  font-family: 'Futura Bold', inherit;
+  font-family: Futura-bold;
 
 }
 
@@ -768,7 +763,7 @@ div.desktop {
   padding-bottom: 3rem;
   width: 80%;
   margin: 0 auto;
-  font-family: 'Futura Bold', inherit;
+  font-family: Futura-bold;
 }
 
 
@@ -812,7 +807,7 @@ p {
   font-size: 1.6rem;
   line-height: 120%;
   color: #001F40;
-  font-size: 'Brandon Text Regular', sans-serif;
+  font-family: 'Brandon Text Regular';
 }
 
 /* STARSTUFF HERO*/
@@ -872,13 +867,13 @@ div.Starstuff-header {
 }
 
 .pg-topic {
-  font-family: 'Brandon Text Regular', sans-serif;
+  font-family: 'Brandon Text Regular';
   font-size: 2.3rem;
   line-height: 3.2rem;
 }
 
 .pg-label {
-  font-family: futura-bold, sans-serif;
+  font-family: Futura-bold, sans-serif;
   font-size: 2.3rem;
   line-height: 120%;
   padding: .2rem 0 .3rem 0;
@@ -932,18 +927,29 @@ section.project-info {
 h2.title {
   font-size: 2.5rem;
   line-height: 120%;
-  font-family: futura-bold, sans-serif;
-  padding: 3rem 0;
+  font-family: Futura-bold, sans-serif;
+  margin-top: 7rem;
+  padding-bottom: 1rem;
 }
 
-hr.small {
-  width: 29.2rem;
-  height: .2rem;
-  color: #9BA0B1;
+.line-rule {
+  border-bottom: 1px solid #9BA0B1;
+  margin: -5rem 10rem 0 10rem;
 }
 
-hr.large {
-  display: none;
+.line-second {
+  border-bottom: 1px solid #9BA0B1;
+  margin: -5rem 5rem 0 5rem;
+}
+
+.line-last {
+  border-bottom: 1px solid #9BA0B1;
+  margin: -5rem 10rem 0 10rem;
+}
+
+.design-role ul, .design-del ul, .tools ul {
+  padding-bottom: 3rem;
+  padding-top: 1rem;
 }
 
 .spec li{
@@ -951,8 +957,8 @@ hr.large {
   line-height: 140%;
 }
 
-.spec ul {
-  padding-bottom: 5rem;
+div.tools ul {
+  margin: 0 10rem 0 10rem;
 }
 
 .lal {
@@ -1041,26 +1047,29 @@ img.chapter1-image {
   background-color: #FDE8DE;
   width: 120%;
   margin: 5rem -1.6rem 5rem -1.6rem;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.survey-results .callout-line {
+  background-color: #FFA856;
+  width: 5rem;
+  height: 28rem;
+  position: relative;
+  left: -1rem;
+  border-radius: 4rem;
+}
+
 .survey-results .callout p {
-  margin-right: 1.6rem;
-  width: 31.3rem;
+  margin-right: 3.8rem;
+  padding: 3rem 0;
   text-align: left;
+  margin-left: .2rem;
   font-size: 2rem;
   line-height: 2.8rem;
 }
-
-.survey-results hr {
-  border-radius: 10rem;
-  margin-left: 0rem;
-  margin-right: 2rem;
-}
-
 
 .magnify .img-frustrations {
   width: 80%;
@@ -1100,7 +1109,7 @@ img.chapter1-image {
   font-size: 2.5rem;
   padding-bottom: .5rem;
   color: #001F40;
-  font-family: futura-bold, sans-serif;
+  font-family: Futura-bold, sans-serif;
 }
 
 .both-personas h3{
@@ -1108,7 +1117,7 @@ img.chapter1-image {
   width: 82%;
   margin: 0 auto;
   line-height: 120%;
-  font-family: futura-medium, sans-serif;
+  font-family: Futura-medium, sans-serif;
 }
 
 .sheila-persona h3 {
@@ -1131,6 +1140,12 @@ img.chapter1-image {
   color: #FB7E6C;
 }
 
+.vertical-line {
+  border-left: 3px solid #FB7E6C;
+  margin-left: 0rem;
+  display: flex;
+}
+
 .persona-quote {
   font-family: 'Brandon Text Regular Italic', cursive;
   color: #FB7E6C;
@@ -1140,17 +1155,11 @@ img.chapter1-image {
   margin-left: 0;
 }
 
-.vertical-line {
-  border-left: 3px solid #FB7E6C;
-  margin-left: 0rem;
-  display: flex;
-}
-
 .motivations span, .frustrations span {
   font-size: 1.8rem;
   line-height: 120%;
   color: #001F40;
-  font-family: futura-bold, sans-serif;
+  font-family: Futura-bold, sans-serif;
 }
 
 .motivations p {
@@ -1231,6 +1240,36 @@ div a.new-button {
   display: none;
 }
 
+
+.prototype .callout p {
+  margin-right: 2rem;
+  padding: 3rem 1rem 3rem 0;
+  text-align: left;
+  margin-left: 1.2rem;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.prototype .callout-line {
+  background-color: #FFA856;
+  width: 3.8rem;
+  height: 20rem;
+  position: relative;
+  left: 0rem;
+  border-radius: 4rem;
+}
+
+.prototype .callout {
+  background-color: #FDE8DE;
+  width: 120%;
+  margin: 3rem -1.6rem 3rem -1.6rem;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .prototype-button span {
   display: inline-block;
   position: relative;
@@ -1242,30 +1281,6 @@ div a.new-button {
   top: 4rem;
   left: 4.3rem;
   background-color: #03E1D7;
-}
-
-.prototype .callout {
-  background-color: #FDE8DE;
-  width: 120%;
-  margin: 5rem -1.6rem 5rem -1.6rem;
-  padding: 3rem 0;
-}
-
-.prototype .callout p {
-  width: 31.3rem;
-  margin: 5rem 1.6rem 5rem 4.6rem;
-  padding: 0;
-  text-align: left;
-  font-size: 2rem;
-  line-height: 2.8rem;
-  display: block;
-}
-
-.prototype hr {
-  border-radius: 10rem;
-  margin: 1.5rem 0 2.5rem 1.6rem;
-  display: block;
-  float: left;
 }
 
 div.iterations-header {
@@ -1440,7 +1455,6 @@ article.hi-fi {
 
 article.hi-fi img {
   width: 100%;
-  margin-top:
 }
 
 article.ab {
@@ -1485,28 +1499,29 @@ div.vid-responsive {
 .short .callout {
   background-color: #FDE8DE;
   width: 120%;
-  margin: 5rem -1.6rem 5rem -1.6rem;
+  margin: 3rem -1.6rem 3rem -1.6rem;
   padding: 3rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .short .callout p {
-  width: 31.3rem;
-  margin: 0rem 1.6rem 0rem 1.6rem;
-  padding-bottom: -2rem;
+  margin-right: 3.5rem;
+  margin-left: 1.2rem;
+  padding: 3rem 1rem 3rem 0;
   text-align: left;
   font-size: 2rem;
   line-height: 2.8rem;
-  display: block;
 }
 
-.short hr {
-  border-radius: 10rem;
-  margin: 0rem 0 0rem 1.6rem;
-  display: block;
-  height: 315px;
-  float: left;
+.short .callout-line {
+  background-color: #FFA856;
+  width: 5.5rem;
+  height: 29rem;
+  position: relative;
+  left: 0rem;
+  border-radius: 4rem;
 }
 
 .iteration-title {
@@ -1515,7 +1530,7 @@ div.vid-responsive {
 
 .iteration-title .it {
   font-size: 1.8rem;
-  font-family: 'Brandon Text Regular', sans-serif;
+  font-family: 'Brandon Text Regular';
   margin-left: 3rem;
   padding: .5rem 0;
 }
@@ -1540,7 +1555,7 @@ div.rogue-img img.rogue-mobile {
 div.rogue-img p.test-img-text  {
   font-size: 2rem;
   line-height: 130%;
-  font-family: 'Brandon Text Regular', sans-serif;
+  font-family: 'Brandon Text Regular';
   color: #FFFDFB;
   position: absolute;
   margin-top: -26rem;
@@ -1555,7 +1570,7 @@ div.rogue-img p.test-img-text  {
 
 .rogue-img p.test-img-text span {
   color: #73EBE0;
-  font-family: futura-bold, bold;
+  font-family: Futura-bold, bold;
 }
 
 .iterations-snippet img{
@@ -1580,31 +1595,32 @@ section.cuatro, section.cinco, section.seis {
   margin: 0 -1.7rem;
 }
 
+article.icing .callout-line {
+  background-color: #FFA856;
+  width: 9rem;
+  height: 41rem;
+  position: relative;
+  left: 0rem;
+  border-radius: 4rem;
+}
+
 .icing .callout {
   background-color: #FDE8DE;
   width: 120%;
-  margin: 5rem -1.6rem 0rem -1.6rem;
+  margin: 3rem -1.6rem 3rem -1.6rem;
   padding: 3rem 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .icing .callout p {
-  width: 31.3rem;
-  margin: 0rem 1.6rem 0rem 1.6rem;
-  padding-bottom: -2rem;
+  margin-right: 3.8rem;
+  padding: 3rem 1rem 3rem 0;
+  margin-left: 1.2rem;
   text-align: left;
   font-size: 2rem;
   line-height: 2.8rem;
-  display: block;
-}
-
-.icing hr {
-  border-radius: 10rem;
-  margin: 0rem 0 0rem 1.6rem;
-  display: block;
-  height: 450px;
-  float: left;
 }
 
 /* CHAPTER 6*/
@@ -1628,7 +1644,7 @@ article.final-p {
 
 article.final-p h2 {
   font-size: 2rem;
-  font-family: futura-bold, 'Brandon Text Bold', sans-serif;
+  font-family: Futura-bold, 'Brandon Text Bold', sans-serif;
 }
 
 img.desktop-bg {
@@ -1819,7 +1835,7 @@ div.key-learnings .concl-sub {
   align-items: center;
   flex-direction: column;
   font-size: 1.8rem;
-  font-family: 'Futura Bold', inherit;
+  font-family: Futura-bold;
 
 }
 
@@ -1833,7 +1849,7 @@ div.key-learnings .concl-sub {
   padding-bottom: 3rem;
   width: 80%;
   margin: 0 auto;
-  font-family: 'Futura Bold', inherit;
+  font-family: Futura-bold;
 }
 
 
@@ -2267,14 +2283,12 @@ a.logo {
     }
 
     .primary-btn {
-      background-color: none;
       font-family: 'Brandon Grotesque Black';
       font-size: 1.6rem;
       border: .3rem solid #FB7E6C;
       color: #FB7E6C;
       text-align: center;
       text-decoration: none;
-      /* display: block; */
       cursor: pointer;
       border-radius: 4rem;
     }
@@ -2421,7 +2435,7 @@ a.logo {
       flex-direction: row;
       padding: 0 1rem;
       font-size: 1.8rem;
-      font-family: 'Futura Bold', inherit;
+      font-family: Futura-bold;
     }
 
     .fab, .fas {
@@ -2445,7 +2459,7 @@ a.logo {
       font-size: 1.8rem;
       padding-left: 10rem;
       padding-top: 3rem;
-      font-family: 'Futura Bold', inherit;
+      font-family: Futura-bold;
     }
 
 }
