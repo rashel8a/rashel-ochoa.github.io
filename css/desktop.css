@@ -1401,4 +1401,470 @@ h5.contact-text {
 
 
 
+    /***
+    /***
+    /*** BIOGRAPHY DESKTOP***/
+
+    body {
+      background-color: #FFFDFB;
+      font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+      color: #001F40;
+      line-height: 125%;
+      /* margin: 0; */
+    }
+
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    nav {
+      z-index: 1500;
+      position: relative;
+      display: block;
+    }
+
+    /* section.header-section {
+      margin: 0 15rem;
+    } */
+
+    article.about-header {
+      text-align: center;
+      position: relative;
+    }
+
+    article.about-header div.about-intro-content {
+      z-index: 1000;
+      position: relative;
+      top: -6rem;
+      display: block;
+      width: 100%;
+      left: 0rem;
+    }
+
+    div.about-intro-content h1.about-name {
+      font-size: 6rem;
+      font-family: "Brandon Text Black", Futura-bold, sans-serif;
+    }
+
+    div.about-intro-content p.about-subtitle {
+      font-family: "Brandon Text Medium", futura-medium, sans-serif;
+      font-size: 3rem;
+      padding-top: 0.3rem;
+    }
+
+    article.about-header .rashel-hero-mobile{
+      display: none;
+    }
+
+    article.about-header img.rashel-hero{
+      width: 100%;
+      display: block;
+      position: relative;
+      top: -47rem;
+      z-index: 1;
+    }
+
+    section.header-section article.about-middle-content {
+      width: 100%;
+      padding: 2rem 0 10rem 0;
+      background-color: #FDE8DE;
+      margin-top: -94rem;
+      display: flex;
+      flex-direction: column;
+      display: block;
+    }
+
+    section.header-section img.squiggles-graphic {
+      width: 25%;
+      position: relative;
+      top: -64rem;
+      left: 110rem;
+      z-index: 1300;
+      display: block;
+    }
+
+    article.about-middle-content div.label-section {
+      margin-left: 16.5rem;
+      margin-top: 5rem;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    h2.about-label {
+      font-size: 4rem;
+      font-family: "Brandon Grotesque Black";
+    }
+
+    div.label-section img.label-image {
+      margin-top: 2rem;
+    }
+
+    article.about-middle-content div.intro-text-section {
+      font-family: "Brandon Text Regular", sans-serif;
+      font-size: 2.5rem;
+      margin: -1rem 32.3rem 0 32.3rem;
+    }
+
+    /* STORY MEAT SECTION*/
+
+    section.about-story-section {
+      margin: 0 38rem;
+    }
+
+    section.about-story-section div.label-section {
+      margin-top: 5rem;
+      margin-left: -14rem;
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    article.about-story-meat p {
+      font-size: 2rem;
+      line-height: 150%;
+      font-family: "Brandon Text Regular";
+    }
+
+    article.about-story-meat h4.story-title {
+      font-size: 2.5rem;
+      line-height: 160%;
+      margin-top: 4rem;
+      font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+    }
+
+    article.about-story-meat  h4.story-title-first {
+      font-size: 2.5rem;
+      line-height: 160%;
+      margin-top: 0;
+      font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+    }
+
+    div.second-par {
+      margin-top: -35rem;
+      z-index: 3;
+      display: block;
+      position: relative;
+    }
+
+    article.about-story-meat img.creative-img {
+      display: block;
+      width: auto;
+      z-index: 1000;
+      position: relative;
+      top: -10rem;
+      left: 66rem;
+    }
+
+    div.third-par {
+      z-index: 3;
+      display: block;
+      position: relative;
+    }
+
+    article.about-story-meat img.plunge-img {
+      display: block;
+      width: 40%;
+      z-index: 1000;
+      position: relative;
+      top: -17rem;
+      right: 28rem;
+    }
+
+    div.fourth-par {
+      margin-top: -35rem;
+    }
+
+    div.fifth-par {
+      z-index: 3;
+      display: block;
+      position: relative;
+      margin-top: -35rem;
+    }
+
+    article.about-story-meat img.cocoon-img {
+      display: block;
+      width: 42%;
+      z-index: 1000;
+      position: relative;
+      top: 30rem;
+      left: 66rem;
+    }
+
+    p.par {
+      line-height: 130%;
+      margin-top: 0.2rem;
+    }
+
+    p.par-last {
+      margin-top: 1rem;
+    }
+
+    div.collage-wrapper-mobile {
+      display: none;
+    }
+
+    section.rashel-collage-images div.collage-wrapper-desktop{
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .collage-wrapper-desktop img {
+      width: auto;
+      margin-right: -.35rem;
+      padding: 0;
+    }
+
+    div.collage-wrapper-desktop img.volcano-img {
+      width: 38%;
+      margin-right: -.3rem;
+    }
+
+    i {
+      font-family: "Brandon Text Medium Italic";
+      font-weight: 600;
+    }
+
+
+
+
+        /***
+        /***
+        /*** BIOGRAPHY DESKTOP***/
+
+        body {
+          background-color: #FFFDFB;
+          font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+          color: #001F40;
+          line-height: 125%;
+          /* margin: 0; */
+        }
+
+        .container {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        nav {
+          z-index: 1500;
+          position: relative;
+          display: block;
+        }
+
+        /* section.header-section {
+          margin: 0 15rem;
+        } */
+
+        article.about-header {
+          text-align: center;
+          position: relative;
+        }
+
+        article.about-header div.about-intro-content {
+          z-index: 1000;
+          position: relative;
+          top: -6rem;
+          display: block;
+          width: 100%;
+          left: 0rem;
+        }
+
+        div.about-intro-content h1.about-name {
+          font-size: 6rem;
+          font-family: "Brandon Text Black", Futura-bold, sans-serif;
+        }
+
+        div.about-intro-content p.about-subtitle {
+          font-family: "Brandon Text Medium", futura-medium, sans-serif;
+          font-size: 3rem;
+          padding-top: 0.3rem;
+        }
+
+        article.about-header .rashel-hero-mobile{
+          display: none;
+        }
+
+        article.about-header img.rashel-hero{
+          width: 100%;
+          display: block;
+          position: relative;
+          top: -47rem;
+          z-index: 1;
+        }
+
+        section.header-section article.about-middle-content {
+          width: 100%;
+          padding: 2rem 0 10rem 0;
+          background-color: #FDE8DE;
+          margin-top: -94rem;
+          display: flex;
+          flex-direction: column;
+          display: block;
+        }
+
+        section.header-section img.squiggles-graphic {
+          width: 25%;
+          position: relative;
+          top: -64rem;
+          left: 110rem;
+          z-index: 1300;
+          display: block;
+        }
+
+        article.about-middle-content div.label-section {
+          margin-left: 16.5rem;
+          margin-top: 5rem;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          margin-right: 0;
+        }
+
+        h2.about-label {
+          font-size: 4rem;
+          font-family: "Brandon Grotesque Black";
+        }
+
+        div.label-section img.label-image {
+          margin-top: 2rem;
+        }
+
+        article.about-middle-content div.intro-text-section {
+          font-family: "Brandon Text Regular", sans-serif;
+          font-size: 2.5rem;
+          margin: -1rem 32.3rem 0 32.3rem;
+        }
+
+        /* STORY MEAT SECTION*/
+
+        section.about-story-section {
+          margin: 0 38rem;
+        }
+
+        section.about-story-section div.label-section {
+          margin-top: 5rem;
+          margin-left: -14rem;
+          display: flex;
+          align-items: center;
+          margin-right: 0;
+        }
+
+        article.about-story-meat p {
+          font-size: 2rem;
+          line-height: 150%;
+          font-family: "Brandon Text Regular";
+        }
+
+        article.about-story-meat h4.story-title {
+          font-size: 2.5rem;
+          line-height: 160%;
+          margin-top: 4rem;
+          font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+        }
+
+        article.about-story-meat  h4.story-title-first {
+          font-size: 2.5rem;
+          line-height: 160%;
+          margin-top: 0;
+          font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+        }
+
+        div.second-par {
+          margin-top: -35rem;
+          z-index: 3;
+          display: block;
+          position: relative;
+        }
+
+        article.about-story-meat img.creative-img {
+          display: block;
+          width: auto;
+          z-index: 1000;
+          position: relative;
+          top: -10rem;
+          left: 66rem;
+        }
+
+        div.third-par {
+          z-index: 3;
+          display: block;
+          position: relative;
+        }
+
+        article.about-story-meat img.plunge-img {
+          display: block;
+          width: 40%;
+          z-index: 1000;
+          position: relative;
+          top: -17rem;
+          right: 28rem;
+        }
+
+        div.fourth-par {
+          margin-top: -35rem;
+        }
+
+        div.fifth-par {
+          z-index: 3;
+          display: block;
+          position: relative;
+          margin-top: -35rem;
+        }
+
+        article.about-story-meat img.cocoon-img {
+          display: block;
+          width: 42%;
+          z-index: 1000;
+          position: relative;
+          top: 30rem;
+          left: 66rem;
+        }
+
+        p.par {
+          line-height: 130%;
+          margin-top: 0.2rem;
+        }
+
+        p.par-last {
+          margin-top: 1rem;
+        }
+
+        div.collage-wrapper-mobile {
+          display: none;
+        }
+
+        section.rashel-collage-images div.collage-wrapper-desktop{
+          display: flex;
+          margin: 0;
+          padding: 0;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        .collage-wrapper-desktop img {
+          width: auto;
+          margin-right: -.35rem;
+          padding: 0;
+        }
+
+        div.collage-wrapper-desktop img.volcano-img {
+          width: 38%;
+          margin-right: -.3rem;
+        }
+
+        i {
+          font-family: "Brandon Text Medium Italic";
+          font-weight: 600;
+        }
+
+        /* CONTACT DESKTOP */
+
+
+
+
 }
