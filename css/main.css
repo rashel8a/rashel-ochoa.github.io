@@ -2301,6 +2301,7 @@ div.key-learnings .concl-sub {
     .contact-image {
       left: 33rem;
       top: -4rem;
+      width: 70%;
       display: block;
     }
 
