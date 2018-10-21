@@ -161,6 +161,47 @@ p {
   animation-name: fadeInDown;
 }
 
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  animation: pulse 5s infinite;
+}
+
+
 /* STORY GRAPHIC ANIMATION*/
 
 .wobble-hor-bottom {
@@ -479,7 +520,7 @@ div.desktop {
     padding-top: 2rem;
   }
 
-  i.fa-caret-down {
+  div.see-work i {
     color: #FB7E6C;
     display: block;
   }
@@ -710,13 +751,37 @@ div.desktop {
   .bounce {
   z-index: 1;
   animation-timing-function: ease;
-  transition-duration: 3s;
-  -moz-animation: bounce 4s 4;
-  -webkit-animation: bounce 4s 4;
-  animation: bounce 4s 4;
+  transition-duration: 4s;
+  -moz-animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
+  animation: bounce 4s infinite;
 }
 
 @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-work {
+-webkit-animation-name: bounce2;
+animation-name: bounce2;
+z-index: 1;
+/* animation-timing-function: ease-in-out; */
+transition-duration: 4s;
+-moz-animation: bounce2 6s infinite;
+-webkit-animation: bounce2 6s infinite;
+animation: bounce2 6s infinite;
+}
+
+@keyframes bounce2 {
+
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -764,7 +829,7 @@ div.copyright p {
   text-align: center;
   padding-bottom: 2rem;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 auto;
   font-family: "Brandon Text Medium";
 }
@@ -1360,7 +1425,7 @@ img.chapter1-image {
 
 .survey-results .callout p {
   margin-right: 3.8rem;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   text-align: left;
   margin-left: .2rem;
   font-size: 2rem;
@@ -1541,7 +1606,7 @@ div a.new-button {
   margin-right: 2rem;
   padding: 3rem 1rem 3rem 0;
   text-align: left;
-  margin-left: 1.2rem;
+  margin-left: 1.3rem;
   font-size: 2rem;
   line-height: 2.8rem;
 }
@@ -1588,6 +1653,7 @@ div.iterations-header {
    font-weight: 600;
    padding: 0.5rem 3rem;
    display: block;
+   font-family: "Brandon Text Medium";
  }
 
  div.iterations section.it-snippet {
@@ -1608,7 +1674,7 @@ div.iterations-header {
 .number-circle {
   background-color: #6534FF;
   border-radius: 50%;
-  margin-top: 0.23rem;
+  margin-top: -0.3rem;
   text-align: center;
   padding-top: 1.3rem;
   color: #FFFDFB;
@@ -1619,6 +1685,7 @@ div.iterations-header {
   line-height: 0;
   display: inline-block;
   float: left;
+
 }
 
 /* CHAPTER 4 MOBILE */
@@ -1804,7 +1871,7 @@ div.vid-responsive {
 
 .short .callout p {
   margin-right: 3.5rem;
-  margin-left: 1.2rem;
+  margin-left: 1.3rem;
   padding: 3rem 1rem 3rem 0;
   text-align: left;
   font-size: 2rem;
@@ -1829,6 +1896,7 @@ div.vid-responsive {
   font-family: 'Brandon Text Regular';
   margin-left: 3rem;
   padding: .5rem 0;
+  font-family: "Brandon Text Medium";
 }
 
 .iteration-title .text-box {
@@ -1913,7 +1981,7 @@ article.icing .callout-line {
 .icing .callout p {
   margin-right: 3.8rem;
   padding: 3rem 1rem 3rem 0;
-  margin-left: 1.2rem;
+  margin-left: 1.3rem;
   text-align: left;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -1961,12 +2029,13 @@ div.desktop-images-final {
 div.mobile-images-final {
   display: block;
   margin-top: -457rem;
+  margin-left: 0.5rem;
   z-index: 1000;
 }
 
 div.mobile-images-final img {
-  width: 100%;
-  margin: .3rem auto;
+  width: 98%;
+  margin: .6rem auto;
 }
 
 div.mobile-screens {
@@ -2086,27 +2155,6 @@ div.key-learnings .concl-sub {
     color: #FFFDFB;
   }
 
-  .bounce {
-  z-index: 1;
-  animation-timing-function: ease;
-  transition-duration: 3s;
-  -moz-animation: bounce 4s 4;
-  -webkit-animation: bounce 4s 4;
-  animation: bounce 4s 4;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
 #footer-box {
   background-color: #FB7E6C;
 }
@@ -2159,12 +2207,6 @@ div.key-learnings .concl-sub {
 /*
 /* HOMEPAGE*/
 
-
-  .desktop-image{
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-  }
 
   a {
     text-decoration: none;
@@ -2227,23 +2269,64 @@ div.key-learnings .concl-sub {
 
     /* TABLET HP HERO*/
 
+    img.desktop-image{
+      width: 100%;
+      margin: -1rem auto 0 1rem;
+      display: block;
+    }
+
     .grid-hero, .feat-project-text, .about-content, .contact-header, .contact-body {
     padding: 0 5rem;
     }
 
+    article p.slogan {
+      font-size: 2.2rem;
+    }
+
+    article p.description {
+      font-size: 1.8rem;
+    }
+
+    article h1.name {
+      font-size: 5.5rem;
+    }
+
     .grid-hero {
-      margin: 0 auto;
+      margin: 3rem auto 0 auto;
       padding: 0;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
     }
 
     .grid-hero article {
-      margin: 0 10rem;
+      margin: -1rem auto 0 2rem;
+      width: 50rem;
     }
+
+    div.see-work {
+      margin-top: -7rem;
+      font-size: 1.7rem;
+    }
+
+    div.see-work i {
+      color: #FB7E6C;
+    }
+
+    article.feat-project-text h4.role {
+      font-size: 1.9rem;
+    }
+
 
     /* TABLET HP PROJECT */
 
+    #project-section {
+      margin: -5rem 0 0 0;
+      padding: 0;
+    }
+
     .feat-project-text {
-      margin: 0 13rem;
+      margin: -2rem 13rem 0 13rem;
       padding: 0;
     }
 
@@ -2255,23 +2338,22 @@ div.key-learnings .concl-sub {
       font-size: 2rem;
     }
 
-    .project-desktop {
-      width: 60%;
-      display: block;
-    }
-
     .project-desktop, .mobile-header, .story-graphic {
       display: none;
     }
 
     .project-mobile-lg {
       display: block;
-      width: 60%;
+      width: 50%;
       margin: 0 auto;
 
     }
 
     /*TABLET HP ABOUT*/
+
+    div.about-box {
+      padding: 10rem 0;
+    }
 
     .rashel-img-mobile {
       margin-bottom: 0rem;
@@ -2299,27 +2381,27 @@ div.key-learnings .concl-sub {
 
     /* TABLET HP CONTACT*/
     .contact-image {
-      left: 33rem;
+      left: 40rem;
       top: -4rem;
-      width: 70%;
+      width: 50%;
       display: block;
     }
 
     .contact-content {
-      margin: 0 6rem;
+      margin: 0 8rem;
       padding: 0;
     }
 
     h3.contact-body {
-      font-size: 2.3rem;
+      font-size: 2.2rem;
     }
 
     h2.contact-header {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
 
     .contact-header {
-      margin-top: -5rem;
+      margin-top: 0rem;
     }
 
     .contact-btns {
@@ -2334,8 +2416,9 @@ div.key-learnings .concl-sub {
       margin: 0 2.5rem 0 2.5rem;
     }
 
-    .return-top {
-      margin-top: -5rem;
+    div.return-top {
+      margin-top: -15rem;
+      padding-top: 0;
     }
 
 
@@ -2360,7 +2443,7 @@ div.key-learnings .concl-sub {
   }
 
   #footer-box ul.social-media p {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
       display: flex;
       align-items: center;
       flex-direction: row;
@@ -2376,7 +2459,7 @@ div.key-learnings .concl-sub {
 
     div.copyright p {
       text-align: left;
-      font-size: 1.8rem;
+      font-size: 1.7rem;
       padding: 0;
       margin-left: 10rem;
       font-family: "Brandon Text Medium";
@@ -2419,14 +2502,15 @@ div.key-learnings .concl-sub {
 
     article.section {
       position: relative;
-      height: 100vh;
+      height: 50vh;
+      padding: 0;
     }
 
     article.section-2 {
-      position: relative;
-      height: 70vh;
-      top: -40rem;
-      z-index: 1000;
+      display: block;
+      height: 41vh;
+      /* z-index: 1600; */
+      margin-top: 80rem;
     }
 
     article.parallax::after {
@@ -2511,7 +2595,7 @@ div.key-learnings .concl-sub {
     img.squiggles-graphic {
       width: 25%;
       position: relative;
-      top: -22.5rem;
+      top: -17.5rem;
       left: 58rem;
       z-index: 1500;
       display: block;
@@ -2548,7 +2632,7 @@ div.key-learnings .concl-sub {
     section.about-story-section {
       width: 65%;
       margin: 0 auto;
-      margin-top: -40rem;
+      margin-top: -30rem;
     }
 
     section.about-story-section div.label-section {
@@ -2637,46 +2721,44 @@ div.key-learnings .concl-sub {
       margin: 0;
       grid-template-areas:
       "vini volcano"
-      "nz mexico";
-      grid-template-columns: 1fr 5fr;
-      grid-template-rows: 1fr;
+      "nz temple";
+      grid-template-columns: 2fr 2fr;
+      /* grid-template-rows: 1fr; */
       grid-column-gap: 0;
     }
 
     div.collage-wrapper-desktop img.temple-img {
-      display: none;
+      grid-area: temple;
+      padding: 0;
+      margin: 0;
+      width: auto;
+      margin-left: -8rem;
     }
 
     div.collage-wrapper-desktop img.volcano-img {
       grid-area: volcano;
-      margin: 0;
-      margin-left: -0.35rem;
+      /* margin-left: -0.35rem; */
       padding: 0;
       width: auto;
+      margin-left: -15rem;
     }
 
     div.collage-wrapper-desktop img.vini {
       grid-area: vini;
       width: auto;
-      margin: 0;
+      margin-left: 0rem;
       padding: 0;
     }
 
     div.collage-wrapper-desktop img.mexico-img {
-      grid-area: mexico;
-      width: auto;
-      margin: 0;
-      padding: 0;
+      display: none;
     }
 
     div.collage-wrapper-desktop img.nzwine-img {
       grid-area: nz;
       width: auto;
-      margin: 0;
       padding: 0;
-      width: 140%;
-      height: 100%;
-      display: block;
+      margin-left: 0rem;
     }
 
     div.collage-wrapper-desktop img.angkor-img {
@@ -2701,7 +2783,7 @@ div.key-learnings .concl-sub {
 
     div.contact-section {
       text-align: left;
-      padding: 0 10rem;
+      padding: 0 10rem 5rem 10rem;
     }
 
     div.content-copy h5.contact-words {
@@ -2762,7 +2844,8 @@ div.key-learnings .concl-sub {
     }
 
     div.return-top {
-      margin-top: 0rem;
+      margin-top: 5rem;
+      margin-bottom: -2rem;
     }
 
     div.return-top a {
@@ -2789,9 +2872,13 @@ div.key-learnings .concl-sub {
     width: 100%;
   }
 
+  div.container {
+    overflow: hidden;
+  }
+/*
  .grid-hero, #project-section {
     width: 80%;
-  }
+  } */
 
 
   /*DESKTOP SECTION BEGINS*/
@@ -2898,36 +2985,42 @@ a.logo {
 
 /* END OF NAV ANIMATION*/
 
-  .nav-link:hover {
-    color: #FB7E6C;
-    -webkit-transition: ease-in-out .5s;
-    -moz-transition: ease-in-out .5s;
-    -o-transition: ease-in-out .5s;
-    transition: ease-in-out .5s;
-  }
-
-  .work-link:hover {
-    color: #FB7E6C;
-  }
-
-  img.desktop-image {
-    display: block;
-    width: 110%;
-    margin-left: 5rem;
-  }
-
-  #hero {
-    margin-top: 3rem;
-  }
-
-  .mobile-header {
-    display: none !important;
-  }
-
   /* DESKTOP GRID HERO SECTION** */
 
     body {
       width: 144rem;
+    }
+
+    .nav-link:hover {
+      color: #FB7E6C;
+      -webkit-transition: ease-in-out .5s;
+      -moz-transition: ease-in-out .5s;
+      -o-transition: ease-in-out .5s;
+      transition: ease-in-out .5s;
+    }
+
+    .work-link:hover {
+      color: #FB7E6C;
+    }
+
+    div.see-work i {
+      color: #FB7E6C;
+    }
+
+    img.desktop-image {
+      display: block;
+      width: 100%;
+      z-index: 1;
+      margin-bottom: 12rem;
+      margin-left: 5rem;
+    }
+
+    #hero {
+      margin-top: 3rem;
+    }
+
+    .mobile-header {
+      display: none !important;
     }
 
     .grid-hero {
@@ -2938,10 +3031,8 @@ a.logo {
       height: 100vh;
     }
 
-    .desktop-image {
-      width: 150%;
-      z-index: 1;
-      padding: 0 5rem 0 0;
+    .grid-hero article {
+      margin-bottom: 12rem;
     }
 
     .description {
@@ -2972,6 +3063,8 @@ a.logo {
     .see-work {
       z-index: 6;
       font-size: 2rem;
+      font-weight: 600;
+      margin-top: -30rem;
     }
 
   /* Project Section Desktop */
@@ -2988,8 +3081,8 @@ a.logo {
 
     .project-desktop {
       display: block;
-      margin-left: -18rem;
-      width: 100%;
+      margin-left: -7rem;
+      width: 90%;
       grid-area: project-desktop;
     }
 
@@ -2998,11 +3091,11 @@ a.logo {
     }
 
     .feat-project-text {
-      margin-right: 15rem;
+      margin-right: 10rem;
       align-self: center;
       align-items: center;
       /* margin-top: 0; */
-      padding: 2rem 2rem;
+      padding: 2rem 0rem;
     }
 
     .project-name {
@@ -3010,13 +3103,13 @@ a.logo {
       font-family: Futura-bold;
       line-height: 120%;
       padding-bottom: .5rem;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     .project-title {
       grid-area: pr-title;
       width: 50rem;
-      line-height: 100%;
+      line-height: 105%;
       padding-bottom: .5rem;
       font-size: 4.5rem;
       font-family: Futura-bold;
@@ -3025,7 +3118,7 @@ a.logo {
     .role {
       grid-area: role;
       font-family: Futura-medium;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       line-height: 120%;
       color: #405276;
       padding-bottom: 2.5rem;
@@ -3073,7 +3166,7 @@ a.logo {
       background-color: #FDE8DE;
       align-items: center;
       justify-content: center;
-      padding: 10rem 10rem;
+      padding: 6rem 8rem 6rem 0rem;
     }
 
     /* .about-content, .about-images {
@@ -3082,13 +3175,14 @@ a.logo {
 
     .about-content {
       margin: 0 auto;
-      width: 50%;
+      width: 50rem;
     }
 
     .rashel-image {
       display: block;
       z-index: 1;
       margin-right: -8rem;
+      margin-bottom: 1rem;
     }
 
     .story-graphic {
@@ -3108,14 +3202,16 @@ a.logo {
       display: none;
     }
 
-    .secondary-btn {
-      width: 12rem;
+    .story-button  {
+      width: 50rem;
+      margin-top: 2.5rem;
     }
 
     .about-title {
       font-size: 4rem;
       font-family: 'Brandon Text Bold', sans-serif;
       color: #001F40;
+      padding-bottom: 0.5rem;
     }
 
     .story-button span:hover {
@@ -3123,9 +3219,10 @@ a.logo {
       cursor: pointer;
     }
 
-    /* Contact Section */
+    /* Contact Desktop Section */
     .contact-box {
       width: 100%;
+      padding: 3rem 0;
     }
 
     .contact-box .contact-image img {
@@ -3190,11 +3287,14 @@ a.logo {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
+      padding-bottom: 0.3rem;
+      padding-top: 0.5rem;
     }
 
     ul.social-media {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
       padding-right: 10rem;
     }
 
@@ -3203,8 +3303,8 @@ a.logo {
       align-items: center;
       flex-direction: row;
       padding: 0;
-      font-size: 1.9rem;
-      font-family: "Brandon Text Bold";
+      font-size: 1.8rem;
+      font-family: "Brandon Text Medium";
     }
 
     i.fab, i.fas {
@@ -3213,11 +3313,7 @@ a.logo {
       color: #001F40;
     }
 
-    .social-media i:hover {
-      color: #FFFDFB;
-    }
-
-    .social-media p:hover {
+    ul.social-media i:hover, ul.social-media p:hover {
       color: #FFFDFB;
       cursor: pointer;
     }
@@ -3225,10 +3321,11 @@ a.logo {
     div.copyright p {
       text-align: left;
       align-items: center;
-      font-size: 1.9rem;
-      padding-left: 8rem;
-      padding-top: 5rem;
-      font-family: "Brandon Text Bold";
+      font-size: 1.8rem;
+      margin-left: 6rem;
+      padding: 0;
+      margin-top: 3rem;
+      font-family: "Brandon Text Medium";
     }
 
     /***
@@ -3243,11 +3340,6 @@ a.logo {
       /* margin: 0; */
     }
 
-    .container {
-      width: 100%;
-      overflow: hidden;
-    }
-
     nav {
       z-index: 1500;
       position: relative;
@@ -3257,7 +3349,7 @@ a.logo {
     div.main-container {
       height: 100vh;
       transform-style: preserve-3d;
-      overflow-x: hidden;
+      overflow: hidden;
       overflow-y: scroll;
       perspective: 2px;
     }
@@ -3477,7 +3569,6 @@ a.logo {
     }
 
     .collage-wrapper-desktop img {
-      width: auto;
       margin: 0;
       padding: 0;
       width: auto;
@@ -3486,7 +3577,12 @@ a.logo {
 
     section div.collage-wrapper-desktop img.volcano-img {
       width: auto;
-      margin-right: -.3rem;
+      margin-right: -3rem;
+    }
+
+    section div.collage-wrapper-desktop img.temple-img {
+      width: auto;
+      margin-right: -3rem;
     }
 
     i {

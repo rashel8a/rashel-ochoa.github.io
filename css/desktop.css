@@ -310,6 +310,7 @@
 
  .both-personas h2{
    font-size: 3.2rem;
+   line-height: 100%;
    color: #001F40;
    font-family: futura-bold, sans-serif;
  }
@@ -631,6 +632,19 @@
    display: block;
  }
 
+ .number-circle {
+   background-color: #6534FF;
+   border-radius: 50%;
+   padding-top: 1.6rem;
+   color: #FFFDFB;
+   width: 3rem;
+   height: 3rem;
+   font-family: 'Brandon Text Medium', sans-serif;
+   font-size: 2rem;
+   margin-top: -0.2rem;
+   margin-left: -0.5rem;
+ }
+
  header.one, header.two {
    margin-left: -10rem;
    width: 55%;
@@ -826,6 +840,10 @@ article.ab a {
   color: #FB7E6C;
 }
 
+article.ab a:hover {
+  color: #FFA856;
+}
+
 div.test-bg {
   display: flex;
   flex-direction: column;
@@ -1002,12 +1020,13 @@ header.iteration-title {
   align-items: flex-start;
 }
 
-.iteration-title .it {
+header.iteration-title h3.it {
   font-size: 2rem;
   font-weight: 600;
   padding: 0.2rem 0;
   display: block;
   text-align: left;
+  font-family: "Brandon Text Medium";
 }
 
 header.iteration-title span {
@@ -1036,6 +1055,11 @@ header.iteration-title p.text-box {
 
 div.rogue-img img.rogue-mobile {
   display: none;
+}
+
+header.iteration-title span.number-circle {
+  margin-top: -0.6rem;
+  margin-left: -0.8rem;
 }
 
 section.uno img {
@@ -1236,6 +1260,7 @@ div.CTA-buttons {
 div.key-learnings .concl-heading {
   font-family: 'Brandon Text Black', 'Brandon Text Bold', sans-serif;
   font-size: 3rem;
+  line-height: 100%;
   margin-top: 5rem;
 }
 
@@ -1269,10 +1294,10 @@ div.key-learnings .concl-sub {
 }
 
 .contact-box .contact-image img {
-  width: 21%;
+  width: 17%;
   position: relative;
-  left: 105rem;
-  top: 1rem;
+  left: 103rem;
+  top: 0;
   z-index: 1;
 }
 
@@ -1340,7 +1365,7 @@ h5.contact-text {
 ul.social-media {
   display: flex;
   justify-content: flex-end;
-  padding: 1rem 0 1rem 0;
+  padding: 0.5rem 0 1rem 0;
   position: relative;
   left: -10rem;
   margin: 0;
@@ -1351,7 +1376,7 @@ ul.social-media {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-family: "Brandon Text Medium";
 }
 
@@ -1368,8 +1393,8 @@ ul.social-media i.fab, ul.social-media i.fas {
 
 div.copyright p {
   text-align: left;
-  font-size: 1.9rem;
-  padding: 3rem 0 0 0;
+  font-size: 1.8rem;
+  padding: 0.5rem 0 1rem 0;
   margin-left: 10rem;
   font-family: "Brandon Text Medium";
 }
