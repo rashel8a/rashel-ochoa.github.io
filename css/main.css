@@ -3357,7 +3357,7 @@ a.logo {
     article.section-2 {
       position: relative;
       height: 62vh;
-      top: -20rem;
+      top: -30rem;
       z-index: 1000;
     }
 
@@ -3366,16 +3366,16 @@ a.logo {
       display: flex;
       flex: 1 0 auto;
       position: relative;
-      top: -65rem;
+      top: -80rem;
       height: 130vh;
       transform: translateZ(-1px) scale(1.5);
       z-index: -1;
+      width: auto;
     }
 
     article.bg1::after {
       background: url('../images/about/rashel-hero.png');
-      background-size: 100%;
-      width: 100%;
+      background-size: auto;
     }
 
     article.about-header div.about-intro-content {
@@ -3410,8 +3410,7 @@ a.logo {
     }
 
      article.about-middle-content {
-      width: 100%;
-      padding: 1.6rem 0 0 0;
+      padding: 0.3rem 0 0 0;
       background-color: #FDE8DE;
       display: flex;
       flex-direction: column;
@@ -3419,10 +3418,10 @@ a.logo {
     }
 
     img.squiggles-graphic {
-      width: 25%;
+      width: 23%;
       position: relative;
-      top: -25.5rem;
-      left: 110rem;
+      top: -38.5rem;
+      left: 108rem;
       z-index: 1300;
       display: block;
     }
@@ -3457,7 +3456,7 @@ a.logo {
     /* STORY MEAT SECTION*/
 
     section.about-story-section {
-      margin: -15rem 38rem 5rem 38rem;
+      margin: -25rem 38rem 5rem 38rem;
     }
 
     section.content-container {

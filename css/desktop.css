@@ -562,7 +562,7 @@
     display: inline-block;
     position: relative;
     left: 7rem;
-    margin: 5rem 16rem 3rem 16rem;
+    margin: 5rem 16rem 3rem 11rem;
     text-align: center;
   }
 
@@ -590,14 +590,14 @@
    width: .9rem;
    height: 21rem;
    border-radius: 4rem;
-   margin-left: 0rem;
-   margin-right: 3rem;
+   margin-left: 37rem;
+   margin-right: -38rem;
  }
 
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -20rem 0rem -20rem;
+   margin: 5rem -20rem 0rem -15rem;
    padding: 10rem 5rem;
    display: flex;
    align-items: center;
@@ -606,7 +606,7 @@
 
  .prototype p.co-text {
    width: 38%;
-   margin: 0;
+   margin: 0 auto;
    text-align: left;
    font-size: 2.3rem;
    font-weight: 600;
@@ -978,9 +978,10 @@ article.short div.callout-line {
   background-color: #FFA856;
   width: .9rem;
   height: 30rem;
-  margin-right: 5rem;
-  margin-left: 0;
+  margin-right: -36rem;
+  margin-left: 40rem;
   border-radius: 4rem;
+  margin-bottom: 1rem;
 }
 
 article.short div.callout {
@@ -1157,9 +1158,9 @@ section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid
 article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
-  height: 39rem;
-  margin-right: 5rem;
-  margin-left: 0;
+  height: 37rem;
+  margin-right: -36rem;
+  margin-left: 45rem;
   border-radius: 4rem;
 }
 
@@ -1223,10 +1224,12 @@ div.mobile-images-final {
 }
 
 article.final-p div.desktop-images-final {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   z-index: 1700;
+  padding: 0;
 }
 
 div.desktop-images-final .other-images {
@@ -1234,12 +1237,17 @@ div.desktop-images-final .other-images {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
   z-index: 1700;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
 }
 
 div.other-images img {
-  width: 43%;
-  margin: 1rem auto;
+  width: 46%;
+  margin: 1rem 2rem;
+  padding: 0;
 }
 
 div.desktop-images-final div.mobile-desktop-images {
@@ -1247,21 +1255,21 @@ div.desktop-images-final div.mobile-desktop-images {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 1rem auto;
   /* display: block; */
 }
 
 div.mobile-desktop-images img.final-mobile-one {
   width: 80%;
   margin-top: 30rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0rem;
   z-index: 1700;
 }
 
  div.mobile-desktop-images img.final-mobile-two {
    width: 80%;
    margin-top: 0rem;
-   padding-bottom: 2rem;
+   padding-bottom: 0.5rem;
    z-index: 1700;
  }
 
