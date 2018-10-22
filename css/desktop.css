@@ -3,6 +3,7 @@
 
   .container {
     width: 100%;
+    overflow: hidden;
   }
 
   p {
@@ -1203,7 +1204,7 @@ article.final-p .text-box {
   font-family: 'Brandon Text Regular', sans-serif;
 }
 
-img.desktop-bg {
+article.final-p img.desktop-bg {
   width: 100vw;
   z-index: 1;
   display: inline-block;
@@ -1221,7 +1222,7 @@ div.desktop-images-final {
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin-top: -390rem;
+  margin-top: -350rem;
   z-index: 1000;
 }
 
