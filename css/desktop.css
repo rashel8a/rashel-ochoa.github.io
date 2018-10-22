@@ -1221,7 +1221,6 @@ div.desktop-images-final {
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin-top: 0;
   z-index: 1000;
 }
 
@@ -1246,8 +1245,7 @@ div.mobile-desktop-images {
 }
 
 div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
-  /* width: 70%;
-  margin-left: -2rem; */
+  width: 50%;
   padding-bottom: 5rem;
   display: block;
 }
