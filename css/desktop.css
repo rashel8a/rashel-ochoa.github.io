@@ -204,7 +204,7 @@
    background-color: #FDE8DE;
    width: 100vw;
    margin: 10rem -20rem 0rem -15rem;
-   padding: 10rem 0;
+   padding: 10rem 5rem;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -213,7 +213,7 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 28rem;
+   height: 32rem;
    margin-right: 2rem;
    border-radius: 4rem;
  }
@@ -597,7 +597,7 @@
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -20rem 0rem -15rem;
+   margin: 5rem -20rem 0rem -20rem;
    padding: 10rem 5rem;
    display: flex;
    align-items: center;
@@ -973,20 +973,21 @@ article.short {
   justify-content: center;
 }
 
-.short .callout-line {
+
+article.short div.callout-line {
   background-color: #FFA856;
   width: .9rem;
-  height: 27rem;
-  position: relative;
-  left: 40rem;
-  margin-right: 0;
+  height: 30rem;
+  margin-right: 5rem;
+  margin-left: 0;
   border-radius: 4rem;
 }
 
 article.short div.callout {
   background-color: #FDE8DE;
   width: 100vw;
-  padding: 10rem 0;
+  margin: 5rem -20rem 0 -20rem;
+  padding: 10rem 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1157,9 +1158,8 @@ article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
   height: 39rem;
-  margin: 0;
-  position: relative;
-  left: 40rem;
+  margin-right: 5rem;
+  margin-left: 0;
   border-radius: 4rem;
 }
 
@@ -1238,7 +1238,7 @@ div.desktop-images-final .other-images {
 }
 
 div.other-images img {
-  width: 43%;
+  width: 33%;
   margin: 1rem auto;
 }
 
