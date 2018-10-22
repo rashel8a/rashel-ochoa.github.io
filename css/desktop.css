@@ -204,11 +204,20 @@
    background-color: #FDE8DE;
    width: 100vw;
    margin: 10rem -32rem 0rem -15rem;
-   padding: 7.5rem 0rem;
+   padding: 7.5rem 0 7.5rem 2rem;
    border: 1px solid blue;
    display: flex;
    align-items: center;
    justify-content: center;
+ }
+
+ .survey-results .callout-line {
+   background-color: #FFA856;
+   width: .9rem;
+   height: 28rem;
+   margin: 0;
+   border: 1px solid red;
+   border-radius: 4rem;
  }
 
  .survey-results p.co-text {
@@ -220,15 +229,6 @@
    font-weight: 600;
    line-height: 3.3rem;
    display: block;
- }
-
- .survey-results .callout-line {
-   background-color: #FFA856;
-   width: .9rem;
-   height: 28rem;
-   margin: 0;
-   border: 1px solid red;
-   border-radius: 4rem;
  }
 
  div.magnify {
@@ -585,8 +585,7 @@
    background-color: #FFA856;
    width: .9rem;
    height: 26rem;
-   position: relative;
-   left: 40rem;
+   margin: 0;
    border-radius: 4rem;
  }
 
@@ -594,7 +593,7 @@
    background-color: #FDE8DE;
    width: 100vw;
    margin: 5rem -10rem 0rem -15rem;
-   padding: 7.5rem 0;
+   padding: 7.5rem 0 7.5rem 2rem;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -973,8 +972,7 @@ article.short {
   background-color: #FFA856;
   width: .9rem;
   height: 26rem;
-  position: relative;
-  left: 40rem;
+  margin: 0;
   border-radius: 4rem;
 }
 
@@ -982,7 +980,7 @@ article.short {
   background-color: #FDE8DE;
   width: 100vw;
   margin: 5rem 0 0 0;
-  padding: 7.5rem 0;
+  padding: 7.5rem 0 7.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1153,8 +1151,7 @@ article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
   height: 37rem;
-  position: relative;
-  left: 40rem;
+  margin: 0;
   border-radius: 4rem;
 }
 
@@ -1162,7 +1159,7 @@ article.icing .callout {
   background-color: #FDE8DE;
   width: 100vw;
   margin: -5rem;
-  padding: 7.5rem 0;
+  padding: 7.5rem 0 7.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1224,7 +1221,7 @@ div.desktop-images-final {
   margin: 0;
   display: flex;
   flex-direction: column;
-  margin-top: -300rem;
+  margin-top: -250rem;
   z-index: 1000;
 }
 
@@ -1249,8 +1246,8 @@ div.mobile-desktop-images {
 }
 
 div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
-  /* width: 70%; */
-  /* margin-left: -2rem; */
+  /* width: 70%;
+  margin-left: -2rem; */
   padding-bottom: 5rem;
   display: block;
 }
