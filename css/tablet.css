@@ -1065,19 +1065,14 @@ article.final-p .text-box {
   font-size: 2rem;
 }
 
-img.desktop-bg {
-  width: 100vw;
-  height: 90%;
-  z-index: 1;
-  display: inline-block;
-}
-
 div.desktop-images-final {
   margin: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: -210rem;
-  z-index: 1000;
+  z-index: 1700;
+  background-image: url("../images/project/background-swoop.png");
+  background-size: cover;
 }
 
 div.desktop-images-final .other-images {
@@ -1091,8 +1086,8 @@ div.desktop-images-final .other-images {
 }
 
 div.other-images img {
-  width: 49%;
-  margin: 1.5rem auto;
+  width: 45%;
+  margin: 1rem auto;
 }
 
 div.desktop-images-final div.mobile-desktop-images {
@@ -1101,23 +1096,31 @@ div.desktop-images-final div.mobile-desktop-images {
   margin: 0 auto;
 }
 
-div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
-  width: 85%;
-  margin: 0 auto;
-  padding-bottom: 5rem;
+div.mobile-desktop-images img.final-mobile-one {
+  width: 90%;
+  margin: 17rem auto 0 auto;
+  padding-bottom: 0rem;
   display: block;
 }
+
+div.mobile-desktop-images img.final-mobile-two {
+  width: 90%;
+    margin: 0 auto;
+  margin-top: 0rem;
+  display: block;
+}
+
 div.mobile-images-final, article.final-p img.mobile-bg {
   display: none;
 }
 
 div.CTA-buttons {
-  margin: -15rem auto 0 10rem;
+  margin: 3rem auto 0 10rem;
   padding: 0;
 }
 
 #chapter6 .concl {
-  margin: 5rem 10rem 5rem 10rem;
+  margin: 3rem 10rem 5rem 10rem;
 }
 
 div.key-learnings .concl-heading {

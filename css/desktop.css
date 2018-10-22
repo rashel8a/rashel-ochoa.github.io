@@ -203,9 +203,8 @@
  .survey-results .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 10rem -32rem 0rem -15rem;
-   padding: 7.5rem 0 7.5rem 10rem;
-   border: 1px solid blue;
+   margin: 10rem -15rem 0rem -15rem;
+   padding: 7.5rem 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -214,15 +213,13 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 28rem;
-   margin: 0;
-   border: 1px solid red;
+   height: 24rem;
+   margin-right: 2rem;
    border-radius: 4rem;
  }
 
  .survey-results p.co-text {
    width: 38%;
-   border: 1px solid gold;
    text-align: left;
    margin: 0;
    font-size: 2.3rem;
@@ -390,7 +387,7 @@
    content: '';
    display: block;
    width: 0;
-   height: .7rem;
+   height: .9rem;
    border-radius: 6rem;
    background: #03E1D7;
    transition: width .3s;
@@ -419,8 +416,13 @@
 
  article.user-flow {
    margin: 0 20rem;
-
  }
+
+ p.text-box .quick-link:hover {
+   color: #FFA856;
+ }
+
+
 
  /* div.block {
    display: flex;
@@ -451,15 +453,17 @@
  }
 
  .box-2 img.flow-2 {
-   margin-right: 20rem;
+   margin-left: 20rem;
    display: block;
    position: relative;
-   left: -21rem;
+   left: -2rem;
+   width: 110%;
+   margin: 0 auto;
  }
 
  .box-1 img.flow-1 {
    display: block;
-   width: auto;
+   width: 100%;
    margin: 0 auto;
    position: relative;
    right: 5rem;
@@ -483,7 +487,7 @@
     content: '';
     display: block;
     width: 0;
-    height: .7rem;
+    height: .9rem;
     border-radius: 6rem;
     background: #03E1D7;
     transition: width .3s;
@@ -566,7 +570,7 @@
    content: '';
    display: block;
    width: 0;
-   height: .7rem;
+   height: .9rem;
    border-radius: 6rem;
    background: #03E1D7;
    transition: width .3s;
@@ -584,16 +588,17 @@
  .prototype .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 26rem;
-   margin: 0;
+   height: 21rem;
    border-radius: 4rem;
+   margin-left: 0rem;
+   margin-right: 3rem;
  }
 
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -10rem 0rem -15rem;
-   padding: 7.5rem 0 7.5rem 10rem;
+   margin: 5rem -15rem 0rem -15rem;
+   padding: 7.5rem 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -601,7 +606,7 @@
 
  .prototype p.co-text {
    width: 38%;
-   margin: 0 auto;
+   margin: 0;
    text-align: left;
    font-size: 2.3rem;
    font-weight: 600;
@@ -791,7 +796,7 @@ div.typography .style-button {
   content: '';
   display: block;
   width: 0;
-  height: .7rem;
+  height: .9rem;
   border-radius: 6rem;
   background: #03E1D7;
   transition: width .3s;
@@ -971,22 +976,23 @@ article.short {
 .short .callout-line {
   background-color: #FFA856;
   width: .9rem;
-  height: 26rem;
-  margin: 0;
+  height: 27rem;
+  position: relative;
+  left: 40rem;
+  margin-right: 0;
   border-radius: 4rem;
 }
 
-.short .callout {
+article.short div.callout {
   background-color: #FDE8DE;
   width: 100vw;
-  margin: 5rem 0 0 0;
-  padding: 7.5rem 0 7.5rem 2rem;
+  padding: 7.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.short p.co-text {
+article.short p.co-text {
   width: 38%;
   margin: 0 auto;
   text-align: left;
@@ -1150,16 +1156,17 @@ section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid
 article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
-  height: 37rem;
+  height: 39rem;
   margin: 0;
+  position: relative;
+  left: 40rem;
   border-radius: 4rem;
 }
 
 article.icing .callout {
   background-color: #FDE8DE;
   width: 100vw;
-  margin: -5rem;
-  padding: 7.5rem 0 7.5rem 10rem;
+  padding: 7.5rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1189,7 +1196,7 @@ article.final-p {
 }
 
 article.final-p .content {
-  margin: 0 62rem 0 15rem;
+  margin-left: 21rem;
   width: 35%;
 }
 
@@ -1203,10 +1210,8 @@ article.final-p .text-box {
   font-family: 'Brandon Text Regular', sans-serif;
 }
 
-article.final-p img.desktop-bg {
-  width: 100vw;
-  z-index: 1;
-  display: inline-block;
+div.desktop-images-final {
+  background-image: url("../images/project/background-swoop.png");
 }
 
 img.mobile-bg {
@@ -1217,11 +1222,11 @@ div.mobile-images-final {
   display: none;
 }
 
-div.desktop-images-final {
-  margin: 0;
+article.final-p div.desktop-images-final {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 1700;
 }
 
 div.desktop-images-final .other-images {
@@ -1229,26 +1234,36 @@ div.desktop-images-final .other-images {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+  z-index: 1700;
 }
 
 div.other-images img {
-  width: 45%;
+  width: 43%;
   margin: 1rem auto;
-  padding-right: 2rem;
 }
 
-div.mobile-desktop-images {
+div.desktop-images-final div.mobile-desktop-images {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  display: block;
+  /* display: block; */
 }
 
-div.mobile-desktop-images img.final-mobile-one, div.mobile-desktop-images img.final-mobile-two {
-  width: 50%;
-  padding-bottom: 5rem;
-  display: block;
+div.mobile-desktop-images img.final-mobile-one {
+  width: 80%;
+  margin-top: 30rem;
+  padding-bottom: 2rem;
+  z-index: 1700;
 }
+
+ div.mobile-desktop-images img.final-mobile-two {
+   width: 80%;
+   margin-top: 0rem;
+   padding-bottom: 2rem;
+   z-index: 1700;
+ }
 
 /*
 .final-p img.final-mobile {
