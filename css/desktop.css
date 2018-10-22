@@ -203,7 +203,7 @@
  .survey-results .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 10rem -15rem 0rem -15rem;
+   margin: 10rem -20rem 0rem -15rem;
    padding: 10rem 0;
    display: flex;
    align-items: center;
@@ -213,7 +213,7 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 24rem;
+   height: 28rem;
    margin-right: 2rem;
    border-radius: 4rem;
  }
@@ -597,8 +597,8 @@
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -15rem 0rem -15rem;
-   padding: 10rem 0;
+   margin: 5rem -20rem 0rem -15rem;
+   padding: 10rem 5rem;
    display: flex;
    align-items: center;
    justify-content: center;
