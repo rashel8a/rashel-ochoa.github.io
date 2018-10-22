@@ -204,7 +204,7 @@
    background-color: #FDE8DE;
    width: 100vw;
    margin: 10rem -15rem 0rem -15rem;
-   padding: 7.5rem 0;
+   padding: 10rem 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -598,7 +598,7 @@
    background-color: #FDE8DE;
    width: 100vw;
    margin: 5rem -15rem 0rem -15rem;
-   padding: 7.5rem 0;
+   padding: 10rem 0;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -986,7 +986,7 @@ article.short {
 article.short div.callout {
   background-color: #FDE8DE;
   width: 100vw;
-  padding: 7.5rem 0;
+  padding: 10rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1166,7 +1166,7 @@ article.icing .callout-line {
 article.icing .callout {
   background-color: #FDE8DE;
   width: 100vw;
-  padding: 7.5rem 0;
+  padding: 10rem 0;
   display: flex;
   align-items: center;
   justify-content: center;

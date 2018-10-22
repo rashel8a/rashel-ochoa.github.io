@@ -868,7 +868,7 @@ div.main-container {
 
 div#navbar-toggle {
   position: fixed !important;
-  margin-top: -1rem;
+  margin-top: -0.9rem;
   z-index: 2000 !important;
 }
 
@@ -889,8 +889,8 @@ article.parallax::after {
   display: flex;
   flex: 1 0 auto;
   position: relative;
-  top: 5rem;
-  height: 250vh;
+  top: -20rem;
+  height: 100vh;
   transform: translateZ(-1px) scale(1.5);
   z-index: -1;
 }
@@ -2525,8 +2525,7 @@ div.key-learnings .concl-sub {
 
     article.bg1::after {
       background: url('../images/about/rashel-hero.png') no-repeat;
-      background-size: 110%;
-      width: auto;
+      background-size: 100%;
     }
 
 
