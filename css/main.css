@@ -964,7 +964,7 @@ img.squiggles-graphic {
   width: 45%;
   position: relative;
   top: -55rem;
-  left: 28rem;
+  left: 24rem;
   z-index: 1300;
   display: block;
 }
@@ -2605,7 +2605,7 @@ div.key-learnings .concl-sub {
       width: 40%;
       position: relative;
       top: -68rem;
-      left: 57rem;
+      left: 55rem;
       z-index: 1750;
       display: block;
     }
@@ -3408,7 +3408,8 @@ a.logo {
     div.about-intro-content h1.about-name {
       font-size: 5.5rem;
       z-index: 1700;
-      margin-top: -80rem;
+      margin-top: -97rem;
+      border: 1px solid green;
       font-family: "Brandon Text Black", Futura-bold, sans-serif;
     }
 
@@ -3458,7 +3459,7 @@ a.logo {
     img.squiggles-graphic {
       width: 30%;
       position: relative;
-      top: -33rem;
+      top: -34rem;
       left: 98.5rem;
       z-index: 1800;
       display: block;

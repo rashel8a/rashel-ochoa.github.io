@@ -180,9 +180,14 @@
     bottom: 1rem;
   }
 
-  article.survey {
-   padding: 0 30rem;
+  /* article.survey {
+   padding: 0;
    margin-top: 0;
+ } */
+
+ article.survey div.content {
+   width: 58%;
+   margin: 0 auto;
  }
 
   article.survey-results, article.survey-results .pg-label {
@@ -301,11 +306,11 @@
  .both-personas img {
    display: block;
    width: auto;
-   padding-top: 0;
+   /* padding-top: 0; */
  }
 
  .maya-persona img {
-   padding-top: 2.3rem;
+   margin-top: -2.1rem;
  }
 
  .both-personas h2{
@@ -374,12 +379,13 @@
  article.person .style-button {
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
-    width: 17.5%;
+    width: 21%;
     color: #1C46C5;
     display: inline-block;
+    /* margin: 0 auto; */
     position: relative;
-    left: 30rem;
-    margin: 5rem 16rem 3rem 16rem;
+    left: 19rem;
+    margin: 5rem 20rem 3rem 20rem;
     text-align: center;
   }
 
@@ -401,7 +407,9 @@
  /* CHAPTER 3 DESKTOP */
 
 #chapter3 .pg .content {
-  margin: 0 20rem;
+  /* margin: 0 20rem; */
+  width: 70%;
+  margin: 0 auto;
 }
 
  #chapter3 .chapter {
@@ -415,7 +423,9 @@
  }
 
  article.user-flow {
-   margin: 0 20rem;
+   /* margin: 0 20rem; */
+   width: 70%;
+   margin: 0 auto;
  }
 
  p.text-box .quick-link:hover {
@@ -453,12 +463,9 @@
  }
 
  .box-2 img.flow-2 {
-   margin-left: 20rem;
+   margin-left: -3rem;
    display: block;
-   position: relative;
-   left: -2rem;
    width: 110%;
-   margin: 0 auto;
  }
 
  .box-1 img.flow-1 {
@@ -476,10 +483,10 @@
   article.user-flow .style-button {
      font-family: 'Brandon Grotesque Black';
      font-size: 1.8rem;
-     width: 16%;
+     width: 18.5%;
      color: #1C46C5;
      display: block;
-     margin-left: 58rem;
+     margin-left: 53.5rem;
      text-align: center;
    }
 
@@ -498,31 +505,9 @@
     transition: width .3s;
   }
 
-/*
- .flows-button .secondary-btn {
-   font-family: 'Brandon Grotesque Bold';
-   font-size: 1.6rem;
-   text-decoration: none;
-   color: #001F40;
-   z-index: 1000;
-   cursor: pointer;
-   display: block;
+
+ div.sketches img.wf-sketchie {
    width: 100%;
- }
-
- .flows-button span {
-   z-index: 1;
-   border-radius: 5rem;
-   height: 1rem;
-   width: 14.5rem;
-   top: 2rem;
-   left: 15.5rem;
-   background-color: #03E1D7;
- } */
-
-
- .sketches img {
-   width: auto;
    margin: 0 auto;
    display: block;
  }
@@ -557,7 +542,7 @@
   article.prototype .style-button {
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
-    width: 40%;
+    width: 42%;
     color: #1C46C5;
     display: inline-block;
     position: relative;
@@ -588,24 +573,24 @@
  .prototype .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 21rem;
+   height: 23rem;
    border-radius: 4rem;
-   margin-left: 37rem;
-   margin-right: -38rem;
+   margin-left: 34rem;
+   margin-right: -28rem;
  }
 
  .prototype .callout {
    background-color: #FDE8DE;
    width: 100vw;
-   margin: 5rem -20rem 0rem -15rem;
+   margin: 5rem -15rem 0rem -18rem;
    padding: 10rem 5rem;
    display: flex;
    align-items: center;
    justify-content: center;
  }
 
- .prototype p.co-text {
-   width: 38%;
+ article.prototype p.co-text {
+   width: 42%;
    margin: 0 auto;
    text-align: left;
    font-size: 2.3rem;
@@ -664,14 +649,14 @@
  }
 
  header.three{
-   width: 100%;
+   width: 70%;
    margin-left: -10rem;
    margin-right: 10rem;
  }
 
  section.third img.last {
-   width: 60%;
-   margin-right: -5rem;
+   width: 80%;
+   margin-right: 0rem;
    display: block;
  }
 
