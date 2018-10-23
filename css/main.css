@@ -3406,16 +3406,15 @@ a.logo {
 
 /* H1 TEXT AT TOP*/
     div.about-intro-content h1.about-name {
-      font-size: 5.5rem;
+      font-size: 5rem;
       z-index: 1700;
-      margin-top: -97rem;
-      border: 1px solid green;
+      margin-top: -95rem;
       font-family: "Brandon Text Black", Futura-bold, sans-serif;
     }
 
     div.about-intro-content p.about-subtitle {
       font-family: "Brandon Text Medium", futura-medium, sans-serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       padding-top: 0.3rem;
     }
 
