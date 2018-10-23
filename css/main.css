@@ -963,8 +963,8 @@ img.label-image {
 img.squiggles-graphic {
   width: 45%;
   position: relative;
-  top: -51rem;
-  left: 25rem;
+  top: -55rem;
+  left: 30rem;
   z-index: 1300;
   display: block;
 }
@@ -2482,6 +2482,7 @@ div.key-learnings .concl-sub {
       z-index: 1500;
       position: relative;
       display: block;
+      border: 1px solid blue;
     }
 
     div.desktop ul.no {
@@ -2602,10 +2603,10 @@ div.key-learnings .concl-sub {
         }
 
     img.squiggles-graphic {
-      width: 35%;
+      width: 40%;
       position: relative;
       top: -68rem;
-      left: 56rem;
+      left: 59rem;
       z-index: 1750;
       display: block;
     }
@@ -3231,7 +3232,8 @@ a.logo {
     .contact-box .contact-image {
       width: auto;
       position: relative;
-      left: 90rem;
+      left: 85rem;
+      border: 1px solid red;
       top: -4rem;
       z-index: 1;
     }
@@ -3441,6 +3443,7 @@ a.logo {
 
     article.about-middle-content div.label-section {
       margin-left: 23rem;
+      margin-top: -1rem;
       display: flex;
       align-items: center;
     }
@@ -3458,8 +3461,8 @@ a.logo {
     img.squiggles-graphic {
       width: 30%;
       position: relative;
-      top: -25rem;
-      left: 99rem;
+      top: -23rem;
+      left: 97rem;
       z-index: 1800;
       display: block;
     }
