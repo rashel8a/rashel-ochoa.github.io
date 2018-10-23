@@ -964,7 +964,7 @@ img.squiggles-graphic {
   width: 45%;
   position: relative;
   top: -55rem;
-  left: 30rem;
+  left: 28rem;
   z-index: 1300;
   display: block;
 }
@@ -2482,7 +2482,6 @@ div.key-learnings .concl-sub {
       z-index: 1500;
       position: relative;
       display: block;
-      border: 1px solid blue;
     }
 
     div.desktop ul.no {
@@ -2606,7 +2605,7 @@ div.key-learnings .concl-sub {
       width: 40%;
       position: relative;
       top: -68rem;
-      left: 59rem;
+      left: 57rem;
       z-index: 1750;
       display: block;
     }
@@ -3233,7 +3232,6 @@ a.logo {
       width: auto;
       position: relative;
       left: 85rem;
-      border: 1px solid red;
       top: -4rem;
       z-index: 1;
     }
@@ -3404,20 +3402,19 @@ a.logo {
       display: flex;
       flex-direction: column;
       /* width: 100%; */
-      /* margin-top: -10rem; */
     }
 
 /* H1 TEXT AT TOP*/
     div.about-intro-content h1.about-name {
-      font-size: 6rem;
+      font-size: 5.5rem;
       z-index: 1700;
-      margin-top: -100rem;
+      margin-top: -80rem;
       font-family: "Brandon Text Black", Futura-bold, sans-serif;
     }
 
     div.about-intro-content p.about-subtitle {
       font-family: "Brandon Text Medium", futura-medium, sans-serif;
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding-top: 0.3rem;
     }
 
@@ -3461,8 +3458,8 @@ a.logo {
     img.squiggles-graphic {
       width: 30%;
       position: relative;
-      top: -23rem;
-      left: 97rem;
+      top: -33rem;
+      left: 98.5rem;
       z-index: 1800;
       display: block;
     }
@@ -3508,7 +3505,7 @@ a.logo {
       position: absolute;
       top: 178rem;
       z-index: 1800;
-      left: 104rem;
+      left: 101rem;
     }
 
     article.about-story-meat img.plunge-img {
@@ -3544,32 +3541,33 @@ a.logo {
     section.rashel-collage-images div.collage-wrapper-desktop{
       display: flex;
       width: 100%;
-      margin-left: 0rem;
-      margin-right: 0;
-      padding: 0;
       flex-direction: row;
+      margin: 0 auto;
       flex-wrap: wrap;
       align-items: center;
       justify-content: flex-start;
     }
 
     .collage-wrapper-desktop img {
-      margin: 0;
-      padding: 0;
+      /* margin: 0; */
+      /* padding: 0; */
       width: auto;
+      padding: 0;
       margin-right: -2rem;
     }
 
-    section div.collage-wrapper-desktop img.volcano-img {
+    div.collage-wrapper-desktop img.volcano-img {
       width: auto;
-      margin-right: -0.35rem;
+      margin-right: -14rem;
       margin-left: 0.5rem;
     }
 
-    section div.collage-wrapper-desktop img.temple-img {
+    div.collage-wrapper-desktop img.camera-img {
       width: auto;
-      margin-right: -2rem;
-      marign-left: 1.5rem;
+    }
+
+    div.collage-wrapper-desktop img.temple-img {
+      margin-right: -15rem;
     }
 
     i {
