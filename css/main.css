@@ -2900,6 +2900,7 @@ a.logo {
   width: 25%;
   padding-top: 6rem;
   margin-bottom: 6rem;
+  border: 1px solid red;
   margin-right: 10rem;
   }
 
@@ -2985,10 +2986,6 @@ a.logo {
 /* END OF NAV ANIMATION*/
 
   /* DESKTOP GRID HERO SECTION** */
-
-    body {
-      /* width: 144rem; */
-    }
 
     .nav-link:hover {
       color: #FB7E6C;
