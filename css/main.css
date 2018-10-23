@@ -2872,6 +2872,7 @@ div.key-learnings .concl-sub {
 
   div.container {
     overflow: hidden;
+    width: 100%;
   }
 /*
  .grid-hero, #project-section {
@@ -2892,14 +2893,14 @@ nav.navbar {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
   }
 
 a.logo {
-  width: 28%;
+  width: 25%;
   padding-top: 6rem;
   margin-bottom: 6rem;
-  margin-left: 7rem;
+  margin-right: 10rem;
   }
 
   .logo-size, .desktop {
@@ -2913,7 +2914,7 @@ a.logo {
 
   div.desktop {
   display: block;
-   min-width: 55%;
+   /* min-width: 55%; */
    padding: 4rem 5rem;
   }
 
@@ -2986,7 +2987,7 @@ a.logo {
   /* DESKTOP GRID HERO SECTION** */
 
     body {
-      width: 144rem;
+      /* width: 144rem; */
     }
 
     .nav-link:hover {
