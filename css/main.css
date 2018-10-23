@@ -2867,7 +2867,7 @@ div.key-learnings .concl-sub {
     background-color: #FFFDFB;
     font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
     transition: background 1s ease;
-    width: 100%;
+    /* width: 100%; */
   }
 
   div.container {
@@ -2889,7 +2889,6 @@ div.key-learnings .concl-sub {
 
 nav.navbar {
     display: flex;
-    height: 12rem;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -2898,10 +2897,8 @@ nav.navbar {
 
 a.logo {
   width: 25%;
-  padding-top: 6rem;
-  margin-bottom: 6rem;
-  border: 1px solid red;
-  margin-right: 10rem;
+  margin-top: 0;
+  margin-right: 21rem;
   }
 
   .logo-size, .desktop {
@@ -2915,8 +2912,6 @@ a.logo {
 
   div.desktop {
   display: block;
-   /* min-width: 55%; */
-   padding: 4rem 5rem;
   }
 
   ul.no {
@@ -3005,10 +3000,10 @@ a.logo {
 
     img.desktop-image {
       display: block;
-      width: 100%;
+      width: 90%;
       z-index: 1;
       margin-bottom: 12rem;
-      margin-left: 5rem;
+      margin-left: 9rem;
     }
 
     .mobile-header {
@@ -3020,7 +3015,7 @@ a.logo {
       width: 114rem;
       flex-direction: row-reverse;
       align-items: center;
-      margin-top: 2rem;
+      margin-top: 0;
     }
 
     .grid-hero article {
@@ -3057,7 +3052,7 @@ a.logo {
       z-index: 6;
       font-size: 2rem;
       font-weight: 600;
-      margin-top: -38rem;
+      margin-top: -36rem;
     }
 
   /* Project Section Desktop */
@@ -3159,7 +3154,6 @@ a.logo {
       background-color: #FDE8DE;
       align-items: center;
       justify-content: center;
-      padding: 6rem 8rem 6rem 0rem;
     }
 
     /* .about-content, .about-images {
@@ -3168,13 +3162,13 @@ a.logo {
 
     .about-content {
       margin: 0 auto;
-      width: 50rem;
+      width: 38%;
     }
 
     .rashel-image {
       display: block;
       z-index: 1;
-      margin-right: -8rem;
+      margin-right: -6rem;
       margin-bottom: 1rem;
     }
 
@@ -3197,14 +3191,18 @@ a.logo {
 
     .story-button  {
       width: 50rem;
-      margin-top: 2.5rem;
+      margin-top: 3rem;
     }
 
     .about-title {
-      font-size: 4rem;
+      font-size: 3.5rem;
       font-family: 'Brandon Text Bold', sans-serif;
       color: #001F40;
       padding-bottom: 0.5rem;
+    }
+
+    p.about {
+      font-size: 2rem;
     }
 
     .story-button span:hover {
@@ -3218,11 +3216,11 @@ a.logo {
       padding: 3rem 0;
     }
 
-    .contact-box .contact-image img {
+    .contact-box .contact-image {
       width: auto;
       position: relative;
-      left: 95rem;
-      top: -1rem;
+      left: 90rem;
+      top: -4rem;
       z-index: 1;
     }
 
@@ -3288,21 +3286,21 @@ a.logo {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-right: 10rem;
+      width: 140%;
+      /* border: 1px solid gold; */
     }
 
     ul.social-media p {
       display: flex;
       align-items: center;
       flex-direction: row;
-      padding: 0;
       font-size: 1.8rem;
       font-family: "Brandon Text Medium";
     }
 
     i.fab, i.fas {
       font-size: 2.5rem;
-      padding-right: .5rem;
+      padding-right: 1rem;
       color: #001F40;
     }
 
@@ -3329,8 +3327,6 @@ a.logo {
       background-color: #FFFDFB;
       font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
       color: #001F40;
-      line-height: 125%;
-      /* margin: 0; */
     }
 
     nav {
@@ -3340,22 +3336,22 @@ a.logo {
     }
 
     div.main-container {
-      height: 100vh;
+      /* height: 100vh; */
       transform-style: preserve-3d;
       overflow: hidden;
-      overflow-y: scroll;
+      overflow-y: auto;
       perspective: 2px;
     }
 
     article.section {
       position: relative;
-      height: 100vh;
+      /* height: 100vh; */
     }
 
     article.section-2 {
       position: relative;
-      height: 62vh;
-      top: -30rem;
+      height: 80vh;
+      top: -20rem;
       z-index: 1000;
     }
 
@@ -3364,7 +3360,7 @@ a.logo {
       display: flex;
       flex: 1 0 auto;
       position: relative;
-      top: -80rem;
+      /* top: -80rem; */
       height: 130vh;
       transform: translateZ(-1px) scale(1.5);
       z-index: -1;
@@ -3373,11 +3369,13 @@ a.logo {
 
     article.bg1::after {
       background: url('../images/about/rashel-hero.png');
-      background-size: auto;
+      width: auto;
+      position: relative;
+      top: -68rem;
     }
 
     article.about-header div.about-intro-content {
-      z-index: 1000;
+      z-index: 1500;
       position: relative;
       display: block;
       width: 100%;
@@ -3395,20 +3393,12 @@ a.logo {
       padding-top: 0.3rem;
     }
 
-    article.about-header .rashel-hero-mobile{
+    article.about-header .rashel-hero-mobile {
       display: none;
     }
 
-    article.about-header img.rashel-hero{
-      width: 100%;
-      display: block;
-      position: relative;
-      top: -47rem;
-      z-index: 1;
-    }
-
      article.about-middle-content {
-      padding: 0.3rem 0 0 0;
+      padding: 3rem 0;
       background-color: #FDE8DE;
       display: flex;
       flex-direction: column;
@@ -3416,10 +3406,10 @@ a.logo {
     }
 
     img.squiggles-graphic {
-      width: 23%;
+      width: 30%;
       position: relative;
       top: -38.5rem;
-      left: 108rem;
+      left: 103rem;
       z-index: 1300;
       display: block;
     }
@@ -3447,25 +3437,19 @@ a.logo {
       line-height: 130%;
       width: 49%;
       position: relative;
-      left: 5rem;
-      margin: -1rem 32.3rem 0 32.3rem;
+      margin: 0 auto 0 auto;
     }
 
     /* STORY MEAT SECTION*/
 
     section.about-story-section {
-      margin: -25rem 38rem 5rem 38rem;
-    }
-
-    section.content-container {
-      position: relative;
-      display: block;
-      z-index: 1;
+      margin: -12rem auto 5rem auto;
+      width: 45%;
     }
 
     section.about-story-section div.label-section {
-      margin-top: 5rem;
-      margin-left: -14rem;
+      /* margin-top: 10rem; */
+      margin-left: -18rem;
       display: flex;
       align-items: center;
       margin-right: 0;
@@ -3477,14 +3461,10 @@ a.logo {
       font-family: "Brandon Text Regular";
     }
 
-    div.par-content {
-      margin: 0;
-    }
-
     article.about-story-meat h4.story-title {
       font-size: 2.5rem;
       line-height: 130%;
-      margin-top: 4rem;
+      /* margin-top: 4rem; */
       font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
     }
 
@@ -3497,28 +3477,29 @@ a.logo {
 
     article.about-story-meat img.creative-img {
       display: block;
-      width: 42%;
-      position: relative;
-      top: 23rem;
-      left: 67rem;
+      width: 20%;
+      position: absolute;
+      top: 200rem;
+      z-index: 1800;
+      left: 102rem;
     }
 
     article.about-story-meat img.plunge-img {
       display: block;
-      width: 40%;
+      width: 18%;
       z-index: 1000;
-      position: relative;
-      top: -17rem;
-      right: 28rem;
+      position: absolute;
+      top: 245rem;
+      left: 12rem;
     }
 
     article.about-story-meat img.cocoon-img {
       display: block;
-      width: 42%;
+      width: 18%;
       z-index: 1000;
-      position: relative;
-      top: 30rem;
-      left: 66rem;
+      position: absolute;
+      top: 315rem;
+      left: 102rem;
     }
 
     p.par {
@@ -3527,25 +3508,6 @@ a.logo {
 
     p.par-last {
       margin-top: 1rem;
-    }
-
-    div.second-par {
-      margin-top: -28rem;
-      z-index: 3;
-      display: block;
-      position: relative;
-    }
-
-    div.fourth-par {
-      margin-top: -33rem;
-    }
-
-    article.about-story-meat div.fifth-par {
-      z-index: 3;
-      display: block;
-      position: relative;
-      padding: 0;
-      margin-top: -34rem;
     }
 
     div.collage-wrapper-mobile {
@@ -3564,12 +3526,12 @@ a.logo {
       margin: 0;
       padding: 0;
       width: auto;
-      margin-right: -.35rem;
+      margin-right: -1rem;
     }
 
     section div.collage-wrapper-desktop img.volcano-img {
       width: auto;
-      margin-right: -3rem;
+      margin-right: -1rem;
     }
 
     section div.collage-wrapper-desktop img.temple-img {
