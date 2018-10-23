@@ -15,7 +15,7 @@
 .logo-size {
   width: 70%;
   padding-left: 1.6rem;
-  padding-top: 7rem;
+  padding-top: 5.8rem;
   position: relative;
 }
 
@@ -76,21 +76,27 @@ ul li {
 }
 
   article.intro-header {
-    margin: 10rem 0 5rem 0;
+    margin: 7.5rem auto;
   }
 
   article.intro-header .content {
-    margin: 1rem 8rem -7rem 8rem;
+    margin: 1rem auto;
+    width: 70%;
   }
 
   div.CTA-buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    margin: 0 -5rem 0 -5rem;
+    top: -2rem;
+    position: relative;
+    left: -5rem;
   }
 
   div.CTA-buttons a.primary-btn {
-    margin: 0 3rem 5rem 0rem;
+    margin-right: 2rem;
+    text-align: center;
   }
 
 /* CHAPTER SECTION GENERAL*/
@@ -161,8 +167,8 @@ img.chart-mobile {
 
 img.chart {
   display: block;
-  width: 100vw;
-  margin-left: -11.5rem;
+  width: 102vw;
+  margin-left: -12rem;
   margin-top: 3rem;
 }
 
@@ -184,28 +190,28 @@ img.chart {
   width: 60%;
   text-align: left;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.1rem;
+  line-height: 120%;
   display: block;
 }
 
 .survey-results .callout-line {
   background-color: #FFA856;
-  width: .9rem;
-  height: 26rem;
+  width: .7rem;
+  height: 23rem;
   position: relative;
-  left: 13rem;
+  left: 16rem;
   border-radius: 4rem;
 }
 
 .magnify .img-frustrations {
-  width: auto;
+  width: 50%;
 }
 
 .audience .users {
-  width: auto;
+  width: 60%;
 }
 
 .companal .compimg {
@@ -359,8 +365,11 @@ div.box-1, div.box-2 {
   margin-top: 5rem;
 }
 
-.box-1 h4 {
+.box-1 h4, .box-2 h4 {
  margin-bottom: 5rem;
+ width: 70%;
+ margin: 0 auto;
+ line-height: 130%;
 }
 
 img.flow-mobile {
@@ -369,7 +378,7 @@ img.flow-mobile {
 
 .box-2 .flow-2 {
   display: block;
-  width: 100vw;
+  width: 110vw;
   margin: 0 auto;
 }
 
@@ -446,19 +455,19 @@ img.flow-mobile {
   width: 60%;
   text-align: left;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.1rem;
+  line-height: 120%;
   display: block;
 }
 
 .prototype .callout-line {
   background-color: #FFA856;
-  width: .9rem;
-  height: 22rem;
+  width: .7rem;
+  height: 19rem;
   position: relative;
-  left: 13rem;
+  left: 16rem;
   border-radius: 4rem;
 }
 
@@ -523,7 +532,7 @@ header.two p {
 }
 
 section.third img.last {
-  width: auto;
+  width: 80%;
   display: block;
   margin-bottom: 0;
 }
@@ -561,7 +570,7 @@ section.third img.last {
 }
 
 .brand-header {
-  width: 100%;
+  width: 102vw;
   display: block;
 }
 
@@ -578,13 +587,12 @@ section.third img.last {
  font-size: 2.5rem;
  line-height: 130%;
  position: relative;
- top: 0rem;
- margin-top: 0rem;
 }
 
 .brand-quote h2.by {
- font-family: 'Brandon Grotesque Black', sans-serif;
- margin-top: .3rem;
+ font-family: 'Brandon Text Medium Italic', sans-serif;
+ margin-top: .5rem;
+ font-size: 2.5rem;
 }
 
 i {
@@ -592,9 +600,9 @@ i {
 }
 
 img.mood {
- width: 100vw;
+ width: 104vw;
  display: block;
- margin-left: -11.5rem;
+ margin-left: -12.5rem;
 }
 
 article.logo-design {
@@ -615,17 +623,16 @@ div.color-palette {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 div.color {
-  margin-right: 5rem;
-  margin-left: -5rem;
+  width: 60%;
 }
 
 img.color-else {
- max-width: 80%;
+ max-width: 50%;
  margin-top: 0;
- margin-right: -5rem;
  display: block;
 }
 
@@ -638,14 +645,12 @@ div.typography {
 }
 
 .type-content {
-  width: 45rem;
-  margin-bottom: 2rem;
-  margin-right: 5rem;
+  width: 60%;
+  margin-right: 2rem;
 }
 
 div.typography img.type-img {
    width: 35%;
-   margin: 0 19rem 0 auto;
 }
 
 .style-guide-button {
@@ -677,9 +682,12 @@ div.typography img.type-img {
 }
 
 #chapter5 .pg {
-  /* margin: 0 32rem; */
-  padding: 0 5rem;
   margin-top: 7.5rem;
+}
+
+#chapter5 .title-card {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 article.hi-fi .content {
@@ -688,6 +696,8 @@ article.hi-fi .content {
 
 article.hi-fi img {
   margin-top: 3rem;
+  width: 105vw;
+  margin-left: -3rem;
 }
 
 div.test-bg {
@@ -695,6 +705,11 @@ div.test-bg {
   flex-direction: column;
   margin: 5rem auto;
   background-color: #132D60;
+}
+
+article.ab div.content {
+  width: 70%;
+  margin: 7.5rem auto 3rem auto;
 }
 
 div.test-wrapper {
@@ -778,6 +793,11 @@ article.testing {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+}
+
+article.testing div.content {
+  width: 60%;
 }
 
 div.vid-responsive {
@@ -807,6 +827,11 @@ article.short {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+}
+
+article.short div.content {
+  width: 60%;
 }
 
 .short .callout {
@@ -823,19 +848,19 @@ article.short {
   width: 60%;
   text-align: left;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.1rem;
+  line-height: 120%;
   display: block;
 }
 
 .short .callout-line {
   background-color: #FFA856;
-  width: .9rem;
-  height: 29rem;
+  width: .7rem;
+  height: 25rem;
   position: relative;
-  left: 13rem;
+  left: 16rem;
   border-radius: 4rem;
 }
 
@@ -1022,19 +1047,19 @@ article.icing p.co-text {
   width: 60%;
   text-align: left;
   margin: 0 auto;
-  padding-left: 1rem;
+  padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 3.1rem;
+  line-height: 120%;
   display: block;
 }
 
 article.icing .callout-line {
   background-color: #FFA856;
-  width: .9rem;
-  height: 40rem;
+  width: .7rem;
+  height: 34rem;
   position: relative;
-  left: 13rem;
+  left: 16rem;
   border-radius: 4rem;
 }
 
@@ -1151,28 +1176,30 @@ div.key-learnings .concl-sub {
 
 .contact-box {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 7.5rem 0 5rem 0;
 }
 
 div.contact-box img.right-side{
   width: 50%;
   display: block;
   position: relative;
-  top: -3rem;
+  top: -6rem;
   left: 16rem;
   z-index: 1;
 }
 
-.contact-copy  {
+div.contact-copy  {
   text-align: left;
-  margin-top: -8rem;
+  position: relative;
+  top: -12rem;
   z-index: 1000;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .contact-title {
   font-size: 3.5rem;
-  width: 60%;
-  margin-left: 8rem;
+  margin-left: 1rem;
   font-family: 'Brandon Text Bold';
   line-height: 100%;
   color: #FFA856;
@@ -1183,8 +1210,6 @@ h5.contact-text {
   line-height: 120%;
   padding-bottom: 1rem;
   margin: 0 auto;
-  margin-left: 8rem;
-  width: 80%;
   color: #FFA856;
 }
 
@@ -1193,11 +1218,11 @@ h5.contact-text {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto 5rem auto;
+  margin: -10rem auto 5rem auto;
 }
 
 .get-in-touch, .download-resume {
-  margin: 0 2.5rem 0 2.5rem;
+  margin: 0 1rem 0 1rem;
 }
 
 .return-top {
@@ -1207,8 +1232,7 @@ h5.contact-text {
   font-size: 2rem;
   text-align: center;
   align-items: center;
-  margin-bottom: 5rem;
-  padding: 0;
+  margin-bottom: -4rem;
 }
 
 #footer-box {
@@ -1219,14 +1243,13 @@ h5.contact-text {
   padding: 0;
 }
 
-.social-media {
+ul.social-media {
   display: flex;
   align-items: center;
-  padding-bottom: 2rem;
-  margin-left: 4.8rem;
+  padding: 0;
 }
 
-.social-media p {
+ul.social-media p {
   margin: 0 auto;
   flex-direction: row;
   font-size: 1.8rem;
@@ -1239,11 +1262,12 @@ h5.contact-text {
   color: #001F40;
 }
 
-.copyright p {
+div.copyright p {
   text-align: center;
   align-items: center;
   font-size: 1.8rem;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 0;
   display: block;
   font-family: "Brandon Text Medium";
 }

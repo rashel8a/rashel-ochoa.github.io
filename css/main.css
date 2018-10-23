@@ -3392,7 +3392,7 @@ a.logo {
       display: block;
       z-index: 1;
       position: relative;
-      top: -33rem;
+      top: -25rem;
     }
 
 
@@ -3408,7 +3408,7 @@ a.logo {
     div.about-intro-content h1.about-name {
       font-size: 5rem;
       z-index: 1700;
-      margin-top: -95rem;
+      margin-top: -93.5rem;
       font-family: "Brandon Text Black", Futura-bold, sans-serif;
     }
 
