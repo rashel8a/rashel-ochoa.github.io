@@ -3322,8 +3322,10 @@ a.logo {
     ul.social-media {
       display: flex;
       justify-content: center;
+      width: 80%;
+      position: relative;
+      left: 6rem;
       align-items: center;
-      width: 140%;
       /* border: 1px solid gold; */
     }
 
@@ -3332,6 +3334,7 @@ a.logo {
       align-items: center;
       flex-direction: row;
       font-size: 1.8rem;
+      margin-right: -3rem;
       font-family: "Brandon Text Medium";
     }
 
@@ -3350,9 +3353,11 @@ a.logo {
       text-align: left;
       align-items: center;
       font-size: 1.8rem;
-      margin-left: 6rem;
+      margin-left: 3rem;
+      margin-bottom: 2rem;
+      width: 120%;
       padding: 0;
-      margin-top: 3rem;
+      margin-top: 2rem;
       font-family: "Brandon Text Medium";
     }
 
@@ -3389,7 +3394,7 @@ a.logo {
       position: relative;
       display: block;
       z-index: 1;
-      top: -30rem;
+      top: -20rem;
       z-index: 1700;
     }
 
@@ -3492,7 +3497,7 @@ a.logo {
     /* STORY MEAT SECTION*/
 
     section.about-story-section {
-      margin: -23rem auto 5rem auto;
+      margin: -15rem auto 5rem auto;
       width: 49%;
     }
 
