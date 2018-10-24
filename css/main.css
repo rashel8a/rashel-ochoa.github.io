@@ -2502,6 +2502,7 @@ div.copyright p {
       justify-content: center;
       padding: 0;
       text-align: center;
+      margin: 0 auto;
     }
 
   ul.social-media li {
@@ -3414,7 +3415,7 @@ a.logo {
       border: none;
       font-size: 1.7rem;
       width: 100% !important;
-      padding-top: 2rem;
+      padding-top: 1rem;
       padding-left: 7rem;
       font-family: "Brandon Text Medium";
     }

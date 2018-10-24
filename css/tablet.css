@@ -1286,10 +1286,10 @@ ul.social-media p {
 div.copyright p {
   text-align: center;
   align-items: center;
+  border: none;
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 0 0 1rem 0;
-  border: 1px solid red;
   width: 100% !important;
   display: block;
   font-family: "Brandon Text Medium";
