@@ -39,7 +39,7 @@
   }
 
   /* INTRO DESKTOP SECTION */
-  div.contact-btns {
+  div.contact-btns1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,8 +47,9 @@
     margin-left: -2rem;
   }
 
-  .contact-btns .primary-btn {
-    margin: 5rem 0rem 5rem 2rem;
+  div.contact-btns1 .primary-btn {
+    margin: 10rem 0rem 10rem 2rem;
+    width: 100%;
   }
 
   article.intro-header {
@@ -385,7 +386,7 @@
     display: inline-block;
     /* margin: 0 auto; */
     position: relative;
-    left: 19rem;
+    left: 16rem;
     margin: 5rem 20rem 3rem 20rem;
     text-align: center;
   }
@@ -479,7 +480,7 @@
      width: 18.5%;
      color: #1C46C5;
      display: block;
-     margin-left: 53.5rem;
+     margin-left: 50rem;
      text-align: center;
    }
 
@@ -1297,7 +1298,6 @@ div.contact-btns2 {
   align-items: center;
   justify-content: center;
   margin-left: -2rem;
-  margin-top: 0;
   /* width: 100%; */
 }
 
@@ -1444,7 +1444,6 @@ ul.social-media {
 #footer-box ul.social-media p {
   display: flex;
   align-items: center;
-  border: 1px solid red;
   flex-direction: row;
   margin-right: 1rem;
   flex-wrap: wrap;

@@ -3126,7 +3126,7 @@ a.logo {
       z-index: 6;
       font-size: 2rem;
       font-weight: 600;
-      margin-top: -36rem;
+      margin-top: -33rem;
     }
 
   /* Project Section Desktop */
@@ -3192,10 +3192,12 @@ a.logo {
       width: 50rem;
     }
 
-    .read-more.primary-btn {
+    article.feat-project-text a.read-more {
       grid-area: button;
       margin-top: 3rem;
       margin-bottom: 0;
+      padding-top: -0.3rem;
+      width: 44%;
     }
 
     .project-mobile-lg {
@@ -3228,6 +3230,7 @@ a.logo {
       background-color: #FDE8DE;
       align-items: center;
       justify-content: center;
+      margin-bottom: -1rem;
     }
 
     /* .about-content, .about-images {
@@ -3331,7 +3334,7 @@ a.logo {
 
     div.contact-btns .primary-btn {
       margin: 0 2rem 0 2rem;
-      width: 25%;
+      width: 20%;
     }
 
     div.return-top {
@@ -3375,7 +3378,7 @@ a.logo {
     ul.social-media p {
       display: flex;
       align-items: center;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       flex-direction: row;
       font-size: 1.7rem;
       font-family: "Brandon Text Medium";
@@ -3634,12 +3637,13 @@ a.logo {
       margin-left: 0.7rem;
     }
 
-    div.collage-wrapper-desktop img.camera-img {
-      width: auto;
-    }
-
     div.collage-wrapper-desktop img.temple-img {
       margin-right: -15rem;
+    }
+
+    div.collage-wrapper-desktop img.nzwine-img {
+      /* margin-left: 0.7rem; */
+      margin-right: -2.5rem;
     }
 
     i {
