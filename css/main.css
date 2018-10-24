@@ -3287,14 +3287,14 @@ a.logo {
     /* Contact Desktop Section */
     .contact-box {
       width: 100%;
-      padding: 3rem 0;
+      padding: 5rem 0;
     }
 
     .contact-box .contact-image {
       width: auto;
       position: relative;
       left: 85rem;
-      top: -4rem;
+      top: -12rem;
       z-index: 1;
     }
 
@@ -3302,7 +3302,7 @@ a.logo {
       font-size: 5rem;
       text-align: center;
       position: relative;
-      top: -15rem;
+      top: -22rem;
       z-index: 1000;
       font-family: 'Brandon Text Bold';
       line-height: 100%;
@@ -3315,32 +3315,33 @@ a.logo {
       font-family: 'Brandon Text Regular';
       line-height: 120%;
       position: relative;
-      top: -5rem;
+      top: -12rem;
       z-index: 1000;
       padding: 0 23rem;
       color: #FFA856;
     }
 
-    .contact-btns {
+    div.contact-btns {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: -3rem auto 2rem auto;
+      margin: -15rem auto 3rem auto;
     }
 
-    .get-in-touch, .download-resume {
-      margin: 0 2.5rem 0 2.5rem;
+    div.contact-btns .primary-btn {
+      margin: 0 2rem 0 2rem;
+      width: 25%;
     }
 
-    .return-top {
+    div.return-top {
       position: relative;
       display: flex;
       flex-direction: column-reverse;
       font-size: 2rem;
       text-align: center;
-      padding-bottom: 10rem;
       padding-top: 2.5rem;
+      top: 4rem;
       align-items: center;
     }
 
@@ -3365,7 +3366,6 @@ a.logo {
       padding: 0;
       left: 0;
       align-items: center;
-      /* border: 1px solid gold; */
     }
 
     ul.social-media li {
@@ -3375,6 +3375,7 @@ a.logo {
     ul.social-media p {
       display: flex;
       align-items: center;
+      margin-right: 1rem;
       flex-direction: row;
       font-size: 1.7rem;
       font-family: "Brandon Text Medium";
@@ -3614,22 +3615,23 @@ a.logo {
       flex-direction: row;
       margin: 0 auto;
       flex-wrap: wrap;
+      padding: 0;
       align-items: center;
       justify-content: flex-start;
     }
 
     .collage-wrapper-desktop img {
       /* margin: 0; */
-      /* padding: 0; */
       width: auto;
       padding: 0;
       margin-right: -2rem;
+      margin-bottom: -1rem;
     }
 
     div.collage-wrapper-desktop img.volcano-img {
       width: auto;
-      margin-right: -14rem;
-      margin-left: 0.5rem;
+      margin-right: -12.5rem;
+      margin-left: 0.7rem;
     }
 
     div.collage-wrapper-desktop img.camera-img {
