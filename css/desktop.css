@@ -840,7 +840,8 @@ article.ab a:hover {
 div.test-bg {
   display: flex;
   flex-direction: column;
-  margin: 0 auto 0 auto;
+  margin-left: -2rem;
+  width: 104vw;
   background-color: #132D60;
 }
 
@@ -1375,11 +1376,23 @@ h5.contact-text {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: -2rem auto 5rem auto;
+  margin: 0 auto 5rem auto;
+}
+
+.primary-btn {
+  padding-top: 1.6rem;
 }
 
 .get-in-touch, .download-resume {
   margin: 0 2.5rem 0 2.5rem;
+}
+
+.desktop-prototype, .mobile-prototype {
+  margin: 7rem 2.5rem 0 2.5rem;
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 1.6rem;
+  width: 100%;
 }
 
 .return-top {
