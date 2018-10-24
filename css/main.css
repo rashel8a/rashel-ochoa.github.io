@@ -632,6 +632,7 @@ div.desktop {
     padding: 7.5rem 1.6rem;
     align-items: center;
     flex-direction: column;
+    margin-bottom: -1rem;
   }
 
   .about-box, .rashel-img-mobile {
@@ -687,10 +688,10 @@ div.desktop {
   }
 
   .contact-image {
-    max-width: 100%;
+    width: auto;
     height: auto;
     position: relative;
-    left: 7rem;
+    left: 9.5rem;
     top: -4rem;
     z-index: 1;
   }
@@ -720,21 +721,22 @@ div.desktop {
     align-items: center;
   }
 
-  .get-in-touch {
-    margin-bottom: 2rem;
+  .contact-btns .primary-btn {
+    margin-bottom: 1rem;
+    width: 70%;
   }
 
-  .return-top {
+  div.return-top .return-link {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
     font-size: 2rem;
-    padding-top: 6rem;
+    margin-bottom: 2rem;
     text-align: center;
     align-items: center;
   }
 
-  i.fa-caret-up {
+  div.return-top i.fa-caret-up {
     color: #B0F0FD;
     display: block;
   }
@@ -834,10 +836,6 @@ div.copyright p {
   font-family: "Brandon Text Medium";
 }
 
-  /* *, *:after, *::before {
-    box-sizing: border-box;
-  } */
-
   a {
     text-decoration: none;
   }
@@ -917,7 +915,7 @@ article.about-header {
 h1.about-name {
   font-size: 3.2rem;
   z-index: 1300;
-  margin-top: -32rem;
+  margin-top: -34rem;
   position: relative;
   font-family: "Brandon Text Black", Futura-bold, sans-serif;
 }
@@ -964,7 +962,7 @@ img.squiggles-graphic {
   width: 45%;
   position: relative;
   top: -55rem;
-  left: 25rem;
+  left: 25.5rem;
   z-index: 1300;
   display: block;
 }
@@ -1024,7 +1022,7 @@ div.collage-wrapper-mobile {
 
 .collage-wrapper-mobile img {
   width: 50%;
-  margin: 0;
+  margin: 0 0 -1rem 0;
   padding: 0;
 }
 
@@ -1039,7 +1037,7 @@ a {
 
 .contact-section {
   background-color: #15246D;
-  padding: 0;
+  padding: 0 0 2rem 0;
 }
 
 article.about-story-meat img.graph {
@@ -1098,12 +1096,19 @@ ul.social-medio i {
 }
 
 div.return-top {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 5rem;
+}
+
+div.return-top i.fas {
+  margin-bottom: -0.5rem;
+  margin-top: 2rem;
 }
 
 div.return-top a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 #footer-card  {
@@ -1117,7 +1122,6 @@ div.copyrightt {
 div.copyrightt p {
   margin: 0 auto;
   width: 70%;
-  font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
 }
@@ -1257,7 +1261,7 @@ article.intro-header div.content {
 }
 
 
-div.contact-btns{
+div.contact-btns1{
   display: flex;
   flex-direction: column;
   /* margin-top: 10rem; */
@@ -1266,10 +1270,10 @@ div.contact-btns{
   margin-bottom: 5rem;
 }
 
-.contact-btns .primary-btn {
+.contact-btns1 .primary-btn {
   width: 27.5rem;
   margin: 1rem auto;
-  width: 100%;
+  width: 83%;
 }
 
 /* PROJECT INFO MOBILE*/
@@ -1400,9 +1404,9 @@ article.survey div.content {
 }
 
 .chart-mobile {
-  width: 100vw;
+  width: 110vw;
   display: block;
-  margin: 0 -1.6rem 0 -1.6rem;
+  margin: 0 -3rem 0 -3rem;
 }
 
 .survey-results {
@@ -1426,18 +1430,17 @@ article.survey div.content {
 
 .survey-results .callout-line {
   background-color: #FFA856;
-  width: 7rem;
+  width: 6rem;
   height: 28rem;
   position: relative;
-  left: 0.1rem;
+  right: 0.2rem;
   border-radius: 4rem;
 }
 
 .survey-results .callout p {
   margin-right: 3.8rem;
-  padding: 3rem 1rem;
+  padding: 3rem 0 3rem 1rem;
   text-align: left;
-  margin-left: .2rem;
   font-size: 2rem;
   line-height: 2.8rem;
 }
@@ -1627,18 +1630,18 @@ div.persona-button a.new-button {
 
 
 .prototype .callout p {
-  margin-right: 2rem;
-  padding: 3rem 1rem 3rem 0;
+  margin-right: 3.5rem;
+  padding: 3rem 1rem 3rem 2rem;
   text-align: left;
-  margin-left: 1.3rem;
+  /* margin-left: 1.3rem; */
   font-size: 2rem;
   line-height: 2.8rem;
 }
 
 .prototype .callout-line {
   background-color: #FFA856;
-  width: 4.5rem;
-  height: 20rem;
+  width: 4rem;
+  height: 23rem;
   position: relative;
   left: 0.5rem;
   border-radius: 4rem;
@@ -1675,8 +1678,7 @@ div.iterations-header {
 .it-title h3.it-text {
    font-size: 1.8rem;
    line-height: 120%;
-   font-weight: 600;
-   padding: 0.5rem 3rem 1rem 3rem;
+   padding: 0.8rem 3rem 1rem 3rem;
    display: block;
    font-family: "Brandon Text Medium";
  }
@@ -1904,9 +1906,9 @@ div.vid-responsive {
 }
 
 .short .callout p {
-  margin-right: 3.5rem;
+  margin-right: 4.5rem;
   margin-left: 1.3rem;
-  padding: 3rem 1rem 3rem 0;
+  padding: 3rem 0 3rem 1rem;
   text-align: left;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -1917,7 +1919,7 @@ div.vid-responsive {
   width: 6.5rem;
   height: 31rem;
   position: relative;
-  left: 0.4rem;
+  left: 0.5rem;
   border-radius: 4rem;
 }
 
@@ -2004,7 +2006,7 @@ article.icing .callout-line {
   width: 10rem;
   height: 42rem;
   position: relative;
-  left: 0.4rem;
+  left: 0.5rem;
   border-radius: 4rem;
 }
 
@@ -2020,7 +2022,7 @@ article.icing .callout {
 
 article.icing .callout p {
   margin-right: 3.8rem;
-  padding: 3rem 1rem 3rem 0;
+  padding: 3rem 1rem 3rem 1rem;
   margin-left: 1.3rem;
   text-align: left;
   font-size: 2rem;
@@ -2091,7 +2093,7 @@ div.contact-btns2 {
 }
 
 div.contact-btns2 .primary-btn {
-  width: 100%;
+  width: 83%;
   margin-top: 2rem;
 }
 
@@ -2176,7 +2178,7 @@ div.key-learnings .concl-sub {
 
   .contact-btns3 .primary-btn {
     margin: 1rem;
-    width: 100%;
+    width: 83%;
   }
 
   div.return-top {
@@ -2290,8 +2292,8 @@ div.copyright p {
 
     div.desktop {
     display: block;
-     min-width: 55%;
-     padding: 4rem 3rem;
+    padding: 4rem 3rem;
+    margin-right: 2rem;
     }
 
     ul.no {
@@ -2405,6 +2407,7 @@ div.copyright p {
 
     div.about-box {
       padding: 10rem 0;
+      margin-bottom: -1rem;
     }
 
     .rashel-img-mobile {
@@ -2433,23 +2436,24 @@ div.copyright p {
 
     /* TABLET HP CONTACT*/
     .contact-image {
-      left: 43rem;
+      left: 40rem;
       top: -4rem;
-      width: 50%;
+      width: 70%;
       display: block;
     }
 
     .contact-content {
-      margin: 0 8rem;
+      width: 80%;
+      margin: -2rem auto 0 auto;
       padding: 0;
     }
 
     h3.contact-body {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
     }
 
     h2.contact-header {
-      font-size: 4rem;
+      font-size: 4.5rem;
     }
 
     .contact-header {
@@ -2461,17 +2465,19 @@ div.copyright p {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 7.5rem auto;
+      margin: 4rem auto;
     }
 
     .get-in-touch, .download-resume {
       margin: 0 2.5rem 0 2.5rem;
+      width: 100%;
     }
 
     div.return-top {
       position: relative;
       top: -3rem;
-      padding-bottom: 3rem;
+      /* margin-bottom: 2rem; */
+      padding-bottom: 5rem;
       padding-top: 0;
     }
 
@@ -2797,6 +2803,7 @@ div.copyright p {
       grid-template-columns: 2fr 2fr;
       /* grid-template-rows: 1fr; */
       grid-column-gap: 0;
+        margin-bottom: -1rem;
     }
 
     div.collage-wrapper-desktop img.temple-img {
@@ -2892,14 +2899,14 @@ div.copyright p {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 5rem 1rem 0 2.4rem;
+      margin: 5rem 0 0 1rem;
       padding: 0;
     }
 
     ul.social-medio i {
       color: #FFFDFB;
       padding-right: 3rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
     }
 
@@ -2910,14 +2917,13 @@ div.copyright p {
 
     div.copyrightt p {
       padding: 0;
-      font-weight: 600;
       font-family: "Brandon Text Medium";
       font-size: 1.8rem;
     }
 
     div.return-top {
       margin-top: 5rem;
-      margin-bottom: -2rem;
+      margin-bottom: -3rem;
     }
 
     div.return-top a {

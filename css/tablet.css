@@ -84,7 +84,7 @@ ul li {
     width: 70%;
   }
 
-  div.contact-btns {
+  div.contact-btns1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,12 +93,14 @@ ul li {
     left: 1rem;
     margin-top: 1rem;
     margin-bottom: 15rem;
-    width: 85%;
+    width: 100%;
   }
 
-  div.contact-btns a.primary-btn {
+  div.contact-btns1 a.primary-btn {
     margin-right: 2rem;
+    margin-top: 7rem;
     text-align: center;
+    width: 39%;
   }
 
 /* CHAPTER SECTION GENERAL*/
@@ -1148,15 +1150,16 @@ div.mobile-images-final, article.final-p img.mobile-bg {
 }
 
 div.contact-btns2 {
-  margin: 3rem auto 10rem auto;
+  margin: 2rem auto 10rem auto;
   display: flex;
   flex-direction: row;
   /* padding-top: 0.5rem; */
-  width: 85%;
+  width: 83%;
 }
 
 div.contact-btns2 .primary-btn {
   margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 #chapter6 .concl {
@@ -1285,7 +1288,7 @@ div.copyright p {
   align-items: center;
   font-size: 1.8rem;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 1rem 0;
   width: 100%;
   display: block;
   font-family: "Brandon Text Medium";
