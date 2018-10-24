@@ -90,15 +90,12 @@ ul li {
     justify-content: center;
     flex-direction: row;
     position: relative;
-    left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 15rem;
     width: 100%;
   }
 
-  div.contact-btns1 a.primary-btn {
-    margin-right: 2rem;
-    margin-top: 7rem;
+  div.contact-btns1 .primary-btn {
+    /* margin-right: 2rem; */
+    margin: 3rem 2rem 5rem 0;
     text-align: center;
     width: 39%;
   }
@@ -197,7 +194,7 @@ img.chart {
   padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   display: block;
 }
 
@@ -371,7 +368,7 @@ div.box-1, div.box-2 {
 
 .box-1 h4, .box-2 h4 {
  margin-bottom: 5rem;
- width: 70%;
+ width: 60%;
  margin: 0 auto;
  line-height: 130%;
 }
@@ -467,7 +464,7 @@ img.flow-mobile {
   padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   display: block;
 }
 
@@ -500,7 +497,6 @@ article div.iterations {
 
 .it-title {
   text-align: center;
-  margin-top: 0;
   margin-left: .5rem;
   font-family: "Brandon Text Bold";
 }
@@ -534,14 +530,14 @@ header.two p {
 }
 
  .first img, .second img {
-  width: 45%;
+  width: 65%;
   margin-left: 2.5rem;
   display: block;
   margin-bottom: 0;
 }
 
 section.third img.last {
-  width: 80%;
+  width: 100%;
   display: block;
   margin-bottom: 0;
 }
@@ -553,9 +549,10 @@ section.third img.last {
   color: #FFFDFB;
   width: 2.5rem;
   height: 2.5rem;
+  margin-left: 0.5rem;
   font-family: 'Brandon Text Medium', sans-serif;
   font-size: 1.8rem;
-  margin-top: 0;
+  margin-top: 0.6rem;
 }
 
 .it-title .it-text {
@@ -563,6 +560,8 @@ section.third img.last {
   font-family: 'Brandon Text Medium', sans-serif;
   display: inline-block;
   text-align: left;
+  padding: 0;
+  margin-top: -0.7rem;
   margin-left: 0.5rem;
 }
 
@@ -712,7 +711,8 @@ article.hi-fi img {
 div.test-bg {
   display: flex;
   flex-direction: column;
-  margin: 5rem auto;
+  margin: 5rem auto 5rem -3rem;
+  width: 105vw;
   background-color: #132D60;
 }
 
@@ -860,7 +860,7 @@ article.short div.content {
   padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   display: block;
 }
 
@@ -950,7 +950,7 @@ section.uno img {
 div.rogue-img img.center {
   display: flex;
   flex-direction: column;
-  width: 105vw;
+  width: 104vw;
 }
 
 div.rogue-img p.test-img-text {
@@ -958,7 +958,7 @@ div.rogue-img p.test-img-text {
   color: #FFFDFB;
   width: 45%;
   left: 37rem;
-  top: 14rem;
+  top: 16rem;
   text-align: center;
   font-size: 1.6rem;
   font-family: 'Brandon Text Regular';
@@ -1060,7 +1060,7 @@ article.icing p.co-text {
   padding-left: 3rem;
   font-size: 2.1rem;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 130%;
   display: block;
 }
 
@@ -1140,7 +1140,7 @@ div.mobile-desktop-images img.final-mobile-one {
 
 div.mobile-desktop-images img.final-mobile-two {
   width: 90%;
-    margin: 0 auto;
+  margin: 0 auto;
   margin-top: 0rem;
   display: block;
 }
@@ -1194,14 +1194,14 @@ div.key-learnings .concl-sub {
 
 .contact-box {
   width: 100%;
-  padding: 7.5rem 0 5rem 0;
+  padding: 7.5rem 0 2rem 0;
 }
 
 div.contact-box img.right-side{
-  width: 50%;
+  width: 37%;
   display: block;
   position: relative;
-  top: -6rem;
+  top: -5rem;
   left: 13rem;
   z-index: 1;
 }
@@ -1236,7 +1236,7 @@ h5.contact-text {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: -9rem auto 0rem auto;
+  margin: -9rem auto 0 auto;
   width: 80%;
 }
 
@@ -1289,7 +1289,7 @@ div.copyright p {
   font-size: 1.8rem;
   margin: 0 auto;
   padding: 0 0 1rem 0;
-  width: 100%;
+  width: 100% !important;
   display: block;
   font-family: "Brandon Text Medium";
 }

@@ -1501,7 +1501,7 @@ article.survey div.content {
 }
 
 .sheila-persona h3 {
-  width: 50%;
+  width: 45%;
 }
 
 .pers-title {
@@ -1619,10 +1619,6 @@ div.persona-button a.new-button {
 .sketches img {
   width: 100%;
   margin: 0 auto;
-}
-
-.wf-group-mobile {
-  margin-left: -1.6rem;
 }
 
 .wf-images .wf-img-1, .wf-images .wf-img-2{
@@ -1822,9 +1818,9 @@ div.style-guide-button span {
   border-radius: 5rem;
   text-align: center;
   height: 1rem;
-  width: 15rem;
+  width: 14.1rem;
   top: 4rem;
-  left: 6.5rem;
+  left: 6.6rem;
   background-color: #03E1D7;
 }
 
@@ -1854,7 +1850,8 @@ article.hi-fi {
 }
 
 article.hi-fi img {
-  width: 100%;
+  width: 105vw;
+  margin-left: -2.2rem;
 }
 
 article.ab {
@@ -1941,7 +1938,7 @@ section.cinco h3.it, section.seis h3.it, section {
   font-size: 1.8rem;
   font-family: 'Brandon Text Regular';
   margin-left: 3rem;
-  padding: 1.2rem 0;
+  padding: 1.3rem 0;
   font-family: "Brandon Text Medium";
 }
 
@@ -1969,7 +1966,7 @@ div.rogue-img p.test-img-text  {
   font-family: 'Brandon Text Regular';
   color: #FFFDFB;
   position: absolute;
-  margin-top: -24rem;
+  margin-top: -25.5rem;
   text-align: center;
   margin-right: 1.6rem;
 }
@@ -2452,7 +2449,7 @@ div.copyright p {
     }
 
     .contact-content {
-      width: 80%;
+      width: 83%;
       margin: -2rem auto 0 auto;
       padding: 0;
     }
@@ -2477,9 +2474,9 @@ div.copyright p {
       margin: 4rem auto;
     }
 
-    .get-in-touch, .download-resume {
-      margin: 0 2.5rem 0 2.5rem;
-      width: 100%;
+    .contact-btns .primary-btn {
+      margin: 0 1rem 0 1rem;
+      width: 41%;
     }
 
     div.return-top {
@@ -2638,7 +2635,7 @@ div.copyright p {
     div.about-intro-content h1.about-name {
       font-size: 4rem;
       z-index: 1900;
-      margin-top: -55rem;
+      margin-top: -56rem;
       font-family: "Brandon Text Black", Futura-bold, sans-serif;
     }
 
@@ -3372,8 +3369,7 @@ a.logo {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
-      padding-bottom: 0.3rem;
-      padding-top: 0.5rem;
+      padding: 2rem 0;
     }
 
     ul.social-media {
@@ -3394,7 +3390,7 @@ a.logo {
     ul.social-media p {
       display: flex;
       align-items: center;
-      margin-right: 1.5rem;
+      margin-right: 2rem;
       flex-direction: row;
       font-size: 1.7rem;
       font-family: "Brandon Text Medium";
@@ -3415,9 +3411,10 @@ a.logo {
       text-align: left;
       align-items: center;
       font-size: 1.7rem;
-      margin: 2rem 0 2rem 3rem;
-      width: 120%;
-      padding: 0;
+      width: 100% !important;
+      padding-top: 1.2rem;
+      padding-left: 7rem;
+      border: 1px solid red;
       font-family: "Brandon Text Medium";
     }
 

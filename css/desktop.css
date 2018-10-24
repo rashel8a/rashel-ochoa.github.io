@@ -220,7 +220,7 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 28rem;
+   height: 25rem;
    margin-right: 2rem;
    border-radius: 4rem;
  }
@@ -305,6 +305,20 @@
    justify-content: center;
  }
 
+ section.maya-persona {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ section.sheila-persona {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
  .both-personas img {
    display: block;
    width: auto;
@@ -312,7 +326,9 @@
  }
 
  .maya-persona img {
-   margin-top: 0rem;
+   margin-top: 1rem;
+   padding-top: 0;
+   /* margin-left: 7rem; */
  }
 
  .both-personas h2{
@@ -332,11 +348,6 @@
    text-align: center;
    justify-content: center;
    padding: 3rem 0;
-   width: 100%;
- }
-
- .sheila-persona h3 {
-   width: 80%;
  }
 
  .vertical-line .pers-quote {
@@ -354,12 +365,38 @@
 
  .vertical-line {
    border-left: 3px solid #FB7E6C;
-   margin-left: 4rem;
+   margin-left: 5rem;
    display: flex;
+   width: 100%;
  }
 
- .maya-persona .persona-quote {
+ .maya-persona .vertical-line {
+   position: relative;
+   left: 3.5rem;
+ }
+
+.sheila-persona .pers-title h3 {
+  width: 100%;
+}
+
+ .maya-persona .vertical-line {
+   width: 78%;
+   padding: 0;
+   margin-left: -5rem;
+ }
+
+ .sheila-persona .vertical-line {
    width: 80%;
+   margin-left: 1rem;
+ }
+
+ .maya-persona .pers-title {
+   width: 110%;
+   margin-left: 0rem;
+ }
+
+ .sheila-persona .pers-title {
+   margin-left: 1rem;
  }
 
  .motivations span, .frustrations span {
@@ -370,8 +407,15 @@
    font-family: futura-bold, sans-serif;
  }
 
- .motivations, .frustrations {
-   margin: 5rem 2rem;
+ .maya-persona .motivations, .maya-persona .frustrations {
+   /* margin: 5rem 2rem; */
+   width: 80%;
+   margin-left: 4rem;
+ }
+
+ .sheila-persona .motivations, .sheila-persona .frustrations {
+   width: 90%;
+   margin-left: 4rem;
  }
 
  .persona-button {
@@ -426,7 +470,7 @@
 
  article.user-flow {
    /* margin: 0 20rem; */
-   width: 70%;
+   width: 73%;
    margin: 0 auto;
    margin-top: -5rem;
  }
@@ -567,9 +611,9 @@
  .prototype .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 23rem;
+   height: 24rem;
    border-radius: 4rem;
-   margin-left: 34rem;
+   margin-left: 36rem;
    margin-right: -27rem;
  }
 
@@ -621,13 +665,13 @@
  .number-circle {
    background-color: #6534FF;
    border-radius: 50%;
-   padding-top: 1.6rem;
+   padding-top: 1.5rem;
    color: #FFFDFB;
    width: 3rem;
    height: 3rem;
    font-family: 'Brandon Text Medium', sans-serif;
    font-size: 2rem;
-   margin-top: -0.2rem;
+   margin-top: 0.2rem;
    margin-left: -0.5rem;
  }
 
@@ -649,7 +693,7 @@
  }
 
  section.third img.last {
-   width: 80%;
+   width: 70%;
    margin-right: 0rem;
    display: block;
  }
@@ -1166,11 +1210,16 @@ section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid
   margin-bottom: 0;
 }
 
+section.cinco span.number-circle, section.seis span.number-circle {
+  margin-top: 0.19rem;
+  padding-top: 1.48rem;
+}
+
 article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
   height: 40rem;
-  margin-left: 34rem;
+  margin-left: 36rem;
   margin-right: -31rem;
   border-radius: 4rem;
 }
@@ -1465,8 +1514,9 @@ ul.social-media i.fab, ul.social-media i.fas {
 div.copyright p {
   text-align: left;
   font-size: 1.8rem;
-  padding: 0.5rem 0 1rem 0;
-  margin-left: 3rem;
+  padding: 1.3rem 0 1rem 0;
+  margin-left: 1rem;
+  width: 120%;
   font-family: "Brandon Text Medium";
 }
 
