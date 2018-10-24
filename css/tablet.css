@@ -817,9 +817,9 @@ div.vid-responsive {
 
 div.vid-responsive {
     overflow:hidden;
-    padding-bottom: 56.25%;
+    padding-bottom: 35%;
     position:relative;
-    padding-top: 10%;
+    padding-top: 15%;
     height:0;
 }
 div.vid-responsive iframe {
