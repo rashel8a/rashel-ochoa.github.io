@@ -810,16 +810,17 @@ animation: bounce2 6s infinite;
 
 ul.social-media {
   display: grid;
-  width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0 2rem 0;
   margin: 0 auto;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
+  margin-right: 5rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 ul.social-media p {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   font-size: 1.8rem;
@@ -834,9 +835,9 @@ i.fab, i.fas {
 
 #footer-box div.copyright p {
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   width: 80%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 auto;
   font-family: "Brandon Text Medium";
 }
@@ -2245,7 +2246,7 @@ div.copyright p {
   text-align: center;
   padding-bottom: 1rem;
   width: 70%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-family: Futura-bold;
   margin: 0 auto;
 }
@@ -3138,7 +3139,7 @@ a.logo {
       z-index: 6;
       font-size: 2rem;
       font-weight: 600;
-      margin-top: -33rem;
+      margin-top: -31rem;
     }
 
   /* Project Section Desktop */
