@@ -3100,7 +3100,7 @@ a.logo {
 
     .grid-hero {
       display: flex;
-      width: 114rem;
+      width: 88%;
       flex-direction: row-reverse;
       align-items: center;
       margin-top: 0;
@@ -3108,6 +3108,7 @@ a.logo {
 
     .grid-hero article {
       margin-bottom: 12rem;
+      margin-left: 1rem;
     }
 
     .description {
@@ -3140,7 +3141,7 @@ a.logo {
       z-index: 6;
       font-size: 2rem;
       font-weight: 600;
-      margin-top: -31rem;
+      margin-top: -30.5rem;
     }
 
   /* Project Section Desktop */
