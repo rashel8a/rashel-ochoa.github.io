@@ -553,7 +553,7 @@ div.desktop {
   .see-work {
     grid-area: work;
     font-size: 2rem;
-    padding-top: 10rem;
+    padding-top: 7rem;
     padding-bottom: 15rem;
     text-align: center;
   }
@@ -561,6 +561,7 @@ div.desktop {
   #project-section {
     display: grid;
     align-items: center;
+    margin-top: -2rem;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -620,7 +621,7 @@ div.desktop {
   .read-more.primary-btn {
     grid-area: button;
     margin-top: 2rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   /* About section*/
@@ -641,7 +642,7 @@ div.desktop {
   }
 
   .about-content {
-    margin-top: -40rem;
+    margin-top: -38rem;
   }
 
   .about-title {
@@ -676,6 +677,10 @@ div.desktop {
   .about {
     margin-top: -4rem;
     margin-bottom: 2rem;
+  }
+
+  div.story-button {
+    margin-bottom: 5rem;
   }
 
   /* Contact Section */
@@ -722,7 +727,7 @@ div.desktop {
   }
 
   .contact-btns .primary-btn {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 70%;
   }
 
@@ -827,11 +832,11 @@ i.fab, i.fas {
   color: #001F40;
 }
 
-div.copyright p {
+#footer-box div.copyright p {
   text-align: center;
   padding-bottom: 2rem;
-  width: 100%;
-  font-size: 1.6rem;
+  width: 80%;
+  font-size: 1.8rem;
   margin: 0 auto;
   font-family: "Brandon Text Medium";
 }
@@ -2360,7 +2365,7 @@ div.copyright p {
 
     div.see-work {
       margin-top: -7rem;
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
 
     div.see-work i {
@@ -2422,7 +2427,7 @@ div.copyright p {
     article.about-content {
       margin-left: 11.5rem;
       margin-right: 11.5rem;
-      margin-top: -40rem;
+      margin-top: -39rem;
       padding: 0;
     }
 
@@ -2432,6 +2437,10 @@ div.copyright p {
 
     p.about {
       font-size: 2rem;
+    }
+
+    div.story-button {
+      margin-bottom: 2rem;
     }
 
     /* TABLET HP CONTACT*/
@@ -3296,7 +3305,7 @@ a.logo {
     /* Contact Desktop Section */
     .contact-box {
       width: 100%;
-      padding: 5rem 0;
+      padding: 5rem 0 0 0;
     }
 
     .contact-box .contact-image {
@@ -3335,7 +3344,7 @@ a.logo {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: -15rem auto 3rem auto;
+      margin: -8rem auto 3rem auto;
     }
 
     div.contact-btns .primary-btn {
@@ -3343,14 +3352,15 @@ a.logo {
       width: 20%;
     }
 
-    div.return-top {
+    div.return-top .return-link {
       position: relative;
       display: flex;
       flex-direction: column-reverse;
       font-size: 2rem;
       text-align: center;
       padding-top: 2.5rem;
-      top: 4rem;
+      margin-bottom: -2rem;
+      top: -2rem;
       align-items: center;
     }
 
@@ -3538,7 +3548,7 @@ a.logo {
     img.squiggles-graphic {
       width: 30%;
       position: relative;
-      top: -34rem;
+      top: -29rem;
       left: 98.5rem;
       z-index: 1800;
       display: block;

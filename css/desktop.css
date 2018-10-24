@@ -48,7 +48,7 @@
   }
 
   div.contact-btns1 .primary-btn {
-    margin: 10rem 0rem 10rem 2rem;
+    margin: 5rem 0rem 10rem 2rem;
     width: 100%;
   }
 
@@ -536,7 +536,7 @@
   article.prototype .style-button {
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
-    width: 42%;
+    width: 45%;
     color: #1C46C5;
     display: inline-block;
     position: relative;
@@ -1302,8 +1302,8 @@ div.contact-btns2 {
 }
 
 div.contact-btns2 .primary-btn {
-  margin: 0 0 10rem 2rem;
-  width: 25%;
+  margin: -2rem 0 10rem 2rem;
+  width: 22%;
 }
 
 #chapter6 .concl {
@@ -1351,7 +1351,7 @@ div.key-learnings .concl-sub {
   width: 17%;
   position: relative;
   left: 16rem;
-  top: -1rem;
+  top: 5rem;
   z-index: 1;
 }
 
@@ -1394,7 +1394,7 @@ h5.contact-text {
 .contact-btns3 .primary-btn {
   padding-top: 1.6rem;
   margin: 0 0rem 5rem 2rem;
-  width: 25%;
+  width: 22%;
 }
 
 /* .get-in-touch, .download-resume {
