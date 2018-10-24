@@ -47,7 +47,7 @@
   }
 
   .CTA-buttons .primary-btn {
-    margin: 0rem 2rem 5rem 2rem;
+    margin: 0rem 0rem 5rem 2rem;
   }
 
   article.intro-header {
@@ -218,13 +218,13 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 32rem;
-   margin-right: -1rem;
+   height: 31rem;
+   margin-right: 2rem;
    border-radius: 4rem;
  }
 
  .survey-results p.co-text {
-   width: 38%;
+   width: 45%;
    text-align: left;
    margin: 0;
    font-size: 2.3rem;
@@ -568,7 +568,7 @@
    height: 23rem;
    border-radius: 4rem;
    margin-left: 34rem;
-   margin-right: -28rem;
+   margin-right: -27rem;
  }
 
  .prototype .callout {
@@ -969,7 +969,7 @@ article.short div.callout-line {
   width: .9rem;
   height: 30rem;
   margin-left: 34rem;
-  margin-right: -28rem;
+  margin-right: -26rem;
   border-radius: 4rem;
   margin-bottom: 1rem;
 }
@@ -985,7 +985,7 @@ article.short div.callout {
 }
 
 article.short p.co-text {
-  width: 42%;
+  width: 43%;
   margin: 0 auto;
   text-align: left;
   font-size: 2.3rem;
@@ -1168,9 +1168,9 @@ section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid
 article.icing .callout-line {
   background-color: #FFA856;
   width: .9rem;
-  height: 37rem;
+  height: 40rem;
   margin-left: 34rem;
-  margin-right: -28rem;
+  margin-right: -31rem;
   border-radius: 4rem;
 }
 
@@ -1184,7 +1184,7 @@ article.icing .callout {
 }
 
 article.icing p.co-text {
-  width: 44%;
+  width: 43%;
   margin: 0 auto;
   text-align: left;
   font-size: 2.3rem;
@@ -1392,7 +1392,6 @@ h5.contact-text {
   padding-right: 0;
   padding-left: 0;
   padding-top: 1.6rem;
-  width: 100%;
 }
 
 .return-top {

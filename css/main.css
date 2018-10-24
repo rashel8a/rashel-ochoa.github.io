@@ -1257,14 +1257,16 @@ article.intro-header div.content {
 }
 
 
-div.CTA-buttons {
+div.contact-btns{
   display: flex;
   flex-direction: column;
+  margin-top: 8rem;
 }
 
-.CTA-buttons .primary-btn {
+.contact-btns .primary-btn {
   width: 27.5rem;
   margin: 1rem auto;
+  width: 100%;
 }
 
 /* PROJECT INFO MOBILE*/
@@ -1395,7 +1397,7 @@ article.survey div.content {
 }
 
 .chart-mobile {
-  width: 109.5%;
+  width: 100vw;
   display: block;
   margin: 0 -1.6rem 0 -1.6rem;
 }
@@ -1421,8 +1423,8 @@ article.survey div.content {
 
 .survey-results .callout-line {
   background-color: #FFA856;
-  width: 5rem;
-  height: 27rem;
+  width: 7rem;
+  height: 28rem;
   position: relative;
   left: 0.1rem;
   border-radius: 4rem;
@@ -1493,7 +1495,12 @@ article.survey div.content {
 
 .pers-title {
   text-align: center;
-  padding: 3rem 0;
+  padding: 2rem 0;
+}
+
+.sheila-persona .pers-title {
+  width: 120%;
+  margin-left: -3rem;
 }
 
 .both-personas {
@@ -1593,7 +1600,7 @@ div.persona-button a.new-button {
   height: 1rem;
   width: 14.5rem;
   top: 4rem;
-  right: -9.4rem;
+  right: -9.5rem;
   background-position: -3rem bottom;
   background-color: #03E1D7;
 }
@@ -1601,6 +1608,10 @@ div.persona-button a.new-button {
 .sketches img {
   width: 100%;
   margin: 0 auto;
+}
+
+.wf-group-mobile {
+  margin-left: -1.6rem;
 }
 
 .wf-images .wf-img-1, .wf-images .wf-img-2{
@@ -1623,8 +1634,8 @@ div.persona-button a.new-button {
 
 .prototype .callout-line {
   background-color: #FFA856;
-  width: 3.3rem;
-  height: 19rem;
+  width: 4.5rem;
+  height: 20rem;
   position: relative;
   left: 0.5rem;
   border-radius: 4rem;
@@ -1660,6 +1671,7 @@ div.iterations-header {
 
 .it-title h3.it-text {
    font-size: 1.8rem;
+   line-height: 120%;
    font-weight: 600;
    padding: 0.5rem 3rem 1rem 3rem;
    display: block;
@@ -1683,15 +1695,15 @@ div.iterations-header {
   }
 
   .third img {
-    width: 100%;
+    width: 100vw;
   }
 
 .number-circle {
   background-color: #6534FF;
   border-radius: 50%;
-  margin-top: -0.1rem;
+  margin-top: 0.7rem;
   text-align: center;
-  padding-top: 1.2rem;
+  padding-top: 1.25rem;
   color: #FFFDFB;
   width: 2.5rem;
   height: 2.5rem;
@@ -1717,7 +1729,7 @@ div.iterations-header {
 }
 
 .brand-header {
-  width: 100%;
+  width: 105%;
   margin-top: 4.5rem;
   display: block;
 }
@@ -1854,6 +1866,10 @@ article.testing {
   flex-direction: column;
 }
 
+article.testing div.content {
+  margin-bottom: 3rem;
+}
+
 article.testing .content {
   margin: 5rem 1.6rem 0 1.6rem;
 }
@@ -1895,8 +1911,8 @@ div.vid-responsive {
 
 .short .callout-line {
   background-color: #FFA856;
-  width: 5rem;
-  height: 28rem;
+  width: 6.5rem;
+  height: 31rem;
   position: relative;
   left: 0.4rem;
   border-radius: 4rem;
@@ -1906,11 +1922,16 @@ div.vid-responsive {
   margin-top: 3rem;
 }
 
+section.cinco h3.it, section.seis h3.it, section {
+  line-height: 120%;
+  padding-top: 0.8rem;
+}
+
 .iteration-title .it {
   font-size: 1.8rem;
   font-family: 'Brandon Text Regular';
   margin-left: 3rem;
-  padding: .5rem 0;
+  padding: 1.2rem 0;
   font-family: "Brandon Text Medium";
 }
 
@@ -1925,19 +1946,19 @@ div.rogue-img img.center {
 
 div.rogue-img img.rogue-mobile {
   display: block;
-  width: 110%;
+  width: 100vw;
   margin-left: -1.65rem;
   margin-bottom: 5rem;
   margin-top: 0.5rem;
 }
 
 div.rogue-img p.test-img-text  {
-  font-size: 2rem;
+  font-size: 1.95rem;
   line-height: 130%;
   font-family: 'Brandon Text Regular';
   color: #FFFDFB;
   position: absolute;
-  margin-top: -26rem;
+  margin-top: -24rem;
   text-align: center;
   margin-right: 1.6rem;
 }
@@ -1976,14 +1997,14 @@ section.cuatro, section.cinco, section.seis {
 
 article.icing .callout-line {
   background-color: #FFA856;
-  width: 8rem;
-  height: 41rem;
+  width: 10rem;
+  height: 42rem;
   position: relative;
   left: 0.4rem;
   border-radius: 4rem;
 }
 
-.icing .callout {
+article.icing .callout {
   background-color: #FDE8DE;
   width: 120%;
   margin: 3rem -1.6rem 3rem -1.6rem;
@@ -1993,7 +2014,7 @@ article.icing .callout-line {
   justify-content: center;
 }
 
-.icing .callout p {
+article.icing .callout p {
   margin-right: 3.8rem;
   padding: 3rem 1rem 3rem 0;
   margin-left: 1.3rem;
@@ -2043,13 +2064,13 @@ div.desktop-images-final {
 
 div.mobile-images-final {
   display: block;
-  margin-top: -457rem;
+  margin-top: -460rem;
   margin-left: 0.5rem;
   z-index: 1000;
 }
 
 div.mobile-images-final img {
-  width: 98%;
+  width: 99%;
   margin: .6rem auto;
 }
 
@@ -2058,8 +2079,8 @@ div.mobile-screens {
   margin: .3rem auto;
 }
 
-div.CTA-buttons {
-  margin: 5rem 0 0 0;
+div.contact-btns {
+  margin: 5rem 0 10rem 0;
 }
 
 
@@ -2109,13 +2130,13 @@ div.key-learnings .concl-sub {
     max-width: 50%;
     height: auto;
     position: relative;
-    left: 12rem;
+    left: 9rem;
     top: 2rem;
     z-index: 1;
   }
 
   .contact-title {
-    font-size: 4rem;
+    font-size: 3.8rem;
     position: relative;
     top: -10rem;
     z-index: 10;
@@ -2129,7 +2150,7 @@ div.key-learnings .concl-sub {
     font-size: 2.2rem;
     font-family: 'Brandon Text Regular';
     line-height: 120%;
-    width: 95%;
+    width: 100%;
     color: #FFA856;
     margin-bottom: 2rem;
 
@@ -2142,17 +2163,20 @@ div.key-learnings .concl-sub {
   }
 
   .get-in-touch {
-    margin: 2rem 0;
+    margin: 0;
   }
 
-  .return-top {
+  div.return-top {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
-    font-size: 2rem;
-    padding-bottom: 5rem;
+    font-size: 2.3rem;
+    line-height: 130%;
     text-align: center;
     align-items: center;
+    top: -8rem;
+    padding: 2rem 0 0 0;
+    margin: 0;
   }
 
   i.fa-caret-up {
