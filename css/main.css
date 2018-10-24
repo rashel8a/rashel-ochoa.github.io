@@ -3410,11 +3410,11 @@ a.logo {
     div.copyright p {
       text-align: left;
       align-items: center;
+      border: none;
       font-size: 1.7rem;
       width: 100% !important;
       padding-top: 1.2rem;
       padding-left: 7rem;
-      border: 1px solid red;
       font-family: "Brandon Text Medium";
     }
 
