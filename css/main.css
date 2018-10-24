@@ -1260,7 +1260,10 @@ article.intro-header div.content {
 div.contact-btns{
   display: flex;
   flex-direction: column;
-  margin-top: 8rem;
+  /* margin-top: 10rem; */
+  position: relative;
+  top: 6rem;
+  margin-bottom: 5rem;
 }
 
 .contact-btns .primary-btn {
@@ -1946,10 +1949,11 @@ div.rogue-img img.center {
 
 div.rogue-img img.rogue-mobile {
   display: block;
+  background-color: #132D60;
   width: 100vw;
-  margin-left: -1.65rem;
-  margin-bottom: 5rem;
-  margin-top: 0.5rem;
+  margin-left: -1.57rem;
+  /* margin-bottom: 5rem;
+  margin-top: 0.5rem; */
 }
 
 div.rogue-img p.test-img-text  {
@@ -2079,8 +2083,16 @@ div.mobile-screens {
   margin: .3rem auto;
 }
 
-div.contact-btns {
-  margin: 5rem 0 10rem 0;
+div.contact-btns2 {
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.contact-btns2 .primary-btn {
+  width: 100%;
+  margin-top: 2rem;
 }
 
 
@@ -2156,14 +2168,15 @@ div.key-learnings .concl-sub {
 
   }
 
-  .contact-btns {
+  .contact-btns3 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .get-in-touch {
-    margin: 0;
+  .contact-btns3 .primary-btn {
+    margin: 1rem;
+    width: 100%;
   }
 
   div.return-top {
@@ -2174,8 +2187,8 @@ div.key-learnings .concl-sub {
     line-height: 130%;
     text-align: center;
     align-items: center;
-    top: -8rem;
-    padding: 2rem 0 0 0;
+    top: 0;
+    padding: 2.5rem 0 2.5rem 0;
     margin: 0;
   }
 
@@ -3346,8 +3359,8 @@ a.logo {
     ul.social-media {
       display: flex;
       justify-content: center;
-      margin: 0;
-      width: 65%;
+      width: 62%;
+      margin-right: 0;
       position: relative;
       padding: 0;
       left: 0;
@@ -3356,7 +3369,7 @@ a.logo {
     }
 
     ul.social-media li {
-      margin-right: -2rem;
+      margin: 0;
     }
 
     ul.social-media p {

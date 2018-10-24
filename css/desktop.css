@@ -39,15 +39,16 @@
   }
 
   /* INTRO DESKTOP SECTION */
-  div.CTA-buttons {
+  div.contact-btns {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: -2rem;
   }
 
-  .CTA-buttons .primary-btn {
-    margin: 0rem 0rem 5rem 2rem;
+  .contact-btns .primary-btn {
+    margin: 5rem 0rem 5rem 2rem;
   }
 
   article.intro-header {
@@ -218,7 +219,7 @@
  .survey-results .callout-line {
    background-color: #FFA856;
    width: .9rem;
-   height: 31rem;
+   height: 28rem;
    margin-right: 2rem;
    border-radius: 4rem;
  }
@@ -310,7 +311,7 @@
  }
 
  .maya-persona img {
-   margin-top: -2.1rem;
+   margin-top: 0rem;
  }
 
  .both-personas h2{
@@ -1291,9 +1292,18 @@ div.mobile-desktop-images img.final-mobile-one {
   display: none;
 } */
 
-div.CTA-buttons {
-  margin: 0;
-  padding: 0;
+div.contact-btns2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: -2rem;
+  width: 100%;
+}
+
+.contact-btns2 .primary-btn {
+  margin: 3rem 0rem 5rem 2rem;
+  width: 25%;
 }
 
 #chapter6 .concl {
@@ -1334,6 +1344,7 @@ div.key-learnings .concl-sub {
 
 .contact-box {
   width: 100%;
+  /* padding: 5rem 0 0 0; */
 }
 
 .contact-box .contact-image img {
@@ -1371,38 +1382,41 @@ h5.contact-text {
   color: #FFA856;
 }
 
-.contact-btns {
+.contact-btns3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 5rem auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.primary-btn {
+.contact-btns3 .primary-btn {
   padding-top: 1.6rem;
+  margin: 0 0rem 5rem 2rem;
+  width: 25%;
 }
 
-.get-in-touch, .download-resume {
+/* .get-in-touch, .download-resume {
   margin: 0 2.5rem 0 2.5rem;
-}
+} */
 
-.desktop-prototype, .mobile-prototype {
-  margin: 7rem 2.5rem 0 2.5rem;
+/* .desktop-prototype, .mobile-prototype {
+  margin: 0rem 2.5rem 0 2.5rem;
   padding-right: 0;
   padding-left: 0;
   padding-top: 1.6rem;
-}
+} */
 
-.return-top {
+div.return-top {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
   font-size: 2rem;
+  top: 3rem;
   text-align: center;
   align-items: center;
   padding-top: 1rem;
-  padding-bottom: 8rem;
 }
 
 .return-top i.fas {
@@ -1429,7 +1443,7 @@ ul.social-media {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-right: -2.5rem;
+  margin-right: 0;
   flex-wrap: wrap;
   font-size: 1.8rem;
   font-family: "Brandon Text Medium";
