@@ -1497,7 +1497,7 @@ ul.social-media {
   margin: 0;
 }
 
-#footer-box ul.social-media p {
+#footer-box ul.social-media a {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -1513,14 +1513,14 @@ ul.social-media i.fab, ul.social-media i.fas {
   color: #001F40;
 }
 
-.social-media i:hover {
+ul.social-media p:hover, ul.social-media i:hover {
   color: #FFFDFB;
   cursor: pointer;
 }
 
 div.copyright p {
   text-align: left;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   padding: 1rem 0 1rem 0;
   margin-left: 1rem;
   width: 120%;
