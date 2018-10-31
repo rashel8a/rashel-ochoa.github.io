@@ -1029,7 +1029,6 @@ div.bg1 {
   margin: 0 auto;
   width: 100%;
   position: relative;
-  top: -10rem;
 }
 
 
@@ -1092,9 +1091,7 @@ p.about-subtitle {
   }
 
   div.bg1 {
-    width: 100vw;
-    position: relative;
-    top: -10rem;
+    top: -13%;
   }
 }
 @media (min-width: 470px) and (max-width: 599px) {
@@ -2972,9 +2969,8 @@ div.key-learnings .concl-sub {
       background-size: cover;
       image-rendering: auto;
       margin: 0 auto;
-      width: 100vw;
       position: relative;
-      top: -10rem;
+      top: -13%
     }
 
 
@@ -3397,8 +3393,8 @@ nav.navbar {
     color: #FB7E6C;
   }
 
-  .off {
-    padding: 2rem;
+  ul.no a.off {
+    /* padding: 2rem; */
     font-size: 2rem;
   }
 
@@ -3615,8 +3611,8 @@ nav.navbar {
     }
 
     article.about-content {
-      margin: 0 auto -5rem 8rem;
-      width: 45rem;
+      margin: 0 0 -5rem 22rem;
+      width: 40%;
       position: relative;
       z-index: 1700;
       padding: 0;
@@ -3627,8 +3623,7 @@ nav.navbar {
       position: relative;
       z-index: 1;
       width: auto;
-      margin: -2rem 0 -1rem 0;
-      margin-right: 2rem;
+      margin: -2rem 15rem -1rem 0;
     }
 
     img.story-graphic {
@@ -3648,11 +3643,6 @@ nav.navbar {
       display: none;
     }
 
-    div.story-button  {
-      width: 50rem;
-      margin: 3rem 0 0 0;
-    }
-
     .about-title {
       font-size: 3.5rem;
       font-family: 'Brandon Text Bold', sans-serif;
@@ -3664,12 +3654,18 @@ nav.navbar {
       font-size: 2rem;
     }
 
+
+    div.story-button  {
+      width: 50rem;
+      margin: 3rem 0 0 0;
+    }
+
     .story-button span:hover {
       background-color: #FB7E6C;
       cursor: pointer;
     }
 
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) and (max-width: 1439px){
       div.contact-box div.contact-image img {
         width: 20%;
         position: relative;
@@ -3682,7 +3678,7 @@ nav.navbar {
         z-index: 6;
         font-size: 2rem;
         padding-top: 0;
-        margin: -10rem 0 0 0;
+        margin: -9rem 0 0 0;
       }
 
       div.grid-hero {
@@ -3694,11 +3690,617 @@ nav.navbar {
         justify-content: center;
       }
 
+      .grid-hero article {
+        width: 70%;
+      }
+
       img.desktop-image {
         display: block;
         width: 100%;
         z-index: 1;
         margin-left: 5rem;
+      }
+    }
+
+    @media (min-width: 1440px) and (max-width: 1699px){
+      section#contact div.contact-box {
+        padding: 0;
+      }
+
+      section#contact div.contact-content {
+          width: 80%;
+          margin: -10rem auto 3rem auto;
+        }
+
+      div.contact-box div.contact-image img {
+        width: 20%;
+        position: relative;
+        left: 55%;
+        top: -8rem;
+        z-index: 1;
+      }
+
+      .see-work {
+        z-index: 6;
+        font-size: 2.5rem;
+        padding-top: 0;
+        margin: -16rem 0 0 0;
+      }
+
+      .see-work i {
+        padding-top: 0.5rem;
+        font-size: 3rem;
+      }
+
+      div.grid-hero {
+        display: flex;
+        width: 83%;
+        margin: 0 auto;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .description {
+        font-size: 2.5rem;
+        line-height: 3.2rem;
+        padding: 0;
+        color: #001F40;
+      }
+
+     .hi {
+        font-size: 3.7rem;
+        padding: 0;
+      }
+
+      .slogan {
+        font-size: 3rem;
+        line-height: 130%;
+        padding: 0 0 1.5rem 0;
+      }
+
+      .name {
+        font-size: 8.5rem;
+        padding: 1rem 0 1.5rem 0;
+      }
+
+
+      .grid-hero article {
+        width: 50%;
+      }
+
+      img.desktop-image {
+        display: block;
+        width: 100%;
+        z-index: 1;
+        margin-left: 5rem;
+      }
+
+      .project-desktop {
+        display: block;
+        width: auto;
+        margin-left: -20rem;
+      }
+
+      article.feat-project-text {
+        padding: 0;
+        width: 55rem;
+        margin: 0 0 0 12rem;
+      }
+
+      .project-name {
+        font-size: 2.8rem;
+      }
+
+      .role {
+        font-size: 2.4rem;
+      }
+
+      .project-desc {
+        font-size: 2.3rem;
+      }
+
+      .about-box {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #FDE8DE;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -1rem;
+      }
+
+      article.about-content {
+        margin: 0 4% -5rem 3%;
+        width: 37%;
+        position: relative;
+        z-index: 1700;
+        padding: 0;
+      }
+
+      article.about-content h2.about-title {
+        font-size: 4rem;
+      }
+
+      article.about-content p.about {
+        font-size: 2.3rem;
+      }
+
+      div.about-box img.rashel-image {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: auto;
+        margin: -2rem 20% -1rem 0;
+      }
+
+      div.story-button  {
+        width: 50rem;
+        margin: 3rem 0 0 0;
+      }
+
+      div.story-button a{
+        font-size: 2rem;
+      }
+
+      div.story-button span {
+        width: 20rem;
+        height: 1.2rem;
+        margin: 1rem 0 0 0;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 0.7rem;
+      }
+
+      #contact div.contact-content h2.contact-header {
+        font-size: 6rem;
+      }
+
+      #contact div.contact-content h3.contact-body {
+        font-size: 3.5rem;
+      }
+
+      #contact div.return-top .return-link {
+        font-size: 2.3rem;
+      }
+
+      #contact div.return-top i {
+        font-size: 2.5rem;
+      }
+
+      #contact div.contact-content {
+        margin: -10rem auto 3rem auto;
+      }
+
+      #footer-box ul.social-media {
+        margin-right: 4%;
+      }
+
+      #footer-box ul.social-media i {
+        font-size: 3rem;
+        padding-right: 1rem;
+      }
+
+      footer#footer-box ul.social-media p {
+        font-size: 2rem;
+      }
+
+      footer#footer-box .copyright p {
+        font-size: 2rem;
+        margin-left: 8%;
+      }
+    }
+
+    @media (min-width: 1700px) and (max-width: 2049px) {
+      div.grid-hero {
+        width: 80%;
+      }
+
+      .description {
+        font-size: 2.5rem;
+        line-height: 130%;
+        padding: 0;
+        color: #001F40;
+      }
+
+     div.grid-hero .hi {
+        font-size: 4.5rem;
+        padding: 0;
+      }
+
+      .slogan {
+        font-size: 3.4rem;
+        line-height: 130%;
+        padding: 0 0 1.5rem 0;
+      }
+
+      .name {
+        font-size: 9rem;
+        padding: 1rem 0 1.5rem 0;
+      }
+
+      .grid-hero article {
+        width: 45%;
+      }
+
+      img.desktop-image {
+        display: block;
+        width: 100%;
+        z-index: 1;
+        margin-left: 5rem;
+      }
+      .see-work {
+        z-index: 6;
+        font-size: 2.7rem;
+        padding-top: 0;
+        margin: -22rem 0 0 0;
+      }
+
+      .see-work i {
+        padding-top: 0.5rem;
+        font-size: 3rem;
+      }
+
+      .project-desktop {
+        display: block;
+        width: 110%;
+        margin-left: -29%;
+      }
+
+      section#project-section {
+        margin-top: 15rem;
+      }
+
+      article.feat-project-text {
+        padding: 0;
+        width: 60rem;
+        margin: 0 0 0 10rem;
+      }
+
+      .project-name {
+        font-size: 3rem;
+      }
+
+      .role {
+        font-size: 2.8rem;
+      }
+
+      .project-desc {
+        font-size: 2.5rem;
+      }
+
+      .about-box {
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: #FDE8DE;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -1rem;
+      }
+
+      article.about-content {
+        margin: 0 4% -5rem -7%;
+        width: 37%;
+        position: relative;
+        z-index: 1700;
+        padding: 0;
+      }
+
+      article.about-content h2.about-title {
+        font-size: 4.5rem;
+      }
+
+      article.about-content p.about {
+        font-size: 2.7rem;
+      }
+
+      div.about-box img.rashel-image {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 130%;
+        margin: 3rem 20% 0 0;
+      }
+
+      img.story-graphic {
+        width: 65%;
+        display: block;
+        position: relative;
+        bottom: 88rem;
+        margin-bottom: -40rem;
+        z-index: 2;
+      }
+
+      div.story-button  {
+        width: 50rem;
+        margin: 3rem 0 0 0;
+      }
+
+      div.story-button a{
+        font-size: 2.4rem;
+      }
+
+      div.story-button span {
+        width: 24rem;
+        height: 1.7rem;
+        margin: 1rem 0 0 0;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 1.3rem;
+      }
+
+      #contact div.contact-image img {
+        left: 75%;
+      }
+
+      #contact div.contact-content h2.contact-header {
+        font-size: 6rem;
+      }
+
+      #contact div.contact-content h3.contact-body {
+        font-size: 3.5rem;
+      }
+
+      #contact div.contact-content {
+        margin: -10rem auto 3rem auto;
+      }
+
+      article.feat-project-text a.primary-btn {
+        width: 40rem;
+        height: 6.5rem;
+        padding: 2.5rem 0 0 0;
+        font-size: 2.3rem;
+      }
+
+      div.contact-btns {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      div.contact-btns a.primary-btn {
+        width: 40rem;
+        height: 6.5rem;
+        padding: 2.5rem 0 0 0;
+        font-size: 2.3rem;
+      }
+
+      div.contact-btns a.get-in-touch {
+        margin-right: 2rem;
+      }
+
+      #contact div.return-top .return-link {
+        font-size: 3rem;
+      }
+
+      #contact div.return-top {
+        margin: 2rem 0 0 0 ;
+      }
+
+      #contact div.return-top i.fa-caret-up {
+        font-size: 3rem;
+      }
+
+      footer#footer-box {
+        padding: 2rem 0;
+      }
+
+
+      #footer-box ul.social-media {
+        margin-right: 4%;
+      }
+
+      footer#footer-box ul.social-media p {
+        font-size: 2.5rem;
+      }
+
+      footer#footer-box ul.social-media i {
+        font-size: 3rem;
+        padding-right: 1rem;
+      }
+
+      footer#footer-box .copyright p {
+        font-size: 2.5rem;
+        margin-left: 8%;
+      }
+
+    }
+
+    @media (min-width: 2050px) and (max-width: 3000px) {
+      div.grid-hero {
+        width: 84%;
+      }
+
+      .description {
+        font-size: 2.9rem;
+        line-height: 130%;
+        padding: 0;
+        color: #001F40;
+      }
+
+     div.grid-hero .hi {
+        font-size: 4.9rem;
+        line-height: 140%;
+        padding: 0;
+      }
+
+      .slogan {
+        font-size: 3.4rem;
+        line-height: 130%;
+        padding: 0 0 1.5rem 0;
+      }
+
+      .name {
+        font-size: 10.5rem;
+        padding: 1rem 0 1.5rem 0;
+      }
+
+      .grid-hero article {
+        width: 45%;
+        margin-right: 5%;
+      }
+
+      img.desktop-image {
+        display: block;
+        width: 100%;
+        z-index: 1;
+        margin-left: 5rem;
+      }
+
+      .see-work {
+        z-index: 6;
+        font-size: 3rem;
+        padding-top: 0;
+        margin: -22rem 0 0 0;
+      }
+
+      .see-work i {
+        padding-top: 0.5rem;
+        font-size: 3.5rem;
+      }
+
+      .project-desktop {
+        display: block;
+        width: 120%;
+        margin-left: -37%;
+      }
+
+      section#project-section {
+        margin-top: 20rem;
+      }
+
+      article.feat-project-text {
+        padding: 0;
+        width: 65rem;
+        margin: 0 0 0 10rem;
+      }
+
+      article.feat-project-text h3.project-name {
+        font-size: 3.9rem;
+      }
+
+      .role {
+        font-size: 3.5rem;
+      }
+
+      h2.project-title {
+        font-size: 7rem;
+      }
+
+      .project-desc {
+        font-size: 3rem;
+      }
+
+      article.about-content {
+        margin: 0 7.5% -5rem -7%;
+        width: 37%;
+        position: relative;
+        z-index: 1700;
+        padding: 0;
+      }
+
+      article.about-content h2.about-title {
+        font-size: 6rem;
+        padding-bottom: 1.5rem;
+      }
+
+      article.about-content p.about {
+        font-size: 3.3rem;
+      }
+
+      div.about-box img.rashel-image {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 150%;
+        margin: 3rem 20% 0 0;
+      }
+
+      img.story-graphic {
+        width: 68%;
+        bottom: 98rem;
+        left: 5%;
+      }
+
+      div.story-button  {
+        margin: 3rem 0 0 0;
+      }
+
+      div.story-button a{
+        font-size: 3rem;
+      }
+
+      div.story-button span {
+        width: 30rem;
+        height: 1.8rem;
+        margin: 1rem 0 0 0;
+      }
+
+      #contact div.contact-image img {
+        left: 72%;
+        width: 22%;
+      }
+
+      #contact div.contact-content h2.contact-header {
+        font-size: 7.5rem;
+      }
+
+      #contact div.contact-content h3.contact-body {
+        font-size: 4.2rem;
+      }
+
+      #contact div.contact-content {
+        margin: -10rem auto 5rem auto;
+      }
+
+      article.feat-project-text a.primary-btn {
+        width: 43rem;
+        height: 7rem;
+        padding: 2.7rem 0 0 0;
+        font-size: 2.7rem;
+      }
+
+      div.contact-btns {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      div.contact-btns a.primary-btn {
+        width: 43rem;
+        height: 7rem;
+        border-radius: 100rem;
+        padding: 2.7rem 0 0 0;
+        font-size: 2.7rem;
+      }
+
+      #contact div.return-top {
+        margin: 2rem 0 0 0 ;
+      }
+
+      #contact div.return-top i.fa-caret-up {
+        font-size: 3.3rem;
+      }
+
+      footer#footer-box {
+        padding: 3rem 0;
+      }
+
+      #footer-box ul.social-media {
+        margin-right: 4%;
+      }
+
+      footer#footer-box ul.social-media p {
+        font-size: 3rem;
+      }
+
+      footer#footer-box ul.social-media i {
+        font-size: 3.5rem;
+        padding-right: 1rem;
+      }
+
+      footer#footer-box .copyright p {
+        font-size: 3rem;
+        margin-left: 8%;
       }
     }
 
@@ -3718,7 +4320,7 @@ nav.navbar {
 
     div.contact-content {
       width: 80%;
-      margin: -6rem auto 0 auto;
+      margin: -8rem auto 2rem auto;
     }
 
     .contact-header {
@@ -3781,7 +4383,7 @@ nav.navbar {
         padding: 0;
         width: 63%;
         text-align: center;
-        margin: 0 3rem 0 auto;
+        margin: 0 6% 0 auto;
       }
 
     ul.social-media li {
@@ -3855,14 +4457,14 @@ nav.navbar {
 
     ul.no li {
       padding: 0;
-      margin: 0;
+      /* margin: 0; */
+      margin-left: 2%;
     }
 
     .no a {
       color: #001F40;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       padding: 1rem 0 0 0;
-      margin-left: 3rem;
     }
 
 
@@ -3879,14 +4481,6 @@ nav.navbar {
       overflow-y: scroll;
       perspective: 2px;
     }
-
-    /* article.section-2 {
-      position: relative;
-      display: block;
-      z-index: 1;
-      top: -20rem;
-      z-index: 1700;
-    } */
 
     //
     //* PARALLAX IMAGE DESKTOP SECTION*//
@@ -3909,67 +4503,25 @@ nav.navbar {
       margin: 0;
     }
 
-    div.bg1 {
-      width: 100vw;
-      position: relative;
-      top: -2rem;
-      margin-top: -15rem;
+    section.section-wrappers article.about-header div.bg1 {
+      background: url("../images/about/rashel-hero.png") no-repeat;
+      background-size: cover;
+      image-rendering: auto;
+      margin-top: -20%;
     }
 
-    @media (min-width: 1080px) {
-      div.bg1 {
-        width: 100vw;
-        position: relative;
-        top: -5rem;
-        margin-top: -14rem;
-      }
-
-      div.bg1 div.about-intro-content {
-        margin: 23rem 0 0 0;
-      }
-
-      header#top section.section-wrappers article.section-2 img.squiggles-graphic {
-         width: 23%;
-         top: 76%;
-         left: 82.5%;
-         z-index: 1500;
-       }
-
-    }
-
-    @media (min-width: 1220px) {
-     header#top section.section-wrappers article.section-2 img.squiggles-graphic {
-        width: 23%;
-        top: 76%;
-        left: 82.5%;
-        z-index: 1500;
-      }
-
-      div.bg1 {
-        position: relative;
-        top: -3rem;
-        margin-top: -19rem;
-      }
-
-      div.bg1 div.about-intro-content {
-        margin: 25rem 0 0 0;
-      }
-
-
-    }
-
-
-    div.about-intro-content {
+    article.about-header div.about-intro-content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 22rem auto 0 auto;
+      position: relative;
+      top: 16%;
       text-align: center;
     }
 
     h1.about-name {
-      font-size: 4.7rem;
+      font-size: 4.8rem;
       z-index: 1500;
       width: 100%;
       padding: 0;
@@ -3999,30 +4551,25 @@ nav.navbar {
     }
 
 
-    article.about-middle-content div.intro-wrapper {
-      text-align: center;
-      padding: 10rem 0 10rem 0;
-      margin-top: -15rem;
-      z-index: 999;
-      position: relative;
-      background-color: #FDE8DE;
-    }
-
     section.section-wrappers article.about-middle-content img.squiggles-graphic {
-      width: 28%;
+      width: 25%;
       position: absolute;
-      top: 71%;
-      left: 79.5%;
+      top: 70%;
+      left: 81%;
       z-index: 1500;
     }
 
-    article.about-middle-content div.label-section {
+    div.pink-text-section {
+      margin: 0 0 2rem 0;
+    }
+
+    article.about-middle-content div.intro-wrapper div.label-section {
       display: flex;
       align-items: center;
-      width: 76%;
+      width: 75.5%;
       justify-content: flex-start;
       padding: 0;
-      margin: -2rem auto 0 auto;
+      margin: 0 auto;
     }
 
     article.about-middle-content h2.about-label {
@@ -4031,7 +4578,12 @@ nav.navbar {
       font-family: "Brandon Grotesque Black";
     }
 
-    div.intro-wrapper {
+    article.about-middle-content div.intro-wrapper {
+      text-align: center;
+      margin-top: -13%;
+      z-index: 999;
+      position: relative;
+      background-color: #FDE8DE;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -4047,20 +4599,12 @@ nav.navbar {
 
     div.intro-text-section {
       font-family: "Brandon Text Regular", sans-serif;
-      font-size: 2rem;
+      font-size: 2.2rem;
       line-height: 130%;
       padding: 0;
       text-align: left;
       width: 50%;
-      margin: 1rem auto 0 auto;
-    }
-
-    section.section-wrappers article.about-middle-content img.squiggles-graphic {
-      width: 25%;
-      position: absolute;
-      top: 69%;
-      left: 81%;
-      z-index: 1500;
+      margin: 0 auto;
     }
 
     /* STORY MEAT SECTION DESKTOP*/
@@ -4072,7 +4616,7 @@ nav.navbar {
       justify-content: center;
       margin: 5rem auto;
       padding-top: 10rem;
-      width: 80%;
+      width: 75%;
     }
 
     section.about-story-section h2.about-label {
@@ -4092,6 +4636,7 @@ nav.navbar {
 
     article.about-story-meat {
       width: 65%;
+      padding-top: 1rem;
     }
 
     article.about-story-meat p {
@@ -4105,14 +4650,14 @@ nav.navbar {
 
     h4.story-title {
       font-size: 2.2rem;
-      line-height: 130%;
+      line-height: 135%;
       margin-top: 4rem;
       font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
     }
 
     h4.story-title-first {
       font-size: 2.2rem;
-      line-height: 130%;
+      line-height: 135%;
       margin: 0rem auto;
       font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
     }
@@ -4135,19 +4680,20 @@ nav.navbar {
 
     article.about-story-meat img.creative-img {
       display: block;
-      width: 25%;
+      width: 23%;
       position: absolute;
-      right: -7rem;
+      right: -8rem;
       margin-top: -12rem;
     }
 
     p.par {
-      line-height: 130%;
+      line-height: 135%;
       margin-top: 0.2rem;
     }
 
     p.par-last {
-      margin-top: 1rem;
+      padding-top: 2rem;
+      line-height: 135%;
     }
 
     section.rashel-collage-images {
@@ -4185,7 +4731,7 @@ nav.navbar {
     div.content-copy {
       line-height: 140%;
       padding: 0;
-      width: 60%;
+      width: 50%;
       margin: 0 auto;
       font-family: "Brandon Text Medium", sans-serif;
     }
@@ -4248,5 +4794,404 @@ nav.navbar {
     div.return-top a {
       font-size: 2rem;
     }
+  }
 
+    /* MEDIA QUERIES FOR DESKTOP START*/
+
+    /* MEDIA QUERY FOR ABOUT DESKTOP PAGE LARGER THAN 1440px*/
+
+    @media (min-width: 1440px) and (max-width: 1599px) {
+      nav.navbar img.logo-size {
+        width: 25rem;
+      }
+
+      nav.navbar ul.no a {
+        font-size: 2.3rem;
+      }
+
+      header#top section.section-wrappers article.section-2 img.squiggles-graphic {
+         width: 23%;
+         top: 89%;
+         left: 82.5%;
+         z-index: 1500;
+       }
+
+      article.about-story-meat div img.creative-img {
+        display: block;
+        width: 27rem;
+        position: absolute;
+        right: -15rem;
+        margin-top: -12rem;
+      }
+
+      article.about-story-meat div img.plunge-img {
+        display: block;
+        width: 22rem;
+        position: absolute;
+        left: -10rem;
+        margin-top: -12rem;
+      }
+
+      article.about-story-meat div img.cocoon-img {
+        display: block;
+        width: 20rem;
+        position: absolute;
+        right: -10rem;
+        margin-top: -12rem;
+      }
+
+
+      section.wrappers article.parallax {
+        content: " ";
+        display: flex;
+        flex: none;
+        position: relative;
+        height: 120vh;
+        transform: translateZ(-1px) scale(1.5);
+        z-index: -1;
+        margin: 0;
+      }
+
+      div.bg1 {
+        margin-top: 0;
+      }
+
+      article.about-header div.about-intro-content {
+        position: relative;
+        top: 18%;
+      }
+
+      article.about-middle-content div.intro-text-section {
+        width: 45%;
+        font-size: 2.5rem;
+        margin: 0 auto;
+      }
+
+      article.about-middle-content div.intro-wrapper div.label-section {
+        width: 59%;
+        margin: 0 auto;
+      }
+
+      article.about-middle-content div.intro-wrapper {
+        position: relative;
+        top: 8rem;
+        padding: 10rem 0;
+      }
+
+      section.about-story-section {
+        margin: 10rem auto 0 auto;
+        border: 1px solid lbue;
+        width: 99rem;
+        font-size: 3rem;
+        line-height: 130%;
+      }
+
+      article.about-story-meat p {
+        font-size: 2.2rem;
+      }
+
+      article.about-story-meat h4 {
+        font-size: 2.5rem;
+      }
+
+    }
+
+    @media (min-width: 1600px) and (max-width: 1999px) {
+      /* NAVBAR DESKTOP LARGE */
+
+      nav.navbar img.logo-size {
+        width: 100%;
+      }
+
+      nav.navbar ul.no a {
+        font-size: 2.7rem;
+      }
+
+
+      nav.navbar ul.no li  {
+        margin-left: 1.5%;
+      }
+
+      /* HERO DESKTOP LARGE */
+
+      section.wrappers article.parallax {
+        content: " ";
+        display: flex;
+        flex: none;
+        position: relative;
+        height: 100vh;
+        transform: translateZ(-1px) scale(1.5);
+        z-index: -1;
+        margin: 0;
+      }
+
+      header#top section.section-wrappers article.section-2 img.squiggles-graphic {
+         width: 23%;
+         top: 85%;
+         left: 82.5%;
+         z-index: 1500;
+      }
+
+      h1.about-name {
+        font-size: 7rem;
+      }
+
+      p.about-subtitle {
+        font-size: 3.5rem;
+      }
+
+      article.about-header div.about-intro-content {
+        position: relative;
+        top: 22%;
+      }
+
+      /* MIDDLE CONTENT DESKTOP LARGE */
+
+      div.pink-text-section {
+        margin: 0 0 1rem 0;
+      }
+
+
+      article.about-middle-content div.intro-wrapper {
+        top: 5rem;
+        padding: 12rem 0;
+      }
+
+      article.about-middle-content div.intro-text-section {
+        font-size: 2.9rem;
+        margin: 0 auto;
+        width: 41%;
+
+      }
+
+      article.about-middle-content div.intro-wrapper div.label-section {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      /* STORY SECTION DESKTOP LARGE */
+      section.about-story-section {
+        margin: 0rem auto 0 auto;
+        padding-top: 10rem;
+        width: 63%;
+        line-height: 130%;
+      }
+
+      article.about-story-meat p {
+        font-size: 2.4rem;
+        line-height: 135%;
+        margin: 0 auto;
+      }
+
+      article.about-story-meat h4.story-title-first, h4.story-title {
+        font-size: 2.9rem;
+        line-height: 135%;
+      }
+
+      article.about-story-meat div img.creative-img {
+        display: block;
+        width: 27rem;
+        position: absolute;
+        right: -15rem;
+        margin-top: -12rem;
+      }
+
+      article.about-story-meat div img.plunge-img {
+        display: block;
+        width: 22rem;
+        position: absolute;
+        left: -10rem;
+        margin-top: -12rem;
+      }
+
+      article.about-story-meat div img.cocoon-img {
+        display: block;
+        width: 22rem;
+        position: absolute;
+        right: -12rem;
+        margin-top: -12rem;
+      }
+
+      /* CONTACT DESKTOP LARGE */
+
+      section#contact div.content-copy {
+        line-height: 140%;
+        padding: 0;
+        width: 45%;
+        margin: 0 auto;
+        font-family: "Brandon Text Medium", sans-serif;
+      }
+
+      #contact div.return-top a {
+        font-size: 2.3rem;
+      }
+
+      #contact div.return-top i {
+        font-size: 3rem;
+      }
+
+      #footer-card div.copyrightt p {
+        font-size: 2rem;
+      }
+    }
+
+    @media (min-width: 2000px) {
+      nav.navbar img.logo-size {
+        width: 35rem;
+      }
+
+      nav.navbar ul.no li {
+        margin-left: 3%;
+      }
+
+      nav.navbar {
+        padding-top: 0rem;
+      }
+
+      nav.navbar ul.no a {
+        font-size: 3.3rem;
+      }
+
+      article.about-story-meat div img.creative-img {
+        margin-top: -20rem;
+        margin-right: -8rem;
+      }
+
+      header#top section.section-wrappers article.section-2 img.squiggles-graphic {
+         top: 80%;
+      }
+
+
+      article.about-header div.about-intro-content {
+        position: relative;
+        top: 24%;
+      }
+
+      h1.about-name {
+        font-size: 8rem;
+      }
+
+      p.about-subtitle {
+        font-size: 4rem;
+      }
+
+      article.about-middle-content div.intro-wrapper {
+        padding: 15rem 0;
+        margin-top: -15rem;
+      }
+
+      section.section-wrappers article.about-middle-content div.label-section {
+        width: 71%;
+      }
+
+      section div.label-section h2.about-label {
+        font-size: 5rem;
+      }
+
+      div.pink-text-section div.intro-text-section {
+        font-size: 3.5rem;
+        line-height: 130%;
+        width: 43%;
+      }
+
+      section.about-story-section article.about-story-meat {
+        width: 57%;
+      }
+
+      section.about-story-section article.about-story-meat p {
+        font-size: 3rem;
+        line-height: 130%;
+      }
+
+      section.about-story-section article.about-story-meat h4 {
+        font-size: 3.5rem;
+      }
+
+      #contact div.contact-section {
+        padding: 20rem 0 10rem 0;
+      }
+
+      div.contact-section div.content-copy {
+        width: 45%;
+        margin-bottom: 3rem;
+      }
+
+      #contact div.content-copy h2.contact-headline {
+        font-size: 8.5rem;
+      }
+
+      #contact div.content-copy h5.contact-words {
+        font-size: 3.8rem;
+      }
+
+      #contact ul.social-medio i {
+        font-size: 5.5rem;
+      }
+
+      #contact div.return-top .return-link {
+        font-size: 3.3rem;
+      }
+
+      #contact div.return-top {
+        margin: 5rem 0 -2rem 0;
+      }
+
+      #contact div.return-top i {
+        font-size: 5rem;
+        margin: 0.3rem;
+      }
+
+      footer#footer-card {
+        padding: 2rem 0;
+      }
+
+      #footer-card div.copyrightt p {
+        font-size: 3rem;
+      }
+    }
+
+    @media (min-width: 2500px) {
+      nav.navbar img.logo-size {
+        width: 45rem;
+      }
+
+      nav.navbar ul.no li {
+        margin-left: 5%;
+      }
+
+      nav.navbar {
+        padding-top: 3rem;
+      }
+
+      nav.navbar ul.no a {
+        font-size: 4rem;
+      }
+
+      article.about-header div.about-intro-content h1.about-name {
+        font-size: 10rem;
+      }
+
+      article.about-header div.about-intro-content p.about-subtitle {
+        font-size: 5rem;
+      }
+
+      div.pink-text-section div.intro-text-section {
+        font-size: 4.3rem;
+        line-height: 130%;
+        width: 45%;
+      }
+
+      section.about-story-section article.about-story-meat p {
+        font-size: 4rem;
+      }
+
+      section.about-story-section article.about-story-meat .story-title {
+        font-size: 4.5rem;
+        margin-top: 8rem;
+      }
+
+      section.about-story-section article.about-story-meat .story-title-first {
+        font-size: 4.5rem;
+      }
 }
+//* MEDIA QUERIES FOR DESKTOP END*//
