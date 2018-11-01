@@ -1,57 +1,756 @@
 /* ****** DESKTOP MEDIA QUERY ******* */
+    @media (min-width: 2300px) and (max-width: 3000px) {
+      p {
+        font-size: 3.3rem;
+        line-height: 120%;
+      }
 
-@media (min-width: 1440px) and (max-width: 1999px) {
-  section#contact div.contact-copy1 h2.contact-title1 {
-    font-size: 7rem;
-    padding-bottom: 1rem;
-  }
+      section div.callout p.co-text {
+        font-size: 3.9rem;
+        border-left: 14px solid #FFA856;
+        line-height: 120%;
+        padding: 3rem 0 3rem 3rem;
+      }
 
-    section#contact div.contact-copy1 h5.contact-text {
-      font-size: 4rem;
-      padding-top: 1rem;
-  }
+      #chapter1 img.chapter1-image {
+        width: 28%;
+        border: 1px solid red;
+        margin: -16rem auto 0 auto;
+      }
 
-  section#contact article.contact-meat div.contact-copy1 {
-    width: 50%;
-    border: 1px solid red;
-  }
+      h1 {
+        font-size: 5rem;
+      }
 
-  section#contact div.contact-btns3 {
-    border: 1px solid blue;
-    width: 100%;
-  }
+      section article.icing div.content {
+        padding-bottom: 5rem;
+      }
 
-   div.contact-btns2 {
-    margin: 3rem auto 0 auto;
-    width: 100%;
-  }
+      h3.pg-topic, h2.pg-label {
+        font-size: 4.5rem;
+      }
 
-   div.contact-btns2 a.primary-btn {
-    width: 50rem;
-    height: 6.5rem;
-    padding: 2.5rem 0 0 0;
-    font-size: 2.4rem;
-  }
+      article.intro-header div.contact-btns1 a.primary-btn {
+       width: 45rem;
+       height: 6.5rem;
+       padding: 2.5rem 0 0 0;
+       font-size: 2.2rem;
+     }
 
-  section#contact div.contact-btns3 {
-    margin: 3rem auto 0 auto;
-    width: 100%;
-  }
+     section.project-info ul li {
+       font-size: 3.3rem;
+     }
 
-  section#contact div.contact-btns3 a.primary-btn {
-    width: 50rem;
-    height: 6.5rem;
-    padding: 2.5rem 0 0 0;
-    font-size: 2.4rem;
-  }
+     section.project-info h2.title {
+       font-size: 4rem;
+     }
 
-  section#contact div.contact-btns3 a.get-in-touch {
-    margin-right: 2rem;
-  }
-}
+     section.project-info img {
+       width: 25%;
+     }
 
-@media screen and (min-width: 1024px) and (max-width: 1999px) {
+     section.project-info div.design-del img {
+       width: 19%;
+     }
 
+     section.project-info div.design-del h2.title {
+       padding-top: 0.1rem;
+     }
+
+     article.intro-header div.contact-btns1 a.primary-btn {
+      width: 50rem;
+      height: 7.5rem;
+      padding: 3rem 0 0 0;
+      font-size: 2.8rem;
+    }
+
+
+     div.contact-btns2 a.primary-btn {
+      width: 50rem;
+      height: 7.5rem;
+      padding: 3rem 0 0 0;
+      font-size: 2.8rem;
+    }
+
+      section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+        font-size: 3.3rem;
+        line-height: 120%;
+      }
+
+      section#chapter1 div.ch1-content div.solution {
+        margin-top: -135rem;
+        margin-bottom: 5rem;
+      }
+
+      section div.title-card h2.section-title {
+        font-size: 4rem;
+      }
+
+      section.cuatro div.vid-responsive, section.cinco .vid-responsive, section.seis .vid-responsive {
+        width: 100%;
+      }
+
+      div.iterations-list section.cuatro header.iteration-title, div.iterations-list section.cinco header.iteration-title, div.iterations-list section.seis header.iteration-title {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      section.cuatro header.iteration-title div.it-caption, section.cinco header.iteration-title div.it-caption, section.seis header.iteration-title div.it-caption {
+        margin-left: 6.5rem;
+        padding: 0 0 1.5rem 0;
+      }
+
+      div.iterations-list section.cuatro p.text-box, div.iterations-list section.cinco p.text-box, div.iterations-list section.seis p.text-box {
+        margin: 0 auto 3rem auto;
+        padding: 0;
+      }
+
+      section div.title-card  {
+        margin: 0 0 20rem 0;
+      }
+
+      section div.title-card img.chapter {
+        width: 6%;
+        margin-top: -3rem;
+      }
+
+      section#chapter3 div.title-card img.chapter {
+        width: 6%;
+        margin: -3rem 0 0 1rem;
+      }
+
+      section#chapter4 div.title-card img.chapter {
+        width: 6%;
+        margin: -0.7rem 0.5rem 0;
+      }
+
+      div.brand-story div.brand-quote h2.main-quote {
+        font-size: 4.8rem;
+      }
+
+      div.brand-story div.brand-quote h2.by {
+        font-size: 4.8rem;
+      }
+
+      div.brand-story div.brand-quote img.quote-img {
+        width: 10%;
+        margin: 0 0rem 1rem -3rem;
+      }
+
+      section.both-personas div.vertical-line span.pers-quote, section.both-personas p.persona-quote i span {
+        font-size: 3.8rem;
+      }
+
+      section.both-personas div.vertical-line p.persona-quote {
+        font-size: 3.5rem;
+        line-height: 110%;
+      }
+
+      section.both-personas div.motivations {
+        margin: 5rem auto 0 auto;
+      }
+
+      section.both-personas img.maya-img, section.both-personas img.sheila-img {
+        width: 65%;
+      }
+
+      div.motivations h4 span, div.frustrations h4 span {
+        font-size: 3.5rem;
+      }
+
+      article.person section.both-personas {
+        width: 80%;
+      }
+
+      section.maya-persona, section.sheila-persona {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      div.pers-title h2 {
+        font-size: 4rem;
+        margin: 1rem 0 0 0;
+      }
+
+      div.pers-title h3 {
+        font-size: 3rem;
+      }
+
+      a.style-button {
+        font-size: 3.3rem;
+      }
+
+      div.block h4 {
+        font-size: 3.8rem;
+      }
+
+      header.it-list h3.it-text {
+        font-size: 3.5rem;
+      }
+
+      section.it-snippet div.it-title div.number-circle {
+        padding: 2.3rem 0 0 0;
+        margin: 0rem 1rem 0 -0.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 3rem;
+      }
+
+      section.it-snippet div.it-title div.number-circle, header.three div.it-title div.number-circle {
+        padding: 2.3rem 0 0 0;
+        margin: 0rem 1rem 0 -0.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        font-size: 3rem;
+      }
+
+      #chapter4 div.color-palette div.color {
+        width: 40%;
+      }
+
+     #chapter4 div.typography div.style-wrapper {
+       margin: 47rem auto 0 auto;
+     }
+
+     div.iterations-list div.it-caption h3.it {
+       font-size: 3.8rem;
+       width: 100%;
+       padding: 1.5rem 0 0 0;
+     }
+
+     div.iterations-list header.iteration-title span.number-circle {
+       padding: 2.3rem 0 0 0;
+       margin: 0rem 1rem 0 -0.5rem;
+       width: 4.5rem;
+       height: 4.5rem;
+       font-size: 3rem;
+     }
+
+     #chapter6 div.desktop-images-final div.mobile-desktop-images {
+       margin: 8rem auto 0 auto;
+       width: 80%;
+     }
+
+     section.cinco div.it-caption span.number-circle, section.seis div.it-caption span.number-circle {
+       margin: 1.5rem 1rem 0 0;
+     }
+
+     article.concl h3.concl-heading, article.final-p div.content h2 {
+       font-size: 4.5rem;
+     }
+
+     article.concl h3.concl-subhead, article.concl h3.concl-sub {
+       font-size: 4rem;
+     }
+
+     article.concl p.text-box {
+       font-size: 3.2rem;
+       line-height: 130%;
+     }
+
+     article.final-p p.text-box {
+       font-size: 3.2rem;
+     }
+
+     section#chapter5 div.test-bg h3.category-title {
+       font-size: 5rem;
+       margin: 7.5rem 0;
+     }
+
+     section#chapter5 div.test-bg div.test-wrapper h4 {
+       font-size: 5rem;
+     }
+
+     section#chapter5 div.test-bg div.test-wrapper p.screen-subtitle {
+       font-size: 3.5rem;
+     }
+
+     section#chapter5 div.test-bg div.test-wrapper h3.numbers {
+       font-size: 4.3rem;
+       margin: 5rem 0 1rem 0;
+     }
+
+     section#chapter5 div.test-bg div.test-wrapper p.descs {
+       font-size: 3.3rem;
+       margin: 0 auto 1rem auto;
+     }
+
+     section.iterations-snippet section.rogue-img p.test-img-text {
+       margin: 5rem auto;
+       font-size: 4rem;
+       line-height: 140%;
+     }
+
+     section.iterations-snippet section.rogue-img p.test-img-text span {
+       font-size: 4.5rem;
+     }
+
+     section.iterations-snippet section.rogue-img div.bt-screen h4.bt-title{
+       font-size: 4.5rem;
+     }
+
+     section.iterations-snippet section.rogue-img div.bt-screen p.bt-desc{
+       font-size: 3.5rem;
+     }
+
+     section.iterations-snippet section.rogue-img h3.button-title {
+       font-size: 5rem;
+     }
+
+     section#contact div.contact-copy1 h2.contact-title1 {
+       font-size: 9rem;
+       padding-bottom: 1rem;
+     }
+
+     section#contact div.contact-copy1 h5.contact-text {
+       font-size: 4rem;
+       padding-top: 1rem;
+   }
+
+     section#contact article.contact-meat div.contact-copy1 {
+       width: 45%;
+       margin: -10rem auto 0 auto;
+     }
+
+     section#contact img.contact-graphic {
+       width: 17%;
+       position: relative;
+       left: 0;
+     }
+
+     section#contact div.contact-btns3 a.primary-btn {
+      width: 50rem;
+      height: 7.5rem;
+      padding: 3rem 0 0 0;
+      font-size: 2.8rem;
+    }
+    }
+
+
+    @media (min-width: 1700px) and (max-width: 2299px) {
+      p {
+        font-size: 2.7rem;
+        line-height: 120%;
+      }
+
+      section div.callout p.co-text {
+        font-size: 3rem;
+        border-left: 10px solid #FFA856;
+        line-height: 120%;
+        padding: 3rem 0 3rem 3rem;
+      }
+
+      #chapter1 img.chapter1-image {
+        width: auto;
+        margin: -16rem auto 0 auto;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+      }
+
+      h3.pg-topic, h2.pg-label {
+        font-size: 3.5rem;
+      }
+
+      article.intro-header div.contact-btns1 {
+       margin: 3rem auto 5rem auto;
+       width: 100%;
+     }
+
+      article.intro-header div.contact-btns1 a.primary-btn {
+       width: 45rem;
+       height: 6.5rem;
+       padding: 2.5rem 0 0 0;
+       font-size: 2.2rem;
+     }
+
+     section.project-info ul li {
+       font-size: 2.5rem;
+     }
+
+     section.project-info h2.title {
+       font-size: 3.5rem;
+     }
+
+     section.project-info img {
+       width: 20%;
+     }
+
+     section.project-info div.design-del img {
+       width: 15%;
+     }
+
+     section.project-info div.design-del h2.title {
+       padding-top: 0.1rem;
+     }
+
+      div.contact-btns2 {
+       margin: 3rem auto 0 auto;
+       width: 100%;
+     }
+
+      div.contact-btns2 a.primary-btn {
+       width: 42rem;
+       height: 6.5rem;
+       padding: 2.5rem 0 0 0;
+       font-size: 2.4rem;
+     }
+
+      section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+        font-size: 2.5rem;
+        line-height: 120%;
+      }
+
+      section#chapter1 div.ch1-content div.solution {
+        margin-top: -77rem;
+      }
+
+      section div.title-card h2.section-title {
+        font-size: 3.6rem;
+      }
+
+      section div.title-card img.chapter {
+        width: 6%;
+        margin-top: -1.3rem;
+      }
+
+      div.brand-story div.brand-quote h2.main-quote {
+        font-size: 4rem;
+      }
+
+      div.brand-story div.brand-quote h2.by {
+        font-size: 4rem;
+      }
+
+      div.brand-story div.brand-quote img.quote-img {
+        width: 10%;
+        padding-right: 1rem;
+      }
+
+      section#chapter4 div.title-card img.chapter {
+        width: 6%;
+        margin: 0 0.3rem 0 0;
+      }
+
+      section.both-personas div.vertical-line span.pers-quote, section.both-personas p.persona-quote i span {
+        font-size: 3.5rem;
+      }
+
+      section.both-personas div.vertical-line p.persona-quote {
+        font-size: 3rem;
+        line-height: 110%;
+      }
+
+      div.motivations h4 span, div.frustrations h4 span {
+        font-size: 2.2rem;
+      }
+
+      article.person section.both-personas {
+        width: 80%;
+      }
+
+      section.maya-persona, section.sheila-persona {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      div.pers-title h2 {
+        font-size: 3.5rem;
+      }
+
+      div.pers-title h3 {
+        font-size: 2.5rem;
+      }
+
+      a.style-button {
+        font-size: 2.4rem;
+      }
+
+      div.block h4 {
+        font-size: 2.7rem;
+      }
+
+      header.it-list h3.it-text {
+        font-size: 2.7rem;
+      }
+
+      section.it-snippet div.it-title div.number-circle {
+        padding: 1.8rem 0 0 0;
+        margin: 0.3rem 0.5rem 0 0rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2.5rem;
+      }
+
+      header.three div.it-title div.number-circle {
+        width: 3.8rem;
+        padding-top: 1.9rem;
+        font-size: 2.5rem;
+        height: 3.8rem;
+      }
+
+      #chapter4 div.color-palette {
+        width: 90%;
+      }
+
+      #chapter4 div.color-palette div.color {
+        width: 45%;
+      }
+
+      #chapter4 div.typography {
+        display: block;
+        margin: 15rem auto;
+        width: 90%;
+      }
+
+      #chapter4 div.typography div.type-content {
+        float: left;
+        margin-left: 12rem;
+        width: 40%;
+        display: inline-block;
+      }
+
+     #chapter4 div.typography img.type-img {
+       float: right;
+       display: inline-block;
+       margin: 0 25rem 0 0;
+       width: 18%;
+     }
+
+     #chapter4 div.typography div.style-wrapper {
+       margin: 40rem auto 0 auto;
+       display: block;
+       float: none;
+     }
+
+     div.iterations-list div.it-caption h3.it {
+       font-size: 2.7rem;
+       width: 100%;
+       padding: 1.5rem 0 0 0;
+     }
+
+     div.iterations-list header.iteration-title span.number-circle {
+       background-color: #6534FF;
+       border-radius: 50%;
+       padding: 1.9rem 0 0 0;
+       margin: 0.3rem 0.5rem 0 -0.5rem;
+       color: #FFFDFB;
+       width: 3.8rem;
+       height: 3.8rem;
+       font-family: 'Brandon Text Medium', sans-serif;
+       font-size: 2.5rem;
+     }
+
+     section.cinco div.it-caption span.number-circle, section.seis div.it-caption span.number-circle {
+       margin: 1.5rem 0 0 -1.5rem;
+     }
+
+     article.concl h3.concl-heading, article.final-p div.content h2 {
+       font-size: 3.5rem;
+     }
+
+     article.concl h3.concl-subhead,  article.concl h3.concl-sub {
+       font-size: 3rem;
+     }
+
+     article.concl p.text-box {
+       font-size: 2.4rem;
+     }
+
+     article.final-p p.text-box {
+       font-size: 2.4rem;
+     }
+
+     section.iterations-snippet section.rogue-img p.test-img-text {
+       margin: 5rem auto;
+       font-size: 3.2rem;
+       line-height: 130%;
+     }
+
+     section.iterations-snippet section.rogue-img p.test-img-text span {
+       font-size: 3.5rem;
+     }
+
+     section.iterations-snippet section.rogue-img div.bt-screen h4.bt-title{
+       font-size: 3.5rem;
+     }
+
+     section.iterations-snippet section.rogue-img div.bt-screen p.bt-desc{
+       font-size: 2.7rem;
+     }
+
+     section.iterations-snippet section.rogue-img h3.button-title {
+       font-size: 4.3rem;
+     }
+
+     section#contact div.contact-copy1 h2.contact-title1 {
+       font-size: 6.5rem;
+       padding-bottom: 1rem;
+     }
+
+     section#contact div.contact-copy1 h5.contact-text {
+       font-size: 3.2rem;
+       padding-top: 1rem;
+   }
+
+     section#contact article.contact-meat div.contact-copy1 {
+       width: 43%;
+       margin: -2rem auto 0 auto;
+     }
+
+     section#contact img.contact-graphic {
+       width: 16%;
+       position: relative;
+       left: 3%;
+     }
+
+     section#contact {
+       padding: 0;
+     }
+
+     section#contact .return-top .return-link {
+       margin: 0;
+     }
+
+     section#contact div.contact-btns3 {
+      margin: 3rem auto 2rem auto;
+      width: 100%;
+    }
+
+     section#contact div.contact-btns3 a.primary-btn {
+      width: 42rem;
+      height: 6.5rem;
+      padding: 2.5rem 0 0 0;
+      font-size: 2.4rem;
+    }
+
+    section.both-personas img.maya-img, section.both-personas img.sheila-img {
+      width: 65%;
+    }
+
+    }
+
+    @media (min-width: 1440px) and (max-width: 1699px) {
+      section#chapter1 div.ch1-content {
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      #chapter6 div.desktop-images-final div.mobile-desktop-images {
+        margin: -10rem auto 0 auto;
+        width: 80%;
+      }
+
+      #chapter1 .content {
+        width: 45%;
+      }
+
+      p {
+        font-size: 2.5rem;
+        line-height: 100%;
+      }
+
+      section div.callout p.co-text {
+        font-size: 2.7rem;
+        border-left: 10px solid #FFA856;
+        line-height: 120%;
+        padding: 3rem 0 3rem 3rem;
+      }
+
+      #chapter1 div.ch1-content div.challenge {
+        margin-left: 10rem;
+        margin-top: -15rem;
+      }
+
+      #chapter1 div.ch1-content div.solution {
+        margin-top: -80rem;
+        margin-left: 10rem;
+      }
+
+
+      #chapter4 div.color-palette div.color {
+        width: 45%;
+      }
+
+      section.it-snippet div.it-title h3.it-text, section.iterations-snippet div.it-caption h3.it {
+        font-size: 2.3rem;
+      }
+
+      section#contact div.contact-copy1 h2.contact-title1 {
+        font-size: 6rem;
+        padding-bottom: 1rem;
+      }
+
+        section#contact div.contact-copy1 h5.contact-text {
+          font-size: 3rem;
+          padding-top: 1rem;
+      }
+
+      section#contact article.contact-meat div.contact-copy1 {
+        width: 50%;
+      }
+
+      section#contact div.contact-btns3 {
+        width: 100%;
+      }
+
+       div.contact-btns2 a.primary-btn {
+        font-size: 1.8rem;
+      }
+
+      section#contact img.contact-graphic {
+        width: 15%;
+        position: relative;
+        left: 5%;
+      }
+
+      section#contact {
+        padding: 0;
+      }
+
+      section#contact .return-top .return-link {
+        margin: 0 0 1.5rem 0;
+      }
+
+      section#contact div.contact-btns3 a.primary-btn {
+        font-size: 1.8rem;
+      }
+
+      a.style-button {
+        font-size: 2.2rem;
+      }
+
+      section.iterations-snippet section.rogue-img p.test-img-text {
+        margin: 5rem auto;
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      section.iterations-snippet section.rogue-img p.test-img-text span{
+        font-size: 3rem;
+      }
+
+      section.iterations-snippet section.rogue-img div.bt-screen h4.bt-title{
+        font-size: 3.3rem;
+      }
+
+      section.iterations-snippet section.rogue-img div.bt-screen p.bt-desc{
+        font-size: 2.3rem;
+      }
+
+      section.iterations-snippet section.rogue-img h3.button-title {
+        font-size: 3.8rem;
+      }
+    }
+
+
+/* PROJECT PAGE DESKTOP NORMAL*/
+@media only screen and (min-width: 1025px) and (max-width: 3000px) {
   div.container {
     width: 100%;
     overflow: hidden !important;
@@ -217,9 +916,8 @@
     margin: 0;
   }
 
-
-
   /* CHAPTER 1 DESKTOP SECTION */
+
 
   article.challenge-intro {
     display: flex;
@@ -227,11 +925,17 @@
     justify-content: center;
   }
 
+  #chapter1 div.ch1-content {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
   #chapter1 .content {
-    display: block;
     width: 45%;
-    margin-top: -3rem;
-    margin-left: 6rem;
   }
 
   ol li, ol span, ul li{
@@ -239,19 +943,19 @@
     line-height: 120%;
   }
 
-  div.challenge {
-    margin-top: 0;
+  #chapter1 div.ch1-content div.challenge {
+    margin-left: 5rem;
+    margin-top: -15rem;
   }
 
-  div.solution {
-    position: relative;
-    top: -80rem;
-    margin-bottom: -65rem;
+  #chapter1 div.ch1-content div.solution {
+    margin-top: -80rem;
+    margin-left: 5rem;
   }
 
   img.chapter1-image {
     width: auto;
-    margin: -5rem auto;
+    margin: -16rem auto 0 auto;
   }
 
   /* CHAPTER 2 DESKTOP SECTION */
@@ -299,7 +1003,7 @@ div.callout {
    border-left: 7px solid #FFA856;
    margin: 0 auto;
    padding: 3rem 0 3rem 2rem;
-   font-size: 2.3rem;
+   font-size: 2.1rem;
    line-height: 120%;
  }
 
@@ -396,23 +1100,21 @@ div.callout {
    justify-content: center;
  }
 
- div.motivations, div.frustrations {
+ .maya-persona div.motivations, .maya-persona div.frustrations {
    padding: 0 6rem;
  }
 
  .sheila-persona div.motivations, .sheila-persona div.frustrations {
-   padding: 0 5rem;
+   padding: 0 6rem;
  }
 
  img.maya-img {
    display: block;
    width: auto;
    padding: 0;
-   /* padding-top: 0; */
  }
 
  img.sheila-img {
-   /* display: block; */
    width: auto;
    height: auto;
    padding:0;
@@ -480,14 +1182,14 @@ div.callout {
  }
 
 
- a.style-button {
+ /* a.style-button {
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
     color: #1C46C5;
     display: inline-block;
     margin: 5rem auto;
     text-align: center;
-  }
+  } */
 
  /* CHAPTER 3 DESKTOP */
 
@@ -548,14 +1250,14 @@ div.callout {
    margin: 0 auto;
  }
 
-a.style-button {
+/* a.style-button {
      font-family: 'Brandon Grotesque Black';
      font-size: 1.8rem;
      color: #1C46C5;
      display: inline-block;
      margin: 5rem auto;
      text-align: center;
-   }
+   } */
 
  img.wf-sketchie {
    width: 50%;
@@ -590,14 +1292,21 @@ a.style-button {
     text-align: center;
  }
 
-  a.style-button {
+ article.prototype div.content {
+ }
+
+ article.prototype a.style-button {
+   margin: 7rem 0 3rem 0;
+ }
+
+  /* a.style-button {
     font-family: 'Brandon Grotesque Black';
     font-size: 1.8rem;
     color: #1C46C5;
     display: inline-block;
     margin: 5rem auto;
     text-align: center;
-  }
+  } */
 
  .prototype .text-box a {
    color: #FB7E6C;
@@ -659,8 +1368,9 @@ a.style-button {
  }
 
  section.third img.last {
-   width: 90%;
-   margin-left: 5rem;
+   width: 50%;
+   position: relative;
+   left: 6rem;
    display: block;
  }
 
@@ -748,26 +1458,33 @@ div.color-palette img.color-else {
   margin: 0 auto;
 }
 
-div.typography {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-}
-
- div.typography div.type-content {
-  width: 45%;
+#chapter4 div.typography {
+  border: 1px solid transparent;
   display: block;
-  margin-right: 7.5rem;
-  margin-left: 0rem;
+  margin: 15rem auto;
+  width: 90%;
+  padding: 0;
 }
 
-div.typography img.type-img {
-  width: auto;
-  margin-left: 12rem;
-  margin-right: 11rem;
+#chapter4 div.typography div.type-content {
+  float: left;
+  width: 50%;
+  display: inline-block;
+  margin-left: 3rem;
+}
+
+#chapter4 div.typography img.type-img {
+ float: right;
+ display: inline-block;
+ margin: 0 12rem 0 0;
+ width: 18%;
+}
+
+div.typography div.style-wrapper {
+ margin: 30rem auto 0 auto;
+ display: block;
+ float: none;
+ padding: 0;
 }
 
 .style-button {
@@ -827,7 +1544,7 @@ article.ab {
 
 article.ab .content {
   text-align: left;
-  margin: 10rem auto 0 auto;
+  margin: 10rem auto 5rem auto;
 }
 
 article.ab a {
@@ -1063,7 +1780,7 @@ section.iterations-snippet {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem auto;
 }
 
 header.iteration-title {
@@ -1071,6 +1788,18 @@ header.iteration-title {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+}
+
+header.iteration-title span.number-circle {
+  background-color: #6534FF;
+  border-radius: 50%;
+  padding: 1.5rem 0 0 0;
+  margin: 0rem 0 0 -0.5rem;
+  color: #FFFDFB;
+  width: 3rem;
+  height: 3rem;
+  font-family: 'Brandon Text Medium', sans-serif;
+  font-size: 2rem;
 }
 
 header.iteration-title h3.it {
@@ -1152,9 +1881,13 @@ section.cinco , section.seis {
 
 section.cuatro .vid-responsive, section.cinco .vid-responsive, section.seis .vid-responsive {
   width: 85%;
-  margin-top: 0rem;
+  margin-top: 2rem;
   padding-bottom: 40rem;
   margin-bottom: 0;
+}
+
+div.iterations-list section.cinco .number-circle, div.iterations-list section.seis .number-circle {
+  margin: 0.5rem 0.5rem 0 0;
 }
 
 section.cuatro header.iteration-title, section.cinco header.iteration-title, section.seis header.iteration-title {
