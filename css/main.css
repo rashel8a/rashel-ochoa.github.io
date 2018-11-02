@@ -402,14 +402,6 @@ div.desktop {
 }
 /*Position to top right of screen*/
 #main-nav {
-  /* display: block;
-  position: absolute;
-  z-index: 2;
-  right: -1.6rem;
-  width: 48rem;
-  height: 90rem;
-  margin: -10rem 0 0 0; */
-
   display: block;
   position: absolute;
   width: 100vw;
@@ -984,6 +976,7 @@ div.main-container {
   overflow-x: hidden;
   overflow-y: scroll;
   perspective: 2px;
+  position: relative;
 }
 
 div#navbar-toggle {
@@ -1030,14 +1023,14 @@ div.about-intro-content {
   text-align: center;
 }
 
-h1.about-name {
+section.section-wrappers article.about-header h1.about-name {
   font-size: 3.1rem;
   z-index: 1300;
   width: 100%;
   padding: 0;
   margin: 0 auto;
   z-index: 1300;
-  font-family: "Brandon Text Black" sans-serif;
+  font-family: "Brandon Text Black", sans-serif;
 }
 
 p.about-subtitle {
@@ -1057,6 +1050,7 @@ article.about-middle-content {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 
 article.about-middle-content div.intro-wrapper {
@@ -1081,10 +1075,9 @@ img.label-image {
 img.squiggles-graphic {
   width: 46%;
   position: absolute;
-  top: -35%;
+  top: -20%;
   left: 65%;
-  z-index: 1500;
-  /* display: block; */
+  z-index: 999;
 }
 
 div.intro-text-section {
@@ -1164,19 +1157,9 @@ div.collage-wrapper img.collage-me-mobile {
 @media (min-width: 320px) and (max-width: 374px) {
 
   section.about-story-section {
-    /* margin: -30% auto 0 auto;
-    padding: 0; */
     position: relative;
     top: -8rem;
     margin: 0 auto -12rem 0;
-  }
-
-  section.section-wrappers article.about-middle-content img.squiggles-graphic {
-    width: 55%;
-    position: absolute;
-    top: -36%;
-    left: 58%;
-    z-index: 1500;
   }
 
   div.collage-wrapper img.collage-me-mobile {
@@ -1189,18 +1172,24 @@ div.collage-wrapper img.collage-me-mobile {
 @media (min-width: 375px) and (max-width: 469px) {
 
   article.bg1::after {
-    background-size: 100%;
-    margin: -15% 0 0 0;
+    background-size: cover;
+    margin: -9% 0 0 0;
     background-repeat: no-repeat;
-    background-image: url("../images/about/rashel-hero-mobile.png");
+    background-image: url("../images/about/rashel-hero-resosm.png");
+  }
+
+  article.about-middle-content div.intro-wrapper {
+    top: -30%;
   }
 
   section.about-story-section {
-    /* margin: -30% auto 0 auto;
-    padding: 0; */
     position: relative;
-    top: -10rem;
-    margin: 0 auto -15rem auto;
+    top: -32%;
+    margin: 0 0 -65% 0;
+  }
+
+  img.squiggles-graphic {
+    top: -23%;
   }
 }
 
@@ -1214,6 +1203,14 @@ div.collage-wrapper img.collage-me-mobile {
   section.about-story-section {
     margin: -28% 0 -15% 0;
   }
+
+  img.squiggles-graphic {
+    width: 46%;
+    position: absolute;
+    top: -25%;
+    left: 65%;
+    z-index: 1000;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
@@ -1223,6 +1220,10 @@ div.collage-wrapper img.collage-me-mobile {
 
   section.about-story-section {
     margin: -25% 0 -12% 0;
+  }
+
+  img.squiggles-graphic {
+    top: -30%;
   }
 }
 
@@ -1769,7 +1770,7 @@ div.callout p.co-text {
 .both-personas img {
   width: 80%;
   display: block;
-  margin: 0 auto;
+  margin: 3rem auto 0 auto;
 }
 
 .personas .content {
@@ -3080,9 +3081,10 @@ div.key-learnings .concl-sub {
       /* margin: 0; */
     }
 
-    .main-container {
+    div.main-container {
       width: 100%;
       overflow: hidden;
+      position: relative;
     }
 
     nav.navbar img.logo-size {
@@ -3150,10 +3152,10 @@ div.key-learnings .concl-sub {
     }
 
     article.bg1::after {
-      background-size: cover;
-      margin: -12% 0 0 0;
+      background-size: 100%;
+      margin: 0;
       background-repeat: no-repeat;
-      background-image: url("../images/about/rashel-hero.png");
+      background-image: url("../images/about/rashel-hero-resosm.png");
     }
 
     div.about-intro-content {
@@ -3165,7 +3167,7 @@ div.key-learnings .concl-sub {
       text-align: center;
     }
 
-    h1.about-name {
+    article.about-intro-content h1.about-name {
       font-size: 3.5rem;
       z-index: 1500;
       width: 100%;
@@ -3192,13 +3194,14 @@ div.key-learnings .concl-sub {
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      position: relative;
     }
 
 
     article.about-middle-content div.intro-wrapper {
       text-align: center;
       padding: 7.5rem 0 7.5rem 0;
-      margin-top: -26.5%;
+      margin-top: -10.5%;
       z-index: 999;
       position: relative;
       background-color: #FDE8DE;
@@ -3237,7 +3240,7 @@ div.key-learnings .concl-sub {
     article.about-middle-content img.squiggles-graphic {
       width: 35%;
       position: absolute;
-      top: -50%;
+      top: -25%;
       left: 74%;
       z-index: 1500;
     }
@@ -3426,10 +3429,6 @@ div.key-learnings .concl-sub {
     margin-top: -10%;
   }
 
-  article.bg1::after {
-    margin: -20% 0 0 0;
-  }
-
   article.about-story-meat img.creative-img {
     width: 28%;
     right: -8%;
@@ -3437,7 +3436,11 @@ div.key-learnings .concl-sub {
   }
 
   article.about-middle-content img.squiggles-graphic {
-    top: -40%;
+    width: 30%;
+    position: absolute;
+    top: -28%;
+    left: 77%;
+    z-index: 1500;
   }
 
   section.about-story-section {
@@ -3451,13 +3454,14 @@ div.key-learnings .concl-sub {
 
 @media (min-width: 865px) and (max-width: 1024px) {
   article.about-middle-content img.squiggles-graphic {
-    top: -40%;
+    top: -34%;
     width: 30%;
     left: 77%;
   }
 
   article.bg1::after {
-    margin: -20% 0 0 0;
+    margin: -3% 0 0 0;
+    background-size: 100%;
   }
 
   article.about-story-meat img.creative-img {
@@ -3481,7 +3485,8 @@ div.key-learnings .concl-sub {
   }
 
   article.about-middle-content div.intro-wrapper {
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
+    padding: 10rem 0;
   }
 
   section.about-story-section {
@@ -4745,11 +4750,15 @@ nav.navbar {
          font-family: "Brandon Grotesque Black";
        }
 
+       article.about-middle-content {
+         position: relative;
+       }
+
        article.about-middle-content div.intro-wrapper {
          text-align: center;
          padding: 7.5rem 0;
          position: relative;
-         top: -28%;
+         top: -18%;
          z-index: 999;
          background-color: #FDE8DE;
          display: flex;
@@ -4782,7 +4791,7 @@ nav.navbar {
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         margin: -13% auto -5% auto;
+         margin: -8% auto -5% auto;
        }
 
        section.about-story-section h2.about-label {
@@ -5033,8 +5042,8 @@ nav.navbar {
   }
 
   section.section-wrappers article.about-middle-content div.intro-wrapper {
-    margin: 12% 0 -5% 0;
-    padding: 10rem 0;
+    margin: 8% 0 -5% 0;
+    padding: 12rem 0;
   }
 
   article.about-middle-content div.intro-wrapper div.label-section {
@@ -5087,12 +5096,12 @@ nav.navbar {
 
   /* HERO DESKTOP LARGE */
 
-  h1.about-name {
-    font-size: 6.9rem;
+  article.about-header div.about-intro-content h1.about-name {
+    font-size: 6.8rem;
   }
 
   p.about-subtitle {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
   }
 
   div.about-intro-content {
@@ -5111,12 +5120,12 @@ nav.navbar {
 
   section.section-wrappers article.about-middle-content div.intro-wrapper {
     margin: 0;
-    padding: 11rem 0;
+    padding: 10rem 0;
   }
 
   article.about-middle-content div.intro-text-section {
     font-size: 2.9rem;
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
     width: 42%;
   }
 
@@ -5242,7 +5251,7 @@ nav.navbar {
  }
 
   header#top article.about-middle-content img.squiggles-graphic {
-     top: -25%;
+     top: -35%;
      width: 25%;
      left: 81%;
   }
@@ -5255,7 +5264,7 @@ nav.navbar {
     margin: 0;
   }
 
-  h1.about-name {
+  article.about-header div.about-intro-content h1.about-name {
     font-size: 7rem;
   }
 
@@ -5271,6 +5280,7 @@ nav.navbar {
     font-size: 3.5rem;
     line-height: 125%;
     width: 45%;
+    margin: 0 auto 3rem auto;
   }
 
   section.about-story-section article.about-story-meat {
