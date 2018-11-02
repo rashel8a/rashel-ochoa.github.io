@@ -3152,7 +3152,7 @@ div.key-learnings .concl-sub {
     }
 
     article.bg1::after {
-      background-size: 100%;
+      background-size: 120%;
       margin: 0;
       background-repeat: no-repeat;
       background-image: url("../images/about/rashel-hero-resosm.png");
