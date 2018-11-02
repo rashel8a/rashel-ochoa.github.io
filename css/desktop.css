@@ -12,9 +12,12 @@
         padding: 3rem 0 3rem 3rem;
       }
 
-      #chapter1 img.chapter1-image {
-        width: 28%;
-        margin: -16rem auto 0 auto;
+      section#chapter1 article.challenge-intro img.chapter1-image {
+        width: 22%;
+        position: absolute;
+        display: block;
+        left: 65%;
+        /* margin: -16rem auto 0 auto; */
       }
 
       h1 {
@@ -83,8 +86,8 @@
       }
 
       section#chapter1 div.ch1-content div.solution {
-        margin-top: -135rem;
-        margin-bottom: 5rem;
+        margin: 0 0 20% 5rem;
+        display: block;
       }
 
       section div.title-card h2.section-title {
@@ -111,7 +114,7 @@
       }
 
       section div.title-card  {
-        margin: 0 0 20rem 0;
+        margin: 25rem 0 20rem 0;
       }
 
       section div.title-card img.chapter {
@@ -338,6 +341,11 @@
         line-height: 120%;
       }
 
+      div.title-card {
+        margin: 25rem auto 15rem auto;
+        width: 90%;
+      }
+
       section div.callout p.co-text {
         font-size: 3rem;
         border-left: 10px solid #FFA856;
@@ -384,6 +392,109 @@
      section.project-info h2.title {
        font-size: 3.5rem;
      }
+
+     section#chapter2 div.chart-html {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       margin: 5rem auto 15rem auto;
+       width: 100vw;
+       background-color: #132D60;
+     }
+
+     div.chart-html div.chart-wrap {
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       width: 85%;
+     }
+
+     div.chart-wrap div.part1-section, div.chart-wrap div.part2-section {
+       width: 50%;
+     }
+
+     div.chart-wrap div.part3-section {
+       width: 50%;
+       margin: 0 auto;
+       align-items: center;
+     }
+
+     div.chart-html h3.chart-title {
+       font-size: 6rem;
+       margin: 5rem auto 2rem auto;
+       color: #FFFDFB;
+       font-family: "Brandon Text Bold";
+       line-height: 130%;
+     }
+
+     div.chart-html h5.p-text {
+       font-size: 3.2rem;
+       width: 85%;
+       text-align: center;
+       margin: 3rem auto 5rem auto;
+       color: #FFFDFB;
+       font-family: "Brandon Text Regular";
+       line-height: 130%;
+       align-items: center;
+     }
+
+     img.chart-mobile-img {
+       width: 30%;
+       display: flex;
+       align-items: center;
+       margin: 0 auto;
+     }
+
+     div.part2-section img.chart-mobile-img{
+       width: 30%;
+     }
+
+
+     img.chart-mobile-large {
+       width: 80%;
+       display: flex;
+       align-items: center;
+       margin: 0 auto;
+     }
+
+     div.chart-html div.partl-section {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: nowrap;
+       margin: 3rem auto;
+       align-items: flex-start;
+       justify-content: flex-start;
+       width: 90%;
+     }
+
+     div.partl-section div.stat {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 50%;
+       padding: 0 2rem;
+       margin: 0 auto 2rem auto;
+     }
+
+     div.chart-html div.stat h3.number-stat {
+       color: #73EBE0;
+       font-family: "Brandon Text Black";
+       font-size: 4.8rem;
+       padding-bottom: 1rem;
+     }
+
+     div.chart-html div.partl-section h5.text-stat {
+       color: #FFFDFB;
+       font-family: "Brandon Text Regular";
+       font-size: 3.2rem;
+       line-height: 120%;
+       margin: 1rem auto 3rem auto;
+     }
+
+
+
 
      section.project-info img {
        width: 20%;
@@ -675,13 +786,14 @@
       }
 
       #chapter1 div.ch1-content div.challenge {
-        margin-left: 10rem;
+        margin-left: 0rem;
         margin-top: -15rem;
+        margin-right: 10rem;
       }
 
       #chapter1 div.ch1-content div.solution {
         margin-top: -80rem;
-        margin-left: 10rem;
+        margin-left: 5rem;
       }
 
 
@@ -970,9 +1082,22 @@
     margin-left: 5rem;
   }
 
-  img.chapter1-image {
+  #chapter1 article.challenge-intro img.chapter1-image {
     width: auto;
+    display: block;
     margin: -16rem auto 0 auto;
+  }
+
+  /* section#chapter1 img.chapter1-image {
+    width: 23%;
+    position: absolute;
+    display: block;
+    left: 65%;
+    margin: 0 0 150% 0 ;
+  } */
+
+  section#chapter1 img.chapter1-mobile {
+    display: none;
   }
 
   /* CHAPTER 2 DESKTOP SECTION */
@@ -995,16 +1120,107 @@
    text-align: center;
  }
 
-  .chart-mobile {
-   display: none;
+ section#chapter2 div.chart-html {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 5rem auto 10rem auto;
+   width: 100vw;
+   background-color: #132D60;
  }
 
-  article.survey-results img.chart {
-   display: block;
-   width: 80%;
-   margin: 0 auto;
-   padding: 3rem 0 1rem 0;
+ div.chart-html div.chart-wrap {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 85%;
  }
+
+ div.chart-wrap div.part1-section, div.chart-wrap div.part2-section {
+   width: 50%;
+ }
+
+ div.chart-wrap div.part3-section {
+   width: 50%;
+   margin: 0 auto;
+   align-items: center;
+ }
+
+ h3.chart-title {
+   font-size: 3.8rem;
+   margin: 5rem auto 2rem auto;
+   color: #FFFDFB;
+   font-family: "Brandon Text Bold";
+   line-height: 130%;
+ }
+
+ h5.p-text {
+   font-size: 2.2rem;
+   width: 85%;
+   text-align: center;
+   margin: 2rem auto;
+   color: #FFFDFB;
+   font-family: "Brandon Text Regular";
+   line-height: 130%;
+   align-items: center;
+ }
+
+ img.chart-mobile-img {
+   width: 30%;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ div.part2-section img.chart-mobile-img{
+   width: 30%;
+ }
+
+
+ img.chart-mobile-large {
+   width: 80%;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+ }
+
+ div.chart-html div.partl-section {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   margin: 3rem auto;
+   align-items: flex-start;
+   justify-content: flex-start;
+   width: 90%;
+ }
+
+ div.partl-section div.stat {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   padding: 0 2rem;
+   margin: 0 auto 2rem auto;
+ }
+
+ div.stat h3.number-stat {
+   color: #73EBE0;
+   font-family: "Brandon Text Bold";
+   font-size: 3.5rem;
+   padding-bottom: 1rem;
+ }
+
+ div.partl-section h5.text-stat {
+   color: #FFFDFB;
+   font-family: "Brandon Text Regular";
+   font-size: 1.8rem;
+   line-height: 120%;
+   margin: 1rem auto 3rem auto;
+ }
+
+
 
 div.callout {
    background-color: #FDE8DE;

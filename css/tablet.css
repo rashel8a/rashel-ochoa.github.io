@@ -2,7 +2,7 @@
 
 /* ****** TABLET MEDIA QUERY ******* */
 
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
 
 div.container {
   width: 100%;
@@ -66,6 +66,16 @@ ul li {
 .Starstuff-header .Starstuff-display {
   width: 100%;
   display: block;
+}
+
+h2.pg-label {
+  font-size: 2.3rem;
+  line-height: 110%;
+}
+
+h3.pg-topic {
+  font-size: 1.9rem;
+  line-height: 100%;
 }
 
 /* INTRO SECTION TABLET*/
@@ -132,7 +142,7 @@ h2.section-title {
 }
 
 .pg {
-  margin: 7.5rem auto 0 auto;
+  margin: 10rem auto 0 auto;
 }
 
 div.content {
@@ -174,10 +184,93 @@ img.chart-mobile {
 }
 
 article.survey-results img.chart {
-  display: block;
-  width: 102vw;
-  margin: 3rem auto 0 -2rem;
+  display: none;
 }
+
+section#chapter2 div.chart-html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5rem auto 10rem auto;
+  width: 100vw;
+  background-color: #132D60;
+}
+
+h3.chart-title {
+  font-size: 3.3rem;
+  margin: 5rem auto 1rem auto;
+  color: #FFFDFB;
+  font-family: "Brandon Text Bold";
+  line-height: 130%;
+}
+
+h5.p-text {
+  font-size: 2.2rem;
+  width: 85%;
+  text-align: center;
+  margin: 2rem auto;
+  color: #FFFDFB;
+  font-family: "Brandon Text Regular";
+  line-height: 130%;
+  align-items: center;
+}
+
+img.chart-mobile-img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.part2-section img.chart-mobile-img{
+  width: 30%;
+}
+
+
+img.chart-mobile-large {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.chart-html div.partl-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+div.partl-section div.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 0 2rem;
+  margin: 0 auto 2rem auto;
+}
+
+div.stat h3.number-stat {
+  color: #73EBE0;
+  font-family: "Brandon Text Bold";
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+div.partl-section h5.text-stat {
+  color: #FFFDFB;
+  font-family: "Brandon Text Regular";
+  font-size: 1.8rem;
+  line-height: 120%;
+  margin: 1rem auto 3rem auto;
+}
+
+
 
 .caption {
   padding-top: 1rem;
@@ -325,9 +418,9 @@ div.box-1, div.box-2 {
 
 .box-1 h4, .box-2 h4 {
  margin-bottom: 5rem;
- width: 60%;
+ width: 65%;
  margin: 0 auto;
- line-height: 130%;
+ line-height: 110%;
 }
 
 img.flow-mobile {
@@ -358,6 +451,7 @@ a.news-button{
   font-family: 'Brandon Grotesque Bold';
   font-size: 1.6rem;
   text-align: center;
+  padding: 3rem 0 0 0;
   color: #15246C;
   text-decoration: underline double #03E1D7;
   margin: 0 auto;
@@ -958,11 +1052,12 @@ article.final-p .content {
 }
 
 article.final-p h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0 0 0.5rem 0;
 }
 
 article.final-p .text-box {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 div.desktop-images-final {
@@ -1067,7 +1162,7 @@ div.key-learnings .concl-sub {
   justify-content: center;
   background-color: #15246D;
   padding-top: 3rem;
-  padding-bottom: -1rem;
+  padding-bottom: -5rem;
 }
 
 .box1 .contact-graphic{
@@ -1105,19 +1200,20 @@ h5.contact-text {
 }
 
 div.contact-btns3 {
-  margin: 3rem auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
+  margin: 3rem auto;
 }
 
 div.contact-btns3 .primary-btn {
-  margin-right: 1.5rem;
+  text-align: center;
   margin-left: 1.5rem;
-  margin-bottom: 3rem;
+  margin-right: 1.5rem;
   display: inline-block;
+  width: 43%;
 }
 
 div.return-top {
@@ -1127,7 +1223,7 @@ div.return-top {
   text-align: center;
   align-items: center;
   padding: 1rem 0 2rem 0;
-  margin: 2rem 0 -3rem 0;
+  margin: 2rem 0 -5rem 0;
 }
 
 footer #footer-box {
@@ -1216,5 +1312,15 @@ div.copyright p {
     align-items: center;
     padding: 5rem 0 0 0;
     margin: 1rem 0 -2rem 0;
+  }
+
+  h2.pg-label {
+    font-size: 2.7rem;
+    line-height: 110%;
+  }
+
+  h3.pg-topic {
+    font-size: 2rem;
+    line-height: 100%;
   }
 }
