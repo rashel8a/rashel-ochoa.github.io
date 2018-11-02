@@ -14,7 +14,6 @@
 
       #chapter1 img.chapter1-image {
         width: 28%;
-        border: 1px solid red;
         margin: -16rem auto 0 auto;
       }
 
@@ -26,8 +25,14 @@
         padding-bottom: 5rem;
       }
 
-      h3.pg-topic, h2.pg-label {
-        font-size: 4.5rem;
+      h2.pg-label {
+        font-size: 4.7rem;
+        line-height: 110%;
+      }
+
+      h3.pg-topic {
+        font-size: 4rem;
+        line-height: 100%;
       }
 
       article.intro-header div.contact-btns1 a.primary-btn {
@@ -345,12 +350,19 @@
         margin: -16rem auto 0 auto;
       }
 
-      h1 {
-        font-size: 4.5rem;
+
+      h2.pg-label {
+        font-size: 4.2rem;
+        line-height: 110%;
       }
 
-      h3.pg-topic, h2.pg-label {
+      h3.pg-topic {
         font-size: 3.5rem;
+        line-height: 100%;
+      }
+
+      h1 {
+        font-size: 4.5rem;
       }
 
       article.intro-header div.contact-btns1 {
@@ -443,7 +455,7 @@
       }
 
       div.motivations h4 span, div.frustrations h4 span {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
       }
 
       article.person section.both-personas {
@@ -757,7 +769,7 @@
   }
 
   p {
-   line-height: 120%;
+   line-height: 125%;
   }
 /*
   main {
@@ -846,6 +858,10 @@
     list-style-type: none;
   }
 
+  h1.header-title {
+    font-size: 4.5rem;
+  }
+
   div.spec{
     margin: 0 auto;
   }
@@ -888,14 +904,15 @@
     margin: 0 auto;
   }
 
-  .pg-topic, .pg-label {
-    font-size: 3.2rem;
+  .pg-label {
+    font-size: 3.5rem;
     line-height: 110%;
     padding-bottom: 1rem;
   }
 
-  .pg-label {
-    line-height: 100%;
+  .pg-topic {
+    font-size: 2.6rem;
+    line-height: 120%;
   }
 
   div.title-card {
@@ -1004,7 +1021,7 @@ div.callout {
    margin: 0 auto;
    padding: 3rem 0 3rem 2rem;
    font-size: 2.1rem;
-   line-height: 120%;
+   line-height: 130%;
  }
 
  div.magnify {
@@ -1128,13 +1145,13 @@ div.callout {
    font-size: 3.2rem;
    line-height: 100%;
    color: #001F40;
-   font-family: futura-bold, sans-serif;
+   font-family: "Brandon Text Bold", sans-serif;
  }
 
  .both-personas h3{
    font-size: 2.15rem;
    line-height: 120%;
-   font-family: futura-medium, sans-serif;
+   font-family: "Brandon Text Medium", sans-serif;
  }
 
  .pers-title {
@@ -1178,7 +1195,7 @@ div.callout {
    font-size: 1.8rem;
    line-height: 120%;
    color: #001F40;
-   font-family: futura-bold, sans-serif;
+   font-family: "Brandon Text Bold", sans-serif;
  }
 
 
@@ -1615,7 +1632,7 @@ div.test-bg h3.category-title {
 
 h3.numbers {
   font-size: 3.5rem;
-  font-family: futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
   margin-top: 3rem;
   padding-bottom: 1rem;
   color: #73EBE0;
@@ -1763,7 +1780,7 @@ section.rogue-img p.test-img-text {
 .test-img-text span {
   color: #73EBE0;
   font-size: 2.5rem;
-  font-family: futura-bold, bold;
+  font-family: "Brandon Text Bold";
 }
 
 .test-img-text a {
@@ -1917,7 +1934,7 @@ article.final-p .content {
 article.final-p h2 {
   font-size: 3rem;
   text-align: left;
-  font-family: futura-bold, 'Brandon Text Bold', sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
 }
 
 article.final-p .text-box {

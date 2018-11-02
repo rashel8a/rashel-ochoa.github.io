@@ -230,7 +230,7 @@ section.both-personas {
   font-size: 2.5rem;
   padding-bottom: .5rem;
   color: #001F40;
-  font-family: futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
 }
 
 .both-personas h3{
@@ -238,7 +238,7 @@ section.both-personas {
   width: 82%;
   margin: 0 auto;
   line-height: 120%;
-  font-family: futura-medium, sans-serif;
+  font-family: "Brandon Text Medium", sans-serif;
 }
 
 .sheila-persona h3 {
@@ -277,7 +277,7 @@ section.both-personas {
   font-size: 1.8rem;
   line-height: 120%;
   color: #001F40;
-  font-family: futura-bold, sans-serif;
+  font-family: "Brandon Text Medium", sans-serif;
 }
 
 .motivations p {
@@ -665,7 +665,7 @@ img.cat-test-mobile {
 
 h3.numbers {
   font-size: 3rem;
-  font-family: futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
   margin-top: 3rem;
   padding-bottom: 1rem;
   color: #73EBE0;
@@ -848,7 +848,7 @@ section.rogue-img p.test-img-text {
 
 .test-img-text span {
   color: #73EBE0;
-  font-family: futura-bold, bold;
+  font-family: "Brandon Text Bold";
   font-size: 1.9rem;
 }
 
@@ -1156,7 +1156,7 @@ ul.social-media a {
 ul.social-media p {
   font-size: 1.6rem;
   margin: 0;
-  font-family: futura-bold;
+  font-family: "Brandon Text Medium";
 }
 
 i.fab, i.fas {

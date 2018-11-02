@@ -11,7 +11,7 @@ a {
 
 body {
   background-color: #FFFDFB;
-  font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+  font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
   transition: all 500ms;
   will-change: background;
 }
@@ -608,7 +608,7 @@ a.secondary-btn {
 
   .project-name {
     grid-area: pr-name;
-    font-family: Futura-bold;
+    font-family: "Brandon Text Medium";
     line-height: 120%;
     padding: 0 .5rem .5rem 0.5rem;
     font-size: 2rem;
@@ -620,13 +620,13 @@ a.secondary-btn {
     /* width: 30rem; */
     line-height: 100%;
     font-size: 3.2rem;
-    font-family: Futura-bold;
+    font-family: "Brandon Text Bold";
   }
 
   .role {
     grid-area: role;
     padding: 0 .5rem .5rem 0.5rem;
-    font-family: Futura-medium;
+    font-family: "Brandon Text Medium";
     font-size: 1.8rem;
     line-height: 120%;
     color: #405276;
@@ -938,14 +938,14 @@ ul.social-media {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-ul.social-media p {
+ul.social-media li p {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
   font-size: 1.6rem;
-  font-family: "Brandon Text Regular";
+  font-family: "Brandon Text Medium";
 
 }
 
@@ -973,7 +973,7 @@ i.fab, i.fas {
 
 body {
   background-color: #FFFDFB;
-  font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+  font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
   color: #001F40;
   line-height: 120%;
 }
@@ -1037,11 +1037,11 @@ h1.about-name {
   padding: 0;
   margin: 0 auto;
   z-index: 1300;
-  font-family: "Brandon Text Black", Futura-bold, sans-serif;
+  font-family: "Brandon Text Black" sans-serif;
 }
 
 p.about-subtitle {
-  font-family: "Brandon Text Medium", futura-medium, sans-serif;
+  font-family: "Brandon Text Medium", sans-serif;
   font-size: 1.8rem;
   width: 95%;
   margin: 0 auto;
@@ -1122,14 +1122,14 @@ h4.story-title {
   font-size: 1.8rem;
   line-height: 120%;
   margin-top: 4rem;
-  font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+  font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
 }
 
 h4.story-title-first {
   font-size: 1.8rem;
   line-height: 120%;
   margin-top: 0;
-  font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+  font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
 }
 
 p.par {
@@ -1462,7 +1462,7 @@ div.Starstuff-header {
 }
 
 .pg-label {
-  font-family: Futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
   font-size: 2.3rem;
   line-height: 120%;
   padding: .2rem 0 .3rem 0;
@@ -1537,7 +1537,7 @@ section.project-info {
 h2.title {
   font-size: 2.5rem;
   line-height: 120%;
-  font-family: Futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
   margin-top: 7rem;
   padding-bottom: 1rem;
 }
@@ -1712,7 +1712,7 @@ div.callout p.co-text {
   line-height: 100%;
   padding-bottom: .5rem;
   color: #001F40;
-  font-family: Futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
 }
 
 .both-personas h3{
@@ -1720,7 +1720,7 @@ div.callout p.co-text {
   width: 75%;
   margin: 0 auto;
   line-height: 120%;
-  font-family: Futura-medium, sans-serif;
+  font-family: "Brandon Text Medium", sans-serif;
 }
 
 .sheila-persona h3 {
@@ -1767,7 +1767,7 @@ div.callout p.co-text {
   font-size: 1.8rem;
   line-height: 120%;
   color: #001F40;
-  font-family: Futura-bold, sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
 }
 
 .motivations p {
@@ -2200,7 +2200,7 @@ section.rogue-img p.test-img-text {
 
 .test-img-text span {
   color: #73EBE0;
-  font-family: futura-bold, bold;
+  font-family: "Brandon Text Bold";
   font-size: 1.9rem;
 }
 
@@ -2254,7 +2254,7 @@ article.final-p {
 
 article.final-p h2 {
   font-size: 2rem;
-  font-family: Futura-bold, 'Brandon Text Bold', sans-serif;
+  font-family: "Brandon Text Bold", sans-serif;
 }
 
 div.mobile-images-final {
@@ -2442,7 +2442,7 @@ div.key-learnings .concl-sub {
   ul.social-media p {
     font-size: 1.6rem;
     margin: 0;
-    font-family: futura-bold;
+    font-family: "Brandon Text Medium";
   }
 
   i.fab, i.fas {
@@ -2881,7 +2881,7 @@ div.key-learnings .concl-sub {
 
     body {
       background-color: #FFFDFB;
-      font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+      font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
       color: #001F40;
       line-height: 125%;
       /* margin: 0; */
@@ -2979,11 +2979,11 @@ div.key-learnings .concl-sub {
       padding: 0;
       margin: 0 auto;
       z-index: 1300;
-      font-family: "Brandon Text Black", Futura-bold, sans-serif;
+      font-family: "Brandon Text Black", sans-serif;
     }
 
     p.about-subtitle {
-      font-family: "Brandon Text Medium", futura-medium, sans-serif;
+      font-family: "Brandon Text Medium", sans-serif;
       font-size: 2rem;
       width: 100%;
       margin: 0 auto;
@@ -3093,14 +3093,14 @@ div.key-learnings .concl-sub {
       font-size: 2rem;
       line-height: 130%;
       margin-top: 4rem;
-      font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+      font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
     }
 
     h4.story-title-first {
       font-size: 2rem;
       line-height: 130%;
       margin-top: 0;
-      font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+      font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
     }
 
     article.about-story-meat img.plunge-img {
@@ -3528,23 +3528,23 @@ nav.navbar {
 
     .project-name {
       grid-area: pr-name;
-      font-family: Futura-bold;
+      font-family: "Brandon Text Bold";
       line-height: 120%;
       padding-bottom: .5rem;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
 
     .project-title {
       grid-area: pr-title;
       line-height: 105%;
       padding-bottom: .5rem;
-      font-size: 4.5rem;
-      font-family: Futura-bold;
+      font-size: 4.7rem;
+      font-family: "Brandon Text Black";
     }
 
     .role {
       grid-area: role;
-      font-family: Futura-medium;
+      font-family: "Brandon Text Medium";
       font-size: 2.2rem;
       line-height: 120%;
       color: #405276;
@@ -4414,7 +4414,7 @@ nav.navbar {
 
        body {
          background-color: #FFFDFB;
-         font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
+         font-family: "Brandon Text Regular", "Josefin Sans", sans-serif;
          color: #001F40;
        }
 
@@ -4511,11 +4511,11 @@ nav.navbar {
          padding: 0;
          margin: 0 auto;
          z-index: 1300;
-         font-family: "Brandon Text Black", Futura-bold, sans-serif;
+         font-family: "Brandon Text Black", sans-serif;
        }
 
        p.about-subtitle {
-         font-family: "Brandon Text Medium", futura-medium, sans-serif;
+         font-family: "Brandon Text Medium", sans-serif;
          font-size: 2.3rem;
          width: 100%;
          margin: 0 auto;
@@ -4621,14 +4621,14 @@ nav.navbar {
          font-size: 2.2rem;
          line-height: 135%;
          margin-top: 4rem;
-         font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+         font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
        }
 
        h4.story-title-first {
          font-size: 2.2rem;
          line-height: 135%;
          margin: 0rem auto;
-         font-family: "Brandon Text Black", "Brandon Text Bold", futura-bold, sans-serif;
+         font-family: "Brandon Text Black", "Brandon Text Bold", sans-serif;
        }
 
        article.about-story-meat img.plunge-img {
