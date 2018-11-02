@@ -4702,7 +4702,7 @@ nav.navbar {
        }
 
 
-       h1.about-name {
+       section.section-wrappers article.about-header h1.about-name {
          font-size: 4.2rem;
          z-index: 1500;
          width: 100%;
