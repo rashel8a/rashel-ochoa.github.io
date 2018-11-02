@@ -1014,8 +1014,8 @@ article.parallax::after {
 }
 
 article.bg1::after {
-  background-size: 110%;
-  margin: 0% 0 0 0;
+  background-size: 100%;
+  margin: 0;
   background-repeat: no-repeat;
   background-image: url("../images/about/rashel-hero-mobile.png");
 }
@@ -1025,7 +1025,8 @@ div.about-intro-content {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 0 120% 0;
+  position: relative;
+  top: -32%;
   text-align: center;
 }
 
@@ -1061,7 +1062,8 @@ article.about-middle-content {
 article.about-middle-content div.intro-wrapper {
   text-align: center;
   padding: 7.5rem 0;
-  margin: -100% 0 0 0;
+  position: relative;
+  top: -25%;
   z-index: 999;
   background-color: #FDE8DE;
 }
@@ -1102,7 +1104,6 @@ section.about-story-section {
   z-index: 1000;
   position: relative;
   justify-content: center;
-  margin: -50% auto 0 auto;
 }
 
 section.about-story-section h2.about-label {
@@ -1113,7 +1114,7 @@ section.about-story-section h2.about-label {
 
 article.about-story-meat {
   text-align: left;
-  margin: 0 1.6rem;
+  margin: 0 1.6rem 7.5rem 1.6rem;
   line-height: 130%;
 }
 
@@ -1161,20 +1162,13 @@ div.collage-wrapper img.collage-me-mobile {
 
 /* MOBILE MEDIA QUERIES */
 @media (min-width: 320px) and (max-width: 374px) {
-  section.section-wrappers article.about-middle-content div.intro-wrapper {
-    text-align: center;
-    padding: 7.5rem 0 7.5rem 0;
-    margin: -100% 0 0 0;
-    background-color: #FDE8DE;
-  }
 
   section.about-story-section {
-    margin: -50% auto 0 auto;
-    padding: 0;
-  }
-
-  section.section-wrappers div.bg1 {
-    margin: -30% -20 10% 0;
+    /* margin: -30% auto 0 auto;
+    padding: 0; */
+    position: relative;
+    top: -8rem;
+    margin: 0 auto -12rem 0;
   }
 
   section.section-wrappers article.about-middle-content img.squiggles-graphic {
@@ -1183,7 +1177,6 @@ div.collage-wrapper img.collage-me-mobile {
     top: -36%;
     left: 58%;
     z-index: 1500;
-    /* display: block; */
   }
 
   div.collage-wrapper img.collage-me-mobile {
@@ -1194,81 +1187,42 @@ div.collage-wrapper img.collage-me-mobile {
 }
 
 @media (min-width: 375px) and (max-width: 469px) {
-  article.about-middle-content div.intro-wrapper {
-    text-align: center;
-    padding: 6rem 0;
-    z-index: 999;
-    background-color: #FDE8DE;
-  }
 
   article.bg1::after {
     background-size: 100%;
-    margin: -10% 0 0 0;
+    margin: -15% 0 0 0;
     background-repeat: no-repeat;
     background-image: url("../images/about/rashel-hero-mobile.png");
   }
 
-  section.section-wrappers article.about-middle-content img.squiggles-graphic {
-    width: 60%;
-    position: absolute;
-    top: -40%;
-    left: 54%;
-  }
-
-  div.about-intro-content {
-    margin: -110% 0 0 0;
+  section.about-story-section {
+    /* margin: -30% auto 0 auto;
+    padding: 0; */
+    position: relative;
+    top: -10rem;
+    margin: 0 auto -15rem auto;
   }
 }
 
 @media (min-width: 470px) and (max-width: 499px) {
-  div.about-intro-content {
-    margin: -90% 0 0 0;
-  }
-
-  article.about-middle-content div.intro-wrapper {
-    padding: 7.5rem 0;
-    margin: -50% 0 0 0;
-  }
 
   article.bg1::after {
     background-size: 100%;
     margin: -20% 0 0 0;
   }
 
-  section.section-wrappers article.about-middle-content img.squiggles-graphic {
-    top: -24%;
-    left: 67%;
-  }
-
   section.about-story-section {
-    padding: 0 0 0 0;
-    margin: -28% 0 0 0;
+    margin: -28% 0 -15% 0;
   }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
   article.bg1::after {
-    background-size: 100%;
     margin: -30% 0 0 0;
   }
 
-  article.about-middle-content div.intro-wrapper {
-    padding: 7.5rem 0;
-    margin: -40% 0 0 0;
-  }
-
-  div.about-intro-content {
-    margin: -70% 0 0 0;
-  }
-
-  section.section-wrappers article.about-middle-content img.squiggles-graphic {
-    top: -19%;
-    left: 70%;
-    width: 40%;
-  }
-
   section.about-story-section {
-    margin: -25% 0 0 0;
+    margin: -25% 0 -12% 0;
   }
 }
 
@@ -3004,7 +2958,7 @@ div.key-learnings .concl-sub {
 
     article.bg1::after {
       background-size: cover;
-      margin: -10% 0 0 0;
+      margin: -12% 0 0 0;
       background-repeat: no-repeat;
       background-image: url("../images/about/rashel-hero.png");
     }
@@ -3014,12 +2968,12 @@ div.key-learnings .concl-sub {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 0 0 70% 0;
+      margin: -20% 0 0 0;
       text-align: center;
     }
 
     h1.about-name {
-      font-size: 4rem;
+      font-size: 3.5rem;
       z-index: 1500;
       width: 100%;
       padding: 0;
@@ -3030,7 +2984,7 @@ div.key-learnings .concl-sub {
 
     p.about-subtitle {
       font-family: "Brandon Text Medium", futura-medium, sans-serif;
-      font-size: 2.2rem;
+      font-size: 2rem;
       width: 100%;
       margin: 0 auto;
       z-index: 1500;
@@ -3090,7 +3044,7 @@ div.key-learnings .concl-sub {
     article.about-middle-content img.squiggles-graphic {
       width: 35%;
       position: absolute;
-      top: -23%;
+      top: -50%;
       left: 74%;
       z-index: 1500;
     }
@@ -3103,7 +3057,7 @@ div.key-learnings .concl-sub {
       align-items: center;
       justify-content: center;
       padding: 0;
-      margin: 0 auto;
+      margin: -25% auto -10% auto;
       width: 80%;
     }
 
@@ -3280,7 +3234,7 @@ div.key-learnings .concl-sub {
   }
 
   article.bg1::after {
-    margin: -17% 0 0 0;
+    margin: -20% 0 0 0;
   }
 
   article.about-story-meat img.creative-img {
@@ -3290,33 +3244,27 @@ div.key-learnings .concl-sub {
   }
 
   article.about-middle-content img.squiggles-graphic {
-    top: -26%;
-    width: 30%;
-    left: 78%;
+    top: -40%;
   }
 
   section.about-story-section {
-    margin: -17% auto 0 auto;
-  }
-
-  div.about-intro-content {
-    margin: 0 0 63% 0;
+    margin: -17% auto -10% auto;
   }
 
   article.about-middle-content div.intro-wrapper {
-    margin: -30% 0 0 0;
+    margin: 0;
   }
 }
 
 @media (min-width: 865px) and (max-width: 1024px) {
   article.about-middle-content img.squiggles-graphic {
-    top: -25%;
-    width: 25%;
-    left: 81%;
+    top: -40%;
+    width: 30%;
+    left: 77%;
   }
 
   article.bg1::after {
-    margin: -5% 0 0 0;
+    margin: -20% 0 0 0;
   }
 
   article.about-story-meat img.creative-img {
@@ -3336,15 +3284,15 @@ div.key-learnings .concl-sub {
   }
 
   div.about-intro-content {
-    margin: 0 0 45% 0;
+    margin: -15% 0 0 0;
   }
 
   article.about-middle-content div.intro-wrapper {
-    margin: -28% auto 0 auto;
+    margin: 0 auto;
   }
 
   section.about-story-section {
-    margin: -17% auto 0 auto;
+    margin: -15% auto -5% auto;
   }
 
   .no a {
@@ -4462,6 +4410,8 @@ nav.navbar {
        /***
        /*** BIOGRAPHY DESKTOP***/
 
+       @media screen and (min-width: 1025px) and (max-width: 3000px){
+
        body {
          background-color: #FFFDFB;
          font-family: "Brandon Text Regular", "Josefin Sans", futura-medium, sans-serif;
@@ -4490,7 +4440,6 @@ nav.navbar {
 
        ul.no li {
          padding: 0;
-         /* margin: 0; */
          margin-left: 2%;
        }
 
@@ -4506,6 +4455,7 @@ nav.navbar {
          position: relative;
          display: block;
        }
+
        div.main-container {
          height: 100vh;
          transform-style: preserve-3d;
@@ -4538,10 +4488,10 @@ nav.navbar {
        }
 
        article.bg1::after {
-         background-size: cover;
-         margin: -15% 0 0 0;
+         background-size: 100%;
+         margin: -10% 0 0 0;
          background-repeat: no-repeat;
-         background-image: url("../images/about/rashel-hero.png");
+         background-image: url("../images/about/rashel-hero-resosm.png");
        }
 
        div.about-intro-content {
@@ -4549,13 +4499,13 @@ nav.navbar {
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         margin: 0 0 40% 0;
+         margin: -10% 0 0 0;
          text-align: center;
        }
 
 
        h1.about-name {
-         font-size: 4.8rem;
+         font-size: 4.2rem;
          z-index: 1500;
          width: 100%;
          padding: 0;
@@ -4576,32 +4526,23 @@ nav.navbar {
 
        /* MIDDLE PINK SECTION*/
 
-       article.about-middle-content {
-         display: flex;
-         flex-direction: column;
-         align-items: flex-start;
-         justify-content: flex-start;
-       }
-
-
-       section.section-wrappers article.about-middle-content img.squiggles-graphic {
+       article.about-middle-content img.squiggles-graphic {
          width: 25%;
          position: absolute;
-         top: -28%;
+         top: -40%;
          left: 81%;
          z-index: 1500;
        }
 
-       div.pink-text-section {
+       /* div.pink-text-section {
          margin: 0 0 2rem 0;
-       }
+       } */
 
        article.about-middle-content div.intro-wrapper div.label-section {
          display: flex;
          align-items: center;
          width: 75.5%;
          justify-content: flex-start;
-         padding: 0;
          margin: 0 auto;
        }
 
@@ -4613,10 +4554,10 @@ nav.navbar {
 
        article.about-middle-content div.intro-wrapper {
          text-align: center;
-         padding: 12rem 0;
-         margin-top: -13%;
-         z-index: 999;
+         padding: 7.5rem 0;
          position: relative;
+         top: -28%;
+         z-index: 999;
          background-color: #FDE8DE;
          display: flex;
          flex-direction: column;
@@ -4648,8 +4589,7 @@ nav.navbar {
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         margin: 0 auto;
-         width: 75%;
+         margin: -13% auto -5% auto;
        }
 
        section.about-story-section h2.about-label {
@@ -4661,24 +4601,20 @@ nav.navbar {
        section.about-story-section div.label-section {
          display: flex;
          align-items: center;
-         width: 95%;
+         width: 75.5%;
          justify-content: flex-start;
          padding: 0;
-         margin: 2rem auto 0 auto;
+         margin: 0 auto;
        }
 
        article.about-story-meat {
-         width: 65%;
+         width: 50%;
          padding-top: 1rem;
        }
 
        article.about-story-meat p {
          font-size: 1.8rem;
          margin: 0 auto;
-       }
-
-       div.par-content {
-         margin: 0;
        }
 
        h4.story-title {
@@ -4697,26 +4633,26 @@ nav.navbar {
 
        article.about-story-meat img.plunge-img {
          display: block;
-         width: 19%;
+         width: 18rem;
          position: absolute;
-         left: -5rem;
-         margin-top: -10rem;
+         left: 4%;
+         margin-top: -9%;
        }
 
        article.about-story-meat img.cocoon-img {
          display: block;
-         width: 20%;
+         width: 20rem;
          position: absolute;
-         right: -5rem;
-         margin-top: -9rem;
+         right: 4%;
+         margin-top: -9%;
        }
 
        article.about-story-meat img.creative-img {
          display: block;
-         width: 23%;
+         width: 23rem;
          position: absolute;
-         right: -8rem;
-         margin-top: -12rem;
+         right: 4%;
+         margin-top: -9%;
        }
 
        p.par {
@@ -4845,7 +4781,7 @@ nav.navbar {
    header#top section.section-wrappers article.about-middle-content img.squiggles-graphic {
      width: 23%;
      position: absolute;
-     top: -20%;
+     top: -30%;
      left: 83%;
      z-index: 1500;
    }
@@ -4855,32 +4791,46 @@ nav.navbar {
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     margin: 0 0 35% 0;
+     margin: -7% 0 0 0;
      text-align: center;
+   }
+
+   h1.about-name {
+     font-size: 4.5rem;
+   }
+
+   p.about-subtitle {
+     font-size: 2.7rem;
+     width: 100%;
    }
 
   article.about-story-meat div img.creative-img {
     display: block;
     width: 27rem;
     position: absolute;
-    right: -15rem;
-    margin-top: -12rem;
+    right: 3%;
+    margin-top: -15rem;
   }
 
   article.about-story-meat div img.plunge-img {
     display: block;
     width: 22rem;
     position: absolute;
-    left: -10rem;
+    left: 5%;
     margin-top: -12rem;
   }
 
   article.about-story-meat div img.cocoon-img {
     display: block;
-    width: 20rem;
+    width: 23rem;
     position: absolute;
-    right: -10rem;
+    right: 5%;
     margin-top: -12rem;
+  }
+
+  article.bg1::after {
+    background-size: 100%;
+    margin: -15% 0 0 0;
   }
 
   article.about-middle-content div.intro-text-section {
@@ -4889,18 +4839,19 @@ nav.navbar {
     margin: 0 auto;
   }
 
-  article.about-middle-content div.intro-wrapper div.label-section {
-    width: 65%;
-    margin: 0 auto;
+  section.section-wrappers article.about-middle-content div.intro-wrapper {
+    margin: 12% 0 -5% 0;
+    padding: 10rem 0;
   }
 
-  article.about-middle-content div.intro-wrapper {
-    margin: -5% 0 0 0;
+  article.about-middle-content div.intro-wrapper div.label-section {
+    width: 68%;
+    margin: 0 auto;
   }
 
   section.about-story-section {
-    margin: 0 auto;
-    width: 99rem;
+    margin: 0 auto -3% auto;
+    width: 90%;
     font-size: 3rem;
     line-height: 130%;
   }
@@ -4912,8 +4863,6 @@ nav.navbar {
   article.about-story-meat h4 {
     font-size: 2.5rem;
   }
-
-
 }
 
 @media (min-width: 1800px) and (max-width: 1999px) {
@@ -4928,13 +4877,16 @@ nav.navbar {
   }
 
   header#top section.section-wrappers article.about-middle-content img.squiggles-graphic {
-    width: 25%;
+    width: 23%;
     position: absolute;
-    top: -23%;
-    left: 81%;
+    top: -42%;
+    left: 82.5%;
     z-index: 1500;
   }
 
+  section.about-story-section {
+    margin: -8% auto -3% auto;
+  }
 
   nav.navbar ul.no li  {
     margin-left: 1.5%;
@@ -4943,43 +4895,36 @@ nav.navbar {
   /* HERO DESKTOP LARGE */
 
   h1.about-name {
-    font-size: 6.6rem;
+    font-size: 6.9rem;
   }
 
   p.about-subtitle {
-    font-size: 3.3rem;
+    font-size: 3.6rem;
   }
 
   div.about-intro-content {
-    margin: 0 0 35% 0;
+    margin: -5% 0 0 0;
     text-align: center;
   }
 
   article.bg1::after {
-    background-size: cover;
-    margin: -12% 0 0 0;
-    background-repeat: no-repeat;
-    background-image: url("../images/about/rashel-hero.png");
+    background-size: 100%;
+    /* width: auto; */
+    margin: -15% 0 0 0;
   }
 
   /* MIDDLE CONTENT DESKTOP LARGE */
 
 
   section.section-wrappers article.about-middle-content div.intro-wrapper {
-    margin: -7% 0 0 0;
-    padding: 13rem 0;
+    margin: 0;
+    padding: 11rem 0;
   }
 
   article.about-middle-content div.intro-text-section {
     font-size: 2.9rem;
     margin: 0 auto;
-    width: 41%;
-
-  }
-
-  article.about-middle-content div.intro-wrapper div.label-section {
-    width: 71%;
-    margin: 0 auto;
+    width: 42%;
   }
 
   /* STORY SECTION DESKTOP LARGE */
@@ -5003,24 +4948,28 @@ nav.navbar {
     display: block;
     width: 33rem;
     position: absolute;
-    right: -15rem;
-    margin-top: -12rem;
+    right: 5%;
+    margin-top: -10rem;
   }
 
   article.about-story-meat div img.plunge-img {
     display: block;
-    width: 30rem;
+    width: 27rem;
     position: absolute;
-    left: -10rem;
-    margin-top: -12rem;
+    left: 5%;
+    margin-top: -10rem;
   }
 
   article.about-story-meat div img.cocoon-img {
     display: block;
     width: 30rem;
     position: absolute;
-    right: -12rem;
-    margin-top: -12rem;
+    right: 5%;
+    margin-top: -10rem;
+  }
+
+  article.about-story-meat {
+    width: 42%;
   }
 
   /* CONTACT DESKTOP LARGE */
@@ -5063,20 +5012,54 @@ nav.navbar {
     font-size: 3.3rem;
   }
 
-   article.bg1::after {
-     width: auto;
-     margin: -20% 0 0 0;
-     background-image: url("../images/about/rashel-hero-large.png") no-repeat;
-   }
+ article.bg1::after {
+   margin: -10% 0 0 0;
+ }
+
+ article.about-story-meat div img.creative-img {
+   display: block;
+   width: 34rem;
+   position: absolute;
+   right: 6%;
+   margin-top: -12rem;
+ }
+
+ article.about-story-meat div img.plunge-img {
+   display: block;
+   width: 30rem;
+   position: absolute;
+   left: 5%;
+   margin-top: -10rem;
+ }
+
+ article.about-story-meat div img.cocoon-img {
+   display: block;
+   width: 31rem;
+   position: absolute;
+   right: 5%;
+   margin-top: -10rem;
+ }
+
+
+ section.section-wrappers article.about-middle-content div.intro-wrapper {
+   margin: 0 0 -10% 0;
+   padding: 12rem 0;
+   position: relative;
+   z-index: 1000;
+ }
 
   header#top article.about-middle-content img.squiggles-graphic {
-     margin-top: -2%;
+     top: -25%;
+     width: 25%;
+     left: 81%;
   }
 
+  section.about-story-section {
+    margin: -2% 0 0 0;
+  }
 
   section.section-wrappers div.about-intro-content {
-    position: absolute;
-    top: 5%;
+    margin: 0;
   }
 
   h1.about-name {
@@ -5086,15 +5069,6 @@ nav.navbar {
   p.about-subtitle {
     font-size: 4rem;
   }
-/*
-  section.section-wrappers article.about-middle-content div.intro-wrapper {
-    padding: 0;
-    margin: -5% auto 0 auto;
-  } */
-
-  section.section-wrappers article.about-middle-content div.label-section {
-    width: 71%;
-  }
 
   section div.label-section h2.about-label {
     font-size: 5rem;
@@ -5103,11 +5077,11 @@ nav.navbar {
   div.pink-text-section div.intro-text-section {
     font-size: 3.5rem;
     line-height: 125%;
-    width: 43%;
+    width: 45%;
   }
 
   section.about-story-section article.about-story-meat {
-    width: 57%;
+    width: 45%;
   }
 
   section.about-story-section article.about-story-meat p {
@@ -5161,5 +5135,4 @@ nav.navbar {
     font-size: 3rem;
   }
 }
-
 /* MEDIA QUERIES FOR DESKTOP END*/
