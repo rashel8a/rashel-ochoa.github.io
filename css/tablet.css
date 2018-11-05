@@ -199,17 +199,17 @@ section#chapter2 div.chart-html {
 
 h3.chart-title {
   font-size: 3.3rem;
-  margin: 5rem auto 1rem auto;
+  margin: 5rem auto 3rem auto;
   color: #FFFDFB;
   font-family: "Brandon Text Bold";
   line-height: 130%;
 }
 
-h5.p-text {
+div.chart-wrap h5.p-text {
   font-size: 2.2rem;
-  width: 85%;
+  width: 65%;
   text-align: center;
-  margin: 2rem auto;
+  margin: 2rem auto 5rem auto;
   color: #FFFDFB;
   font-family: "Brandon Text Regular";
   line-height: 130%;
@@ -217,19 +217,27 @@ h5.p-text {
 }
 
 img.chart-mobile-img {
-  width: 30%;
+  width: 25%;
   display: flex;
   align-items: center;
   margin: 0 auto;
 }
 
 div.part2-section img.chart-mobile-img{
-  width: 30%;
+  width: 25%;
 }
 
+div.number-circle {
+  display: none;
+}
 
-img.chart-mobile-large {
-  width: 85%;
+div.part3-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+div.part3-section img.chart-mobile-large {
+  width: 40%;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -248,8 +256,8 @@ div.chart-html div.partl-section {
 div.partl-section div.stat {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 50%;
   padding: 0 2rem;
   margin: 0 auto 2rem auto;
@@ -643,23 +651,57 @@ img.color-else {
  display: block;
 }
 
-div.typography {
+section#chapter4 div.typography {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 75%;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.type-content {
+div.typography div.type-content {
   width: 50%;
-  margin-right: 5rem;
+  margin: 0 auto;
 }
 
 div.typography img.type-img {
    width: 35%;
 }
+/*
+#chapter4 div.typography div.type-section {
+  width: 90%;
+  margin: 0 auto;
+} */
+
+div.typography div.sg-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #405276;
+  width: 100vw;
+  margin: 5rem 0 0 0;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+div.typography div.sg-images img.sg-img {
+  width: 48%;
+  margin: 0 auto;
+}
+
+div.typography div.sg-images img.sg-img2 {
+  width: 48%;
+  margin: 0 auto;
+}
+
+div.typography div.style-wrapper {
+ margin: 5rem auto 0 auto;
+ display: block;
+ padding: 0;
+}
+
 
 .typography a.news-button {
   margin: 3rem 0 0 0;
@@ -1315,12 +1357,12 @@ div.copyright p {
   }
 
   h2.pg-label {
-    font-size: 2.7rem;
+    font-size: 2.6rem;
     line-height: 110%;
   }
 
   h3.pg-topic {
-    font-size: 2rem;
+    font-size: 2.1rem;
     line-height: 100%;
   }
 }

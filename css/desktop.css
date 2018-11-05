@@ -1,5 +1,5 @@
 /* ****** DESKTOP MEDIA QUERY ******* */
-    @media (min-width: 2300px) and (max-width: 3000px) {
+    @media (min-width: 2300px) and (max-width: 5000px) {
       p {
         font-size: 3.3rem;
         line-height: 120%;
@@ -11,6 +11,38 @@
         line-height: 120%;
         padding: 3rem 0 3rem 3rem;
       }
+
+      /*chart section*/
+
+      div.chart-html h5.p-text {
+        font-size: 3.5rem;
+        margin: 2rem auto;
+      }
+
+
+     div.chart-html div.partl-section h5.text-stat {
+       font-size: 3.5rem;
+       margin: 2rem auto 3rem auto;
+     }
+
+     div.chart-html div.partl-section h3.number-stat {
+       font-size: 6.5rem;
+     }
+
+
+     section#chapter2 div.chart-html div.chart-wrap div.number-circle {
+       padding: 3rem 0 0 0;
+       width: 6rem;
+       height: 6rem;
+       font-size: 3.5rem;
+       margin: 0 0 10rem 0;
+     }
+
+     div.chart-html div.chart-wrap img.chart-mobile-large {
+       width: 30%;
+     }
+
+     /* END CHART SECTION*/
 
       section#chapter1 article.challenge-intro img.chapter1-image {
         width: 22%;
@@ -28,13 +60,13 @@
         padding-bottom: 5rem;
       }
 
-      h2.pg-label {
+      section h2.pg-label {
         font-size: 4.7rem;
         line-height: 110%;
       }
 
-      h3.pg-topic {
-        font-size: 4rem;
+      section h3.pg-topic {
+        font-size: 4.2rem;
         line-height: 100%;
       }
 
@@ -176,12 +208,12 @@
       }
 
       div.pers-title h2 {
-        font-size: 4rem;
+        font-size: 5rem;
         margin: 1rem 0 0 0;
       }
 
       div.pers-title h3 {
-        font-size: 3rem;
+        font-size: 3.8rem;
       }
 
       a.style-button {
@@ -216,8 +248,31 @@
         width: 40%;
       }
 
-     #chapter4 div.typography div.style-wrapper {
-       margin: 47rem auto 0 auto;
+      /* STYLE GUIDE IMAGES*/
+
+     section#chapter4 div.typography div.sg-images {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: #405276;
+       padding: 2rem 3rem;
+       width: 100vw;
+       margin: 10rem auto 0 auto;
+     }
+
+     section#chapter4 div.sg-images img.sg-img {
+       width: 27%;
+       margin: 0 2rem 0 0;
+     }
+
+     section#chapter4 div.typography div.sg-images img.sg-img2 {
+       width: 27%;
+       margin: 0 0 0 0;
+     }
+
+     section#chapter4 div.typography div.style-wrapper {
+      margin: 5rem auto;
      }
 
      div.iterations-list div.it-caption h3.it {
@@ -358,13 +413,47 @@
         margin: -16rem auto 0 auto;
       }
 
+      /* STYLE GUIDE SECTION*/
 
-      h2.pg-label {
-        font-size: 4.2rem;
+      section#chapter4 div.typography div.sg-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #405276;
+        padding: 2rem 10rem;
+        width: 100vw;
+        margin: 0 auto;
+      }
+
+      section#chapter4 div.typography img.type-img {
+       float: right;
+       display: inline-block;
+       margin: 0 12rem 10rem 0;
+       width: 18%;
+      }
+
+      div.typography div.sg-images img.sg-img {
+        width: 27%;
+        margin: 0 2rem 0 0;
+        display: block;
+      }
+
+      section#chapter4 div.typography div.sg-images img.sg-img2 {
+        width: 27%;
+        display: block;
+        margin: 0 0 0 0;
+      }
+
+      /* SG END*/
+
+
+      section h2.pg-label {
+        font-size: 4rem;
         line-height: 110%;
       }
 
-      h3.pg-topic {
+      section h3.pg-topic {
         font-size: 3.5rem;
         line-height: 100%;
       }
@@ -393,108 +482,35 @@
        font-size: 3.5rem;
      }
 
-     section#chapter2 div.chart-html {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
-       margin: 5rem auto 15rem auto;
-       width: 100vw;
-       background-color: #132D60;
-     }
-
-     div.chart-html div.chart-wrap {
-       display: flex;
-       align-items: center;
-       flex-wrap: wrap;
-       width: 85%;
-     }
-
-     div.chart-wrap div.part1-section, div.chart-wrap div.part2-section {
-       width: 50%;
-     }
-
-     div.chart-wrap div.part3-section {
-       width: 50%;
-       margin: 0 auto;
-       align-items: center;
-     }
-
-     div.chart-html h3.chart-title {
-       font-size: 6rem;
-       margin: 5rem auto 2rem auto;
-       color: #FFFDFB;
-       font-family: "Brandon Text Bold";
-       line-height: 130%;
-     }
+     /*chart section*/
 
      div.chart-html h5.p-text {
-       font-size: 3.2rem;
-       width: 85%;
-       text-align: center;
-       margin: 3rem auto 5rem auto;
-       color: #FFFDFB;
-       font-family: "Brandon Text Regular";
-       line-height: 130%;
-       align-items: center;
+       font-size: 3rem;
+       margin: 2rem auto;
      }
 
-     img.chart-mobile-img {
-       width: 30%;
-       display: flex;
-       align-items: center;
-       margin: 0 auto;
-     }
-
-     div.part2-section img.chart-mobile-img{
+     div.chart-html div.chart-wrap img.chart-mobile-large {
        width: 30%;
      }
 
 
-     img.chart-mobile-large {
-       width: 80%;
-       display: flex;
-       align-items: center;
-       margin: 0 auto;
-     }
+    div.chart-html div.partl-section h5.text-stat {
+      font-size: 3rem;
+      margin: 1rem auto 3rem auto;
+    }
 
-     div.chart-html div.partl-section {
-       display: flex;
-       flex-direction: row;
-       flex-wrap: nowrap;
-       margin: 3rem auto;
-       align-items: flex-start;
-       justify-content: flex-start;
-       width: 90%;
-     }
-
-     div.partl-section div.stat {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       width: 50%;
-       padding: 0 2rem;
-       margin: 0 auto 2rem auto;
-     }
-
-     div.chart-html div.stat h3.number-stat {
-       color: #73EBE0;
-       font-family: "Brandon Text Black";
-       font-size: 4.8rem;
-       padding-bottom: 1rem;
-     }
-
-     div.chart-html div.partl-section h5.text-stat {
-       color: #FFFDFB;
-       font-family: "Brandon Text Regular";
-       font-size: 3.2rem;
-       line-height: 120%;
-       margin: 1rem auto 3rem auto;
-     }
+    div.chart-html div.partl-section h3.number-stat {
+      font-size: 4.8rem;
+    }
 
 
-
+    div.chart-html div.chart-wrap div.number-circle {
+      padding: 2.3rem 0 0 0;
+      width: 4.6rem;
+      height: 4.6rem;
+      font-size: 2.7rem;
+      margin: 0 0 10rem 0;
+    }
 
      section.project-info img {
        width: 20%;
@@ -642,9 +658,7 @@
      }
 
      #chapter4 div.typography div.style-wrapper {
-       margin: 40rem auto 0 auto;
-       display: block;
-       float: none;
+       margin: 5rem auto;
      }
 
      div.iterations-list div.it-caption h3.it {
@@ -764,10 +778,58 @@
         justify-content: flex-start;
       }
 
+      section .pg-label {
+        font-size: 3.3rem;
+        line-height: 110%;
+        padding-bottom: 1rem;
+      }
+
+      section .pg-topic {
+        font-size: 2.8rem;
+        line-height: 120%;
+      }
+
       #chapter6 div.desktop-images-final div.mobile-desktop-images {
         margin: -10rem auto 0 auto;
         width: 80%;
       }
+
+      section.both-personas div.vertical-line p.persona-quote {
+        font-size: 2.5rem;
+        line-height: 110%;
+      }
+
+      div.motivations h4 span, div.frustrations h4 span {
+        font-size: 2.4rem;
+      }
+
+      div.motivations p, div.frustrations p {
+        font-size: 2.3rem;
+      }
+
+      div.chart-html h5.p-text {
+        font-size: 2.5rem;
+        margin: 2rem auto;
+      }
+
+      div.chart-html div.chart-wrap img.chart-mobile-large {
+        width: 30%;
+      }
+
+
+     div.chart-html div.partl-section h5.text-stat {
+       font-size: 2.5rem;
+       margin: 1rem auto 3rem auto;
+     }
+
+
+     div.chart-html div.chart-wrap div.number-circle {
+       padding: 2.1rem 0 0 0;
+       width: 4rem;
+       height: 4rem;
+       font-size: 2.5rem;
+       margin: 0 0 10rem 0;
+     }
 
       #chapter1 .content {
         width: 45%;
@@ -794,6 +856,27 @@
       #chapter1 div.ch1-content div.solution {
         margin-top: -80rem;
         margin-left: 5rem;
+      }
+
+      /* STYLE GUIDE IMAGES*/
+      section#chapter4 div.typography div.sg-images img.sg-img {
+        width: 25%;
+        margin: 0 2rem 0 0;
+      }
+
+      section#chapter4 div.typography div.sg-images img.sg-img2 {
+        width: 25%;
+      }
+
+      section#chapter4 div.typography div.sg-images {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #405276;
+        padding: 2rem 5rem;
+        width: 100vw;
+        margin: 5rem auto 0 auto;
       }
 
 
@@ -874,7 +957,7 @@
 
 
 /* PROJECT PAGE DESKTOP NORMAL*/
-@media only screen and (min-width: 1025px) and (max-width: 3000px) {
+@media only screen and (min-width: 1025px) and (max-width: 5000px) {
   div.container {
     width: 100%;
     overflow: hidden !important;
@@ -1016,14 +1099,14 @@
     margin: 0 auto;
   }
 
-  .pg-label {
-    font-size: 3.5rem;
+  section .pg-label {
+    font-size: 3rem;
     line-height: 110%;
     padding-bottom: 1rem;
   }
 
-  .pg-topic {
-    font-size: 2.6rem;
+  section .pg-topic {
+    font-size: 2.5rem;
     line-height: 120%;
   }
 
@@ -1133,18 +1216,14 @@
  div.chart-html div.chart-wrap {
    display: flex;
    align-items: center;
+   justify-content: center;
    flex-wrap: wrap;
-   width: 85%;
+   width: 90%;
  }
 
  div.chart-wrap div.part1-section, div.chart-wrap div.part2-section {
    width: 50%;
- }
-
- div.chart-wrap div.part3-section {
-   width: 50%;
-   margin: 0 auto;
-   align-items: center;
+   margin: 5rem auto 0 auto;
  }
 
  h3.chart-title {
@@ -1155,15 +1234,52 @@
    line-height: 130%;
  }
 
+ div.part1-section div.number-circle, div.part2-section div.number-circle {
+   position: relative;
+   left: 7rem;
+ }
+
+ div.part3-section div.number-circle {
+   position: relative;
+   left: 7rem;
+   top: -10rem;
+ }
+
+ div.chart-wrap div.number-circle {
+   background-color: #6534FF;
+   border-radius: 50%;
+   padding: 1.6rem 0 0 0;
+   margin: 0.3rem 0 0 -0.5rem;
+   color: #FFFDFB;
+   width: 3.2rem;
+   height: 3.2rem;
+   font-family: 'Brandon Text Medium', sans-serif;
+   font-size: 2rem;
+ }
+
  h5.p-text {
    font-size: 2.2rem;
-   width: 85%;
+   /* width: 85%; */
    text-align: center;
    margin: 2rem auto;
    color: #FFFDFB;
    font-family: "Brandon Text Regular";
    line-height: 130%;
    align-items: center;
+ }
+
+ div.chart-wrap div.part3-section {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   margin: 5rem auto 0 auto;
+ }
+
+ div.part3-section h5.p-text {
+   width: 40%;
+   text-align: left;
+   margin-right: 5rem;
  }
 
  img.chart-mobile-img {
@@ -1177,11 +1293,8 @@
    width: 30%;
  }
 
-
- img.chart-mobile-large {
-   width: 80%;
-   display: flex;
-   align-items: center;
+ div.part3-section img.chart-mobile-large {
+   width: 30%;
    margin: 0 auto;
  }
 
@@ -1189,7 +1302,7 @@
    display: flex;
    flex-direction: row;
    flex-wrap: nowrap;
-   margin: 3rem auto;
+   margin: 10rem auto 3rem auto;
    align-items: flex-start;
    justify-content: flex-start;
    width: 90%;
@@ -1198,7 +1311,7 @@
  div.partl-section div.stat {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    justify-content: center;
    width: 50%;
    padding: 0 2rem;
@@ -1208,7 +1321,7 @@
  div.stat h3.number-stat {
    color: #73EBE0;
    font-family: "Brandon Text Bold";
-   font-size: 3.5rem;
+   font-size: 4rem;
    padding-bottom: 1rem;
  }
 
@@ -1219,8 +1332,6 @@
    line-height: 120%;
    margin: 1rem auto 3rem auto;
  }
-
-
 
 div.callout {
    background-color: #FDE8DE;
@@ -1313,44 +1424,33 @@ div.callout {
    display: flex;
    flex-direction: row;
    align-items: flex-start;
-    margin: 5rem auto;
-    width: 90%;
+   margin: 5rem auto;
+   width: 100%;
  }
 
- section.maya-persona {
+ section.maya-persona, section.sheila-persona {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
    padding: 0;
- }
-
- section.sheila-persona {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 0;
-   justify-content: center;
+   width: 50%;
  }
 
  .maya-persona div.motivations, .maya-persona div.frustrations {
-   padding: 0 6rem;
+   width: 70%;
  }
 
  .sheila-persona div.motivations, .sheila-persona div.frustrations {
-   padding: 0 6rem;
- }
-
- img.maya-img {
-   display: block;
-   width: auto;
+   width: 70%;
    padding: 0;
  }
 
- img.sheila-img {
+ section.both-personas img {
    width: auto;
    height: auto;
-   padding:0;
+   padding: 0;
+   margin: 0;
  }
 
  a.news-button{
@@ -1370,11 +1470,11 @@ div.callout {
    font-family: "Brandon Text Medium", sans-serif;
  }
 
- .pers-title {
+ section.both-personas div.pers-title {
    text-align: center;
    justify-content: center;
    padding: 3rem 0;
-   width: 70%;
+   width: 100%;
  }
 
  .vertical-line .pers-quote {
@@ -1691,12 +1791,16 @@ div.color-palette img.color-else {
   margin: 0 auto;
 }
 
-#chapter4 div.typography {
+section#chapter4 div.typography {
   border: 1px solid transparent;
-  display: block;
-  margin: 15rem auto;
-  width: 90%;
+  margin: 15rem auto 0 auto;
+  width: 100%;
   padding: 0;
+}
+
+#chapter4 div.typography div.type-section {
+  width: 90%;
+  margin: 0 auto;
 }
 
 #chapter4 div.typography div.type-content {
@@ -1713,10 +1817,30 @@ div.color-palette img.color-else {
  width: 18%;
 }
 
+div.typography div.sg-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #405276;
+  padding: 2rem 8rem 3rem 8rem;
+  width: 100vw;
+  margin: 5rem auto 0 auto;
+}
+
+div.typography div.sg-images img.sg-img {
+  width: 27%;
+  margin: 0 2rem 0 0;
+}
+
+div.typography div.sg-images img.sg-img2 {
+  width: 27%;
+  margin: 0 0 0 0;
+}
+
 div.typography div.style-wrapper {
- margin: 30rem auto 0 auto;
+ margin: 5rem auto -3rem auto;
  display: block;
- float: none;
  padding: 0;
 }
 
@@ -1771,13 +1895,21 @@ article.hi-fi img {
   margin: 5rem auto;
 }
 
-article.ab {
-  margin-top: 15rem;
-}
-
-article.ab .content {
+section#chapter5 article.ab div.content {
   text-align: left;
   margin: 10rem auto 5rem auto;
+  color: #FFFDFB;
+  padding: 5rem 0 0 0;
+}
+
+article.ab p.text-box {
+  color: #FFFDFB;
+}
+
+article.ab {
+  background-color: #132D60;
+  width: 100vw;
+  margin: 15rem auto 0 auto;
 }
 
 article.ab a {
@@ -1841,7 +1973,7 @@ img.cat-test-mobile {
 div.test-bg h3.category-title {
   font-size: 3.5rem;
   font-family: 'Brandon Text Bold', bold;
-  margin: 5rem auto 3rem auto;
+  margin: 5rem auto 0 auto;
   text-align: center;
   width: 100%;
 }
@@ -2044,6 +2176,12 @@ header.iteration-title h3.it {
   font-family: "Brandon Text Medium";
 }
 
+header.iteration-title p.text-box {
+  width: 80%;
+  margin-left: 3.5rem;
+  text-align: left;
+}
+
 header.iteration-title span {
   display: block;
   margin: 0 auto;
@@ -2054,15 +2192,23 @@ header.iteration-title {
   width: 60%;
 }
 
-header.iteration-title p.text-box {
-  width: 80%;
-  margin-left: 3.5rem;
-  text-align: left;
-}
-
 section.uno img {
   width: auto;
   display: block;
+}
+
+section.uno {
+  margin: 5rem auto 0 auto;
+  background-color: #132D60;
+}
+
+section.uno header.iteration-title {
+  margin: 5rem auto 0 auto;
+  color: #FFFDFB;
+}
+
+section.uno p.text-box {
+  color: #FFFDFB;
 }
 
 div.section-wrapper {
@@ -2070,7 +2216,7 @@ div.section-wrapper {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 0 auto;
+  margin: 10rem auto;
   width: 100%;
 }
 
