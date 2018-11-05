@@ -409,7 +409,7 @@ div.desktop {
   margin-top: -10rem;
   margin: -10rem 0rem 0 57.5rem;
   padding: 50%;
-  padding-top: 13rem;
+  padding-top: 10rem;
   background: #FB7E6C;
   opacity: 0.95;
   list-style-type: none;
@@ -709,10 +709,10 @@ a.secondary-btn {
     padding-top: 2rem;
   }
 
-  .contact-box .contact-image img{
+  #contact .contact-box .contact-image img{
     width: 50%;
     position: relative;
-    left: 50%;
+    left: 54%;
     top: -4rem;
     z-index: 1;
   }
@@ -745,6 +745,119 @@ a.secondary-btn {
   .contact-btns .primary-btn {
     margin: 0 auto 2rem auto;
     width: 32rem;
+  }
+
+  #contact div.return-top {
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  div.return-top i.fa-caret-up {
+    color: #B0F0FD;
+    padding-bottom: 0.5rem;
+    display: block;
+  }
+
+  a.return-link {
+    text-decoration: none;
+    color: #B0F0FD;
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .return-link:hover {
+    color: #FFFDFB;
+  }
+
+footer#footer-box {
+  background-color: #FB7E6C;
+  padding: 0;
+}
+
+.social-media li a{
+  list-style-type: none;
+  display: flex;
+  padding: 0.5rem 0;
+  flex-direction: column;
+}
+
+ul.social-media {
+  display: flex;
+  padding: 0;
+  margin: 0 auto -1rem auto;
+}
+
+i.fab, i.fas {
+  font-size: 2rem;
+  color: #001F40;
+}
+
+footer#footer-box div.copyright {
+  display: block;
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+footer#footer-box div.copyright p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  width: 98%;
+  font-size: 1.6rem;
+  margin: -0.5rem auto 0 auto;
+  font-family: "Brandon Text Regular";
+}
+
+a {
+  text-decoration: none;
+}
+
+
+    .bounce {
+    z-index: 1;
+    animation-timing-function: ease;
+    transition-duration: 4s;
+    -moz-animation: bounce 4s infinite;
+    -webkit-animation: bounce 4s infinite;
+    animation: bounce 4s infinite;
+  }
+
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+  .bounce-work {
+  -webkit-animation-name: bounce2;
+  animation-name: bounce2;
+  z-index: 1;
+  /* animation-timing-function: ease-in-out; */
+  transition-duration: 4s;
+  -moz-animation: bounce2 6s infinite;
+  -webkit-animation: bounce2 6s infinite;
+  animation: bounce2 6s infinite;
+  }
+
+  @keyframes bounce2 {
+
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
   }
 
   @media (min-width: 320px) and (max-width: 439px) {
@@ -805,158 +918,42 @@ a.secondary-btn {
       margin: 0 auto;
     }
 
-    div.contact-btns {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin: 0 auto;
-    }
-
-    .contact-btns .primary-btn {
+    footer#footer-box div.copyright {
+      display: block;
       width: 100%;
+      padding: 0 0 1rem 0;
     }
 
-    div.contact-btns a.get-in-touch {
-      margin-right: 1rem;
+    footer#footer-box div.copyright p {
+      text-align: center;
+      padding-bottom: 1rem;
+      width: 98%;
+      font-size: 1.6rem;
+      margin: 0 auto;
+      font-family: "Brandon Text Regular";
     }
 
     .contact-content {
       width: 100%;
     }
 
-    .just-copy {
-      width: 85%;
-      margin: 0 auto;
+    #contact .just-copy {
+      width: 35rem;
+      margin: -4rem auto 3rem auto;
     }
 
-    .contact-box .contact-image img{
-      width: 50%;
+    #contact .just-copy h3.contact-body {
+      width: 100%;
+      /* margin: -3rem auto 3rem auto; */
+    }
+
+    #contact .contact-box .contact-image img{
+      width: 25rem;
       position: relative;
-      left: 59%;
+      left: 50%;
       top: -4rem;
       z-index: 1;
     }
-  }
-
-  div.return-top {
-    padding: 0;
-    margin-top: -2rem;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  div.return-top i.fa-caret-up {
-    color: #B0F0FD;
-    padding-bottom: 0.5rem;
-    display: block;
-  }
-
-  a.return-link {
-    text-decoration: none;
-    color: #B0F0FD;
-    font-size: 2rem;
-    margin-bottom: 0;
-    text-align: center;
-  }
-
-  .return-link:hover {
-    color: #FFFDFB;
-  }
-
-  .bounce {
-  z-index: 1;
-  animation-timing-function: ease;
-  transition-duration: 4s;
-  -moz-animation: bounce 4s infinite;
-  -webkit-animation: bounce 4s infinite;
-  animation: bounce 4s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-.bounce-work {
--webkit-animation-name: bounce2;
-animation-name: bounce2;
-z-index: 1;
-/* animation-timing-function: ease-in-out; */
-transition-duration: 4s;
--moz-animation: bounce2 6s infinite;
--webkit-animation: bounce2 6s infinite;
-animation: bounce2 6s infinite;
-}
-
-@keyframes bounce2 {
-
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-#footer-box {
-  background-color: #FB7E6C;
-}
-
-.social-media li a{
-  list-style-type: none;
-  display: flex;
-  padding: 0.5rem 0;
-  flex-direction: column;
-}
-
-ul.social-media {
-  display: grid;
-  padding: 0;
-  margin: 0 auto;
-  grid-gap: 0.5rem;
-  margin-right: 5rem;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-ul.social-media li p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  font-size: 1.6rem;
-  font-family: "Brandon Text Medium";
-
-}
-
-i.fab, i.fas {
-  font-size: 2rem;
-  color: #001F40;
-}
-
-#footer-box div.copyright p {
-  text-align: center;
-  padding-bottom: 1rem;
-  width: 80%;
-  font-size: 1.6rem;
-  margin: 0 auto;
-  font-family: "Brandon Text Regular";
-}
-
-  a {
-    text-decoration: none;
   }
 /***
 /***
@@ -1085,7 +1082,7 @@ article.about-middle-content div.intro-wrapper {
   padding: 7.5rem 0;
   position: relative;
   bottom: -8%;
-  z-index: 999;
+  z-index: 998;
   background-color: #FDE8DE;
 }
 
@@ -1631,10 +1628,6 @@ article.survey div.content {
   margin-top: -3rem;
 }
 
-.chart {
-  display: none
-}
-
 section#chapter2 div.chart-html {
   display: flex;
   align-items: center;
@@ -1655,7 +1648,7 @@ div.chart-html h3.chart-title {
   line-height: 130%;
 }
 
-div.number-circle {
+div.typography div.chart-html div.number-circlec {
   display: none;
 }
 
@@ -1704,7 +1697,7 @@ div.chart-html div.partl-section {
 div.partl-section div.stat {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 50%;
   padding: 0 1rem;
@@ -2155,6 +2148,8 @@ section#chapter5 article.ab div.content {
 
 article.ab p.text-box {
   color: #FFFDFB;
+  font-size: 1.8rem;
+  line-height: 125%;
 }
 
 article.ab {
@@ -2201,22 +2196,18 @@ div.screen-a-header h4, div.screen-b-header h4 {
 }
 
 .test-bg img {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
-.test-bg h4 {
-  color: #FFFDFB;
-  font-family: 'Brandon Text Regular', sans-serif;
-  font-size: 2rem;
-}
-
-.test-bg h4 {
+.test-bg h4.a-screen, .test-bg h4.b-screen {
   color: #73EBE0;
+  font-family: 'Brandon Text Medium', sans-serif;
+  font-size: 2.8rem;
 }
 
 .test-bg .category-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #FFFDFB;
   font-family: 'Brandon Text Bold', bold;
   margin: 0 auto;
@@ -2245,7 +2236,7 @@ p.descs {
   margin: 0 auto;
   color: #FFFDFB;
   font-family: 'Brandon Text Regular', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 /* END OF TEST SECTION*/
 
@@ -2308,6 +2299,7 @@ div.vid-responsive {
 
 header.iteration-title {
   margin: 3rem 1.6rem;
+  width: 100%;
 }
 
 section.cinco h3.it, section.seis h3.it {
@@ -2315,12 +2307,17 @@ section.cinco h3.it, section.seis h3.it {
   padding-top: 0.8rem;
 }
 
-.iteration-title .it {
+header.iteration-title h3.it {
   font-size: 1.8rem;
   font-family: 'Brandon Text Regular';
   margin-left: 3rem;
   padding: 1.3rem 0;
   font-family: "Brandon Text Medium";
+}
+
+header.iteration-title p.text-box {
+  font-size: 1.8rem;
+  line-height: 120%;
 }
 
 .iteration-title .text-box {
@@ -2342,7 +2339,7 @@ section.rogue-img {
 }
 
 section.rogue-img h3.button-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: "Brandon Text Bold";
   text-align: center;
   line-height: 120%;
@@ -2352,7 +2349,7 @@ section.rogue-img h3.button-title {
 h4.bt-title {
   font-family: "Brandon Text Bold";
   line-height: 120%;
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #73EBE0;
 }
 
@@ -2377,7 +2374,7 @@ article.button-wrapper {
 
 article.button-wrapper p.bt-desc {
   font-family: "Brandon Text Regular";
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 120%;
   width: 80%;
   margin: 0 auto 1rem auto;
@@ -2399,7 +2396,7 @@ section.rogue-img p.test-img-text {
   width: 90%;
   text-align: center;
   display: block;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #FFFDFB;
   font-family: 'Brandon Text Regular';
   line-height: 125%;
@@ -2454,8 +2451,8 @@ section.cuatro header.iteration-title, section.cinco header.iteration-title, sec
   width: 90%;
 }
 
-section.cuatro, section.cinco, section.seis {
-  margin: 0 -1.7rem;
+section.cinco span.number-circle, section.seis span.number-circle {
+  margin: 1.2rem 0 0 0;
 }
 
 /* CHAPTER 6*/
@@ -2643,7 +2640,7 @@ div.key-learnings .concl-sub {
     margin-bottom: -3rem;
   }
 
-  footer #footer-box {
+  footer#footer-cube {
     margin: 0 auto;
   }
 
@@ -3001,16 +2998,16 @@ div.key-learnings .concl-sub {
         margin: 0 auto;
         width: 85%;
       }
+
+      section#contact div.contact-box .contact-image img{
+        left: 65%;
+        top: -3rem;
+        width: 25rem;
+        display: block;
+      }
     }
 
     @media (min-width: 780px) and (max-width: 949px) {
-
-      div.contact-box div.contact-image img{
-        left: 65%;
-        top: -3rem;
-        width: 33%;
-        display: block;
-      }
 
       img.desktop-image {
         margin-left: 5rem;
@@ -3072,10 +3069,10 @@ div.key-learnings .concl-sub {
       }
     }
 
-    div.contact-box .contact-image img{
-      left: 68%;
+    #contact div.contact-box .contact-image img{
+      left: 60%;
       top: -3rem;
-      width: 35%;
+      width: 25rem;
       display: block;
     }
 
@@ -3108,25 +3105,26 @@ div.key-learnings .concl-sub {
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      margin: 4rem auto 0 auto;
+      margin: 4rem auto;
       width: 100%;
     }
 
     .contact-btns .primary-btn {
       width: 50%;
-      padding-top: 1.8rem;
+      padding-top: 1.5rem;
     }
 
     div.contact-btns a.get-in-touch {
-      margin-right: 1rem;
+      margin-right: 2rem;
     }
 
-    div.return-top {
+    #contact div.return-top {
       position: relative;
       top: -5rem;
       /* margin-bottom: 2rem; */
       padding-bottom: 2rem;
       padding-top: 0;
+      margin: 0 auto -7rem auto;
     }
 
 
@@ -3136,28 +3134,19 @@ div.key-learnings .concl-sub {
       justify-content: center;
       padding: 0;
       text-align: center;
-      margin: 0 auto;
+      margin: 0 auto 0 2.5rem;
     }
 
   ul.social-media li {
-    margin: 2rem 0.5rem;
+    margin: 2rem 8% 2rem 0 ;
 
   }
 
-  #footer-box ul.social-media p {
-      font-size: 1.7rem;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      font-family: "Brandon Text Regular";
-    }
-
-    ul.social-media i.fab, ul.social-media i.fas {
-      font-size: 2rem;
-      padding-right: .5rem;
-      color: #001F40;
-    }
+  ul.social-media i.fab, ul.social-media i.fas {
+    font-size: 2rem;
+    padding-right: .5rem;
+    color: #001F40;
+  }
 
     div.copyright p {
       text-align: left;
@@ -3760,6 +3749,7 @@ nav.navbar {
 
     div.see-work i {
       color: #FB7E6C;
+      margin-top: 0.2rem;
     }
 
     .mobile-header {
@@ -3968,12 +3958,24 @@ nav.navbar {
     }
 
     @media (min-width: 1200px) and (max-width: 1439px){
-      div.contact-box div.contact-image img {
+      section#contact div.contact-box div.contact-image img {
         width: 20%;
         position: relative;
-        left: 71%;
-        top: -8rem;
+        left: 72%;
+        top: -7rem;
         z-index: 1;
+      }
+
+      section#contact div.return-top {
+        margin: 0 0 4rem 0;
+      }
+
+      section#contact div.contact-box h2.contact-header {
+        font-size: 4.3rem;
+      }
+
+      section#contact div.contact-box h3.contact-body {
+        font-size: 2.5rem;
       }
 
       .see-work {
@@ -4005,22 +4007,6 @@ nav.navbar {
     }
 
     @media (min-width: 1440px) and (max-width: 1699px){
-      section#contact div.contact-box {
-        padding: 0;
-      }
-
-      section#contact div.contact-content {
-          width: 80%;
-          margin: -10rem auto 3rem auto;
-        }
-
-      div.contact-box div.contact-image img {
-        width: 20%;
-        position: relative;
-        left: 55%;
-        top: -8rem;
-        z-index: 1;
-      }
 
       .see-work {
         z-index: 6;
@@ -4154,16 +4140,39 @@ nav.navbar {
         top: 0.7rem;
       }
 
+      /* CONTACT 1440px min*/
+
+      section#contact div.contact-box {
+        padding: 0;
+      }
+
+      section#contact div.contact-content {
+          width: 80%;
+          margin: -10rem auto 3rem auto;
+        }
+
+      section#contact div.contact-box div.contact-image img {
+        width: 20%;
+        position: relative;
+        left: 75%;
+        top: -8rem;
+        z-index: 1;
+      }
+
       #contact div.contact-content h2.contact-header {
-        font-size: 6rem;
+        font-size: 5rem;
       }
 
       #contact div.contact-content h3.contact-body {
-        font-size: 3.5rem;
+        font-size: 3rem;
       }
 
-      #contact div.return-top .return-link {
+      section#contact div.return-top a.return-link {
         font-size: 2.3rem;
+      }
+
+      section#contact div.return-top {
+        margin: 0 0 4rem 0;
       }
 
       #contact div.return-top i {
@@ -4178,17 +4187,22 @@ nav.navbar {
         margin-right: 4%;
       }
 
-      #footer-box ul.social-media i {
-        font-size: 3rem;
+      ul.social-media i {
+        font-size: 2.7rem !important;
         padding-right: 1rem;
+      }
+
+      footer ul.social-media i.fas {
+        font-size: 2.5rem;
       }
 
       footer#footer-box ul.social-media p {
         font-size: 2rem;
       }
 
-      footer#footer-box .copyright p {
-        font-size: 2rem;
+      footer div.copyright p {
+        font-size: 2rem !important;
+        font-family: "Brandon Text Medium";
         margin-left: 8%;
       }
     }
@@ -4332,16 +4346,20 @@ nav.navbar {
         top: 1.3rem;
       }
 
-      #contact div.contact-image img {
+      /* CONTACT 1700 min*/
+
+      section#contact div.contact-box div.contact-image img {
         left: 75%;
+        width: 33rem;
+        margin: 3rem 0 0 0;
       }
 
       #contact div.contact-content h2.contact-header {
-        font-size: 6rem;
+        font-size: 5.7rem;
       }
 
       #contact div.contact-content h3.contact-body {
-        font-size: 3.5rem;
+        font-size: 3.4rem;
       }
 
       #contact div.contact-content {
@@ -4375,8 +4393,8 @@ nav.navbar {
         font-size: 3rem;
       }
 
-      #contact div.return-top {
-        margin: 2rem 0 0 0 ;
+      section#contact div.return-top {
+        margin: 4rem 0 8rem 0 !important;
       }
 
       #contact div.return-top i.fa-caret-up {
@@ -4384,7 +4402,7 @@ nav.navbar {
       }
 
       footer#footer-box {
-        padding: 2rem 0;
+        padding: 3rem 0 !important;
       }
 
 
@@ -4392,17 +4410,13 @@ nav.navbar {
         margin-right: 4%;
       }
 
-      footer#footer-box ul.social-media p {
-        font-size: 2.5rem;
-      }
-
       footer#footer-box ul.social-media i {
-        font-size: 3rem;
+        font-size: 3rem !important;
         padding-right: 1rem;
       }
 
       footer#footer-box .copyright p {
-        font-size: 2.5rem;
+        font-size: 2.3rem !important;
         margin-left: 8%;
       }
 
@@ -4538,9 +4552,9 @@ nav.navbar {
         margin: 1rem 0 0 0;
       }
 
-      #contact div.contact-image img {
-        left: 72%;
-        width: 22%;
+      section#contact div.contact-box div.contact-image img {
+        left: 73%;
+        width: 20%;
       }
 
       #contact div.contact-content h2.contact-header {
@@ -4552,7 +4566,7 @@ nav.navbar {
       }
 
       #contact div.contact-content {
-        margin: -10rem auto 5rem auto;
+        margin: -15rem auto 5rem auto;
       }
 
       article.feat-project-text a.primary-btn {
@@ -4575,8 +4589,8 @@ nav.navbar {
         font-size: 2.7rem;
       }
 
-      #contact div.return-top {
-        margin: 2rem 0 0 0 ;
+      section#contact div.return-top {
+        margin: 6rem auto 10rem auto !important;
       }
 
       #contact div.return-top i.fa-caret-up {
@@ -4584,25 +4598,22 @@ nav.navbar {
       }
 
       footer#footer-box {
-        padding: 3rem 0;
+        padding: 4rem 0 !important;
       }
 
       #footer-box ul.social-media {
         margin-right: 4%;
       }
 
-      footer#footer-box ul.social-media p {
-        font-size: 3rem;
-      }
-
       footer#footer-box ul.social-media i {
-        font-size: 3.5rem;
+        font-size: 3.5rem !important;
         padding-right: 1rem;
       }
 
       footer#footer-box .copyright p {
-        font-size: 3rem;
+        font-size: 3rem !important;
         margin-left: 8%;
+        padding: 0 0 1rem 0;
       }
     }
 
@@ -4612,21 +4623,21 @@ nav.navbar {
       padding: 5rem 0 2rem 0;
     }
 
-    div.contact-box div.contact-image img {
-      width: 21%;
+    #contact div.contact-box div.contact-image img {
+      width: 25rem;
       position: relative;
-      left: 77%;
+      left: 75%;
       top: -7rem;
       z-index: 1;
     }
 
     div.contact-content {
       width: 80%;
-      margin: -8rem auto 2rem auto;
+      margin: -5rem auto 2rem auto;
     }
 
     .contact-header {
-      font-size: 4.5rem;
+      font-size: 4rem;
       text-align: center;
       font-family: 'Brandon Text Bold';
       line-height: 100%;
@@ -4634,7 +4645,7 @@ nav.navbar {
     }
 
     div.contact-content h3.contact-body {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       text-align: center;
       font-family: 'Brandon Text Regular';
       line-height: 120%;
@@ -4692,39 +4703,40 @@ nav.navbar {
       margin: 2rem 1rem;
     }
 
-    #footer-box {
+    footer#footer-box {
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
       justify-content: center;
+      padding: 2rem 0;
     }
 
-    #footer-box ul.social-media p {
-        font-size: 1.7rem;
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        font-family: "Brandon Text Regular";
+      footer#footer-box ul.social-media {
+        margin-right: 0;
+        /* width: 50%; */
       }
 
-      ul.social-media i.fab, ul.social-media i.fas {
-        font-size: 2rem;
+      footer#footer-box ul.social-media i.fab, ul.social-media i.fas {
+        font-size: 2.2rem;
         padding-right: .5rem;
         color: #001F40;
       }
 
-      div.copyright {
-        width: 50%;
-        padding: 0;
-        margin: 0 0 0 -2.5rem;
+      footer#footer-box ul.social-media li {
+        margin: 0 8% 0 0;
       }
 
-      div.copyright p {
+      footer#footer-box div.copyright {
+        width: 50%;
+        padding: 0;
+        margin: 0 0 0 4%;
+      }
+
+      footer#footer-box div.copyright p {
         text-align: left;
-        font-size: 1.8rem;
-        padding: 1.5rem 0 0 0;
-        font-family: "Brandon Text Medium";
+        font-size: 1.6rem;
+        padding: 1.5rem 0 1rem 0;
+        font-family: "Brandon Text Regular";
       }
 
       /***

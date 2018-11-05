@@ -227,7 +227,7 @@ div.part2-section img.chart-mobile-img{
   width: 25%;
 }
 
-div.number-circle {
+div.typography div.chart-wrap div.number-circlec {
   display: none;
 }
 
@@ -746,7 +746,7 @@ div.test-bg {
 
 article.ab div.content {
   width: 70%;
-  margin: 7.5rem auto 3rem auto;
+  margin: 7.5rem auto 0 auto;
 }
 
 div.test-wrapper {
@@ -793,9 +793,9 @@ img.cat-test-mobile {
 .test-bg .category-title {
   font-size: 3.5rem;
   font-family: 'Brandon Text Bold', bold;
-  margin: 5rem auto 0 auto;
+  margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 90%;
   line-height: 130%;
 }
 
@@ -895,12 +895,12 @@ section.iterations-snippet header.iteration-title {
   flex-direction: column;
   align-items: flex-start;
   width: 70%;
-  margin: 3rem auto;
+  margin: 3rem auto 0 auto;
   text-align: left;
 }
 
-.iteration-title .it {
-  font-size: 1.8rem;
+header.iteration-title h3.it {
+  font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 0.5rem;
   display: block;
@@ -915,10 +915,9 @@ header.iteration-title span {
 }
 
 header.iteration-title p.text-box {
-  margin-top: -0.5rem;
+  margin: -0.5rem 0 0 3.5rem;
   text-align: left;
-  width: 80%;
-  margin-left: 3.5rem;
+  width: 90%;
 }
 
 section.rogue-img {
@@ -935,10 +934,10 @@ section.rogue-img h3.button-title {
   font-family: "Brandon Text Bold";
   text-align: center;
   line-height: 120%;
-  margin: 5rem auto 1.5rem auto;
+  margin: 0 auto;
 }
 
-h4.bt-title {
+section.rogue-img h4.bt-title {
   font-family: "Brandon Text Medium";
   line-height: 120%;
   font-size: 2.5rem;
@@ -1008,12 +1007,12 @@ section.dos {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7.5rem;
+  margin: 7.5rem auto;
 }
 
 section.dos img {
   width: auto;
-  margin: 5rem auto 3rem auto;
+  margin: 2rem auto 3rem auto;
 }
 
 section.tres {
@@ -1026,7 +1025,7 @@ section.tres {
 
 section.tres img {
   width: auto;
-  margin: 5rem auto 3rem auto;
+  margin: 2rem auto 3rem auto;
 }
 
 
@@ -1268,7 +1267,7 @@ div.return-top {
   margin: 2rem 0 -5rem 0;
 }
 
-footer #footer-box {
+footer #footer-cube {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1281,7 +1280,7 @@ ul.social-media {
 }
 
 ul.social-media li {
-  margin: 2rem auto;
+  margin: 2rem auto 1rem auto;
 }
 
 ul.social-media a {
@@ -1297,23 +1296,23 @@ ul.social-media p {
   font-family: "Brandon Text Medium";
 }
 
-i.fab, i.fas {
+footer#footer-cube ul.social-media li i {
   font-size: 2rem;
   padding-right: 1rem;
   padding-bottom: 0.1rem;
   color: #001F40;
 }
 
-div.copyright p {
+footer#footer-cube div.copyright p {
   text-align: center;
   align-items: center;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin: 0 auto;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1.5rem 0;
   width: 100%;
   display: block;
-  font-family: "Brandon Text Medium";
+  font-family: "Brandon Text Regular";
 
 }
 }
@@ -1364,5 +1363,17 @@ div.copyright p {
   h3.pg-topic {
     font-size: 2.1rem;
     line-height: 100%;
+  }
+
+  section.cuatro p.text-box, section.cinco p.text-box {
+    margin-bottom: 3rem;
+  }
+
+
+  footer#footer-cube ul.social-media li i {
+    font-size: 2.3rem;
+    padding-right: 1rem;
+    padding-bottom: 0.1rem;
+    color: #001F40;
   }
 }
