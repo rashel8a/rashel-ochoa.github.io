@@ -2,7 +2,7 @@
 
 /* ****** TABLET MEDIA QUERY ******* */
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
 
 div.container {
   width: 100%;
@@ -657,7 +657,7 @@ section#chapter4 div.typography {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 
 div.typography div.type-content {
@@ -666,7 +666,7 @@ div.typography div.type-content {
 }
 
 div.typography img.type-img {
-   width: 35%;
+   width: 25%;
 }
 /*
 #chapter4 div.typography div.type-section {
@@ -1267,20 +1267,23 @@ div.return-top {
   margin: 2rem 0 -5rem 0;
 }
 
-footer #footer-cube {
+footer#footer-cube {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 ul.social-media {
   display: flex;
   align-items: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 ul.social-media li {
-  margin: 2rem auto 1rem auto;
+  margin: -4rem 4% 1rem 4%;
 }
 
 ul.social-media a {
@@ -1296,20 +1299,13 @@ ul.social-media p {
   font-family: "Brandon Text Medium";
 }
 
-footer#footer-cube ul.social-media li i {
-  font-size: 2rem;
-  padding-right: 1rem;
-  padding-bottom: 0.1rem;
-  color: #001F40;
-}
-
 footer#footer-cube div.copyright p {
   text-align: center;
   align-items: center;
   border: none;
   font-size: 1.6rem;
   margin: 0 auto;
-  padding: 0 0 1.5rem 0;
+  padding: 0 0 2rem 0;
   width: 100%;
   display: block;
   font-family: "Brandon Text Regular";
@@ -1345,14 +1341,14 @@ footer#footer-cube div.copyright p {
     width: 35%;
   }
 
-  div.return-top {
+  section#contact div.return-top {
     display: flex;
     flex-direction: column-reverse;
     font-size: 2rem;
     text-align: center;
     align-items: center;
-    padding: 5rem 0 0 0;
-    margin: 1rem 0 -2rem 0;
+    padding: 0rem 0 0 0;
+    margin: 3rem 0 -8rem 0;
   }
 
   h2.pg-label {
@@ -1369,11 +1365,23 @@ footer#footer-cube div.copyright p {
     margin-bottom: 3rem;
   }
 
+  footer#footer-cube ul.social-media {
+    margin: 0 auto;
+  }
 
-  footer#footer-cube ul.social-media li i {
-    font-size: 2.3rem;
-    padding-right: 1rem;
-    padding-bottom: 0.1rem;
-    color: #001F40;
+  ul.social-media li {
+    margin: -2rem 3% 2rem 3%;
+  }
+
+  footer#footer-cube div.copyright p {
+    text-align: center;
+    align-items: center;
+    border: none;
+    font-size: 1.6rem;
+    margin: -1rem auto 0 auto;
+    padding: 1rem 0 3rem 0;
+    width: 100%;
+    display: block;
+    font-family: "Brandon Text Regular";
   }
 }
