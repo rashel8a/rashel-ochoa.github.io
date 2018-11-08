@@ -2466,8 +2466,9 @@ body {
   line-height: 120%;
 }
 
-div.main-container {
+div.container {
   height: 100vh;
+  border: 1px solid transparent;
   transform-style: preserve-3d;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -3300,7 +3301,7 @@ div.copyrightt p {
       /* margin: 0; */
     }
 
-    div.main-container {
+    div.container {
       width: 100%;
       overflow: hidden;
       position: relative;
@@ -3368,7 +3369,7 @@ div.copyrightt p {
        /* background-color: #FDE8DE; */
      }
 
-    div.main-container {
+    div.container {
       height: 100vh;
       transform-style: preserve-3d;
       overflow: hidden;
@@ -5678,7 +5679,7 @@ nav.navbar {
          z-index: 1000;
        }
 
-       div.main-container {
+       div.container {
          width: 100%;
          overflow: hidden;
          position: relative;
@@ -5728,7 +5729,7 @@ nav.navbar {
          display: block;
        }
 
-       div.main-container {
+       div.container {
          height: 100vh;
          transform-style: preserve-3d;
          overflow: hidden;
