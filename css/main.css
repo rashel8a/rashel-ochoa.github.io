@@ -5979,6 +5979,10 @@ nav.navbar {
          font-family: "Brandon Text Medium", sans-serif;
        }
 
+       section#contact div.contact-image {
+         margin-top: 2rem;
+       }
+
        div.content-copy h5.contact-words {
          font-size: 2.3rem;
          line-height: 120%;
@@ -5994,11 +5998,11 @@ nav.navbar {
          font-family: "Brandon Text Black";
        }
 
-       ul.social-medio {
+       footer#footer-box ul.social-medio {
          display: flex;
          align-items: center;
          justify-content: center;
-         margin: 5rem 0 3rem 0;
+         margin: 5rem 0;
          padding: 0;
        }
 
@@ -6018,9 +6022,10 @@ nav.navbar {
          color: #FFA856;
        }
 
-       #footer-card  {
+       footer#footer-box  {
          background-color: #FB7E6C;
-         padding: 1rem 0;
+         padding: 0;
+         margin: -1rem auto;
        }
 
        div.copyrightt p {
@@ -6029,13 +6034,20 @@ nav.navbar {
          font-size: 1.8rem;
        }
 
-       div.return-top {
-         margin-top: 0rem;
-         padding-bottom: 5rem;
+       section#contact div.return-top {
+         margin-top: 0;
+         padding-bottom: 0;
+         margin-bottom: 6.5rem;
        }
 
-       div.return-top a {
-         font-size: 2.5rem;
+       section#contact div.return-top i.fas {
+         padding-bottom: 1rem;
+       }
+
+       section#contact div.return-top a {
+         font-size: 2.2rem;
+         padding: 0;
+         margin: 0;
        }
      }
 
