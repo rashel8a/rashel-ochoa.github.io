@@ -1,3 +1,5 @@
+
+
 /* TABLET STARSTUFF PAGE*/
 
 /* ****** TABLET MEDIA QUERY ******* */
@@ -1264,8 +1266,12 @@ section#contact div.return-top {
   font-size: 2rem;
   text-align: center;
   align-items: center;
-  padding: 1rem 0 2rem 0;
-  margin: 3rem 0 -10rem 0;
+  padding: 0;
+  margin: 1rem auto 0 auto;
+}
+
+section#contact div.return-top a.return-link{
+  margin-bottom: -3rem;
 }
 
 footer#footer-cube {
@@ -1348,8 +1354,8 @@ footer#footer-cube div.copyright p {
     font-size: 2rem;
     text-align: center;
     align-items: center;
-    padding: 0rem 0 0 0;
-    margin: 3rem 0 -8rem 0;
+    padding: 0;
+    margin: 1rem auto 0 auto;
   }
 
   h2.pg-label {

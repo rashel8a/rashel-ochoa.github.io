@@ -1,3 +1,4 @@
+
 /* ****** DESKTOP MEDIA QUERY ******* */
 
 
@@ -176,23 +177,28 @@
   /* CHAPTER 1 DESKTOP SECTION */
 
 
-  article.challenge-intro {
+  div.ch1-content article.challenge-intro {
     display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 
-  #chapter1 div.ch1-content {
+  section#chapter1 div.ch1-content {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
   }
 
   #chapter1 .content {
     width: 45%;
+    margin: 0;
+    padding: 0;
   }
 
   ol li, ol span, ul li{
@@ -201,28 +207,26 @@
   }
 
   #chapter1 div.ch1-content div.challenge {
-    margin-left: 5rem;
-    margin-top: -15rem;
+    margin-top: 0;
+    position: relative;
+    left: 0;
   }
 
-  #chapter1 div.ch1-content div.solution {
-    margin-top: -80rem;
-    margin-left: 5rem;
-  }
-
-  #chapter1 article.challenge-intro img.chapter1-image {
-    width: auto;
-    display: block;
-    margin: -16rem auto 0 auto;
-  }
-
-  /* section#chapter1 img.chapter1-image {
-    width: 23%;
+  section#chapter1 article.challenge-intro img.chapter1-image {
+    width: 40%;
     position: absolute;
     display: block;
-    left: 65%;
-    margin: 0 0 150% 0 ;
-  } */
+    right: 5rem;
+    margin: 0 0 0 0;
+  }
+
+  section#chapter1 div.ch1-content div.solution {
+    margin: -7% 0 12% 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    left: -1.5rem;
+  }
 
   section#chapter1 img.chapter1-mobile {
     display: none;
@@ -1492,8 +1496,8 @@ section#contact div.box1 {
 }
 
 div.box1 img.contact-graphic{
-  width: 20%;
-  margin-left: 67%;
+  width: 16%;
+  margin-left: 66%;
   z-index: 1;
 }
 
@@ -1614,18 +1618,25 @@ ul.social-media p:hover, ul.social-media i:hover {
 }
 }
 
+@media (min-width: 1200px) {
+  section#chapter1 article.challenge-intro img.chapter1-image {
+    width: 32%;
+    padding: 0;
+    position: absolute;
+    display: block;
+    right: 10rem;
+    margin: 0;
+  }
+
+  section#chapter1 article.introduction div.solution {
+    margin: 0 0 15% 0;
+  }
+}
+
 
 
 
 @media (min-width: 1440px) and (max-width: 1699px) {
-  section#chapter1 div.ch1-content {
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
 
   div.block div.box-1 h4, div.block div.box-2 h4 {
     font-size: 2.4rem;
@@ -1729,14 +1740,57 @@ ul.social-media p:hover, ul.social-media i:hover {
 
  /* END CHART SECTION*/
 
-  #chapter1 .content {
-    width: 45%;
-  }
+ div.ch1-content article.challenge-intro {
+   display: flex;
+   flex-direction: row;
+   margin: 0;
+   padding: 0;
+   align-items: flex-start;
+   justify-content: space-between;
+ }
 
-  div.challenge ol li {
-    font-size: 2.4rem;
-    padding-top: 1rem;
-  }
+ section#chapter1 div.ch1-content {
+   width: 80%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-around;
+ }
+
+ #chapter1 .content {
+   width: 45%;
+   margin: 0;
+   padding: 0;
+ }
+
+ ol li, ol span, ul li{
+   font-size: 2.4rem;
+   line-height: 120%;
+   padding-top: 1rem;
+ }
+
+ #chapter1 div.ch1-content div.challenge {
+   margin-top: 0;
+   position: relative;
+   left: 0;
+ }
+
+ section#chapter1 article.challenge-intro img.chapter1-image {
+   width: 50rem;
+   position: absolute;
+   display: block;
+   right: 16rem;
+   margin: 0 0 0 0;
+ }
+
+ section#chapter1 div.ch1-content div.solution {
+   margin: -7% 0 12% 0;
+   padding: 0;
+   display: block;
+   position: relative;
+   left: -1.5rem;
+ }
 
   #chapter1 div.challenge span {
     font-size: 2.4rem;
@@ -1748,27 +1802,11 @@ ul.social-media p:hover, ul.social-media i:hover {
     line-height: 120%;
   }
 
-  div.content ul li {
-    font-size: 2.4rem;
-    padding-bottom: 1rem;
-  }
-
   section div.callout p.co-text {
     font-size: 2.5rem;
     border-left: 10px solid #FFA856;
     line-height: 120%;
     padding: 3rem 0 3rem 3rem;
-  }
-
-  #chapter1 div.ch1-content div.challenge {
-    margin-left: 0rem;
-    margin-top: -15rem;
-    margin-right: 10rem;
-  }
-
-  #chapter1 div.ch1-content article.introduction div.solution {
-    margin-top: -70rem;
-    margin-left: 5rem;
   }
 
   /* STYLE GUIDE IMAGES*/
@@ -2010,7 +2048,7 @@ ul.social-media p:hover, ul.social-media i:hover {
    }
 }
 
-    @media (min-width: 1700px) and (max-width: 2299px) {
+    @media (min-width: 1700px) and (max-width: 1899px) {
       p {
         font-size: 2.7rem;
         line-height: 120%;
@@ -2028,10 +2066,61 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding: 3rem 0 3rem 3rem;
       }
 
-      #chapter1 img.chapter1-image {
-        width: auto;
-        margin: -16rem auto 0 auto;
+      div.ch1-content article.challenge-intro {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: space-between;
       }
+
+      section#chapter1 div.ch1-content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      #chapter1 .content {
+        width: 45%;
+        margin: 0;
+        padding: 0;
+      }
+
+      ol li, ol span, ul li{
+        font-size: 2.4rem;
+        line-height: 120%;
+        padding-top: 1rem;
+      }
+
+      #chapter1 div.ch1-content div.challenge {
+        margin-top: 0;
+        position: relative;
+        left: 0;
+      }
+
+      section#chapter1 article.challenge-intro img.chapter1-image {
+        width: 60rem;
+        position: absolute;
+        display: block;
+        right: 18rem;
+        margin: 0 0 0 0;
+      }
+
+      section#chapter1 div.ch1-content div.solution {
+        margin: -5% 0 13% 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        left: -1.5rem;
+      }
+
+       #chapter1 div.challenge span {
+         font-size: 2.4rem;
+       }
 
       /* STYLE GUIDE SECTION*/
 
@@ -2205,10 +2294,6 @@ ul.social-media p:hover, ul.social-media i:hover {
       section#chapter1 div.content ol span, div.content ol li, div.content ul li{
         font-size: 2.5rem;
         line-height: 120%;
-      }
-
-      section#chapter1 div.ch1-content div.solution {
-        margin-top: -77rem;
       }
 
       section div.title-card h2.section-title {
@@ -2579,6 +2664,613 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
     }
 
+   @media (min-width: 1900px) and (max-width: 2299px) {
+     p {
+       font-size: 3rem;
+       line-height: 120%;
+     }
+
+     section div.callout p.co-text {
+       font-size: 3.5rem;
+       border-left: 12px solid #FFA856;
+       line-height: 125%;
+       padding: 3rem 0 3rem 3rem;
+     }
+
+     div.ch1-content article.challenge-intro {
+       display: flex;
+       flex-direction: row;
+       margin: 0;
+       padding: 0;
+       align-items: flex-start;
+       justify-content: space-between;
+     }
+
+     section#chapter1 div.ch1-content {
+       width: 80%;
+       margin: 0 auto;
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: space-around;
+     }
+
+     #chapter1 .content {
+       width: 45%;
+       margin: 0;
+       padding: 0;
+     }
+
+     #chapter1 div.ch1-content div.challenge {
+       margin-top: 0;
+       position: relative;
+       left: 0;
+     }
+
+     section#chapter1 article.challenge-intro img.chapter1-image {
+       width: 30%;
+       position: absolute;
+       display: block;
+       right: 23rem;
+       margin: 0 0 0 0;
+     }
+
+     section#chapter1 div.ch1-content div.solution {
+       margin: -3% 0 20% 0;
+       padding: 0;
+       display: block;
+       position: relative;
+       left: -1.5rem;
+     }
+
+     section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+       font-size: 3rem;
+       line-height: 120%;
+     }
+
+
+      #chapter1 div.challenge span {
+        font-size: 2.4rem;
+      }
+
+
+     /* STYLE GUIDE SECTION*/
+
+     section#chapter4 div.typography div.sg-images {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       background-color: #405276;
+       padding: 2rem 10rem;
+       width: 100vw;
+       margin: 0 auto;
+     }
+
+     section#chapter4 div.typography img.type-img {
+      float: right;
+      display: inline-block;
+      margin: 0 12rem 10rem 0;
+      width: 18%;
+     }
+
+     div.typography div.sg-images img.sg-img {
+       width: 27%;
+       margin: 0 2rem 0 0;
+       display: block;
+     }
+
+     section#chapter4 div.typography div.sg-images img.sg-img2 {
+       width: 27%;
+       display: block;
+       margin: 0 0 0 0;
+     }
+
+     /* SG END*/
+
+
+     section h2.pg-label {
+       font-size: 4rem;
+       line-height: 110%;
+     }
+
+     section h3.pg-topic {
+       font-size: 3.5rem;
+       line-height: 100%;
+     }
+
+     h1 {
+       font-size: 4.5rem;
+     }
+
+     article.intro-header div.contact-btns1 {
+      margin: 3rem auto 5rem auto;
+      width: 100%;
+    }
+
+     article.intro-header div.contact-btns1 a.primary-btn {
+       width: 40rem;
+       height: 6.3rem;
+       padding: 2.5rem 0 0 0;
+       font-size: 2.3rem;
+    }
+
+    section.project-info ul li {
+      font-size: 3rem;
+    }
+
+    section.project-info h2.title {
+      font-size: 4.3rem;
+    }
+
+    article.ab div.content p.text-box {
+      font-size: 2.7rem;
+      line-height: 120%;
+    }
+
+    div.test-bg div.test-wrapper p.screen-subtitle {
+      font-size: 3rem;
+    }
+
+    article.ab div.test-bg h3.category-title {
+      font-size: 4.5rem;
+      margin: 1rem 0 -2rem 0;
+    }
+
+    div.test-bg div.test-wrapper h4.a-screen, div.test-bg div.test-wrapper h4.b-screen {
+      font-size: 4rem;
+    }
+
+    div.test-bg div.test-wrapper h3.numbers {
+      font-size: 4.5rem;
+      padding: 1rem 0 1rem 0;
+    }
+
+    div.test-bg div.test-wrapper p.descs {
+      font-size: 2.5rem;
+      padding-top: 1rem;
+    }
+
+    article.testing div.content ul li {
+      font-size: 2.7rem;
+    }
+
+    /*chart section*/
+
+    section#chapter2 div.chart-html h5.p-text {
+      font-size: 2.5rem;
+      margin: 2rem auto;
+    }
+
+    div.chart-html h3.chart-title {
+      margin: 7.5rem auto 5rem auto;
+      font-size: 4rem;
+    }
+
+    div.chart-html div.chart-wrap img.chart-mobile-large {
+      width: 30%;
+    }
+
+
+   div.chart-html div.partl-section h5.text-stat {
+     font-size: 3rem;
+     margin: 1rem auto 3rem auto;
+   }
+
+   div.chart-html div.partl-section h3.number-stat {
+     font-size: 4.8rem;
+   }
+
+   div.part1-section div.number-circlec, div.part2-section div.number-circlec {
+     position: relative;
+     left: 5rem;
+   }
+
+   div.part3-section div.number-circlec {
+     position: relative;
+     left: 5rem;
+     top: -10rem;
+   }
+
+   section#chapter2 div.chart-html div.chart-wrap div.number-circlec {
+     margin: 0;
+     width: 4.5rem;
+     height: 4.5rem;
+     font-size: 2.7rem;
+   }
+
+    section.project-info img {
+      width: 20%;
+    }
+
+    section.project-info div.design-del img {
+      width: 15%;
+    }
+
+    section.project-info div.design-del h2.title {
+      padding-top: 0.1rem;
+    }
+
+     div.contact-btns2 {
+      margin: 3rem auto 0 auto;
+      width: 100%;
+    }
+
+     div.contact-btns2 a.primary-btn {
+       width: 40rem;
+       height: 6.3rem;
+       padding: 2.5rem 0 0 0;
+       font-size: 2.3rem;
+    }
+
+     section div.title-card h2.section-title {
+       font-size: 3.6rem;
+     }
+
+     .companal div.content {
+       width: 55%;
+       padding: 0;
+       margin-left: 0rem;
+      }
+
+      .companal .compimg {
+        display: block;
+        width: 20%;
+        margin-right: 5rem;
+      }
+
+      .compimgh {
+        display: none;
+      }
+
+     section div.title-card img.chapter {
+       width: 6%;
+       margin-top: -1.3rem;
+     }
+
+     div.brand-story div.brand-quote h2.main-quote {
+       font-size: 4rem;
+     }
+
+     div.brand-story div.brand-quote h2.by {
+       font-size: 4rem;
+     }
+
+     div.brand-story div.brand-quote img.quote-img {
+       width: 10%;
+       padding-right: 1rem;
+     }
+
+     section#chapter4 div.title-card img.chapter {
+       width: 6%;
+       margin: 0 0.3rem 0 0;
+     }
+
+     section.both-personas div.vertical-line span.pers-quote, section.both-personas p.persona-quote i span {
+       font-size: 3.5rem;
+     }
+
+     section.both-personas div.vertical-line p.persona-quote {
+       font-size: 3rem;
+       line-height: 110%;
+     }
+
+     div.motivations h4 span, div.frustrations h4 span {
+       font-size: 2.5rem;
+     }
+
+     article.person section.both-personas {
+       width: 80%;
+     }
+
+     section.maya-persona, section.sheila-persona {
+       width: 50%;
+       margin: 0 auto;
+     }
+
+     div.pers-title h2 {
+       font-size: 3.5rem;
+     }
+
+     div.pers-title h3 {
+       font-size: 2.5rem;
+     }
+
+     a.style-button {
+       font-size: 2.4rem;
+     }
+
+     div.block h4 {
+       font-size: 2.7rem;
+     }
+
+     header.it-list h3.it-text {
+       font-size: 2.7rem;
+     }
+
+     section.it-snippet div.it-title div.number-circle {
+       padding: 1.8rem 0 0 0;
+       margin: 0.3rem 0.5rem 0 0rem;
+       width: 3.5rem;
+       height: 3.5rem;
+       font-size: 2.5rem;
+     }
+
+     header.three div.it-title div.number-circle {
+       width: 3.8rem;
+       padding-top: 1.9rem;
+       font-size: 2.5rem;
+       height: 3.8rem;
+     }
+
+     #chapter4 div.color-palette {
+       width: 90%;
+     }
+
+     #chapter4 div.color-palette div.color {
+       width: 45%;
+     }
+
+     #chapter4 div.typography {
+       display: block;
+       margin: 15rem auto;
+       width: 90%;
+     }
+
+     #chapter4 div.typography div.type-content {
+       float: left;
+       margin-left: 12rem;
+       width: 40%;
+       display: inline-block;
+     }
+
+    #chapter4 div.typography img.type-img {
+      float: right;
+      display: inline-block;
+      margin: 0 25rem 0 0;
+      width: 18%;
+    }
+
+    #chapter4 div.typography div.style-wrapper {
+      margin: 5rem auto;
+    }
+
+    div.iterations-list div.it-caption h3.it {
+      font-size: 2.7rem;
+      width: 100%;
+      padding: 1.5rem 0 0 0;
+    }
+
+    div.iterations-list header.iteration-title span.number-circlec {
+      background-color: #6534FF;
+      border-radius: 50%;
+      padding: 1.9rem 0 0 0;
+      margin: 0.3rem 0.5rem 0 -0.5rem;
+      color: #FFFDFB;
+      width: 3.8rem;
+      height: 3.8rem;
+      font-family: 'Brandon Text Medium', sans-serif;
+      font-size: 2.5rem;
+    }
+
+    div.iterations-list section.cuatro, div.iterations-list section.cinco, div.iterations-list section.seis  {
+      width: 80%;
+    }
+
+    div.iterations-list section.cuatro p.text-box, div.iterations-list section.cinco p.text-box, div.iterations-list section.seis p.text-box  {
+      width: 90%;
+    }
+
+    div.iterations-list section.cinco, div.iterations-list section.seis {
+      margin: 15rem auto 0 auto;
+    }
+
+    div.iterations-list section.seis {
+      margin-bottom: 15rem;
+    }
+
+    div.iterations-list section.iterations-snippet header.iteration-title {
+      width: 80rem;
+    }
+
+    div.iterations-list section.iterations-snippet p.text-box {
+      padding: 0;
+    }
+
+    div.iterations-list header.iteration-title p.text-box {
+      font-size: 2.7rem;
+      margin: 0 0 0 4rem;
+    }
+
+    div.iterations-list section.uno header.iteration-title {
+      font-size: 2.7rem;
+      margin: 0 0 5rem 0;
+      width: 100rem;
+      display: block;
+      float: left;
+    }
+
+
+    section#chapter5 div.iterations-list section.cinco .number-circle, section#chapter5 div.iterations-list section.seis .number-circle {
+      margin: 1.5rem 1rem 0 0;
+    }
+
+    article.concl h3.concl-heading, article.final-p div.content h2 {
+      font-size: 3.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    article.concl h3.concl-subhead,  article.concl h3.concl-sub {
+      font-size: 3rem;
+    }
+
+    article.concl div.content  {
+      margin: 15rem auto 0 auto;
+    }
+
+    article.concl p.text-box {
+      font-size: 2.7rem;
+    }
+
+    article.final-p p.text-box {
+      font-size: 2.7rem;
+    }
+
+    section.iterations-snippet section.rogue-img p.test-img-text {
+      margin: 5rem auto;
+      font-size: 3.2rem;
+      line-height: 130%;
+    }
+
+    header.iteration-title div.it-caption {
+      margin: 0 0 1rem 0;
+    }
+
+
+
+    section.iterations-snippet header.iteration-title p.text-box {
+      margin: 0 0 0 4rem;
+    }
+
+    section.tres img.right-side {
+      margin: 3rem auto 0 auto;
+    }
+
+    section.iterations-snippet p.text-box {
+      font-size: 2.5rem;
+    }
+
+    section.iterations-snippet header.iteration-title span.number-circle {
+      margin: 0.5rem 1rem 0 0;
+    }
+
+    section.iterations-snippet section.rogue-img p.test-img-text span {
+      font-size: 3.5rem;
+    }
+
+    section.iterations-snippet section.rogue-img div.bt-screen h4.bt-title{
+      font-size: 3.5rem;
+    }
+
+    section.iterations-snippet section.rogue-img div.bt-screen p.bt-desc{
+      font-size: 2.7rem;
+    }
+
+    section.iterations-snippet section.rogue-img h3.button-title {
+      font-size: 4.3rem;
+    }
+
+    section#contact div.contact-copy1 h2.contact-title1 {
+      font-size: 6rem;
+      padding-bottom: 1rem;
+    }
+
+    section#contact div.contact-copy1 h5.contact-text {
+      font-size: 3.2rem;
+      padding-top: 1rem;
+  }
+
+    section#contact article.contact-meat div.contact-copy1 {
+      width: 80rem;
+      margin: -10rem auto 0 auto;
+    }
+
+    section#contact img.contact-graphic {
+      width: 16%;
+      position: relative;
+      left: 3%;
+      margin-top: 2rem;
+    }
+
+    section#contact {
+      padding: 0;
+    }
+
+    section#contact div.return-top a.return-link {
+      margin: 0 auto -2rem auto;
+      font-size: 2.8rem;
+    }
+
+    section#contact div.return-top i.fas {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    section#contact div.contact-btns3 {
+     margin: 3rem auto 2rem auto;
+     width: 100%;
+   }
+
+    section#contact div.contact-btns3 a.primary-btn {
+     width: 40rem;
+     height: 6.3rem;
+     padding: 2.5rem 0 0 0;
+     font-size: 2.3rem;
+   }
+
+   section.both-personas img.maya-img, section.both-personas img.sheila-img {
+     width: 65%;
+   }
+
+   div.desktop-images-final div.mobile-desktop-images img.final-mobile-one {
+     width: 100%;
+     margin-top: 45rem;
+     margin-bottom: 3rem;
+     z-index: 1699;
+   }
+
+
+   /* FOOTER*/
+
+   footer#footer-cube{
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0;
+     background-color: #FB7E6C;
+     margin: 0;
+     height: 20rem;
+   }
+
+   footer#footer-cube ul.social-media {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 45%;
+     margin: -9rem 3% 0 0 ;
+     padding: 0;
+   }
+
+   footer#footer-cube ul.social-media li {
+     margin: 0 0 0 10%;
+   }
+
+   footer#footer-cube ul.social-media i.fab, footer#footer-cube ul.social-media i.fas{
+     font-size: 3.3rem;
+     padding-right: 0.5rem;
+     color: #001F40;
+   }
+
+   ul.social-media p:hover, ul.social-media i:hover {
+     color: #FFFDFB;
+     cursor: pointer;
+   }
+
+   footer#footer-cube div.copyright {
+     text-align: left;
+     padding: 0;
+     width: auto;
+     margin: -9rem 0 0 5%;
+   }
+
+   footer#footer-cube div.copyright p {
+     padding: 0 0 0.5rem 0;
+     font-size: 2.3rem;
+     font-family: "Brandon Text Medium";
+    }
+   }
+
 
     @media (min-width: 2300px) and (max-width: 5000px) {
       p {
@@ -2650,13 +3342,73 @@ ul.social-media p:hover, ul.social-media i:hover {
 
      /* END CHART SECTION*/
 
+
+      div.ch1-content article.challenge-intro {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      section#chapter1 div.ch1-content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      #chapter1 .content {
+        width: 45%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #chapter1 div.ch1-content div.challenge {
+        margin-top: 0;
+        position: relative;
+        left: 0;
+      }
+
       section#chapter1 article.challenge-intro img.chapter1-image {
-        width: 22%;
+        width: 25%;
         position: absolute;
         display: block;
-        left: 65%;
-        /* margin: -16rem auto 0 auto; */
+        right: 30rem;
+        margin: 0 0 50rem 0;
       }
+
+      section#chapter1 div.ch1-content div.solution {
+        margin: -3% 0 20% 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        left: -1.5rem;
+      }
+
+      section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+        font-size: 3rem;
+        line-height: 120%;
+      }
+
+
+       #chapter1 div.challenge span {
+         font-size: 2.4rem;
+       }
+
+       section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+         font-size: 3.3rem;
+         line-height: 120%;
+       }
+
+
+       section#chapter2 div.title-card {
+         margin-top: 20rem;
+         display: block;
+       }
 
       h1 {
         font-size: 5rem;
@@ -2721,15 +3473,6 @@ ul.social-media p:hover, ul.social-media i:hover {
       border: 0.5rem solid #FB7E6C;
     }
 
-      section#chapter1 div.content ol span, div.content ol li, div.content ul li{
-        font-size: 3.3rem;
-        line-height: 120%;
-      }
-
-      section#chapter1 div.ch1-content div.solution {
-        margin: 0 0 20% 5rem;
-        display: block;
-      }
 
       section div.title-card h2.section-title {
         font-size: 4rem;
@@ -3121,4 +3864,68 @@ ul.social-media p:hover, ul.social-media i:hover {
           font-size: 3rem;
           font-family: "Brandon Text Medium";
          }
+    }
+
+    @media (min-width: 2500px) {
+      div.ch1-content article.challenge-intro {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      section#chapter1 div.ch1-content {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      #chapter1 .content {
+        width: 45%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #chapter1 div.ch1-content div.challenge {
+        margin-top: 0;
+        position: relative;
+        left: 0;
+      }
+
+      section#chapter1 article.challenge-intro img.chapter1-image {
+        width: 70rem;
+        position: absolute;
+        display: block;
+        right: 33rem;
+        margin: 0 0 0 0;
+      }
+
+      section#chapter1 div.ch1-content div.solution {
+        margin: -3% 0 20% 0;
+        padding: 0;
+        display: block;
+        position: relative;
+        left: -1.5rem;
+      }
+
+      section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+        font-size: 3rem;
+        line-height: 120%;
+      }
+
+
+       #chapter1 div.challenge span {
+         font-size: 2.4rem;
+       }
+
+       section#chapter1 div.content ol span, div.content ol li, div.content ul li{
+         font-size: 3.3rem;
+         line-height: 120%;
+       }
+
     }
