@@ -1512,7 +1512,7 @@ article.contact-meat div.contact-copy1  {
 }
 
 h2.contact-title1 {
-  font-size: 5rem;
+  font-size: 4.3rem;
   font-family: 'Brandon Text Bold';
   line-height: 100%;
   color: #FFA856;
@@ -1556,6 +1556,7 @@ section#contact div.return-top {
 
 .return-top i.fas {
   color: #B0F0FD;
+  padding-bottom: 1rem;
 }
 
 /* FOOTER SMALL SIZE*/
@@ -1564,7 +1565,7 @@ footer#footer-cube  {
   margin: 0 auto -2rem auto;
   height: auto;
   display: flex;
-  padding: 2rem 0;
+  padding: 3rem 0;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
@@ -1849,7 +1850,8 @@ ul.social-media p:hover, ul.social-media i:hover {
   section#contact img.contact-graphic {
     width: 15%;
     position: relative;
-    left: 5%;
+    left: 0;
+    margin-top: 3rem;
   }
 
 
@@ -1868,7 +1870,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
 
   section#contact div.contact-copy1 h2.contact-title1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     padding-bottom: 1rem;
     font-family: 'Brandon Text Bold';
     line-height: 100%;
@@ -1877,7 +1879,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
 
   section#contact div.contact-copy1 h5.contact-text {
-    font-size: 3rem;
+    font-size: 2.8rem;
     padding-top: 1rem;
     line-height: 120%;
     /* padding-bottom: 1rem; */
@@ -2086,10 +2088,10 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
       article.intro-header div.contact-btns1 a.primary-btn {
-       width: 45rem;
-       height: 6.5rem;
-       padding: 2.5rem 0 0 0;
-       font-size: 2.2rem;
+        width: 40rem;
+        height: 6.3rem;
+        padding: 2.5rem 0 0 0;
+        font-size: 2.3rem;
      }
 
      section.project-info ul li {
@@ -2194,10 +2196,10 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
       div.contact-btns2 a.primary-btn {
-       width: 42rem;
-       height: 6.5rem;
-       padding: 2.5rem 0 0 0;
-       font-size: 2.4rem;
+        width: 40rem;
+        height: 6.3rem;
+        padding: 2.5rem 0 0 0;
+        font-size: 2.3rem;
      }
 
       section#chapter1 div.content ol span, div.content ol li, div.content ul li{
@@ -2467,7 +2469,7 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      section#contact div.contact-copy1 h2.contact-title1 {
-       font-size: 6.5rem;
+       font-size: 6rem;
        padding-bottom: 1rem;
      }
 
@@ -2492,8 +2494,14 @@ ul.social-media p:hover, ul.social-media i:hover {
        padding: 0;
      }
 
-     section#contact .return-top .return-link {
+     section#contact div.return-top a.return-link {
        margin: 0 auto -2rem auto;
+       font-size: 2.8rem;
+     }
+
+     section#contact div.return-top i.fas {
+       font-size: 3rem;
+       padding-bottom: 1rem;
      }
 
      section#contact div.contact-btns3 {
@@ -2502,10 +2510,10 @@ ul.social-media p:hover, ul.social-media i:hover {
     }
 
      section#contact div.contact-btns3 a.primary-btn {
-      width: 42rem;
-      height: 6.5rem;
+      width: 40rem;
+      height: 6.3rem;
       padding: 2.5rem 0 0 0;
-      font-size: 2.4rem;
+      font-size: 2.3rem;
     }
 
     section.both-personas img.maya-img, section.both-personas img.sheila-img {
@@ -2585,6 +2593,17 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding: 3rem 0 3rem 3rem;
       }
 
+      div.Starstuff-header img.logo-header {
+        width: 50%;
+      }
+
+      div.Starstuff-header h1.header-title {
+        font-size: 6.5rem;
+      }
+
+      div.Starstuff-header p.header-text {
+        font-size: 3.8rem;
+      }
       /*chart section*/
 
       div.chart-html h3.chart-title {
@@ -2657,12 +2676,14 @@ ul.social-media p:hover, ul.social-media i:hover {
         line-height: 100%;
       }
 
-      article.intro-header div.contact-btns1 a.primary-btn {
+      section#intro article.intro-header div.contact-btns1 a.primary-btn {
        width: 45rem;
-       height: 6.5rem;
-       padding: 2.5rem 0 0 0;
-       font-size: 2.2rem;
+       padding: 2.8rem 0 0 0;
+       font-size: 2.8rem;
+       height: 7.5rem;
+       border: 0.5rem solid #FB7E6C;
      }
+
 
      section.project-info ul li {
        font-size: 3.3rem;
@@ -2693,10 +2714,11 @@ ul.social-media p:hover, ul.social-media i:hover {
 
 
      div.contact-btns2 a.primary-btn {
-      width: 50rem;
       height: 7.5rem;
-      padding: 3rem 0 0 0;
+      padding: 2.8rem 0 0 0;
       font-size: 2.8rem;
+      width: 45rem;
+      border: 0.5rem solid #FB7E6C;
     }
 
       section#chapter1 div.content ol span, div.content ol li, div.content ul li{
@@ -2999,7 +3021,7 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      section#contact div.contact-copy1 h2.contact-title1 {
-       font-size: 9rem;
+       font-size: 8.5rem;
        padding-bottom: 1rem;
      }
 
@@ -3009,25 +3031,35 @@ ul.social-media p:hover, ul.social-media i:hover {
    }
 
      section#contact article.contact-meat div.contact-copy1 {
-       width: 45%;
+       width: 95rem;
        margin: -20rem auto 3rem auto;
      }
 
      section#contact img.contact-graphic {
-       width: 17%;
+       width: 16%;
        position: relative;
        left: 0;
      }
 
      section#contact div.contact-btns3 a.primary-btn {
-      width: 50rem;
-      height: 7.5rem;
-      padding: 3rem 0 0 0;
-      font-size: 2.8rem;
+       height: 7.5rem;
+       padding: 2.9rem 0 0 0;
+       font-size: 2.8rem;
+       width: 45rem;
+       border: 0.4rem solid #FB7E6C;
     }
 
     section#contact div.return-top {
       margin: 5rem 0 10rem 0;
+    }
+
+    section#contact div.return-top a.return-link {
+      font-size: 4rem;
+    }
+
+    section#contact div.return-top i.fas {
+      font-size: 4rem;
+      padding-bottom: 1.5rem;
     }
 
     section#chapter5 article.ab h3.pg-topic {

@@ -1221,7 +1221,7 @@ div.key-learnings .concl-sub {
 
 article.contact-meat div.contact-copy1  {
   text-align: left;
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -1234,6 +1234,7 @@ h2.contact-title1 {
 
 h5.contact-text {
   font-size: 2.3rem;
+  width: 100%;
   line-height: 120%;
   padding-bottom: 1rem;
   margin: 0 auto;
@@ -1257,40 +1258,36 @@ div.contact-btns3 .primary-btn {
   width: 43%;
 }
 
-div.return-top {
+section#contact div.return-top {
   display: flex;
   flex-direction: column-reverse;
   font-size: 2rem;
   text-align: center;
   align-items: center;
   padding: 1rem 0 2rem 0;
-  margin: 2rem 0 -5rem 0;
+  margin: 3rem 0 -10rem 0;
 }
 
 footer#footer-cube {
   margin: 0 auto;
   display: flex;
+  padding: 4rem 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-ul.social-media {
+footer#footer-cube ul.social-media {
+  width: 80%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0;
+  margin: -2rem auto 1rem auto;
 }
 
 ul.social-media li {
-  margin: -4rem 4% 1rem 4%;
-}
-
-ul.social-media a {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 ul.social-media p {
@@ -1301,21 +1298,25 @@ ul.social-media p {
 
 footer#footer-cube div.copyright p {
   text-align: center;
-  align-items: center;
-  border: none;
   font-size: 1.6rem;
   margin: 0 auto;
-  padding: 0 0 2rem 0;
+  padding: 0.5rem 0 3rem 0;
   width: 100%;
   display: block;
   font-family: "Brandon Text Regular";
-
-}
+ }
 }
 
 
 
 @media only screen and (min-width: 800px) {
+
+  article.contact-meat div.contact-copy1  {
+    text-align: left;
+    width: 48rem;
+    padding: 0;
+    margin: 0 auto;
+  }
 
   div.contact-btns1 .primary-btn {
     text-align: center;
@@ -1365,12 +1366,16 @@ footer#footer-cube div.copyright p {
     margin-bottom: 3rem;
   }
 
-  footer#footer-cube ul.social-media {
-    margin: 0 auto;
+  footer#footer-cube {
+    padding: 4rem 0 4rem 0;
   }
 
-  ul.social-media li {
-    margin: -2rem 3% 2rem 3%;
+  footer#footer-cube ul.social-media {
+    width: 60%;
+  }
+
+  footer#footer-cube li i {
+    font-size: 2.3rem;
   }
 
   footer#footer-cube div.copyright p {
@@ -1378,8 +1383,8 @@ footer#footer-cube div.copyright p {
     align-items: center;
     border: none;
     font-size: 1.6rem;
-    margin: -1rem auto 0 auto;
-    padding: 1rem 0 3rem 0;
+    margin: 0 auto;
+    padding: 0.5rem 0 3rem 0;
     width: 100%;
     display: block;
     font-family: "Brandon Text Regular";
