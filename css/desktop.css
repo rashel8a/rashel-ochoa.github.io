@@ -6,7 +6,7 @@
 @media (min-width: 1025px) and (max-width: 5000px) {
   div.container {
     width: 100%;
-    overflow: hidden !important;
+    overflow: hidden;
   }
 
   p {

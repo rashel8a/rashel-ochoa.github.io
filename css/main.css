@@ -2465,8 +2465,14 @@ body {
   color: #001F40;
   line-height: 120%;
 }
+/*
+div.main-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+} */
 
-div.container {
+div.main-container {
   height: 100vh;
   transform-style: preserve-3d;
   overflow-x: hidden;
@@ -2531,7 +2537,7 @@ header#top article.about-header div.about-intro-content {
   justify-content: center;
   top: -30%;
   position: relative;
-  /* z-index: 999; */
+  z-index: 999;
   text-align: center;
 }
 
@@ -2570,7 +2576,7 @@ article.about-middle-content div.intro-wrapper {
   padding: 7.5rem 0;
   position: relative;
   bottom: -8%;
-  /* z-index: 998; */
+  z-index: 998;
   background-color: #FDE8DE;
 }
 
@@ -3300,11 +3306,11 @@ div.copyrightt p {
       /* margin: 0; */
     }
 
-    /* div.container {
+    div.main-container {
       width: 100%;
       overflow: hidden;
       position: relative;
-    } */
+    }
 
     nav.navbar img.logo-size {
       width: 70%;
@@ -3368,7 +3374,7 @@ div.copyrightt p {
        /* background-color: #FDE8DE; */
      }
 
-    div.container {
+    div.main-container {
       height: 100vh;
       transform-style: preserve-3d;
       overflow: hidden;
@@ -3910,8 +3916,8 @@ nav.navbar {
     }
 
     .description {
-      font-size: 2.2rem;
-      line-height: 3.2rem;
+      font-size: 2rem;
+      line-height: 120%;
       padding: 0;
       color: #001F40;
     }
@@ -3929,14 +3935,14 @@ nav.navbar {
 
     .name {
       font-size: 7rem;
-      padding: 1rem 0 1rem 0;
+      padding: 0;
     }
 
-    .see-work {
+    div.see-work {
       z-index: 6;
       font-size: 2rem;
       padding-top: 0;
-      margin: -10rem 0 0 0;
+      margin: -14rem 0 0rem 0;
     }
 
   /* Project Section Desktop */
@@ -5673,16 +5679,16 @@ nav.navbar {
 
        @media screen and (min-width: 1025px) and (max-width: 5000px){
 
-       nav.navbar {
+       /* nav.navbar {
          position: relative;
          z-index: 1000;
-       }
-/*
-       div.container {
-         width: 100%;
-         overflow: hidden;
-         position: relative;
        } */
+
+       div.main-container {
+         width: 100%;
+         /* overflow: hidden; */
+         /* position: relative; */
+       }
 
        body {
          background-color: #FFFDFB;
@@ -5728,7 +5734,7 @@ nav.navbar {
          display: block;
        }
 
-       div.container {
+       div.main-container {
          height: 100vh;
          transform-style: preserve-3d;
          overflow: hidden;
@@ -5783,7 +5789,7 @@ nav.navbar {
 
        article.bg1::after {
          background-size: cover;
-         z-index: 500;
+         /* z-index: 500; */
          margin: -10% 0 0 0;
          background-repeat: no-repeat;
          background-image: url("../images/about/rashel-hero-resosm.png");
