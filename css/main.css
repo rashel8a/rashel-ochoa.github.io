@@ -2468,7 +2468,6 @@ body {
 
 div.container {
   height: 100vh;
-  border: 1px solid transparent;
   transform-style: preserve-3d;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -3301,11 +3300,11 @@ div.copyrightt p {
       /* margin: 0; */
     }
 
-    div.container {
+    /* div.container {
       width: 100%;
       overflow: hidden;
       position: relative;
-    }
+    } */
 
     nav.navbar img.logo-size {
       width: 70%;
@@ -5678,12 +5677,12 @@ nav.navbar {
          position: relative;
          z-index: 1000;
        }
-
+/*
        div.container {
          width: 100%;
          overflow: hidden;
          position: relative;
-       }
+       } */
 
        body {
          background-color: #FFFDFB;
