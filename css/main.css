@@ -341,7 +341,7 @@ div.desktop {
   display: block;
   position: fixed;
   right: 1.6rem;
-  z-index: 2;
+  z-index: 9998;
   -webkit-user-select: none;
   user-select: none;
   margin-top: -0.9rem;
@@ -356,7 +356,7 @@ div.desktop {
   left: -6px;
   cursor: pointer;
   opacity: 0; /* hide this */
-  z-index: 3; /* and place it over the hamburger */
+  z-index: 9999; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
@@ -370,7 +370,7 @@ div.desktop {
   position: relative;
   background: #FB7E6C;
   border-radius: .5rem;
-  z-index: 2;
+  z-index: 9998;
   transform-origin: .4rem 0rem;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -2454,10 +2454,10 @@ a {
 /***
 /***
 /*** BIOGRAPHY MOBILE***/
-nav.navbar {
+/* nav.navbar  {
   position: relative;
-  z-index: 1000;
-}
+  z-index: 9999;
+} */
 
 body {
   background-color: #FFFDFB;
@@ -2471,14 +2471,7 @@ div.main-container {
   transform-style: preserve-3d;
   overflow-x: hidden;
   overflow-y: scroll;
-  position: relative;
-  z-index: 1;
   perspective: 2px;
-}
-
-#navbar-toggle {
-  /* position: fixed; */
-
 }
 
 section.section-wrappers article.section {
@@ -2500,7 +2493,7 @@ section.section-wrappers article.section-2 {
 
 main {
   margin: 0 auto;
-  z-index: 1800;
+  /* z-index: 1800; */
   position: relative;
   top: 7rem;
 }
@@ -2526,7 +2519,7 @@ article.parallax::after {
 
 article.bg1::after {
   background-size: cover;
-  z-index: 500;
+  /* z-index: -1; */
   background-repeat: no-repeat;
   background-image: url("../images/about/rashel-hero-resosm.png");
 }
@@ -2538,17 +2531,17 @@ header#top article.about-header div.about-intro-content {
   justify-content: center;
   top: -30%;
   position: relative;
-  z-index: 999;
+  /* z-index: 999; */
   text-align: center;
 }
 
 section.section-wrappers article.about-header h1.about-name {
   font-size: 3.1rem;
-  z-index: 999;
+  /* z-index: 999; */
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  z-index: 1300;
+  /* z-index: 1300; */
   font-family: "Brandon Text Black", sans-serif;
 }
 
@@ -2557,7 +2550,7 @@ p.about-subtitle {
   font-size: 1.8rem;
   width: 95%;
   margin: 0 auto;
-  z-index: 1300;
+  /* z-index: 1300; */
   position: relative;
   padding-top: 0.3rem;
 }
@@ -2577,7 +2570,7 @@ article.about-middle-content div.intro-wrapper {
   padding: 7.5rem 0;
   position: relative;
   bottom: -8%;
-  z-index: 998;
+  /* z-index: 998; */
   background-color: #FDE8DE;
 }
 
@@ -2600,7 +2593,7 @@ img.squiggles-graphic {
   position: absolute;
   top: 82.5%;
   left: 62.5%;
-  z-index: 999;
+  /* z-index: 999; */
 }
 
 div.intro-text-section {
@@ -2618,7 +2611,7 @@ section.about-story-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1000;
+  /* z-index: 1000; */
   justify-content: center;
 }
 
@@ -2695,7 +2688,7 @@ div.collage-wrapper img.collage-me-mobile {
 
   main {
     margin: 0 auto;
-    z-index: 1800;
+    /* z-index: 1800; */
     position: relative;
     top: 5rem;
   }
@@ -2707,12 +2700,12 @@ div.collage-wrapper img.collage-me-mobile {
     position: absolute;
     top: 81%;
     left: 70%;
-    z-index: 1000;
+    /* z-index: 1000; */
   }
 
   main {
     margin: 0 auto;
-    z-index: 1800;
+    /* z-index: 1800; */
     position: relative;
     top: 4.5rem;
   }
