@@ -571,7 +571,7 @@ a.secondary-btn {
     line-height: 3.3rem;
   }
 
-  .see-work {
+  div.see-work {
     grid-area: work;
     font-size: 2rem;
     padding-top: 7rem;
@@ -3942,7 +3942,7 @@ nav.navbar {
       z-index: 6;
       font-size: 2rem;
       padding-top: 0;
-      margin: -14rem 0 0rem 0;
+      margin: -8rem 0 0rem 0;
     }
 
   /* Project Section Desktop */
@@ -4013,7 +4013,7 @@ nav.navbar {
     article.feat-project-text a.primary-btn {
       padding: 1.5rem 0 0 0;
       width: 55%;
-      border: .4rem solid #FB7E6C;
+      border: .3rem solid #FB7E6C;
     }
 
     .primary-btn:hover {
@@ -4152,7 +4152,7 @@ nav.navbar {
       }
 
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 2rem;
         padding-top: 0;
@@ -4222,18 +4222,22 @@ nav.navbar {
         z-index: 1;
         margin-left: 5rem;
       }
+
+      div.contact-btns a.primary-btn {
+        width: 27rem;
+      }
     }
 
     @media (min-width: 1440px) and (max-width: 1699px){
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 2.3rem;
         padding-top: 0;
         margin: -13rem 0 0 0;
       }
 
-      .see-work i {
+      div.see-work i {
         padding-top: 0.5rem;
         font-size: 3rem;
       }
@@ -4527,14 +4531,14 @@ nav.navbar {
         margin-left: 5rem;
       }
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 2.7rem;
         padding-top: 0;
         margin: -22rem 0 0 0;
       }
 
-      .see-work i {
+      div.see-work i {
         padding-top: 0.5rem;
         font-size: 3rem;
       }
@@ -4779,14 +4783,14 @@ nav.navbar {
         margin-left: 5rem;
       }
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 3rem;
         padding-top: 0;
         margin: -22rem 0 0 0;
       }
 
-      .see-work i {
+      div.see-work i {
         padding-top: 0.5rem;
         font-size: 3rem;
       }
@@ -5041,14 +5045,14 @@ nav.navbar {
         margin-left: 5rem;
       }
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 3.3rem;
         padding-top: 0;
         margin: -20rem 0 0 0;
       }
 
-      .see-work i {
+      div.see-work i {
         padding-top: 0.5rem;
         font-size: 3.5rem;
       }
@@ -5334,14 +5338,14 @@ nav.navbar {
         right: 30rem;
       }
 
-      .see-work {
+      div.see-work {
         z-index: 6;
         font-size: 4.3rem;
         padding-top: 0;
         margin: -20rem 0 0 0;
       }
 
-      .see-work i {
+      div.see-work i {
         padding-top: 0.5rem;
         font-size: 4.5rem;
       }
@@ -5588,11 +5592,13 @@ nav.navbar {
     }
 
     div.contact-btns .primary-btn {
-      width: 30rem;
+      width: 42%;
+      padding: 1.6rem 0 0 0;
+      border: .2rem solid #FB7E6C;
     }
 
     div.contact-btns a.get-in-touch {
-      margin-right: 2rem;
+      margin-right: 1rem;
     }
 
     div.return-top .return-link {
