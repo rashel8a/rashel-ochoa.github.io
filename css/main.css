@@ -543,6 +543,7 @@ a.secondary-btn {
   div.see-work i {
     color: #FB7E6C;
     display: block;
+    padding-top: 0.3rem;
   }
 
   .hi {
@@ -1034,9 +1035,10 @@ a {
   }
 
   .mobile-display {
-    max-width: 100%;
+    width: auto;
     padding: 0;
     margin-top: 3.5rem;
+    /* border: 1px solid red; */
   }
 
   /* INTRO SECTION MOBILE*/
@@ -1091,7 +1093,7 @@ a {
   }
 
   article.intro-header div.content {
-    margin: 0 auto;
+    margin: -7rem auto 0 auto;
   }
 
   div.contact-btns1 {
@@ -2352,11 +2354,31 @@ a {
     #main-nav {
       margin: -10rem 0 0 48.2rem;
     }
+
+    .mobile-display {
+      width: auto;
+      /* height: 40vh; */
+      padding: 0;
+      margin-top: 3.5rem;
+    }
   }
 
   @media screen and (min-width: 480px) {
+
     #main-nav {
       margin: -10rem 0 0 41.7rem;
+    }
+
+    .Starstuff-display {
+      width: 105%;
+      margin-left: -1rem;
+      display: block;
+      padding: 0;
+      margin-top: 3.5rem;
+    }
+
+    .mobile-display {
+      display: none;
     }
 
     footer#footer-cube{
@@ -2440,6 +2462,30 @@ a {
   @media screen and (min-width: 540px) {
     #main-nav {
       margin: -10rem 0 0 35.6rem;
+    }
+
+    /* .Starstuff-display {
+      width: 100%;
+      display: block;
+      padding: 0;
+      margin-top: 3.5rem;
+    }
+
+    .mobile-display {
+      display: none;
+    } */
+  }
+
+  @media screen and (min-width: 560px) {
+    .Starstuff-display {
+      width: 100%;
+      display: block;
+      margin: 3.5rem auto 0 auto;
+      padding: 0;
+    }
+
+    .mobile-display {
+      display: none;
     }
   }
 
