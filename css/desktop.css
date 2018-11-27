@@ -21,9 +21,9 @@
 
   /* HEADER DESKTOP SECTION */
 
-  section #intro {
+  section#intro {
     width: 100%;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
   }
 
   ul .project-1 a {
