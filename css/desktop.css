@@ -9,9 +9,14 @@ div.container, div.contain-roam {
   overflow: hidden;
 }
 
+div.contain-roam ul, div.container ul {
+  margin-left: 1rem;
+}
+
 
 div.contain-roam div.content {
   width: 58%!important;
+  margin: 0 auto;
 }
 
 img.img-frustrations {
@@ -302,8 +307,8 @@ div.p2-section h5.p-text, div.p1-section h5.p-text, div.p3-section h5.p-text  {
   margin-left: 0rem;
  }
 
- .companal1 .compimg {
-   display: block;
+ div.companal1 img.compimg {
+   display: block!important;
    width: 25%;
    margin-left: 0;
  }
@@ -1258,7 +1263,7 @@ div.iteratey section.iterations-snippet header.iteration-title div.it-caption {
   width: 100%;
 }
 
-div.iteratey section.iterations-snippet header.iteration-title {
+div.contain-roam div.iteratey section.iterations-snippet header.iteration-title {
   display: flex;
   flex-direction: row!important;
   align-items: flex-start;
@@ -1274,14 +1279,14 @@ section.iterations-snippet div.it-caption p.text-box {
   padding: 0;
 }
 
-section.iterations-snippet div.it-caption h3.it {
-  padding: 0 0 0 0.5rem!important;
+div.iteratey section.iterations-snippet div.it-caption h3.it {
+  padding: 0!important;
   /* width: auto; */
   line-height: 120%;
-  /* margin: 0!important; */
+  margin: 0!important;
 }
 
-section.iterations-snippet span.number-circle {
+div.iteratey section.iterations-snippet span.number-circle {
   margin: 0 1rem 0 -1rem!important;
 }
 
@@ -1558,7 +1563,7 @@ section.iterations-snippet div.it-caption p.text-box {
    }
 
    div.brand-quote img.quote-img {
-     width: 15%!important;
+     width: 10%!important;
      /* margin-right: 20rem!important; */
    }
 
@@ -1577,11 +1582,11 @@ section.iterations-snippet div.it-caption p.text-box {
      width: 100%!important;
    }
 
-   section.iterations-snippet span.number-circle {
+   div.iteratey section.iterations-snippet span.number-circle {
      margin-bottom: 3rem!important;
    }
 
-   section.iterations-snippet div.edit-images img.edit-plan {
+   div.iteratey section.iterations-snippet div.edit-images img.edit-plan {
      margin-top: 2rem!important;
    }
 
@@ -1919,7 +1924,7 @@ section.iterations-snippet div.it-caption p.text-box {
    }
 
 
-  section.it-snippet1 header.it-list div.number-circle, section.iterations-snippet span.number-circle {
+  section.it-snippet1 header.it-list div.number-circle, div.iteratey section.iterations-snippet span.number-circle {
     padding: 1.85rem 0 0 0!important;
     margin: 0.3rem 0.5rem 0 0rem;
     width: 4.2rem!important;
@@ -2044,7 +2049,7 @@ div.wrapper img.screen-b {
    /* SUVEY CHART END 1600px*/
  }
 
- @media (min-width: 1700px) and (max-width: 1799px) {
+ @media (min-width: 1700px) {
    div.desktop ul.no a.off {
      font-size: 3rem;
    }
@@ -2194,7 +2199,7 @@ div.wrapper img.screen-b {
 
    section#intro article.intro-new a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
      font-size: 2.3rem!important;
-     padding: 1.8rem 0 2.1rem 0;
+     padding: 2.4rem 0 3.2rem 0;
    }
 
    section#intro {
@@ -2302,6 +2307,7 @@ div.wrapper img.screen-b {
  @media (min-width: 1800px)  {
    div.Roamr-header div.header-content h1.header-title {
      margin-top: 3rem;
+     font-size: 5.2rem!important;
    }
 
    article.person section.twot{
@@ -2398,7 +2404,7 @@ div.wrapper img.screen-b {
      font-size: 3rem!important;
    }
 
-   p, p.text-box {
+   div.contain-roam p, div.contain-roam p.text-box {
      font-size: 2.8rem!important;
      line-height: 120%;
    }
@@ -2438,6 +2444,15 @@ div.wrapper img.screen-b {
 @media (min-width: 2000px)  {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
+  }
+
+  article.challenge-intro1 {
+    margin: 0!important;
+    padding: 0;
+    display: flex;
+    flex-direction: row!important;
+    align-items: flex-start;
+    width: 90%!important;
   }
 
   div.Roamr-header div.header-content h1.header-title {
@@ -2569,7 +2584,7 @@ div.wrapper img.screen-b {
      font-size: 3.3rem!important;
    }
 
-   ul li {
+   div.contain-roam ul li {
      font-size: 2.9rem!important;
      padding-bottom: 1rem!important;
    }
@@ -2592,6 +2607,11 @@ div.wrapper img.screen-b {
 @media (min-width: 2300px) {
   div.contain-roam div.style-wrapper a.style-button {
     font-size: 3.4rem!important;
+  }
+
+  div.contain-roam p, div.contain-roam p.text-box {
+    font-size: 3.6rem!important;
+    line-height: 120%;
   }
 
   section.project-info {
@@ -2675,7 +2695,7 @@ div.wrapper img.screen-b {
   }
 
   section#intro a.btn-solo, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
-    width: 55rem!important;
+    width: 50rem!important;
     padding: 3.2rem 0 3.7rem 0!important;
         margin-top: 7.5rem!important;
   }
@@ -2692,7 +2712,7 @@ div.wrapper img.screen-b {
     font-size: 4.6rem!important;
   }
 
-  section h3.pg-topic {
+  div.contain-roam section h3.pg-topic {
     font-size: 4.2rem!important;
   }
 
@@ -2752,7 +2772,7 @@ div.wrapper img.screen-b {
   }
 
   div.typography, div.pg, article.pg {
-    margin: 22rem auto 0 auto!important;
+    /* margin: 22rem auto 0 auto!important; */
   }
 
   div.title-new {
@@ -2768,7 +2788,7 @@ div.wrapper img.screen-b {
        font-size: 3.8rem!important;
      }
 
-     section.it-snippet1 header.it-list div.number-circle, section.iterations-snippet span.number-circle {
+     section.it-snippet1 header.it-list div.number-circle, div.iteratey section.iterations-snippet span.number-circle {
        padding: 2.6rem 0 0 0!important;
        margin: 0.3rem 0.5rem 0 0rem;
        width: 5.5rem!important;
@@ -2790,10 +2810,10 @@ div.wrapper img.screen-b {
         margin: 0 0 0 10rem!important;
       }
 
-     ul li {
+     div.contain-roam ul li {
        font-size: 3.6rem!important;
        padding-bottom: 1rem!important;
-       margin-top: 2rem!important;
+       margin-top: 1rem!important;
      }
 
      section#chapter4 div.typography div.sg {
@@ -2893,11 +2913,12 @@ div.wrapper img.screen-b {
 
 
 @media (min-width: 2500px) {
-  section#intro a.btn-solo, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
+  section#intro article.intro-new a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
     width: 60rem!important;
-    padding: 3.6rem 0 4.2rem 0!important;
-    font-size: 3.3rem!important;
+    padding: 3.8rem 0 4.5rem 0!important;
+    font-size: 3.4rem!important;
     border-radius: 50rem;
+    border: 0.5rem solid #FB7E6C;
     margin-top: 7.5rem!important;
   }
 
@@ -2955,7 +2976,7 @@ div.wrapper img.screen-b {
     font-size: 4.2rem!important;
   }
 
-  section.it-snippet1 header.it-list div.number-circle, section.iterations-snippet span.number-circle {
+  section.it-snippet1 header.it-list div.number-circle, div.iteratey section.iterations-snippet span.number-circle {
     padding: 3.2rem 0 0 0!important;
     margin: 0.3rem 1.5rem 0 0rem!important;
     width: 6.5rem!important;
@@ -3200,9 +3221,9 @@ div.wrapper img.screen-b {
 
   /* HEADER DESKTOP SECTION */
 
-  section#intro {
+  div.contain-roam section#intro {
     width: 100%;
-    margin: 10rem auto 0 auto;
+    margin: 5rem auto 0 auto!important;
   }
 
   ul .project-1 a {
@@ -3230,6 +3251,18 @@ div.wrapper img.screen-b {
     display: none;
   }
 
+  div.container header.iteration-title div.it-caption {
+    display: flex;
+    flex-direction: row;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+
+  /* div.container header.iteration-title div.it-caption h3.it {
+    padding: 0!important;
+    margin: 0!important;
+  } */
+
   .Starstuff-display {
     width: 100%;
     display: block;
@@ -3242,9 +3275,8 @@ div.wrapper img.screen-b {
     flex-direction: row;
     align-items: center;
    margin: 3rem auto 15rem auto;
-   width: 80%!important;
+   width: 85%!important;
    justify-content: space-between;
-   border: 2px solid red;
  }
 
   div.contact-btns1 a.primary-btn {
@@ -3327,13 +3359,12 @@ div.wrapper img.screen-b {
     padding: 0!important;
   }
 
-  div.contact-btns1 {
-    width: 85%;
+  div.container article.intro-header div.content {
+    width: 70%!important;
   }
 
-  div.container div.content {
-    width: 80%;
-    margin: 0 auto;
+  div.contact-btns1 {
+    width: 85%;
   }
 
   section .pg-label {
@@ -3368,22 +3399,22 @@ div.wrapper img.screen-b {
   /* CHAPTER 1 DESKTOP SECTION */
 
 
-  div.ch1-content article.challenge-intro {
+  div.container div.ch1-content article.challenge-intro {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 0!important;
     padding: 0;
     align-items: flex-start;
     justify-content: space-between;
   }
 
-  section#chapter1 div.ch1-content {
-    width: 90%;
-    margin: 0 auto;
+  div.container section#chapter1 div.ch1-content {
+    width: 80%;
+    margin: 0 auto!important;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center!important;
   }
 
   #chapter1 .content {
@@ -3534,6 +3565,14 @@ div.wrapper img.screen-b {
    margin-right: 5rem;
  }
 
+ div.container article.ab div.content p.text-box {
+   font-size: 2rem!important;
+ }
+
+ div.container article.ab div.test-wrapper p.descs {
+   padding-top: 1rem;
+ }
+
  div.chart-html img.chart-mobile-img {
    width: 30%;
    display: flex;
@@ -3606,19 +3645,20 @@ div.callout {
  div.magnify {
    display: flex;
    align-items: center;
+   justify-content: space-between!important;
    width: 80%;
    margin: 0 auto;
  }
 
- .magnify .content {
+ div.magnify div.content {
    width: 50%;
    padding: 0;
-   margin-right: 7rem;
+   margin-right: 7rem!important;
  }
 
- .magnify img.img-frustrations {
+ div.magnify img.img-frustrations {
    display: block;
-   margin: 0 auto;
+   margin: 0!important;
    width: 35%;
  }
 
@@ -3630,15 +3670,15 @@ div.callout {
    display: flex;
    flex-direction: row-reverse;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between!important;
    width: 80%;
    margin: 0 auto;
  }
 
- .audience .content {
+ div.audience div.content {
    width: 50%;
    padding: 0;
-   margin-left: 7rem;
+   margin-left: 7rem!important;
  }
 
  div.audience img.users {
@@ -3650,20 +3690,23 @@ div.callout {
  div.companal {
    display: flex;
    align-items: center;
+   justify-content: space-between!important;
    width: 80%;
    margin: 0 auto;
  }
 
-.companal div.content {
+div.companal div.content {
   width: 60%;
   padding: 0;
-  margin-left: 0rem;
+  margin-left: 0!important;
+  margin-right: 7rem!important;
  }
 
- .companal .compimg {
-   display: block;
+ div.container div.companal img.compimg {
+   display: block!important;
    width: 25%;
    margin-left: 0;
+   margin-right: 0!important;
  }
 
  .compimgh {
@@ -3787,9 +3830,13 @@ div.callout {
 
  /* CHAPTER 3 DESKTOP */
 
-#chapter3 div.content {
-  /* width: 50%; */
-  margin: 0 auto;
+div.container #chapter3 article.pg div.content {
+  width: 50%;
+  margin: 0 auto 5rem auto!important;
+}
+
+div.container div.brand-quote {
+  margin-top: 5rem!important;
 }
 
  #chapter3 .chapter {
@@ -3882,15 +3929,6 @@ div.callout {
    margin: 7rem 0 3rem 0;
  }
 
-  /* a.style-button {
-    font-family: 'Brandon Grotesque Black';
-    font-size: 1.8rem;
-    color: #1C46C5;
-    display: inline-block;
-    margin: 5rem auto;
-    text-align: center;
-  } */
-
  .prototype .text-box a {
    color: #FB7E6C;
  }
@@ -3917,18 +3955,20 @@ div.callout {
    margin: 0 auto 15rem auto;
  }
 
-.it-title h3.it-text {
+div.container div.it-title h3.it-text {
    font-size: 2rem;
    font-weight: 600;
-   padding: 0.5rem 3rem;
+   padding: 0rem 3rem;
    display: block;
  }
 
- div.it-title div.number-circle {
+ /* EDIT NEW*/
+
+ div.container div.it-title div.number-circle, div.container section.iterations-snippet div.it-caption span.number-circle {
    background-color: #6534FF;
    border-radius: 50%;
    padding: 1.5rem 0 0 0;
-   margin: 0.5rem 0 0 -0.5rem;
+   margin: 0 0.75rem 0 -0.75rem;
    color: #FFFDFB;
    width: 3rem;
    height: 3rem;
@@ -3997,13 +4037,17 @@ div.brand-quote h2.main-quote {
   font-family: 'Brandon Text Medium Italic', cursive;
   font-size: 3rem;
   line-height: 130%;
-  margin-top: 0rem;
+  /* margin-top: 0rem; */
+  width: 85%;
+  margin: 1rem auto 0 auto!important;
 }
 
 .brand-quote h2.by {
   font-weight: bolder;
   padding-top: 0.5rem;
-  font-size: 3rem;
+  width: 85%!important;
+  margin: 1rem auto 0 auto!important;
+  font-size: 3.2rem;
   font-family: 'Brandon Text Medium Italic', cursive;
 }
 
@@ -4057,7 +4101,7 @@ section#chapter4 div.typography {
 
 #chapter4 div.typography div.type-content {
   float: left;
-  width: 50%;
+  width: 40%;
   display: inline-block;
   margin-left: 3rem;
 }
@@ -4256,7 +4300,7 @@ article.testing div.content {
 
 article.testing {
   display: flex;
-  margin: 0 auto;
+  margin: 15rem auto 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4393,6 +4437,7 @@ section.rogue-img p.test-img-text {
 
 /* ITERATIONS SECOND SECTION*/
 
+
 section.iterations-snippet {
   display: flex;
   flex-direction: column;
@@ -4407,33 +4452,82 @@ header.iteration-title {
   align-items: flex-start;
   width: 100%;
 }
-
+/*
 header.iteration-title span.number-circle {
   background-color: #6534FF;
   border-radius: 50%;
   padding: 1.5rem 0 0 0;
-  margin: 0rem 0 0 -0.5rem;
+  margin: 0.3rem 1rem 0 -0.5rem;
   color: #FFFDFB;
   width: 3rem;
-  height: 3rem;
+  height: 2.8rem;
   font-family: 'Brandon Text Medium', sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-header.iteration-title h3.it {
+section.iterations-snippet header.iteration-title h3.it {
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.7rem 0 0 0.5rem;
+  padding: 0.7rem 0 0 0rem;
   margin-bottom: 0;
+  margin: 0!important;
   display: block;
   text-align: left;
   width: 100%;
   font-family: "Brandon Text Medium";
+} */
+
+/* EDIT OLD */
+
+/* div.iterations-header {
+  margin-bottom: 5rem;
+  text-align: center;
+} */
+
+section.iterations-snippet div.it-caption {
+  text-align: left;
+  margin-left: -3rem;
+}
+
+div.container section.iterations-snippet header.iteration-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  justify-content: center;
+}
+
+div.container section.iterations-snippet header.iteration-title p.text-box {
+  padding: 0;
+  font-size: 2rem!important;
+}
+
+
+
+section.iterations-snippet header.iteration-title div.it-caption{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start!important;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+div.container section.iterations-snippet div.it-caption h3.it {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0!important;
+  margin: 0!important;
+  line-height: 120%;
+  display: block;
+}
+
+header.iteration-title h3.it {
+  margin: 0;
 }
 
 header.iteration-title p.text-box {
-  width: 80%;
-  margin-left: 3.5rem;
+  /* width: 80%; */
+  /* margin-left: 3.5rem; */
   margin-top: -0.5rem;
   text-align: left;
 }
@@ -4541,13 +4635,13 @@ section.cuatro header.iteration-title, section.cinco header.iteration-title, sec
   left: 1rem;
 }
 
-article.final-p {
+div.container article.final-p {
   margin: 0 auto;
 }
 
-article.final-p .content {
-  margin-left: 13%;
-  width: 35%;
+div.container article.final-p .content {
+  margin-left: 13%!important;
+  width: 35%!important;
   text-align: left;
 }
 
@@ -4655,9 +4749,13 @@ div.contact-btns2 .primary-btn {
   display: inline-block;
 }
 
-#chapter6 .concl {
-  width: 55%;
-  margin: 0 auto 5rem auto;
+div.container section#chapter6 article.concl {
+  width: 55%!important;
+  margin: 0 auto 5rem auto!important;
+}
+
+div.container section#chapter6 article.concl div.content {
+  width: 100%!important;
 }
 
 div.key-learnings .concl-heading {
@@ -4831,6 +4929,35 @@ ul.social-media p:hover, ul.social-media i:hover {
     margin: 0;
   }
 
+  section#chapter5 section.iterations-snippet div.it-caption {
+    padding: 0!important;
+    /* margin: 0; */
+  }
+
+  div.container section#chapter6 article.concl div.content {
+    width: 83%!important;
+    margin: 0 auto;
+  }
+
+  div.container section.iterations-snippet header.iteration-title p.text-box {
+    padding: 0.75rem 0 0 0;
+    font-size: 2rem!important;
+    line-height: 120%;
+  }
+
+  div.container section.iterations-snippet header.iteration-title {
+    padding: 0!important;
+  }
+
+  div.container article.person {
+    width: 90%;
+  }
+
+  div.companal img.compimg {
+    display: block!important;
+  }
+
+
   div.contact-btns1 {
     display: flex;
     flex-direction: row;
@@ -4838,7 +4965,6 @@ ul.social-media p:hover, ul.social-media i:hover {
    margin: 3rem auto 15rem auto;
    width: 73%!important;
    justify-content: space-between;
-   border: 2px solid red;
  }
 
   section#chapter1 article.introduction div.solution {
@@ -4865,9 +4991,34 @@ ul.social-media p:hover, ul.social-media i:hover {
       display: flex;
       flex-direction: row;
       align-items: center;
-     margin: 3rem auto 15rem auto;
+     margin: 5rem auto 15rem auto;
      width: 63%!important;
      justify-content: space-between;
+   }
+
+   article.iteration-one div.iterations-header {
+     width: 75%;
+     margin: 0 auto 5rem auto;
+   }
+
+   /* div.container article.pg div.content {
+     width: 55%!important;
+   } */
+
+   div.container div.brand-story div.brand-quote img.quote-img {
+     width: 10%!important;
+     padding-right: 1rem;
+     margin-left: 3rem!important;
+     margin-top: 3rem!important;
+   }
+
+   div.container h2.by {
+     width: 75%;
+     margin: 0 auto;
+   }
+
+   div.container #chapter6 .concl {
+     width: 80%;
    }
 }
 
@@ -4876,18 +5027,93 @@ ul.social-media p:hover, ul.social-media i:hover {
 
 @media (min-width: 1440px) and (max-width: 1699px) {
 
-  div.block div.box-1 h4, div.block div.box-2 h4 {
-    font-size: 2.4rem;
+  div.block div.box-1 h4, div.block div.box-2 h4, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box {
+    font-size: 2.4rem!important;
+    line-height: 120%!important;
+  }
+
+  div.contain-roam section#intro article.intro-new {
+    margin-top: 0!important;
+  }
+
+  div.contain-roam article.abt3 div.wrapper p.descs, article.abt3 div.test-summ p.descs, article.abt2 div.sec-three p.text-box, article.abt2 div.content p.text-box, article.abt2 div.wrapper p.descs, div.contain-roam header.iteration-title div.it-caption p.text-box, p.text-box  {
+    font-size: 2.4rem!important;
+  }
+
+  div.block1 div.box-1 h4, div.block1 div.box-2 h4, div.chart-html1 h3.chart-subtitle, div.chart-html1 h5.p-text, div.chart-html1 div.stat h5.text-stat{
+    font-size: 2.4rem!important;
+  }
+
+  div.chart-html1 h5.p-text {
+    font-size: 2.4rem!important;
+  }
+
+  div.contain-roam article.abt2 div.wrapper h4.b-screen, div.sec-three div.image-title h3.numbers  {
+    font-size: 3.5rem!important;
+    padding-bottom: 1rem!important;
+  }
+
+  div.contain-roam div.key-learnings h3.concl-sub, div.contain-roam div.key-learnings h3.concl-heading, div.contain-roam div.key-learnings h3.concl-subhead, article.abt3 div.wrapper h4.b-screen {
+    font-size: 3rem!important;
+  }
+
+  div.contain-roam article.abt3 div.test-size div.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start!important;
+    justify-content: center!important;
+    margin: 0 auto;
+  }
+
+  div.contain-roam article.abt2 div.wrapper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap!important;
+  }
+
+  article.abt2 div.wrapper img.screen-b {
+    width: 50%!important;
+  }
+
+  article.abt2 div.wrapper p.screen-subtitle, article.abt3 div.wrapper p.screen-subtitle {
+    font-size: 2.4rem!important;
+  }
+
+  div.sec-three img.test-design {
+    width: 50%!important;
+  }
+
+  article.abt2 div.sec-three {
+    margin-top: 10rem!important;
+  }
+
+  /* div.contain-roam div.content {
+    width: 58%!important;
+  } */
+
+  div.container section#intro {
+    margin: 10rem auto 0 auto!important;
+  }
+
+  div.container section#chapter6 article.concl div.content {
+    width: 80%!important;
+    margin: 0 auto;
+  }
+
+  div.brand-quote h2.main-quote {
+    font-size: 3.5rem;
   }
 
   div.contact-btns1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-   margin: 3rem auto 15rem auto;
+   margin: 5rem auto 15rem auto;
    width: 70%!important;
    justify-content: space-between;
-   border: 2px solid red;
  }
 
     article h2.pg-label, div h3.pg-label {
@@ -4933,7 +5159,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
   div.iterations-list section.uno header.iteration-title p.text-box {
     font-size: 2.5rem;
-    margin: 0 0 0 3.6rem;
+    margin: 0;
   }
 
   div.iterations-list header.iteration-title h3.it {
@@ -4988,10 +5214,10 @@ ul.social-media p:hover, ul.social-media i:hover {
 
  /* END CHART SECTION*/
 
- div.ch1-content article.challenge-intro {
+ div.container div.ch1-content article.challenge-intro {
    display: flex;
    flex-direction: row;
-   margin: 0;
+   margin: 0!important;
    padding: 0;
    align-items: flex-start;
    justify-content: space-between;
@@ -5115,8 +5341,8 @@ ul.social-media p:hover, ul.social-media i:hover {
     margin-left: 0rem;
    }
 
-   .companal .compimg {
-     display: block;
+   div.companal img.compimg {
+     display: block!important;
      width: 20%;
      margin-right: 5rem;
    }
@@ -5233,16 +5459,13 @@ ul.social-media p:hover, ul.social-media i:hover {
     font-size: 2.3rem;
   }
 
-  section.iterations-snippet section.rogue-img h3.button-title {
+  div.container section.iterations-snippet section.rogue-img h3.button-title {
     font-size: 3.8rem;
+    margin-top: 3rem;
   }
 
   section.tres img.right-side {
     margin: 3rem auto 0 auto;
-  }
-
-  section#chapter5 div.iterations-list section.cinco .number-circle, section#chapter5 div.iterations-list section.seis .number-circle {
-    margin: 1rem 1rem 0 0;
   }
 
   /* FOOTER*/
@@ -5295,15 +5518,6 @@ ul.social-media p:hover, ul.social-media i:hover {
     font-family: "Brandon Text Regular";
    }
 
-   div.contact-btns1 {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-    margin: 3rem auto 15rem auto;
-    width: 80%;
-    justify-content: space-between;
-  }
-
    div.contact-btns1 a.primary-btn {
      width: 33rem!important;
      padding: 2.2rem 0 3rem 0;
@@ -5318,6 +5532,19 @@ ul.social-media p:hover, ul.social-media i:hover {
         line-height: 120%;
       }
 
+      div.chart-html div.chart-wrap h5.p-text {
+        font-size: 2.7rem!important;
+        /* width: 65%!important; */
+      }
+
+      div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box {
+        font-size: 2.7rem!important;
+      }
+
+      article.survey div.content {
+        width: 50%!important;
+      }
+
       div.title-card {
         margin: 25rem auto 15rem auto;
         width: 90%;
@@ -5330,13 +5557,25 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding: 3rem 0 3rem 3rem;
       }
 
-      div.ch1-content article.challenge-intro {
+      div.container div.ch1-content article.challenge-intro {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: 0!important;
         padding: 0;
         align-items: flex-start;
         justify-content: space-between;
+      }
+
+      div.container div.iterations-list div.it-caption span.number-circle, section.it-snippet div.number-circle {
+        width: 4.5rem!important;
+        height: 4.4rem!important;
+        padding: 2.2rem 0 0 0!important;
+        margin: 0 0 0 0!important;
+        font-size: 2.6rem!important;
+      }
+
+      div.container section.iterations-snippet header.iteration-title div.it-caption span.number-circle, section.it-snippet div.number-circle {
+        margin: 0.3rem 1rem 0 -3rem !important;
       }
 
       section#chapter1 div.ch1-content {
@@ -5360,18 +5599,21 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding-top: 1rem;
       }
 
-      #chapter1 div.ch1-content div.challenge {
-        margin-top: 0;
+      section#chapter1 div.ch1-content article.challenge-intro div.challenge {
+        margin-top: 0!important;
         position: relative;
+        margin-right: 10rem!important;
         left: 0;
+        width: 50%!important;
       }
+
 
       section#chapter1 article.challenge-intro img.chapter1-image {
         width: 60rem;
         position: absolute;
         display: block;
         right: 18rem;
-        margin: 0 0 0 0;
+        margin: 0 0 0 10rem!important;
       }
 
       section#chapter1 div.ch1-content div.solution {
@@ -5380,6 +5622,7 @@ ul.social-media p:hover, ul.social-media i:hover {
         display: block;
         position: relative;
         left: -1.5rem;
+        width: 50%!important;
       }
 
        #chapter1 div.challenge span {
@@ -5403,7 +5646,7 @@ ul.social-media p:hover, ul.social-media i:hover {
        float: right;
        display: inline-block;
        margin: 0 12rem 10rem 0;
-       width: 18%;
+       width: 22%;
       }
 
       div.typography div.sg-images img.sg-img {
@@ -5436,7 +5679,7 @@ ul.social-media p:hover, ul.social-media i:hover {
       }
 
       article.intro-header div.contact-btns1 {
-       margin: 3rem auto 15rem auto;
+       margin: 5rem auto 15rem auto!important;
        width: 70%!important;
      }
 
@@ -5571,8 +5814,8 @@ ul.social-media p:hover, ul.social-media i:hover {
         margin-left: 0rem;
        }
 
-       .companal .compimg {
-         display: block;
+       div.companal img.compimg {
+         display: block!important;
          width: 20%;
          margin-right: 5rem;
        }
@@ -5642,8 +5885,8 @@ ul.social-media p:hover, ul.social-media i:hover {
         font-size: 2.7rem;
       }
 
-      header.it-list h3.it-text {
-        font-size: 2.7rem;
+      div.container section.it-snippet header.it-list h3.it-text {
+        font-size: 2.7rem!important;
       }
 
       section.it-snippet div.it-title div.number-circle {
@@ -5728,7 +5971,7 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      div.iterations-list section.iterations-snippet header.iteration-title {
-       width: 80rem;
+       /* width: 80rem; */
      }
 
      div.iterations-list section.iterations-snippet p.text-box {
@@ -5746,6 +5989,10 @@ ul.social-media p:hover, ul.social-media i:hover {
        width: 100rem;
        display: block;
        float: left;
+     }
+
+     div.container div.iterations-list section.uno {
+       padding: 5rem 0;
      }
 
 
@@ -5780,14 +6027,15 @@ ul.social-media p:hover, ul.social-media i:hover {
        line-height: 130%;
      }
 
-     header.iteration-title div.it-caption {
-       margin: 0 0 1rem 0;
+     div.container section.iterations-snippet header.iteration-title div.it-caption {
+       margin: 0 0 0 0!important;
+       padding: 0!important;
      }
 
 
 
      section.iterations-snippet header.iteration-title p.text-box {
-       margin: 0 0 0 4rem;
+       margin: 0 0 0 2rem;
      }
 
      section.tres img.right-side {
@@ -5929,10 +6177,52 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
     }
 
-   @media (min-width: 1900px) and (max-width: 2299px) {
-     p {
-       font-size: 3rem;
+   @media (min-width: 1900px) {
+     div.container p, div.container p.text-box, div.container div.chart-wrap h5.p-text, div.container div.partl-section h5.text-stat, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box {
+       font-size: 3rem!important;
        line-height: 120%;
+     }
+
+     div.container header.it-list div.it-title h3.it-text {
+       font-size: 3.2rem!important;
+     }
+
+
+     div.iteratey section.iterations-snippet header.iteration-title div.it-caption {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       padding: 0!important;
+       margin: 0!important;
+       width: 100%;
+     }
+
+     div.contain-roam div.iteratey section.iterations-snippet header.iteration-title {
+       display: flex;
+       flex-direction: row!important;
+       align-items: flex-start;
+       justify-content: center!important;
+       width: 50%!important;
+       margin: 0 auto!important;
+       padding: 0!important;
+     }
+
+    div.iteratey section.iterations-snippet div.it-caption p.text-box {
+       margin: 0!important;
+       width: 100%!important;
+       padding: 0;
+     }
+
+     div.iteratey section.iterations-snippet div.it-caption h3.it {
+       padding: 0!important;
+       /* width: auto; */
+       line-height: 120%;
+       margin: 0!important;
+     }
+
+     div.iteratey section.iterations-snippet span.number-circle {
+       margin: 0 1rem 0 -1rem!important;
      }
 
      section div.callout p.co-text {
@@ -5942,17 +6232,17 @@ ul.social-media p:hover, ul.social-media i:hover {
        padding: 3rem 0 3rem 3rem;
      }
 
-     div.ch1-content article.challenge-intro {
+     div.container div.ch1-content article.challenge-intro {
        display: flex;
        flex-direction: row;
-       margin: 0;
+       margin: 0!important;
        padding: 0;
        align-items: flex-start;
        justify-content: space-between;
      }
 
-     section#chapter1 div.ch1-content {
-       width: 80%;
+     div.contain-roam section#chapter1 {
+       /* width: 80%; */
        margin: 0 auto;
        display: flex;
        flex-direction: column;
@@ -6049,7 +6339,7 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      article.intro-header div.contact-btns1 {
-      margin: 3rem auto 15rem auto;
+      margin: 5rem auto 15rem auto;
       width: 78%;
       justify-content: space-between;
     }
@@ -6346,7 +6636,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
     div.iterations-list header.iteration-title p.text-box {
       font-size: 2.7rem;
-      margin: 0 0 0 4rem;
+      margin: 0 0 0 2.4rem;
     }
 
     div.iterations-list section.uno header.iteration-title {
@@ -6401,55 +6691,8 @@ ul.social-media p:hover, ul.social-media i:hover {
       /* margin: 7.5rem auto 15rem auto!important; */
     }
 
-     section.iterations-snippet header.iteration-title {
-      display: flex;
-      flex-direction: column!important;
-      align-items: flex-start;
-      width: 70%;
-      /* margin: 3rem auto 0 auto; */
-      text-align: left;
-    }
-
-    header.iteration-title h3.it {
-      font-size: 2rem;
-      font-weight: 600;
-      padding: 0.5rem 0.5rem;
-      display: block;
-      text-align: left;
-      font-family: "Brandon Text Medium";
-    }
-
-    section.iterations-snippet span.number-circle {
-      margin: 0 0.5rem 0 -1rem!important;
-    }
-
-    section.iterations-snippet header.iteration-title div.it-caption {
-      display: flex;
-      flex-direction: row!important;
-      align-items: flex-start!important;
-      justify-content: flex-start;
-      padding: 0!important;
-      margin: 0!important;
-      width: 100%;
-    }
-
     header.iteration-title div.it-caption h3.it, header.iteration-title div.it-caption p.text-box {
       margin: 0!important;
-    }
-
-    section.iterations-snippet header.iteration-title {
-      display: flex;
-      flex-direction: column!important;
-      align-items: flex-start!important;
-      justify-content: center!important;
-      /* width: 75%!important; */
-      padding: 0!important;
-    }
-
-
-
-    section.iterations-snippet header.iteration-title p.text-box {
-      margin: 0 0 0 4rem;
     }
 
     section.tres img.right-side {
@@ -6458,10 +6701,6 @@ ul.social-media p:hover, ul.social-media i:hover {
 
     section.iterations-snippet p.text-box {
       font-size: 2.5rem;
-    }
-
-    section.iterations-snippet header.iteration-title span.number-circle {
-      margin: 0.5rem 1rem 0 0;
     }
 
     section.iterations-snippet section.rogue-img p.test-img-text span {
@@ -6589,13 +6828,37 @@ ul.social-media p:hover, ul.social-media i:hover {
      font-size: 2.3rem;
      font-family: "Brandon Text Medium";
     }
+
+    div.container div.block div.box-1 h4, div.container div.block div.box-2 h4 {
+      font-size: 3rem!important;
+      margin: 10rem auto!important;
+    }
    }
 
 
     @media (min-width: 2300px) and (max-width: 5000px) {
-      p {
-        font-size: 3.3rem;
+      div.container p, div.container p.text-box, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box  {
+        font-size: 3.6rem!important;
         line-height: 120%;
+      }
+
+      div.container .header-content {
+        width: 50%;
+      }
+
+      div.container article.pg div.content {
+        width: 45%;
+        /* margin: 0 auto!important; */
+      }
+
+      div.container div.style-wrapper a.style-button {
+        font-size: 3rem!important;
+      }
+
+      ul li {
+        font-size: 3.6rem!important;
+        padding-bottom: 1rem!important;
+        /* margin-top: 2rem!important; */
       }
 
       article.abt2 div.content p.text-box {
@@ -6671,10 +6934,10 @@ ul.social-media p:hover, ul.social-media i:hover {
      /* END CHART SECTION*/
 
 
-      div.ch1-content article.challenge-intro {
+      div.container div.ch1-content article.challenge-intro {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: 0!important;
         padding: 0;
         align-items: flex-start;
         justify-content: space-between;
@@ -6746,13 +7009,13 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding-bottom: 5rem;
       }
 
-      section h2.pg-label {
-        font-size: 4.7rem;
+      article.pg div.content h2.pg-label, h2.pg-label {
+        font-size: 5rem!important;
         line-height: 110%;
       }
 
-      section h3.pg-topic {
-        font-size: 4.2rem;
+      article.pg div.content h3.pg-topic, h2.pg-topic {
+        font-size: 4.6rem!important;
         line-height: 100%;
       }
 
@@ -6818,8 +7081,12 @@ ul.social-media p:hover, ul.social-media i:hover {
       }
 
       div.iterations-list section.cuatro header.iteration-title, div.iterations-list section.cinco header.iteration-title, div.iterations-list section.seis header.iteration-title {
-        width: 60%;
-        margin: 0 auto;
+        width: 50%;
+        margin: 0 auto!important;
+      }
+
+      div.container section#chapter6 article.concl div.content {
+        width: 75%!important;
       }
 
       section.cuatro header.iteration-title div.it-caption, section.cinco header.iteration-title div.it-caption, section.seis header.iteration-title div.it-caption {
@@ -6828,7 +7095,7 @@ ul.social-media p:hover, ul.social-media i:hover {
       }
 
       div.iterations-list section.cuatro p.text-box, div.iterations-list section.cinco p.text-box, div.iterations-list section.seis p.text-box {
-        margin: 0 auto 3rem auto;
+        margin-bottom: 3rem;
         padding: 0;
       }
 
@@ -6841,14 +7108,18 @@ ul.social-media p:hover, ul.social-media i:hover {
         margin-top: -3rem;
       }
 
-      .companal div.content {
+      div.container div.companal div.content {
         width: 55%;
-        padding: 0;
-        margin-left: 0rem;
+        padding: 0!important;
+        margin: 0!important;
        }
 
-       .companal .compimg {
-         display: block;
+       div.container header.it-list div.it-title h3.it-text {
+         font-size: 3.8rem!important;
+       }
+
+       div.companal img.compimg {
+         display: block!important;
          width: 20%;
          margin-right: 5rem;
        }
@@ -7026,7 +7297,12 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      section#chapter5 div.test-bg div.test-wrapper p.screen-subtitle {
-       font-size: 3.5rem;
+       font-size: 4rem!important;
+       margin-bottom: 3rem!important;
+     }
+
+     ol li, ol span, ul li {
+       padding-top: 0!important;
      }
 
      section#chapter5 div.test-bg div.test-wrapper h3.numbers {
@@ -7049,8 +7325,14 @@ ul.social-media p:hover, ul.social-media i:hover {
        font-size: 4.5rem;
      }
 
-     div.magnify img.img-frustrations {
+     div.container article.pg div.magnify img.img-frustrations {
        width: 30%;
+       margin: 0!important;
+     }
+
+     div.container div.magnify {
+       padding: 0!important;
+       justify-content: space-between!important;
      }
 
      div.audience img.users {
@@ -7083,7 +7365,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
      section#chapter5 section.uno p.text-box {
        font-size: 3.5rem;
-       margin: 0 0 0 6rem;
+       /* margin: 0 0 0 6rem; */
      }
 
      section.iterations-snippet section.rogue-img div.bt-screen h4.bt-title{
@@ -7202,10 +7484,10 @@ ul.social-media p:hover, ul.social-media i:hover {
     }
 
     @media (min-width: 2500px) {
-      div.ch1-content article.challenge-intro {
+      div.container div.ch1-content article.challenge-intro {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: 0!important;
         padding: 0;
         align-items: flex-start;
         justify-content: space-between;
@@ -7225,6 +7507,36 @@ ul.social-media p:hover, ul.social-media i:hover {
         margin: 0;
         padding: 0;
       }
+
+      div.container div.style-wrapper a.style-button {
+        font-size: 3.5rem!important;
+      }
+
+      div.container section.both-personas div.pers-title h3 {
+        font-size: 4rem!important;
+      }
+
+      div.container div.motivations h4 span, div.container div.frustrations h4 span {
+        font-size: 4rem!important;
+      }
+
+      div.container div.block div.box-1 h4, div.container div.block div.box-2 h4 {
+        font-size: 4rem!important;
+      }
+
+
+        div.Starstuff-header p.header-text {
+          font-size: 4.3rem!important;
+          margin-top: 1rem;
+        }
+
+        div.container p, div.container p.text-box, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box, div.content ol li, div.content ul li {
+          font-size: 4rem!important;
+        }
+
+        div.container div.content ol span {
+          font-size: 4rem!important;
+        }
 
       #chapter1 div.ch1-content div.challenge {
         margin-top: 0;
