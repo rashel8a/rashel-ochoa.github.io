@@ -1551,6 +1551,10 @@ section.iterations-snippet div.it-caption p.text-box {
      width: 21rem;
    }
 
+   article.ab p.text-box {
+     font-size: 2rem!important;
+   }
+
    div.contain-roam section.it-snippet1 div.it-title h3.it-text, div.contain-roam section.iterations-snippet div.it-caption h3.it {
      font-size: 2.2rem!important;
    }
