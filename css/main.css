@@ -2666,7 +2666,7 @@ article.conclroam div.content {
 
   article.ab p.text-box {
     color: #FFFDFB;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     line-height: 125%;
   }
 
@@ -2754,7 +2754,7 @@ article.conclroam div.content {
     margin: 0 auto;
     color: #FFFDFB;
     font-family: 'Brandon Text Regular', sans-serif;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
   /* END OF TEST SECTION*/
 
@@ -2826,7 +2826,7 @@ article.conclroam div.content {
   }
 
   header.iteration-title p.text-box {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     line-height: 120%;
   }
 
