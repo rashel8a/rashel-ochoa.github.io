@@ -2136,9 +2136,9 @@ div.wrapper img.screen-b {
      padding: 10rem 0 10rem 0!important;
    }
 
-   section#chapter5 article.abt2 div.content p.text-box {
+   /* section#chapter5 article.abt2 div.content p.text-box {
      font-size: 2.7rem!important;
-   }
+   } */
 
    div.test-summ p.descs {
      margin: 0 auto 5rem auto!important;
@@ -2227,7 +2227,7 @@ div.wrapper img.screen-b {
      padding: 2.4rem 0 3.2rem 0;
    }
 
-   section.iterations-snippet div.it-caption p.text-box, section.it-snippet1 header.it-list p.text-box {
+   section.iterations-snippet div.it-caption p.text-box, section.it-snippet1 header.it-list p.text-box, article.abt2 div.content p.text-box {
      font-size: 2.7rem!important;
    }
 
@@ -2607,7 +2607,7 @@ div.wrapper img.screen-b {
      font-size: 4.3rem!important;
    }
 
-     section#chapter2 div.chart-wrap h5.p-text, section#chapter2 div.partl-section h5.text-stat, section#chapter2 div.partn-section div.stat h5.text-stat, section.it-snippet1 div.it-title p.text-box, article.user-flow div.block1 h4, section.project-info ul li, p.text-box, p, section.iterations-snippet div.it-caption p.text-box {
+     section#chapter2 div.chart-wrap h5.p-text, section#chapter2 div.partl-section h5.text-stat, section#chapter2 div.partn-section div.stat h5.text-stat, section.it-snippet1 div.it-title p.text-box, article.user-flow div.block1 h4, section.project-info ul li, p.text-box, p, p.descs, section.iterations-snippet div.it-caption p.text-box {
      font-size: 2.9rem!important;
      line-height: 120%!important;
    }
@@ -6247,9 +6247,9 @@ ul.social-media p:hover, ul.social-media i:hover {
        line-height: 120%;
      }
 
-    div.contain-roam section#chapter5 article.abt2 div.content p.text-box, div.contain-roam section#chapter5 article.abt3 div.content p.text-box {
+    /* div.contain-roam section#chapter5 article.abt2 div.content p.text-box, div.contain-roam section#chapter5 article.abt3 div.content p.text-box {
        font-size: 2.8rem!important;
-     }
+     } */
 
      div.contain-roam section.it-snippet1 div.it-title h3.it-text, div.contain-roam section.iterations-snippet div.it-caption h3.it {
        font-size: 3rem!important;
