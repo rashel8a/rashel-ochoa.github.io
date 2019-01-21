@@ -1170,7 +1170,7 @@ div.iterate-2 section.iterations-snippet header.it-changes {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 55%;
+  width: 40%;
   margin: 3rem auto 0 auto;
   padding: 0;
 }
@@ -1315,7 +1315,7 @@ div.iterate-4 {
 div.iterate-4 section.iterations-snippet header.it-changes {
   display: flex;
   flex-direction: column;
-  width: 55%;
+  width: 40%;
   padding: 0;
 }
 
@@ -1570,6 +1570,10 @@ section.iterations-snippet div.it-caption p.text-box {
 
    div.contain-roam div.content {
      width: 50%!important;
+   }
+
+   section#chapter6 div.final-videos div.content {
+     width: 43%!important;
    }
 
    div.brand-quote img.quote-img {
