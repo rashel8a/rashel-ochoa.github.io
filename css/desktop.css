@@ -837,8 +837,13 @@ article.pinpoint div.callout {
    padding: 0;
  }
 
+ section#chapter4 div.colorp div.content {
+   width: 50%!important;
+   margin: 0!important;
+ }
 
- section#chapter4 div.colorp div.content, section#chapter4 div.colorp img.color-else {
+
+  section#chapter4 div.colorp img.color-else {
    margin: 0!important;
  }
 
