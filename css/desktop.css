@@ -1745,6 +1745,23 @@ section.iterations-snippet div.it-caption p.text-box {
   div.desktop ul.no a.off {
     font-size: 2.5rem;
   }
+  /* TEST EDITS*/
+  div.container div.test-wrapper div.screen-a-header, div.container div.test-wrapper div.screen-b-header   {
+    width: 100%!important;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0!important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div.container div.screen-a-header img.screen-a,   div.container div.screen-b-header img.screen-b {
+  width: 78%!important;
+  margin: 0!important;
+  }
+  /* EDITS*/
 
   div.contain-roam div.content {
     width: 50%!important;
@@ -2226,9 +2243,9 @@ div.wrapper img.screen-b {
      padding: 2.4rem 0 3.2rem 0;
    }
 
-   section#intro {
+   div.container section#intro {
      width: 100%;
-     margin: 0 auto!important;
+     margin: 15rem auto 0 auto!important;
    }
 
    section#intro a.btn-solo, div.buttone, div.contact-btns3 a.primary-btn {
@@ -2603,6 +2620,7 @@ div.wrapper img.screen-b {
      font-size: 3.9rem!important;
      padding-bottom: 0.5rem!important;
    }
+
 
    section#intro article.intro-header div.contact-btns1 {
     margin: 3rem auto 15rem auto;
@@ -3360,6 +3378,11 @@ div.wrapper img.screen-b {
     /* width: 60%; */
     padding: 0;
   }
+
+  div.container section#intro {
+    margin: 20rem auto 0 auto;
+  }
+
 
   .intro-header div.content {
     padding: 0;
@@ -4295,14 +4318,33 @@ div.test-bg {
   background-color: #132D60;
 }
 
-div.test-wrapper {
+/* TEST EDITS*/
+div.container div.test-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: 0 auto;
+  width: 100%;
   margin-bottom: 5rem;
 }
+
+div.container div.test-wrapper div.screen-a-header, div.container div.test-wrapper div.screen-b-header   {
+  width: 100%!important;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0!important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.container div.screen-a-header img.screen-a,   div.container div.screen-b-header img.screen-b {
+width: 65%;
+margin: 0!important;
+}
+/* EDITS*/
 
 div.screen-a-header, div.screen-b-header {
   text-align: center;

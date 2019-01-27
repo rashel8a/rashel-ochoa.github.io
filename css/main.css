@@ -642,9 +642,15 @@ a.secondary-btn {
     width: 100%;
   }
 
-  div.starstuff-project img.project-mobile-lg {
+  div.container div.starstuff-project a.feat-project-display {
+    display: flex;
+    align-items: center;
+  }
+
+  div.container div.starstuff-project img.project-mobile-lg {
     grid-area: mobile-img;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     margin: 0 auto;
   }
 
@@ -2704,6 +2710,29 @@ article.conclroam div.content {
     text-align: center;
   }
 
+    div.container div.test-wrapper div.screen-a-header, div.container div.test-wrapper div.screen-b-header   {
+      width: 100%!important;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0!important;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+  div.container div.screen-a-header img.screen-a,   div.container div.screen-b-header img.screen-b {
+    width: 100vw;
+    margin: 0!important;
+  }
+
+  div.container div.test-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   div.screen-a-header h4, div.screen-b-header h4 {
     font-size: 3rem;
     letter-spacing: 1px;
@@ -2761,6 +2790,8 @@ article.conclroam div.content {
   article.testing {
     display: flex;
     flex-direction: column;
+    width: 90%;
+    margin: 7.5rem auto 0 auto;
   }
 
   div.vid-responsive {
@@ -4080,6 +4111,19 @@ div.copyrightt p {
       justify-content: flex-start;
     }
 
+    div.container div.starstuff-project a.feat-project-display {
+      display: flex;
+      align-items: center;
+      width: 80%;
+    }
+
+    div.container div.starstuff-project img.project-mobile-lg {
+      grid-area: mobile-img;
+      width: 65%;
+      margin: 0 auto;
+      margin: 0 auto;
+    }
+
     article.feat-project-text a.primary-btn, article.feat-project-text2 a.primary-btn {
       margin-left: 0;
     }
@@ -4165,6 +4209,19 @@ div.copyrightt p {
       img.desktop-image{
         width: 100%;
         display: block;
+      }
+
+      div.container div.starstuff-project a.feat-project-display {
+        display: flex;
+        align-items: center;
+        width: 85%;
+      }
+
+      div.container div.starstuff-project img.project-mobile-lg {
+        grid-area: mobile-img;
+        width: 55%;
+        margin: 0 auto;
+        margin: 0 auto;
       }
 
       .grid-hero {

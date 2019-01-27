@@ -2956,14 +2956,33 @@ article.ab div.content {
   margin: 7.5rem auto 0 auto;
 }
 
-div.test-wrapper {
+/* TEST EDITS*/
+div.container div.test-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  width: 100%;
   margin-bottom: 5rem;
 }
+
+div.container div.test-wrapper div.screen-a-header, div.container div.test-wrapper div.screen-b-header   {
+  width: 100%!important;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0!important;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.container div.screen-a-header img.screen-a,   div.container div.screen-b-header img.screen-b {
+width: 60%;
+margin: 0!important;
+}
+/* EDITS*/
 
 div.screen-a-header, div.screen-b-header {
   text-align: center;
@@ -2998,7 +3017,7 @@ img.cat-test-mobile {
 }
 
 .test-bg .category-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: 'Brandon Text Bold', bold;
   margin: 0 auto;
   text-align: center;
@@ -3551,6 +3570,21 @@ footer#footer-cube div.copyright p {
     width: 48rem;
     padding: 0;
     margin: 0 auto;
+  }
+
+  div.container div.test-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  div.container div.screen-a-header img.screen-a,   div.container div.screen-b-header img.screen-b {
+  width: 80%;
+  margin: 0!important;
   }
 
   div.contact-btns1 .primary-btn {
