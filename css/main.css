@@ -675,8 +675,9 @@ a.secondary-btn {
   .project-title {
     grid-area: pr-title;
     padding: 0 .5rem .5rem 0.5rem;
+    text-align: left;
     /* width: 30rem; */
-    line-height: 100%;
+    line-height: 110%;
     font-size: 3.2rem;
     font-family: "Brandon Text Bold";
   }
@@ -1937,7 +1938,7 @@ article.conclroam div.content {
     padding: 0 1.6rem;
   }
 
-  .header-text {
+  div.container p.header-text {
     color: #FFFDFB;
   }
 
@@ -4080,7 +4081,7 @@ div.copyrightt p {
 
     .grid-hero article {
       margin: 0 auto;
-      width: 75%;
+      width: 100%;
     }
 
     div.see-work {
@@ -4092,9 +4093,9 @@ div.copyrightt p {
       color: #FB7E6C;
     }
 
-    article.feat-project-text h4.role {
+    /* article.feat-project-text h4.role {
       font-size: 1.9rem;
-    }
+    } */
 
 
     /* TABLET HP PROJECT */
@@ -4104,11 +4105,25 @@ div.copyrightt p {
       padding: 0;
     }
 
+
+      .project-title {
+        grid-area: pr-title;
+        padding: 0 .5rem .5rem 0.5rem;
+        text-align: center;
+        /* width: 30rem; */
+        line-height: 120%;
+        font-size: 3.2rem;
+        font-family: "Brandon Text Bold";
+      }
+
     #project-section article {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
+      text-align: left;
+      align-items: center;
+      justify-content: center;
+      width: 65%;
+      margin: 1rem auto 0 auto;
     }
 
     div.container div.starstuff-project a.feat-project-display {
@@ -4117,16 +4132,21 @@ div.copyrightt p {
       width: 80%;
     }
 
-    div.container div.starstuff-project img.project-mobile-lg {
+    div.container div.starstuff-project img.project-desktop{
       grid-area: mobile-img;
       width: 65%;
       margin: 0 auto;
-      margin: 0 auto;
+      display: block;
+      margin: 0 auto 2rem auto;
     }
 
-    article.feat-project-text a.primary-btn, article.feat-project-text2 a.primary-btn {
-      margin-left: 0;
+    div.container div.starstuff-project img.project-mobile-lg {
+      display: none;
     }
+
+    /* article.feat-project-text a.primary-btn, article.feat-project-text2 a.primary-btn {
+      margin-left: 0;
+    } */
 
     article.feat-project-text, article.feat-project-text2 {
       margin: -2rem auto 0 auto;
@@ -4151,7 +4171,7 @@ div.copyrightt p {
     }
 
     h4.role {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
 
     p.project-desc {
@@ -4283,7 +4303,7 @@ div.copyrightt p {
       div.roamr-project img.project-desktop2 {
         display: block;
         width: 58rem;
-        margin: 0 auto 5rem auto;
+        margin: 0 auto 2rem auto;
       }
 
       #about img.rashel-img-mobile {
@@ -4314,6 +4334,16 @@ div.copyrightt p {
         font-size: 1.7rem !important;
         margin: -0.5rem auto 0 auto;
         font-family: "Brandon Text Regular";
+      }
+    }
+
+    @media (min-width: 750px) and (max-width: 1024px) {
+      p.project-desc {
+        width: 80%;
+      }
+
+      .project-name {
+        font-size: 2.6rem;
       }
     }
 
@@ -4362,7 +4392,7 @@ div.copyrightt p {
       div.roamr-project img.project-desktop2 {
         display: block;
         width: 60rem;
-        margin: 0 auto 5rem auto;
+        margin: 0 auto 2rem auto;
       }
 
       div.roamr-project img.project-mobile-lg {
@@ -5193,16 +5223,18 @@ nav.navbar {
     .project-name {
       grid-area: pr-name;
       font-family: "Brandon Text Bold";
-      line-height: 120%;
+      line-height: 100%;
       padding-bottom: .5rem;
       font-size: 2.8rem;
     }
 
-    .project-title {
+
+    h2.project-title {
       grid-area: pr-title;
       line-height: 105%;
       padding-bottom: .5rem;
       font-size: 4.7rem;
+      text-align: left;
       font-family: "Brandon Text Black";
     }
 

@@ -2188,6 +2188,13 @@ div.container {
   /* overflow: hidden; */
 }
 
+div.container p.header-text {
+  color: #FFFDFB!important;
+  width: 70%!important;
+  margin: 0 auto;
+  font-size: 1.8rem;
+}
+
 div.container img.logo-size {
   width: 70%;
   margin: 0 auto;
@@ -3570,6 +3577,13 @@ footer#footer-cube div.copyright p {
     width: 48rem;
     padding: 0;
     margin: 0 auto;
+  }
+
+  div.container p.header-text {
+    color: #FFFDFB!important;
+    width: 55%!important;
+    margin: 0 auto;
+    font-size: 1.8rem;
   }
 
   div.container div.test-wrapper {
