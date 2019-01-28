@@ -1,14 +1,5 @@
 @media (min-width: 600px) and (max-width: 5000px) {
   /* STICKY TOP NAV*/
-  /* li a.scrollspy {
-    display: inline-block;
-    vertical-align: middle;
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  } */
-
   div.container #cs-menu a {
     color: #15246D;
     font-weight: bold;
@@ -1602,9 +1593,9 @@ section.iterations-snippet div.it-caption p.text-box {
       display: none;
     }
 
-    div.title-new {
-      margin: 15rem 0 0 0!important;
-      width: 90%;
+    div.contain-roam div.title-new {
+      margin: 15rem auto 0 auto!important;
+      width: 90%!important;
     }
 
     section#chapter5 div.content {
