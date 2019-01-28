@@ -1048,6 +1048,10 @@ a {
 /*** ROAMR MOBILE */
 @media (min-width: 320px) and (max-width: 599px) {
 
+  #cs-menu, #cs-menu2 {
+  display: none;
+}
+
   /* NAVBAR TOGGLE */
   div.fixed div#navbar-toggle {
     display: block;
@@ -2529,22 +2533,26 @@ article.conclroam div.content {
     display: block;
   }
 
-  .brand-quote img.quote-img {
-    width: 9%;
+  div.container div.brand-quote {
+    display: flex;
+    width: 95%!important;
+    flex-direction: row;
+    align-items: flex-start!important;
+    justify-content: center;
+    margin: 2rem auto 0 auto!important;
+  }
+
+  div.container .brand-quote img.quote-img {
+    width: 10%;
     display: block;
-    position: relative;
-    right: .5rem;
-    top: 2rem;
+    margin: 0 1rem 0 0!important;
     }
 
   .brand-story .brand-quote h2 {
    font-family: 'Brandon Text Medium Italic', cursive;
-   font-size: 2.2rem;
+   font-size: 2rem;
    line-height: 130%;
-   width: 88%;
-   margin: 0 0 0 3rem;
-   position: relative;
-   top: 0rem;
+   /* width: 88%; */
   }
 
   .brand-quote h2.by {
@@ -2582,7 +2590,7 @@ article.conclroam div.content {
   div.color-palette img.color-else {
    width: 100%;
    display: block;
-   margin: 3rem auto;
+   margin: 3rem auto 0 auto;
   }
 
   /* STYLE GUIDE IMAGES*/
@@ -2596,7 +2604,7 @@ article.conclroam div.content {
 
   div.typography div.type-content {
     width: 90%;
-    margin: 5rem auto;
+    margin: 0 auto;
   }
 
   div.typography div.sg-images {
@@ -3310,7 +3318,7 @@ article.conclroam div.content {
     }
 
     div.brand-quote h2.main-quote {
-      width: 75%;
+      /* width: 75%; */
       margin: 0 auto!important;
       padding: 0!important;
       top: 0!important;
@@ -3463,6 +3471,15 @@ article.conclroam div.content {
       margin: -10rem 0 0 39.8rem;
     }
 
+    div.container div.brand-quote {
+      display: flex;
+      width: 90%!important;
+      flex-direction: row;
+      align-items: flex-start!important;
+      justify-content: center;
+      margin: 2rem auto 0 auto!important;
+    }
+
     div.two-button2 {
       padding: 0 7rem;
       display: flex!important;
@@ -3516,9 +3533,9 @@ article.conclroam div.content {
       width: 70%;
     }
 
-    img.img-frustrations {
+    div.container img.img-frustrations {
       margin: 3rem auto 10rem auto!important;
-      width: 60%!important;
+      width: 45%!important;
     }
   }
 

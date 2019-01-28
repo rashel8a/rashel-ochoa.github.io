@@ -1,3 +1,94 @@
+@media (min-width: 600px) and (max-width: 5000px) {
+  /* STICKY TOP NAV*/
+  /* li a.scrollspy {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  } */
+
+  div.container #cs-menu a {
+    color: #15246D;
+    font-weight: bold;
+  }
+
+  div.contain-roam #cs-menu a {
+    color: #2D73FF;
+    text-decoration: none;
+  }
+
+  div.contain-roam #cs-menu{
+    width: 100%;
+    text-align: center;
+    position: sticky!important;
+    top: 0;
+    z-index: 1;
+    margin: 0 0 10rem 0!important;
+    padding: 2.8rem 0 2rem 0;
+    background-color: #FDE8DE!important;
+  }
+
+   div.container #cs-menu {
+     background-color: #E3DCFF;
+     z-index: 2;
+     padding: 3rem 0 2.2rem 0;
+       margin: 0 0 5rem 0!important;
+     text-align: center;
+     width: 100%;
+   }
+
+  nav#cs-menu ul.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto!important;
+    flex-direction: row;
+    align-items: center!important;
+    padding: 0;
+    justify-content: center!important;
+  }
+
+  #cs-menu ul.navcenter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start!important;
+    justify-content: space-between!important;
+  }
+
+  #cs-menu .sticky {
+    position: fixed!important;
+    position: -webkit-sticky;
+    top: 0!important;
+    z-index:4;
+  }
+
+  #cs-menu li {
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    /* padding: 0 1rem; */
+  }
+
+  .scrollspy::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.5rem;
+    border-radius: 6rem;
+    background: #03E1D7;
+    transition: width .3s;
+  }
+
+  .scrollspy:hover::after {
+    width: 100%;
+    transition: width .3s;
+  }
+  /* END STICKY TOP NAV FOR BOTH TABLET & DESKTOP*/
+}
 
 /* ****** DESKTOP MEDIA QUERY ******* */
 
@@ -7,6 +98,23 @@
 div.container, div.contain-roam {
   width: 100%;
   overflow: hidden;
+}
+
+/* STICKY NAVBAR DESKTOP BOTH PROJECTS*/
+
+nav#cs-menu ul.navbar-nav {
+  justify-content: space-between!important;
+}
+
+div.contain-roam #cs-menu{
+  width: 100%;
+  text-align: center;
+  position: sticky!important;
+  top: 0;
+  z-index: 1;
+  margin: 0 0 10rem 0!important;
+  padding: 3.4rem 0 2.8rem 0;
+  background-color: #FDE8DE!important;
 }
 
 div.contain-roam ul, div.container ul {
@@ -1771,6 +1879,11 @@ section.iterations-snippet div.it-caption p.text-box {
     width: 80%!important;
   }
 
+  div.container .logo-header {
+    width: 48%!important;
+    margin-top: 2rem;
+  }
+
   article.final-p div.finalc p.text-box {
     width: 50%!important;
   }
@@ -2485,6 +2598,10 @@ div.wrapper img.screen-b {
 @media (min-width: 2000px) and (max-width: 2499px)  {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
+  }
+
+  div.container #cs-menu, div.contain-roam #cs-menu {
+    padding: 5rem 0 4.2rem 0!important;
   }
 
   div.contain-roam section div.pers-title h2, div.contain-roam section div.motivations h4 span, div.contain-roam section div.frustrations h4 span {
@@ -3321,8 +3438,8 @@ div.wrapper img.screen-b {
     font-size: 2rem;
   }
 
-  .logo-header {
-    width: auto;
+  div.container .logo-header {
+    width: 53%;
     margin-top: 2rem;
   }
 
@@ -3406,7 +3523,7 @@ div.wrapper img.screen-b {
   }
 
   h1.header-title {
-    font-size: 4.5rem;
+    font-size: 5.3rem;
   }
 
   div.spec{
@@ -3928,8 +4045,29 @@ div.container #chapter3 article.pg div.content {
   margin: 0 auto 5rem auto!important;
 }
 
-div.container div.brand-quote {
+div.container section#chapter4 div.brand-quote {
   margin-top: 5rem!important;
+  width: 100%!important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start!important;
+  justify-content: center!important;
+}
+
+div.container div.brand-quote div.text-quote {
+  margin: 0;
+  padding:0;
+}
+
+div.container div.brand-quote div.text-quote h2.main-quote{
+  width: 100%;
+  margin: 0!important;
+  padding: 0;
+}
+
+div.container div.text-quote h2.by {
+  margin: 0!important;
+  padding: 1rem 0 0 0;
 }
 
  #chapter3 .chapter {
@@ -4129,18 +4267,12 @@ div.brand-story {
 div.brand-quote h2.main-quote {
   font-family: 'Brandon Text Medium Italic', cursive;
   font-size: 3rem;
-  line-height: 130%;
-  /* margin-top: 0rem; */
-  width: 85%;
-  margin: 1rem auto 0 auto!important;
+  line-height: 125%;
 }
 
 .brand-quote h2.by {
   font-weight: bolder;
-  padding-top: 0.5rem;
-  width: 85%!important;
-  margin: 1rem auto 0 auto!important;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-family: 'Brandon Text Medium Italic', cursive;
 }
 
@@ -5119,9 +5251,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
    div.container div.brand-story div.brand-quote img.quote-img {
      width: 10%!important;
-     padding-right: 1rem;
-     margin-left: 3rem!important;
-     margin-top: 3rem!important;
+     margin: 0 2rem 0 0!important;
    }
 
    div.container h2.by {
@@ -5142,6 +5272,10 @@ ul.social-media p:hover, ul.social-media i:hover {
   div.block div.box-1 h4, div.block div.box-2 h4, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box {
     font-size: 2.4rem!important;
     line-height: 120%!important;
+  }
+
+  div.container #cs-menu, div.contain-roam #cs-menu {
+    padding: 2.8rem 0 2.8rem 0!important;
   }
 
   div.contain-roam section.it-snippet1 div.it-title h3.it-text, div.contain-roam section.iterations-snippet div.it-caption h3.it {
@@ -5646,6 +5780,10 @@ ul.social-media p:hover, ul.social-media i:hover {
       p {
         font-size: 2.7rem;
         line-height: 120%;
+      }
+
+      div.container #cs-menu, div.contain-roam #cs-menu {
+        padding: 4.4rem 0 4.2rem 0!important;
       }
 
       div.chart-html div.chart-wrap h5.p-text {
@@ -6297,6 +6435,20 @@ ul.social-media p:hover, ul.social-media i:hover {
      div.container p, div.container p.text-box, div.container div.chart-wrap h5.p-text, div.container div.partl-section h5.text-stat, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box {
        font-size: 3rem!important;
        line-height: 120%;
+     }
+
+
+     div.container section#chapter4 div.brand-quote {
+       margin: 7.5rem auto!important;
+       width: 85%!important;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start!important;
+       justify-content: center!important;
+     }
+
+     div.container #cs-menu, div.contain-roam #cs-menu {
+       padding: 5.2rem 0 4.4rem 0!important;
      }
 
     /* div.contain-roam section#chapter5 article.abt2 div.content p.text-box, div.contain-roam section#chapter5 article.abt3 div.content p.text-box {
@@ -6965,6 +7117,20 @@ ul.social-media p:hover, ul.social-media i:hover {
       div.container p, div.container p.text-box, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box  {
         font-size: 3.6rem!important;
         line-height: 120%;
+      }
+
+
+           div.container section#chapter4 div.brand-quote {
+             margin: 7.5rem auto!important;
+             width: 85%!important;
+             display: flex;
+             flex-direction: row;
+             align-items: flex-start!important;
+             justify-content: center!important;
+           }
+
+      div.container #cs-menu, div.contain-roam #cs-menu {
+        padding: 6.2rem 0 5.2rem 0!important;
       }
 
       div.contain-roam section.it-snippet1 div.it-title h3.it-text, div.contain-roam section.iterations-snippet div.it-caption h3.it {

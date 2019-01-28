@@ -9,6 +9,84 @@
   position: relative;
 }
 
+/* TABLET CHAPTER IMAGES BOTH PROJECTS*/
+div.contain-roam div.title-new img.chapter, div.container div.title-card img.chapter {
+  width: 10%!important;
+  padding: 0;
+  margin: 0!important;
+}
+
+div.contain-roam section div.title-new, div.container section div.title-card {
+  padding: 0;
+  margin: 0 auto!important;
+  display: flex;
+  flex-direction: row;
+  align-items: center!important;
+  justify-content: flex-start!important;
+  width: 90%;
+}
+
+div.contain-roam #chapter4 img.chapter, div.container #chapter4 img.chapter {
+  margin: 0!important;
+  bottom: 0;
+}
+
+div.contain-roam #chapter5 .chapter, div.container #chapter5 img.chapter {
+  bottom: 0;
+  margin: 0 1rem 0 0!important;
+  width: 12%!important;
+}
+
+div.contain-roam #chapter6 .chapter, div.container #chapter6 .chapter {
+  bottom: 0;
+  margin: 0 1rem 0 0!important;
+  width: 12%!important;
+}
+
+/* STICKY NAVBAR TABLET BOTH PROJECTS*/
+  div.contain-roam nav#cs-menu{
+    width: 100%;
+    text-align: center;
+    position: sticky!important;
+    top: 0;
+    z-index: 1;
+    margin: 0 0 3rem 0!important;
+    padding: 2.8rem 0 2rem 0;
+    background-color: #FDE8DE!important;
+  }
+
+  div.container nav#cs-menu{
+    width: 100%;
+    text-align: center;
+    position: sticky!important;
+    top: 0;
+    z-index: 1;
+    margin: 0 0 3rem 0!important;
+    padding: 2.8rem 0 2rem 0;
+    background-color: #E3DCFF;
+  }
+
+  div.contain-roam nav#cs-menu li, div.container nav#cs-menu li {
+    padding: 1rem;
+  }
+
+
+
+div.contain-roam div.title-new {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0!important;
+}
+
+section#chapter2 img.chapter {
+  padding: 0;
+  margin: 0;
+}
+
 div.iteratey section.iterations-snippet {
   display: flex;
   flex-direction: column;
@@ -79,6 +157,11 @@ div.Roamr-header div.header-content {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+div.contain-roam {
+  width: 100%;
+  overflow: hidden;
 }
 
 .mobile-display {
@@ -160,15 +243,15 @@ a.primary-btn {
  }
 
  div.p1-section img.chart-mobile-img {
-    width: 40%;
+    width: 47%;
   }
 
   div.p2-section img.chart-desk {
-     width: 70%;
+     width: 77%;
    }
 
   div.p3-section img.chart-desk {
-    width: 65%;
+    width: 75%!important;
     margin: 0 auto;
   }
 
@@ -193,7 +276,7 @@ a.primary-btn {
    font-family: "Brandon Text Regular";
    line-height: 130%;
    align-items: center;
-   width: 75%!important;
+   width: 90%!important;
  }
 
  div.chart-html1 div.chart-wrap div.p3-section {
@@ -284,7 +367,7 @@ article.pinpoint div.callout {
 }
 
 div.audience img.users {
-  width: 65%;
+  width: 50%;
 }
 
 article.pg div.companal1 {
@@ -460,10 +543,11 @@ section#chapter3 div.newt2 {
   padding: 5rem 0!important;
 }
 
-section#chapter3 img.wf-img-1 {
+section#chapter3 img.wf-img-1, section#chapter3 img.wf-img-2 {
   /* width: 100%!important; */
   margin: 0 auto!important;
   display: block;
+  width: 75%;
 }
 
 section.it-snippet1 div.it-title h3.it-text {
@@ -1442,6 +1526,29 @@ article.conclroam div.content {
     margin: 0 auto;
   }
 
+  section#chapter3 img.wf-img-1, section#chapter3 img.wf-img-2 {
+    /* width: 100%!important; */
+    margin: 0!important;
+    display: block;
+    width: 45%!important;
+    padding: 0!important;
+  }
+
+  div.container section#chapter3 img.wf-img-2 {
+    width: 46.5%!important;
+  }
+
+  div.container div.wf-images {
+    display: flex!important;
+    flex-direction: row;
+    flex-wrap: wrap!important;
+    align-items: flex-start;
+    justify-content: center!important;
+    padding: 0;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+  }
+
   section#chapter4 div.colorp img.color-else {
    width: 57%!important;
    margin: 3rem auto 0 auto!important;
@@ -1740,6 +1847,39 @@ section#chapter6 article.onboarding, section#chapter6 article.customize, section
   justify-content: space-between;
   padding: 0;
   margin: 10rem auto!important;
+ }
+
+ div.container div.brand-quote {
+   margin: 0;
+   width: 100%;
+ }
+
+ section#chapter3 img.wf-img-1, section#chapter3 img.wf-img-2 {
+   /* width: 100%!important; */
+   margin: 0!important;
+   display: block;
+   width: 39%!important;
+   padding: 0!important;
+ }
+
+ div.container section#chapter3 img.wf-img-2 {
+   width: 40.5%!important;
+ }
+
+ div.container div.wf-images {
+   display: flex!important;
+   flex-direction: row;
+   flex-wrap: wrap!important;
+   align-items: flex-start;
+   justify-content: center!important;
+   padding: 0;
+   width: 85%;
+   margin: 5rem auto 0 auto;
+ }
+
+
+ div.container div.brand-quote div.text-quote h2.main-quote {
+   width: 100%;
  }
 
  section#chapter5 div.sec-three div.content {
@@ -2187,6 +2327,28 @@ div.container {
   width: 100%;
   /* overflow: hidden; */
 }
+
+div.iterations-header {
+  width: 75%;
+  margin: 0 auto 5rem auto;
+}
+
+div.container div.brand-quote div.text-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center!important;
+}
+
+div.container div.brand-quote div.text-quote h2.by {
+  margin: 0;
+  padding: 0.3rem 0 0 0;
+}
+
+div.container div.brand-quote div.text-quote h2.main-quote {
+  width: 100%;
+}
+
 
 div.container p.header-text {
   color: #FFFDFB!important;
@@ -2659,8 +2821,36 @@ img.flow-mobile {
   margin: 0 auto;
 }
 
-.box-1 h4 {
+div.container div.brand-quote {
+  margin: 2rem auto 0 auto!important;
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+  justify-content: center;
+    width: 100%!important;
+}
+
+div.container div.brand-quote h2.main-quote {
+  width: 90%;
+}
+
+div.container div.brand-quote img.quote-img {
+  margin: 0 0 0 0!important;
+  padding: 0 1rem 1rem 0!important;
+  width: 12%!important;
+  /* margin-left: -2.5rem; */
+}
+
+div.container div.brand-quote h2.by {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+
+.box-1 h4, .box-2 h4 {
  margin-bottom: 5rem;
+ font-size: 1.8rem;
+ line-height: 120%;
 }
 
 .style-button {
@@ -2693,13 +2883,18 @@ img.wf-sketchie {
   width: 100vw;
 }
 
-.wf-images {
-  padding-top: 1rem;
+div.container .wf-images {
+  margin: 3rem auto 0 auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+div.container div.wf-images img.wf-img-1, div.container div.wf-images img.wf-img-2 {
+  width: 50%!important;
 }
 
 .prototype a.news-button{
@@ -2787,11 +2982,7 @@ section.third img.last {
 #chapter4 img.chapter {
   width: auto;
   display: block;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  position: relative;
-  bottom: 1.5rem;
-  padding-right: 1rem;
+  margin: 0!important;
 }
 
 .brand-header {
