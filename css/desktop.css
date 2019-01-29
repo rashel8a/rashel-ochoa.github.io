@@ -91,6 +91,10 @@ div.container, div.contain-roam {
   overflow: hidden;
 }
 
+article.pg ul li {
+  padding-bottom: 1rem;
+}
+
 /* STICKY NAVBAR DESKTOP BOTH PROJECTS*/
 
 nav#cs-menu ul.navbar-nav {
@@ -137,6 +141,14 @@ div.Roamr-header .logo-header {
   margin-top: 2rem;
 }
 
+div.contain-roam h3.numbers {
+  font-size: 3.5rem;
+  font-family: "Brandon Text Bold", sans-serif;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  color: #73EBE0;
+}
+
 div.Roamr-header p.header-text {
   margin: 0 auto;
   font-size:
@@ -169,6 +181,12 @@ div.Roamr-header div.header-content {
 div.Roamr-header p.header-text {
   color: #27203C;
   width: 77%;
+}
+
+div.contain-roam h1.header-title {
+  font-size: 4.5rem!important;
+  font-weight: bold;
+  padding: 2rem 0 1rem 0;
 }
 
 section#chapter1 img.chapter1-mobile2 {
@@ -929,7 +947,7 @@ article.pinpoint div.callout {
  }
 
  section#chapter4 div.colorp {
-   width: 90%;
+   width: 80%;
    display: flex;
    flex-direction: row-reverse;
    align-items: center;
@@ -949,6 +967,7 @@ article.pinpoint div.callout {
 
 article.logo-designs p.text-new {
    margin-right: 3rem;
+   width: 85%!important;
  }
 
 section#chapter4 div.colorp img.color-else {
@@ -1069,7 +1088,7 @@ article.abt3 div.test-size img.screen-b {
 article.abt3 div.test-size div.wrapper{
   display: flex;
   flex-direction: row;
-  align-items: center !important;
+  align-items: flex-start!important;
   justify-content: center!important;
   padding: 0!important;
   margin: 0 auto 5rem auto;
@@ -1084,7 +1103,7 @@ section#chapter5 div.test-size {
   /* padding-bottom: -10rem; */
 }
 
-div.wrapper div.screen-b-header {
+div.contain-roam div.wrapper div.screen-b-header {
   width: 33.33%;
 }
 
@@ -1545,7 +1564,7 @@ section#contact div.box1 {
 }
 
 article.conclroam {
-  margin: -3rem auto 10rem auto!important;
+  margin: -3rem auto 7.5rem auto!important;
 }
 
 p.text-box, p {
@@ -1877,6 +1896,12 @@ section.iterations-snippet div.it-caption p.text-box {
 
   article.final-p div.finalc p.text-box {
     width: 50%!important;
+  }
+
+  div.contain-roam h1.header-title {
+    font-size: 5.5rem!important;
+    font-weight: bold;
+    padding: 3rem 0 1.5rem 0;
   }
 
   section.iterations-snippet div.it-caption p.text-box {
@@ -2368,7 +2393,7 @@ div.wrapper img.screen-b {
 
    div.Roamr-header div.header-content {
      margin-top: 2rem;
-     width: 45%!important;
+     /* width: 45%!important; */
    }
 
    img.chapter1-image2 {
@@ -2452,7 +2477,7 @@ div.wrapper img.screen-b {
  @media (min-width: 1800px)  {
    div.Roamr-header div.header-content h1.header-title {
      margin-top: 3rem;
-     font-size: 5.2rem!important;
+     font-size: 5.7rem!important;
    }
 
    article.person section.twot{
@@ -2623,7 +2648,8 @@ div.wrapper img.screen-b {
   }
 
   div.Roamr-header div.header-content h1.header-title {
-    font-size: 5.2rem!important;
+    font-size: 7rem!important;
+    padding: 3rem 0 1.8rem 0;
   }
 
   div.block1 h4 {
@@ -3115,7 +3141,7 @@ div.wrapper img.screen-b {
   }
 
   div.Roamr-header div.header-content h1.header-title {
-    font-size: 7rem!important;
+    font-size: 8rem!important;
   }
 
   article.final-p div.finalc p.text-box {
@@ -3513,7 +3539,7 @@ div.wrapper img.screen-b {
     list-style-type: none;
   }
 
-  h1.header-title {
+  div.container h1.header-title {
     font-size: 5.3rem;
   }
 
@@ -7454,8 +7480,13 @@ ul.social-media p:hover, ul.social-media i:hover {
         width: 65%;
       }
 
-      div.motivations h4 span, div.frustrations h4 span {
-        font-size: 3.5rem;
+      div.contain-roam div.motivations h4 span, div.contain-roam div.frustrations h4 span {
+        font-size: 3.5rem!important;
+      }
+
+      div.contain-roam article.person div.pers-title h3 {
+        font-size: 4rem!important;
+        margin-bottom: 1rem;
       }
 
       article.person section.both-personas {
