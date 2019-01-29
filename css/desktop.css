@@ -91,6 +91,33 @@ div.container, div.contain-roam {
   overflow: hidden;
 }
 
+div.contain-roam main div.return-nav{
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem auto 0 auto;
+  position: fixed;
+}
+
+div.return-nav i.fas {
+  color: #FB7E6C;
+  font-size: 2rem;
+  padding-bottom: 0!important;
+}
+
+div.contain-roam main div.return-nav a {
+  color: #FB7E6C!important;
+  font-size: 1.7rem;
+}
+
 article.pg ul li {
   padding-bottom: 1rem;
 }
@@ -1863,6 +1890,18 @@ section.iterations-snippet div.it-caption p.text-box {
   div.desktop ul.no a.off {
     font-size: 2.5rem;
   }
+
+
+  div.return-nav i.fas {
+    color: #FB7E6C;
+    font-size: 2.5rem;
+    padding-bottom: 0!important;
+  }
+
+  div.contain-roam main div.return-nav a {
+    color: #FB7E6C!important;
+    font-size: 2rem!important;
+  }
   /* TEST EDITS*/
   div.container div.test-wrapper div.screen-a-header, div.container div.test-wrapper div.screen-b-header   {
     width: 100%!important;
@@ -2480,6 +2519,17 @@ div.wrapper img.screen-b {
      font-size: 5.7rem!important;
    }
 
+   div.return-nav i.fas {
+     color: #FB7E6C;
+     font-size: 2.8rem;
+     padding-bottom: 0!important;
+   }
+
+   div.contain-roam main div.return-nav a {
+     color: #FB7E6C!important;
+     font-size: 2.3rem!important;
+   }
+
    article.person section.twot{
      width: 90%!important;
      margin: 5rem auto 0 auto;
@@ -2814,6 +2864,25 @@ div.wrapper img.screen-b {
     font-size: 3.4rem!important;
   }
 
+  div.return-nav i.fas {
+    color: #FB7E6C;
+    font-size: 3.4rem!important;
+    padding-bottom: 0.5rem!important;
+  }
+
+  div.contain-roam main div.return-nav a {
+    color: #FB7E6C!important;
+    font-size: 3rem!important;
+  }
+
+  div.contain-roam main div.return-nav{
+    padding-bottom: 5rem;
+    padding-right: 3rem;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+  }
+
 
   div.contain-roam p, div.contain-roam p.text-box {
     font-size: 3.6rem!important;
@@ -3126,6 +3195,17 @@ div.wrapper img.screen-b {
     border-radius: 50rem;
     border: 0.5rem solid #FB7E6C;
     margin-top: 7.5rem!important;
+  }
+
+  div.return-nav i.fas {
+    color: #FB7E6C;
+    font-size: 3.6rem!important;
+    padding-bottom: 0.8rem!important;
+  }
+
+  div.contain-roam main div.return-nav a {
+    color: #FB7E6C!important;
+    font-size: 3.5rem!important;
   }
 
   body section#chapter5 article.abt2 p.text-box, body div.contain-roam section#chapter5 article.abt3 p.text-box, section#chapter5 article.abt2 div.sec-three p.text-box {
