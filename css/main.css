@@ -3087,6 +3087,26 @@ article.conclroam div.content {
     margin: 0 1.6rem;
   }
 
+  div.contain-roam article.conclroam div.key-learnings h3.concl-subhead {
+    font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: bolder;
+    padding: 0!important;
+    margin: 2rem 0 0 0!important;
+  }
+
+  div.test {
+    margin-top: 2rem;
+  }
+
+  div.contain-roam div.key-learnings p.text-box {
+    font-size: 2rem;
+    line-height: 120%;
+    margin-top: 0!important;
+    padding-top: 0!important;
+  }
+
   div.key-learnings .concl-heading {
     font-family: 'Brandon Text Black', 'Brandon Text Bold', sans-serif;
     font-size: 2rem;

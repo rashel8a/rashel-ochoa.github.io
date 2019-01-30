@@ -3623,6 +3623,27 @@ div.key-learnings .concl-heading {
   margin-top: 3rem;
 }
 
+div.contain-roam article.conclroam div.key-learnings h3.concl-subhead {
+  font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
+  font-size: 1.9rem;
+  line-height: 120%;
+  width: 100%;
+  font-weight: bold;
+  padding: 0!important;
+  margin: 2rem 0 0 0!important;
+}
+
+div.test {
+  margin-top: 2rem;
+}
+
+div.contain-roam div.key-learnings p.text-box {
+  font-size: 2rem;
+  line-height: 120%;
+  margin-top: 0!important;
+  padding-top: 0!important;
+}
+
 div.key-learnings .concl-subhead {
   font-size: 2.3rem;
   line-height: 120%;
@@ -3768,6 +3789,16 @@ footer#footer-cube div.copyright p {
     width: 48rem;
     padding: 0;
     margin: 0 auto;
+  }
+
+  div.contain-roam article.conclroam div.key-learnings h3.concl-subhead {
+    font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
+    font-size: 2.1rem;
+    line-height: 120%;
+    width: 100%;
+    font-weight: bold;
+    padding: 0!important;
+    margin: 2rem 0 0 0!important;
   }
 
   div.container p.header-text {

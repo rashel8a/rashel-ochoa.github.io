@@ -5106,20 +5106,24 @@ div.key-learnings .concl-heading {
   margin-top: 5rem;
 }
 
-div.key-learnings .concl-subhead {
+div.contain-roam article.conclroam div.key-learnings h3.concl-subhead {
   font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
   font-size: 3rem;
   line-height: 120%;
+  font-weight: bold;
+  padding: 0!important;
+  margin: 2rem 0 0 0!important;
 }
 
 div.test {
   margin-top: 2rem;
 }
 
-div.key-learnings .text-box {
+div.contain-roam div.key-learnings p.text-box {
   font-size: 2rem;
   line-height: 120%;
-  margin-top: 0.5rem;
+  margin-top: 0!important;
+  padding-top: 0!important;
 }
 
 div.key-learnings .concl-sub {
