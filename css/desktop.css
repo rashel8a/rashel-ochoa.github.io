@@ -1653,7 +1653,7 @@ section.iterations-snippet div.it-caption p.text-box {
       margin-top: 1.5rem!important;
     }
 
-    article.conclroam div.key-learnings h3.concl-heading, article.conclroam div.key-learnings h3.concl-subhead, article.conclroam div.key-learnings h3.concl-sub {
+    div.container div.key-learnings h3.concl-subhead, article.conclroam div.key-learnings h3.concl-heading, article.conclroam div.key-learnings h3.concl-subhead, article.conclroam div.key-learnings h3.concl-sub {
       font-size: 2.5rem!important;
     }
 
@@ -2519,6 +2519,10 @@ div.wrapper img.screen-b {
      font-size: 5.7rem!important;
    }
 
+   div.container div.key-learnings h3.concl-subhead {
+     font-size: 3rem!important;
+   }
+
    div.return-nav i.fas {
      color: #FB7E6C;
      font-size: 2.8rem;
@@ -2664,6 +2668,22 @@ div.wrapper img.screen-b {
 @media (min-width: 2000px) and (max-width: 2499px)  {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
+  }
+
+  div.container div.key-learnings{
+    margin-top: 2rem!important;
+  }
+
+  div.container div.test, div.container div.key-learnings h3.concl-sub {
+    margin-top: 3.5rem;
+  }
+
+  div.container article.concl p.text-box {
+    font-size: 3rem;
+  }
+
+  div.container article.concl h3.concl-sub, div.container article.concl h3.concl-subhead {
+    font-size: 3.5rem!important;
   }
 
   div.container #cs-menu, div.contain-roam #cs-menu {
@@ -2857,11 +2877,23 @@ div.wrapper img.screen-b {
     div.contain-roam section#chapter5 article.abt2 div.content p.text-box, div.contain-roam section#chapter5 article.abt3 div.content p.text-box {
       font-size: 3.6rem!important;
     }
+
+    /* div.container article.concl p.text-box {
+      font-size: 3rem;
+    } */
+
+    div.container article.concl h3.concl-sub, div.container article.concl h3.concl-subhead {
+      font-size: 4rem!important;
+    }
 }
 
 @media (min-width: 2300px) {
   div.contain-roam div.style-wrapper a.style-button {
     font-size: 3.4rem!important;
+  }
+
+  div.container article.final-p p.text-box {
+    padding-top: 2rem!important;
   }
 
   div.return-nav i.fas {
@@ -3197,6 +3229,14 @@ div.wrapper img.screen-b {
     margin-top: 7.5rem!important;
   }
 
+  div.container article.concl p.text-box {
+    font-size: 4rem;
+  }
+
+  div.container article.concl h3.concl-sub, div.container article.concl h3.concl-subhead {
+    font-size: 4.5rem!important;
+  }
+
   div.return-nav i.fas {
     color: #FB7E6C;
     font-size: 3.6rem!important;
@@ -3510,6 +3550,14 @@ div.wrapper img.screen-b {
     width: 100%;
     overflow: hidden;
   }
+
+  /* div.container div.key-learnings .text-box {
+    font-size: 2rem!important;
+  }
+
+  div.container div.key-learnings .concl-subhead {
+    font-size: 3rem!important;
+  } */
 
   p {
    line-height: 125%;
