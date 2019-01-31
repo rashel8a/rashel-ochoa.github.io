@@ -1891,6 +1891,16 @@ section.iterations-snippet div.it-caption p.text-box {
     font-size: 2.5rem;
   }
 
+  div.container article.concl h3.concl-sub, div.container article.concl h3.concl-subhead {
+      font-size: 3rem!important;
+      margin-bottom: 0!important;
+      padding-bottom: 0!important;
+    }
+
+
+
+
+
 
   div.return-nav i.fas {
     color: #FB7E6C;
@@ -2479,8 +2489,12 @@ div.wrapper img.screen-b {
      padding: 0!important;
    }
 
-   p.text-box, p {
+   p.text-box, p, div.container article.concl p.text-box {
      font-size: 2.7rem!important;
+   }
+
+   div.container article.concl h3.concl-subhead, div.container article.concl h3.concl-sub {
+     font-size: 3rem!important;
    }
 
    div.iteratey section.iterations-snippet header.iteration-title {
@@ -2669,6 +2683,11 @@ div.wrapper img.screen-b {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
   }
+
+
+            div.container article.concl div.test, div.container article.concl h3.concl-sub {
+              margin-top: 3rem!important;
+            }
 
   div.container div.key-learnings{
     margin-top: 2rem!important;
@@ -2872,6 +2891,11 @@ div.wrapper img.screen-b {
   section#chapter3 section.it-snippet1 div.it-title h3.it-text, div.contain-roam section#chapter5 section.iterations-snippet div.it-caption h3.it {
     font-size: 3.8rem!important;
   }
+
+
+          div.container article.concl div.test, div.container article.concl h3.concl-sub {
+            margin-top: 3rem!important;
+          }
 
 
     div.contain-roam section#chapter5 article.abt2 div.content p.text-box, div.contain-roam section#chapter5 article.abt3 div.content p.text-box {
@@ -3551,13 +3575,17 @@ div.wrapper img.screen-b {
     overflow: hidden;
   }
 
-  /* div.container div.key-learnings .text-box {
+  div.container div.key-learnings .text-box {
     font-size: 2rem!important;
   }
 
   div.container div.key-learnings .concl-subhead {
     font-size: 3rem!important;
-  } */
+  }
+
+  div.container div.key-learnings .text-box {
+    margin: 0!important;
+  }
 
   p {
    line-height: 125%;
@@ -5435,7 +5463,7 @@ ul.social-media p:hover, ul.social-media i:hover {
     margin-top: 0!important;
   }
 
-  div.contain-roam article.abt3 div.wrapper p.descs, article.abt3 div.test-summ p.descs, article.abt2 div.sec-three p.text-box, article.abt2 div.content p.text-box, article.abt2 div.wrapper p.descs, div.contain-roam header.iteration-title div.it-caption p.text-box, p.text-box  {
+  div.contain-roam article.abt3 div.wrapper p.descs, article.abt3 div.test-summ p.descs, article.abt2 div.sec-three p.text-box, article.abt2 div.content p.text-box, article.abt2 div.wrapper p.descs, div.contain-roam header.iteration-title div.it-caption p.text-box, p.text-box, div.container article.concl p.text-box  {
     font-size: 2.4rem!important;
   }
 
@@ -6587,6 +6615,15 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
 
+        p.text-box, p, div.container article.concl p.text-box {
+          font-size: 3rem!important;
+        }
+
+        div.container article.concl h3.concl-subhead, div.container article.concl h3.concl-sub {
+          font-size: 3.5rem!important;
+        }
+
+
      div.container section#chapter4 div.brand-quote {
        margin: 7.5rem auto!important;
        width: 85%!important;
@@ -7266,6 +7303,14 @@ ul.social-media p:hover, ul.social-media i:hover {
       div.container p, div.container p.text-box, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box  {
         font-size: 3.6rem!important;
         line-height: 120%;
+      }
+
+      p.text-box, p, div.container article.concl p.text-box {
+        font-size: 3.6rem!important;
+      }
+
+      div.container article.concl h3.concl-subhead, div.container article.concl h3.concl-sub {
+        font-size: 4.2rem!important;
       }
 
 
@@ -7986,6 +8031,18 @@ ul.social-media p:hover, ul.social-media i:hover {
 
         div.container p, div.container p.text-box, div.container article.ab div.content p.text-box, div.container section.iterations-snippet header.iteration-title p.text-box, div.content ol li, div.content ul li {
           font-size: 4rem!important;
+        }
+
+        p.text-box, p, div.container article.concl p.text-box {
+          font-size: 4rem!important;
+        }
+
+        div.container article.concl h3.concl-subhead, div.container article.concl h3.concl-sub {
+          font-size: 4.8rem!important;
+        }
+
+        div.container article.concl div.test, div.container article.concl h3.concl-sub {
+          margin-top: 3rem!important;
         }
 
         div.container div.content ol span {
