@@ -5177,7 +5177,8 @@ nav.navbar {
 
     .description {
       font-size: 2rem;
-      line-height: 120%;
+      line-height: 130%;
+      margin-top: 1rem!important;
       padding: 0;
       color: #001F40;
     }
