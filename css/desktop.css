@@ -91,8 +91,21 @@ div.container, div.contain-roam {
   overflow: hidden;
 }
 
-b {
-  font-family: 'Brandon Text Bold';
+div.contain-roam div.content b {
+  /* font-family: 'Brandon Text Bold'; */
+  background-color: #E7EEF9;
+  padding: 0!important;
+  display: inline;
+  margin: -7.5rem 0!important;
+  /* line-height: 50%; */
+  /* height: 1rem; */
+  /* opacity: 90%; */
+}
+
+div.contain-roam div.callout span {
+  font-size: 2.3rem;
+  font-family: "Brandon Text Bold";
+  line-height: 140%;
 }
 
 div.contain-roam main div.return-nav{
@@ -109,6 +122,10 @@ div.contain-roam main div.return-nav{
   right: 0;
   margin: 1.5rem auto 0 auto;
   position: fixed;
+}
+
+div.contain-roam div.iteratey header.iteration-title div.it-caption {
+  margin: 7.5rem auto 0 auto!important;
 }
 
 div.return-nav i.fas {
@@ -155,6 +172,11 @@ div.contain-roam div.content {
 
 img.img-frustrations {
   width: 40%!important;
+}
+
+div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 
 section div.callout {
@@ -237,7 +259,7 @@ article.intro-new p.text-box {
 }
 
 section#intro a.btn-solo {
-  margin: 3rem auto 10rem auto;
+  margin: 5rem auto 15rem auto;
   width: 30rem;
   padding: 1.7rem 0 1rem 0;
 }
@@ -1362,7 +1384,7 @@ div.fy-images div.fy-it {
 
 section.iterations-snippet div.fy-it span.number-circle {
   background-color: #494FF5;
-  padding: 1.8rem 0 0 0;
+  padding: 1.85rem 0 0 0;
   margin: 0rem 0.5rem 3rem 0rem!important;
   width: 3.5rem;
   height: 3.5rem;
@@ -1600,7 +1622,7 @@ article.conclroam {
 }
 
 div.contain-roam p.text-box, div.contain-roam p {
-  line-height: 125%!important;
+  line-height: 129%!important;
 }
 
 section.iterations-snippet div.it-caption p.text-box {
@@ -1896,13 +1918,27 @@ section.iterations-snippet div.it-caption p.text-box {
     top: 30rem;
   }
 
+  div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+    font-size: 2.6rem!important;
+    font-weight: bolder;
+  }
+
+  div.contain-roam div.test-summ p.descs {
+    margin-top: 10rem!important;
+  }
+
+  div.contain-roam div.callout span {
+    font-size: 2.7rem;
+    font-family: "Brandon Text Bold";
+    line-height: 140%;
+  }
+
   div.vid-responsived video{
     width: 115%;
   }
 
   div.contain-roam article.new-p div.finalc p.text-box {
     width: 43%!important;
-    margin-left: 1rem;
   }
 
   div.contain-roam div.iteratey header.iteration-title span.number-circle {
@@ -1928,6 +1964,12 @@ section.iterations-snippet div.it-caption p.text-box {
 
   div.desktop ul.no a.off {
     font-size: 2.5rem;
+  }
+
+  div.contain-roam section.iterations-snippet div.fy-it span.number-circle {
+    padding: 2.45rem 0 0 0!important;
+    width: 4.8rem!important;
+    height: 4.8rem!important;
   }
 
   div.container article.concl h3.concl-sub, div.container article.concl h3.concl-subhead {
@@ -1973,9 +2015,9 @@ section.iterations-snippet div.it-caption p.text-box {
     width: 50%!important;
   }
 
-  section#chapter6 article.final-p div.finalc {
+  /* section#chapter6 article.final-p div.finalc {
     width: 80%!important;
-  }
+  } */
 
   div.container .logo-header {
     width: 48%!important;
@@ -2308,6 +2350,24 @@ div.wrapper img.screen-b {
      font-size: 3rem;
    }
 
+   div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+     font-size: 2.9rem!important;
+     font-weight: bolder;
+   }
+
+
+     div.contain-roam section.iterations-snippet div.fy-it span.number-circle {
+       padding: 2.4rem 0 0 0!important;
+       width: 4.8rem!important;
+       height: 4.8rem!important;
+     }
+
+   div.contain-roam div.callout span {
+     font-size: 2.9rem;
+     font-family: "Brandon Text Bold";
+     line-height: 140%;
+   }
+
    div.edit-images img.edit-plan {
      width: 27%!important;
    }
@@ -2572,8 +2632,19 @@ div.wrapper img.screen-b {
      font-size: 5.7rem!important;
    }
 
+   div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+     font-size: 3rem!important;
+     font-weight: bolder;
+   }
+
    div.container div.key-learnings h3.concl-subhead {
      font-size: 3rem!important;
+   }
+
+   div.contain-roam div.callout span {
+     font-size: 3rem;
+     font-family: "Brandon Text Bold";
+     line-height: 145%;
    }
 
    div.return-nav i.fas {
@@ -2683,7 +2754,7 @@ div.wrapper img.screen-b {
 
    div.contain-roam p, div.contain-roam p.text-box {
      font-size: 2.8rem!important;
-     line-height: 120%;
+     line-height: 125%;
    }
 
    div.title-new h2.section-title {
@@ -2718,9 +2789,51 @@ div.wrapper img.screen-b {
    }
  }
 
+ @media (min-width: 2200px) {
+   div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+     font-size: 3.3rem!important;
+     font-weight: bolder;
+     line-height: 140%;
+   }
+
+   div.contain-roam body p, div.contain-roam body p.text-box {
+     font-size: 3.2rem!important;
+     line-height: 140%!important;
+   }
+ }
+
 @media (min-width: 2000px) and (max-width: 2499px)  {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
+  }
+
+  div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, div.contain-roam section.iterations-snippet div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
+    padding: 3.1rem 0 0 0!important;
+    margin: 0.3rem 0.5rem 3rem 0rem!important;
+    width: 6.3rem!important;
+    height: 6.1rem!important;
+    font-size: 3rem!important;
+    background-color: #494FF5;
+  }
+
+  div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+    font-size: 3.2rem!important;
+    font-weight: bolder;
+  }
+
+
+        div.iteratey {
+          margin: 10rem 0!important;
+        }
+
+        div.contain-roam div.iteratey header.iteration-title div.it-caption {
+          margin-bottom: 3rem!important;
+        }
+
+  div.contain-roam div.callout span {
+    font-size: 3.2rem;
+    font-family: "Brandon Text Bold";
+    line-height: 145%;
   }
 
 
@@ -2753,12 +2866,13 @@ div.wrapper img.screen-b {
   }
 
   div.contain-roam p, div.contain-roam p.text-box, section#chapter5 article.abt div.content p{
-    font-size: 2.9rem!important;
-    line-height: 120%;
+    font-size: 3rem!important;
+    line-height: 140%;
   }
 
   body section#chapter5 article.abt2 p.text-box, body div.contain-roam section#chapter5 article.abt3 p.text-box, section#chapter5 article.abt2 div.sec-three p.text-box {
-    font-size: 2.9rem!important;
+    font-size: 3rem!important;
+    line-height: 145%;
   }
 
 
@@ -2931,6 +3045,18 @@ div.wrapper img.screen-b {
     font-size: 3.8rem!important;
   }
 
+  div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+    font-size: 3.8rem!important;
+    font-weight: bolder;
+    line-height: 140%;
+  }
+
+  div.contain-roam div.callout span {
+    font-size: 3.8rem;
+    font-family: "Brandon Text Bold";
+    line-height: 145%;
+  }
+
 
           div.container article.concl div.test, div.container article.concl h3.concl-sub {
             margin-top: 3rem!important;
@@ -3007,10 +3133,6 @@ div.wrapper img.screen-b {
 
   div.plan-videos {
     width: 60%!important;
-  }
-
-  div.pvid img.plan-g1 {
-    width: 75%!important;
   }
 
   div.iteratey section.iterations-snippet header.iteration-title span.number-circle {
@@ -3167,9 +3289,9 @@ div.wrapper img.screen-b {
      }
 
 
-      div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
+      div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, section.iterations-snippet div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
         padding: 3.3rem 0 0 0!important;
-        margin: 0.3rem 0.5rem 2rem 0rem!important;
+        margin: 0.3rem 0.5rem 3rem 0rem!important;
         width: 6.7rem!important;
         height: 6.5rem!important;
         font-size: 3.6rem!important;
@@ -3292,6 +3414,16 @@ div.wrapper img.screen-b {
     margin-top: 7.5rem!important;
   }
 
+  div.contain-roam div.plan-videos div.pvid img {
+    width: 160%!important;
+  }
+
+  div.contain-roam div.callout span {
+    font-size: 4.2rem;
+    font-family: "Brandon Text Bold";
+    line-height: 145%;
+  }
+
   div.container article.concl p.text-box {
     font-size: 4rem;
   }
@@ -3390,9 +3522,9 @@ div.wrapper img.screen-b {
   }
 
 
-   div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
+   div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, section.iterations-snippet div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
      padding: 4.4rem 0 0 0!important;
-     margin: 0.3rem 0.5rem 2rem 0rem!important;
+     margin: 0.3rem 0.5rem 3rem 0rem!important;
      width: 8.6rem!important;
      height: 8.4rem!important;
      font-size: 4.4rem!important;
@@ -5442,6 +5574,12 @@ ul.social-media p:hover, ul.social-media i:hover {
      width: 65%!important;
      justify-content: space-between;
    }
+
+   div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+     font-size: 2.2rem;
+     line-height: 145%;
+     font-weight: bolder;
+   }
 }
 
 
@@ -5459,6 +5597,10 @@ ul.social-media p:hover, ul.social-media i:hover {
    article.iteration-one div.iterations-header {
      width: 75%;
      margin: 0 auto 5rem auto;
+   }
+
+   div.test-summ p.descs {
+     margin-top: 7.5rem;
    }
 
    /* div.container article.pg div.content {
@@ -6653,6 +6795,17 @@ ul.social-media p:hover, ul.social-media i:hover {
        line-height: 120%;
      }
 
+     div.contain-roam section.iterations-snippet div.fy-it span.number-circle {
+       padding: 2.4rem 0 0 0!important;
+       width: 4.8rem!important;
+       height: 4.8rem!important;
+       margin-bottom: 3rem!important;
+     }
+
+     div.iterate-2 div.fy-images {
+       margin: 10rem auto 3rem auto;
+     }
+
 
         p.text-box, p, div.container article.concl p.text-box {
           font-size: 3rem!important;
@@ -6724,7 +6877,7 @@ ul.social-media p:hover, ul.social-media i:hover {
      }
 
      div.iteratey section.iterations-snippet span.number-circle {
-       margin: 0 1rem 0 -1rem!important;
+       margin: 0 1rem 3rem -1rem!important;
      }
 
      section div.callout p.co-text {
@@ -7961,7 +8114,6 @@ ul.social-media p:hover, ul.social-media i:hover {
 
     section#chapter5 article.ab div.content p.text-box {
       font-size: 3.5rem;
-      margin-bottom: 10rem;
     }
 
 
@@ -8024,6 +8176,20 @@ ul.social-media p:hover, ul.social-media i:hover {
         padding: 0;
         align-items: flex-start;
         justify-content: space-between;
+      }
+
+      div.iteratey {
+        margin: 15rem 0;
+      }
+
+      div.contain-roam div.iteratey header.iteration-title div.it-caption {
+        margin-bottom: 5rem!important;
+      }
+
+      div.test-summ p.descs a, div.sec-three div.content p.text-box a {
+        font-size: 4.2rem!important;
+        font-weight: bolder;
+        line-height: 145%;
       }
 
       div.contain-roam section.it-snippet1 div.it-title h3.it-text, div.contain-roam section.iterations-snippet div.it-caption h3.it {

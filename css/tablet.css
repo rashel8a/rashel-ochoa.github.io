@@ -9,6 +9,41 @@
   position: relative;
 }
 
+div.contain-roam div.callout span {
+  font-size: 2rem;
+  font-family: "Brandon Text Bold";
+  line-height: 120%;
+}
+
+div.contain-roam main div.return-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  z-index: 0!important;
+  bottom: 0;
+  right: 0;
+  margin: 1.5rem auto 0 auto;
+  position: fixed;
+}
+
+div.contain-roam main div.return-nav a {
+  color: #FB7E6C!important;
+  font-size: 1.6rem;
+  cursor: auto;
+  z-index: 1!important;
+}
+
+div.return-nav i.fas {
+  color: #FB7E6C;
+    font-size: 2rem;
+    padding-bottom: 0!important;
+}
+
 /* TABLET CHAPTER IMAGES BOTH PROJECTS*/
 div.contain-roam div.title-new img.chapter, div.container div.title-card img.chapter {
   width: 10%!important;
@@ -43,6 +78,16 @@ div.contain-roam #chapter6 .chapter, div.container #chapter6 .chapter {
   width: 12%!important;
 }
 
+div.contain-roam {
+  height: 100%;
+  overflow-y: scroll!important;
+}
+
+div.contain-roam p, div.contain-roam p.textbox {
+  font-size: 1.8rem!important;
+  line-height: 125%!important;
+}
+
 /* STICKY NAVBAR TABLET BOTH PROJECTS*/
   div.contain-roam nav#cs-menu{
     width: 100%;
@@ -53,6 +98,10 @@ div.contain-roam #chapter6 .chapter, div.container #chapter6 .chapter {
     margin: 0 0 3rem 0!important;
     padding: 2.8rem 0 2rem 0;
     background-color: #FDE8DE!important;
+  }
+
+  section#chapter5 div.contain-roam nav.navbar {
+    padding-top: 10rem;
   }
 
   div.container nav#cs-menu{
@@ -123,6 +172,10 @@ div.contain-roam nav.navbar {
   width: 90%;
   margin: 0 auto!important;
 }
+/*
+nav#cs-menu div.contain-roam nav.navbar {
+    padding-top: 10rem;
+} */
 
 div.contain-roam nav.navbar img.logo-size {
   padding: 0!important;
@@ -1422,7 +1475,7 @@ section#chapter6 div.mobile-swoop-f {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  z-index: 1700;
+  z-index: -1;
   padding: 0;
   border: 0;
   /* border: 0px solid #FFFDFB!important; */
@@ -3625,8 +3678,8 @@ div.key-learnings .concl-heading {
 
 div.contain-roam article.conclroam div.key-learnings h3.concl-subhead {
   font-family: 'Brandon Text Medium', 'Brandon Text Bold', sans-serif;
-  font-size: 1.9rem;
-  line-height: 120%;
+  font-size: 2.2rem;
+  line-height: 150%;
   width: 100%;
   font-weight: bold;
   padding: 0!important;
@@ -3664,7 +3717,7 @@ div.key-learnings .concl-sub {
 
 /* CONTACT TABLET*/
 
-.box1 {
+div.contain-roam section#contact div.box1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -3673,6 +3726,11 @@ div.key-learnings .concl-sub {
   background-color: #15246D;
   padding-top: 3rem;
   padding-bottom: -5rem;
+  z-index: 1!important;
+}
+
+section#contact {
+  z-index: 1700!important;
 }
 
 .box1 .contact-graphic{
