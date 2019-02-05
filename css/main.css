@@ -314,7 +314,8 @@ p {
 /* END ANIMATIONS*/
 
 strong {
-  font-family: 'Brandon Text Bold';
+  font-family: 'Brandon Text Medium';
+  font-weight: 900;
 }
 
 @font-face {
