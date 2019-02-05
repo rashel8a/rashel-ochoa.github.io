@@ -91,6 +91,10 @@ div.container, div.contain-roam {
   overflow: hidden;
 }
 
+b {
+  font-family: 'Brandon Text Bold';
+}
+
 div.contain-roam main div.return-nav{
   display: flex;
   flex-direction: column-reverse;
@@ -140,7 +144,7 @@ div.contain-roam #cs-menu{
 }
 
 div.contain-roam ul, div.container ul {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 
@@ -242,7 +246,7 @@ section#chapter1 article.challenge-intro1 img.chapter1-image2 {
   width: 90%!important;
   display: block!important;
   padding: 0;
-  margin: 0 -30rem 0 -7rem;
+  margin: -15rem -30rem -10rem -7rem;
 }
 
 article.challenge-intro1 div.challenge1 {
@@ -319,18 +323,19 @@ article.user-interviews div.content {
 
  /* ROAMR CHART */
  h3.chart-subtitle {
-   font-size: 2.2rem;
-   font-weight: bold;
+   font-size: 2.4rem;
+   font-weight: bolder;
    margin: 2rem 0 0rem 8rem;
    color: #FFFDFB;
-   text-decoration: underline #00FBDD;
+   /* text-decoration: underline #00FBDD; */
  }
 
  div.chart-html1 h3.chia {
-   font-size: 2rem;
-   margin: 5rem 0 0rem 8rem;
+   font-size: 2.4rem;
+   margin: 5rem 0 2rem 8rem;
    color: #FFFDFB;
-   text-decoration: underline #00FBDD;
+   font-weight: bolder;
+   /* text-decoration: underline #00FBDD; */
  }
 
  section#chapter2 div.chart-html1 {
@@ -338,7 +343,7 @@ article.user-interviews div.content {
    align-items: baseline;
    justify-content: center;
    flex-direction: column;
-   margin: 5rem auto 10rem auto;
+   margin: 5rem auto -7.5rem auto;
    width: 100vw;
    background-color: #27213A;
  }
@@ -870,13 +875,13 @@ article.pinpoint div.callout {
    margin: 5rem auto 0 auto;
  }
 
- section.it-snippet1 div.plan-img {
+ div.contain-roam section.it-snippet1 div.plan-img {
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
    margin: 5rem auto 0 auto!important;
-   width: 75%;
+   width: 85%;
  }
 
  div.plan-img section.picker-1 {
@@ -1191,7 +1196,7 @@ section#chapter5 div.sec-three {
   flex-direction: row;
   align-items: center !important;
   justify-content: space-between !important;
-  margin: 5rem auto 0 auto;
+  margin: 10rem auto 0 auto;
   width: 90%!important;
 }
 
@@ -1594,8 +1599,8 @@ article.conclroam {
   margin: -3rem auto 7.5rem auto!important;
 }
 
-p.text-box, p {
-  line-height: 120%;
+div.contain-roam p.text-box, div.contain-roam p {
+  line-height: 125%!important;
 }
 
 section.iterations-snippet div.it-caption p.text-box {
@@ -1640,7 +1645,7 @@ section.iterations-snippet div.it-caption p.text-box {
     }
 
     div.contain-roam div.title-new {
-      margin: 15rem auto 0 auto!important;
+      margin: 15rem auto -7.5rem auto!important;
       width: 90%!important;
     }
 
@@ -1883,6 +1888,40 @@ section.iterations-snippet div.it-caption p.text-box {
     section.iterations-snippet div.it-caption p.text-box {
       font-size: 2rem;
     }
+}
+
+@media (min-width: 1500px) {
+  div.desktop-images-f div.content-sections {
+    position: relative;
+    top: 30rem;
+  }
+
+  div.vid-responsived video{
+    width: 115%;
+  }
+
+  div.contain-roam article.new-p div.finalc p.text-box {
+    width: 43%!important;
+    margin-left: 1rem;
+  }
+
+  div.contain-roam div.iteratey header.iteration-title span.number-circle {
+    padding: 1.9rem 0 0 0!important;
+    font-size: 2.3rem;
+    width: 4rem;
+    height: 3.8rem;
+  }
+
+  div.contain-roam div.tt-images img.ett0 {
+    width: 25%!important;
+  }
+
+  div.contain-roam section.iterations-snippet div.fy-it span.number-circle {
+    padding: 2.1rem 0 0 0!important;
+    font-size: 2rem;
+    width: 4.2rem;
+    height: 4rem;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -2140,7 +2179,7 @@ section.iterations-snippet div.it-caption p.text-box {
 
 
   section.it-snippet1 header.it-list div.number-circle, div.iteratey section.iterations-snippet span.number-circle {
-    padding: 1.85rem 0 0 0!important;
+    padding: 1.95rem 0 0 0!important;
     margin: 0.3rem 0.5rem 0 0rem;
     width: 4.2rem!important;
     height: 4rem!important;
