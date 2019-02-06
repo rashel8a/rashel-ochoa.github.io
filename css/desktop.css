@@ -1351,10 +1351,13 @@ header.it-changes div.iter{
   margin: 1rem auto;
 }
 
-header.it-changes span.number-circle {
-  margin: 0;
-  padding-top: 1.3rem;
-  background-color: #FF4B55;
+div.contain-roam header.it-changes span.number-circle {
+  margin: 0 1rem 0 -1rem!important;
+  width: 3rem;
+  height: 3rem;
+  padding: 1.6rem 0 0 0;
+  font-size: 1.8rem;
+  background-color: #FF4B55!important;
 }
 
 header.it-changes p.text-box {
@@ -1459,12 +1462,13 @@ div.iteratey section.iterations-snippet div.it-caption h3.it, div.contain-roam s
   font-size: 2.2rem!important;
 }
 
-div.iteratey section.iterations-snippet span.number-circle {
-  margin: 0 1rem 0 -1rem!important;
-  width: 3rem;
-  height: 3rem;
-  padding: 1.6rem 0 0 0;
-  font-size: 1.8rem;
+div.contain-roam div.iteratey section.iterations-snippet span.number-circle {
+    padding: 1.8rem 0 0 0;
+    margin: 0.3rem 1rem 0 0rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.8rem;
+    background-color: #494FF5;
 }
 
 div.iterate-4 div.edit-images {
@@ -1940,7 +1944,7 @@ section.iterations-snippet div.it-caption p.text-box {
   }
 
   div.contain-roam div.iteratey header.iteration-title span.number-circle {
-    padding: 1.9rem 0 0 0!important;
+    padding: 2.1rem 0 0 0!important;
     font-size: 2.3rem;
     width: 4rem;
     height: 3.8rem;
@@ -2219,10 +2223,9 @@ section.iterations-snippet div.it-caption p.text-box {
 
 
   section.it-snippet1 header.it-list div.number-circle, div.iteratey section.iterations-snippet span.number-circle {
-    padding: 1.95rem 0 0 0!important;
-    margin: 0.3rem 0.5rem 0 0rem;
+    padding: 2rem 0 0 0!important;
     width: 4.2rem!important;
-    height: 4rem!important;
+    height: 4.2rem!important;
     font-size: 2.3rem!important;
   }
 
@@ -2396,7 +2399,7 @@ div.wrapper img.screen-b {
 
    div.iteratey section.iterations-snippet header.iteration-title span.number-circle {
      background-color: #00D3FE;
-     padding: 2.2rem 0 0 0;
+     padding: 2rem 0 0 0!important;
      margin: 0rem 1rem 3rem 0rem!important;
      width: 4.7rem;
      height: 4.5rem;
@@ -3043,6 +3046,10 @@ div.wrapper img.screen-b {
     font-size: 3.8rem!important;
   }
 
+  section.iterations-snippet header.it-changes p.text-box {
+    margin-left: 7.5rem!important;
+  }
+
   div.test-summ p.descs a, div.sec-three div.content p.text-box a {
     font-size: 3.8rem!important;
     font-weight: bolder;
@@ -3516,7 +3523,20 @@ div.wrapper img.screen-b {
     margin: 0.3rem 1.5rem 0 0rem!important;
     width: 6.5rem!important;
     height: 6.3rem!important;
-    font-size: 4.4rem!important;
+    font-size: 3.9rem!important;
+  }
+
+  div.iteratey section.iterations-snippet header.iteration-title span.number-circle {
+    padding: 3.2rem 0 0 0!important;
+    margin: 0.3rem 1.5rem 0 0rem!important;
+    width: 6.5rem!important;
+    height: 6.3rem!important;
+    font-size: 3.9rem!important;
+  }
+
+  div.contain-roam section.iterations-snippet header.it-changes p.text-box {
+    text-align: left;
+    margin-left: 10rem;
   }
 
 
