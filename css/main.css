@@ -1677,7 +1677,11 @@ div.sec-three img.test-design {
 
 div.sec-three p.text-box {
   padding: 0;
-  margin: 3rem auto;
+  margin: 5rem auto 0 auto;
+}
+
+div.sec-three p.text {
+  margin: 0 0 3rem 0!important;
 }
 
 /* ITERATIONS FORMATTING HERE */
@@ -1718,6 +1722,7 @@ div.tt-images {
 div.iterate img.ett0 {
   width: 66%;
   margin: 0 auto 1.5rem auto!important;
+  box-shadow: 0px 2px 5px grey!important;
   padding: 0;
 }
 
