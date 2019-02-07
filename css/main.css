@@ -4932,8 +4932,12 @@ div.copyrightt p {
 }
 
 @media (min-width: 1300px) and (max-width: 1499px) {
-  p {
+  article.about-story-meat p {
     font-size: 2rem!important;
+  }
+
+  p.about-subtitle {
+    font-size: 2.6rem!important;
   }
 
   div.intro-text-section {
@@ -8141,10 +8145,21 @@ nav.navbar {
     }
 }
 
+@media (min-width: 2400px) {
+  p.about-subtitle {
+    font-size: 4.7rem!important;
+  }
+}
+
 @media (min-width: 2600px) {
   section.about-story-section article.about-story-meat p {
     font-size: 3.7rem!important;
     line-height: 135%;
+          font-weight: 200;
+  }
+
+  p.about-subtitle {
+    font-size: 5rem!important;
   }
 
   section.about-story-section article.about-story-meat h4 {
@@ -8160,6 +8175,11 @@ nav.navbar {
   section.about-story-section article.about-story-meat p {
     font-size: 3.9rem!important;
     line-height: 135%;
+    font-weight: 200;
+  }
+
+  p.about-subtitle {
+    font-size: 5.3rem!important;
   }
 
   section.about-story-section article.about-story-meat h4 {
@@ -8182,9 +8202,14 @@ nav.navbar {
       top: 9rem;
     }
 
+    p.about-subtitle {
+      font-size: 5.7rem!important;
+    }
+
     section.about-story-section article.about-story-meat p {
       font-size: 4.2rem!important;
       line-height: 135%;
+      font-weight: 200;
     }
 
     section.about-story-section article.about-story-meat h4 {
