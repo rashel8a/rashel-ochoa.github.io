@@ -2253,8 +2253,8 @@ section.iterations-snippet div.it-caption p.text-box {
   }
 
   section#intro a.btn-solo, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
-    width: 39rem;
-    padding: 1.9rem 0 2.8rem 0;
+    width: 35rem;
+    padding: 2.1rem 0 3rem 0;
   }
 
   section#intro a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
@@ -2517,8 +2517,10 @@ div.wrapper img.screen-b {
    }
 
    section#intro article.intro-new a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
-     font-size: 2.3rem!important;
-     padding: 2.4rem 0 3.2rem 0;
+     font-size: 2.3rem;
+     /* padding: 2.4rem 0 3.2rem 0; */
+     margin: 5rem 2rem 15rem 2rem;
+     border-width: medium;
    }
 
    div.container section#intro {
@@ -2806,6 +2808,10 @@ div.wrapper img.screen-b {
 @media (min-width: 2000px) and (max-width: 2499px)  {
   div.chart-html1 h3.chart-title {
     font-size: 5.5rem;
+  }
+
+  div.contain-roam section#intro section.project-info{
+    margin-bottom: 10rem!important;
   }
 
   div.videeeo div.vid-responsive1 span.number-circle, div.plan-videos div.pvid span.number-circle, div.contain-roam section.iterations-snippet div.fy-images div.fy-it span.number-circle, section.it-snippet1 div.picker-img div.number-circle, section.it-snippet1 div.plan-img div.number-circle {
@@ -3198,7 +3204,7 @@ div.wrapper img.screen-b {
   }
 
   section#intro a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
-    font-size: 3rem!important;
+    font-size: 2.7rem!important;
   }
 
   section#chapter6 div.key-learnings h3.concl-heading, section#chapter6 article.conclroam div.key-learnings h3.concl-subhead, article.conclroam div.key-learnings h3.concl-sub {
@@ -3417,6 +3423,14 @@ div.wrapper img.screen-b {
     border-radius: 50rem;
     border: 0.5rem solid #FB7E6C;
     margin-top: 7.5rem!important;
+  }
+
+  section#intro article.intro-new a.primary-btn, div.buttone a.primary-btn, div.contact-btns3 a.primary-btn {
+    margin: 5rem 3.5rem 15rem 3rem!important;
+  }
+
+  div.contain-roam section#intro section.project-info{
+    margin-bottom: 15rem!important;
   }
 
   div.contain-roam div.plan-videos div.pvid img {
@@ -5351,6 +5365,9 @@ div.contact-btns2 {
 div.contact-btns2 .primary-btn {
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 1.7rem 2rem 2.7rem 2rem;
   width: 30rem;
   display: inline-block;
 }
@@ -7763,7 +7780,7 @@ ul.social-media p:hover, ul.social-media i:hover {
 
 
      div.contact-btns2 a.primary-btn {
-      height: 7.5rem;
+      height: 8rem;
       padding: 2.8rem 0 0 0;
       font-size: 2.8rem;
       width: 45rem;
