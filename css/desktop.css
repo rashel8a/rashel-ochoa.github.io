@@ -4009,7 +4009,7 @@ div.wrapper img.screen-b {
     padding: 0;
   }
 
-  ol li, ol span, ul li{
+  ol li, ol span, ul li, #chapter1 ol span{
     font-size: 2rem;
     line-height: 120%;
   }
